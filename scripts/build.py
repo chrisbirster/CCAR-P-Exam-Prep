@@ -125,7 +125,19 @@ def inline(text: str) -> str:
 
     def link_sub(match: re.Match[str]) -> str:
         label = html.escape(match.group(1))
-        href = html.escape(match.group(2), quote=True)
+        href_raw = match.group(2)
+
+        # Markdown sources are published as directory-style Pages routes.
+        # Keep absolute/external URLs untouched.
+        if "://" not in href_raw and not href_raw.startswith("#"):
+            if href_raw.endswith("/README.md"):
+                href_raw = href_raw[:-len("README.md")]
+            elif href_raw == "README.md":
+                href_raw = "./"
+            elif href_raw.endswith(".md"):
+                href_raw = href_raw[:-3] + "/"
+
+        href = html.escape(href_raw, quote=True)
         return stash(f'<a href="{href}">{label}</a>')
 
     text = CODE_TOKEN.sub(code_sub, text)
