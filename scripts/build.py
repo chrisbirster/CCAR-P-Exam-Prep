@@ -35,6 +35,14 @@ PAGES = [
         "objectives_href": "../objectives/",
     },
     {
+        "source": ROOT / "docs" / "sources-and-verification.md",
+        "output": DIST / "verification" / "index.html",
+        "title": "CCAR-P Sources & Verification",
+        "asset_prefix": "../",
+        "home_href": "../",
+        "objectives_href": "../objectives/",
+    },
+    {
         "source": ROOT / "docs" / "concepts" / "README.md",
         "output": DIST / "concepts" / "index.html",
         "title": "CCAR-P Concept Notes",
