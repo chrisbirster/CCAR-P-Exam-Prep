@@ -25,7 +25,15 @@ PAGES = [
         "asset_prefix": "../",
         "home_href": "../",
         "objectives_href": "./",
+    },    {
+        "source": ROOT / "docs" / "flashcard-plan.md",
+        "output": DIST / "flashcards" / "index.html",
+        "title": "CCAR-P Flashcard Plan",
+        "asset_prefix": "../",
+        "home_href": "../",
+        "objectives_href": "../objectives/",
     },
+
 ]
 
 CODE_TOKEN = re.compile(r"`([^`]+)`")
