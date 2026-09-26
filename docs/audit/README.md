@@ -48,13 +48,32 @@ D3.1 capability bloat
 
 ## Domain collections
 
-- [Domain 3 collection](D3.md) — all 8 Integration source packets
+- [D1 — Solution Design & Architecture](D1.md) — 6 packets
+- [D2 — Models, Prompting & Context](D2.md) — 5 packets
+- [D3 — Integration](D3.md) — 8 packets
+- [D4 — Evaluation, Testing & Optimization](D4.md) — 6 packets
+- [D5 — Governance, Safety & Risk](D5.md) — 5 packets
+- [D6 — Stakeholder & Lifecycle](D6.md) — 5 packets
+- [D7 — Developer Productivity](D7.md) — 3 packets
+
+**Total:** 38 objective source packets.
 
 ## Progress
 
-| Objective | Status | Audit |
+| Objective | Status | Sources |
 | --- | --- | --- |
-| D3.1 | AI REVIEWED — AWAITING HUMAN | [Sources](D3.1-sources.md) · [Audit](d3-integration.md#d3-1-capability-bloat) |
+| D1.1 | SOURCES READY — AWAITING HUMAN | [Sources](D1.1-sources.md) |
+| D1.2 | SOURCES READY — AWAITING HUMAN | [Sources](D1.2-sources.md) |
+| D1.3 | SOURCES READY — AWAITING HUMAN | [Sources](D1.3-sources.md) |
+| D1.4 | SOURCES READY — AWAITING HUMAN | [Sources](D1.4-sources.md) |
+| D1.5 | SOURCES READY — AWAITING HUMAN | [Sources](D1.5-sources.md) |
+| D1.6 | SOURCES READY — AWAITING HUMAN | [Sources](D1.6-sources.md) |
+| D2.1 | SOURCES READY — AWAITING HUMAN | [Sources](D2.1-sources.md) |
+| D2.2 | SOURCES READY — AWAITING HUMAN | [Sources](D2.2-sources.md) |
+| D2.3 | SOURCES READY — AWAITING HUMAN | [Sources](D2.3-sources.md) |
+| D2.4 | SOURCES READY — AWAITING HUMAN | [Sources](D2.4-sources.md) |
+| D2.5 | SOURCES READY — AWAITING HUMAN | [Sources](D2.5-sources.md) |
+| D3.1 | AI REVIEWED — AWAITING HUMAN | [Sources](D3.1-sources.md) |
 | D3.2 | SOURCES READY — AWAITING HUMAN | [Sources](D3.2-sources.md) |
 | D3.3 | SOURCES READY — AWAITING HUMAN | [Sources](D3.3-sources.md) |
 | D3.4 | SOURCES READY — AWAITING HUMAN | [Sources](D3.4-sources.md) |
@@ -62,11 +81,26 @@ D3.1 capability bloat
 | D3.6 | SOURCES READY — AWAITING HUMAN | [Sources](D3.6-sources.md) |
 | D3.7 | SOURCES READY — AWAITING HUMAN | [Sources](D3.7-sources.md) |
 | D3.8 | SOURCES READY — AWAITING HUMAN | [Sources](D3.8-sources.md) |
-| D2.1–D2.5 | UNREVIEWED | |
-| D5.1–D5.5 | UNREVIEWED | |
-| D4.1–D4.6 | UNREVIEWED | |
-| D1.1–D1.6 | UNREVIEWED | |
-| D6.1–D6.5 | UNREVIEWED | |
-| D7.1–D7.3 | UNREVIEWED | |
+| D4.1 | SOURCES READY — AWAITING HUMAN | [Sources](D4.1-sources.md) |
+| D4.2 | SOURCES READY — AWAITING HUMAN | [Sources](D4.2-sources.md) |
+| D4.3 | SOURCES READY — AWAITING HUMAN | [Sources](D4.3-sources.md) |
+| D4.4 | SOURCES READY — AWAITING HUMAN | [Sources](D4.4-sources.md) |
+| D4.5 | SOURCES READY — AWAITING HUMAN | [Sources](D4.5-sources.md) |
+| D4.6 | SOURCES READY — AWAITING HUMAN | [Sources](D4.6-sources.md) |
+| D5.1 | SOURCES READY — AWAITING HUMAN | [Sources](D5.1-sources.md) |
+| D5.2 | SOURCES READY — AWAITING HUMAN | [Sources](D5.2-sources.md) |
+| D5.3 | SOURCES READY — AWAITING HUMAN | [Sources](D5.3-sources.md) |
+| D5.4 | SOURCES READY — AWAITING HUMAN | [Sources](D5.4-sources.md) |
+| D5.5 | SOURCES READY — AWAITING HUMAN | [Sources](D5.5-sources.md) |
+| D6.1 | SOURCES READY — AWAITING HUMAN | [Sources](D6.1-sources.md) |
+| D6.2 | SOURCES READY — AWAITING HUMAN | [Sources](D6.2-sources.md) |
+| D6.3 | SOURCES READY — AWAITING HUMAN | [Sources](D6.3-sources.md) |
+| D6.4 | SOURCES READY — AWAITING HUMAN | [Sources](D6.4-sources.md) |
+| D6.5 | SOURCES READY — AWAITING HUMAN | [Sources](D6.5-sources.md) |
+| D7.1 | SOURCES READY — AWAITING HUMAN | [Sources](D7.1-sources.md) |
+| D7.2 | SOURCES READY — AWAITING HUMAN | [Sources](D7.2-sources.md) |
+| D7.3 | SOURCES READY — AWAITING HUMAN | [Sources](D7.3-sources.md) |
+
+**Human-approved:** 0 / 38
 
 No flashcard should be considered final until its source objective has passed this audit.
