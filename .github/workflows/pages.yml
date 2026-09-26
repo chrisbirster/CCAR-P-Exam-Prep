@@ -67,22 +67,42 @@ jobs:
                       if href:
                           self.hrefs.append(href)
 
+          id_cache = {}
+
+          def ids_for(path):
+              if path not in id_cache:
+                  text = path.read_text(encoding="utf-8")
+                  id_cache[path] = set(__import__("re").findall(r'id="([^"]+)"', text))
+              return id_cache[path]
+
           for page in root.rglob("*.html"):
               parser = Links()
               parser.feed(page.read_text(encoding="utf-8"))
               for href in parser.hrefs:
                   parts = urlsplit(href)
-                  if parts.scheme or parts.netloc or href.startswith("#"):
+                  if parts.scheme or parts.netloc:
                       continue
-                  target = (page.parent / parts.path).resolve()
-                  if parts.path.endswith("/") or not target.suffix:
-                      target = target / "index.html"
+
+                  if not parts.path:
+                      target = page
+                  else:
+                      target = (page.parent / parts.path).resolve()
+                      if parts.path.endswith("/") or not target.suffix:
+                          target = target / "index.html"
+
                   if not target.exists():
                       failures.append(f"{page.relative_to(root)} -> {href}")
+                      continue
+
+                  if parts.fragment and parts.fragment not in ids_for(target):
+                      failures.append(
+                          f"{page.relative_to(root)} -> {href} "
+                          f"(missing anchor #{parts.fragment})"
+                      )
 
           if failures:
               print("\n".join(failures))
-              raise SystemExit("broken internal links found")
+              raise SystemExit("broken internal links or anchors found")
           PY
 
       - name: Upload Pages artifact
