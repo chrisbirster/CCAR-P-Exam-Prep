@@ -1,5 +1,8 @@
 # CCAR-P Exam Prep
 
+**Study site:** https://chrisbirster.github.io/CCAR-P-Exam-Prep/
+
+
 Community study material for the **Claude Certified Architect – Professional (CCAR-P)** exam.
 
 This repository is designed to help students move from “I know Claude” to **“I can make and defend production architecture decisions involving Claude.”**
