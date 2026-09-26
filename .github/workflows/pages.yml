@@ -22,9 +22,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
       - name: Install Zig
         uses: mlugg/setup-zig@v2
         with:
@@ -32,6 +29,14 @@ jobs:
 
       - name: Build static site
         run: zig build
+
+      - name: Verify generated pages
+        run: |
+          test -s dist/index.html
+          test -s dist/objectives/index.html
+          test -s dist/style.css
+          grep -q "CCAR-P Exam Prep" dist/index.html
+          grep -q "Solution Design" dist/objectives/index.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
