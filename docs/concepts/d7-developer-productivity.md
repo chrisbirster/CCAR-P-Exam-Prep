@@ -61,6 +61,14 @@ Version shared instructions/Skills like other operational assets.
 
 Watch for: **Claude Code, team config, hook, permission, sandbox, Skill, shared tool, guardrail**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Claude Code — tool permissions](../references/claude-code.md#tool-permissions)
+- [Claude Code — working-directory scope](../references/claude-code.md#working-directory-scope)
+- [Agent Skills — Skills package reusable expertise](../references/agent-skills.md#skills-package-reusable-expertise)
+
 ---
 
 ## D7.2 — Improve developer workflows using AI-assisted tooling
@@ -110,6 +118,13 @@ Use agents to accelerate the engineering loop, not bypass CI, code review, or se
 ### Exam cues
 
 Watch for: **developer workflow, coding assistant, tests, code review, verification, productivity**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Claude Code — machine-readable output](../references/claude-code.md#machine-readable-output)
+- [Claude Code — operational interpretation](../references/claude-code.md#operational-interpretation)
 
 ---
 
@@ -164,6 +179,14 @@ Build:
 ### Exam cues
 
 Watch for: **runbook, incident, debug, latency, tool failure, cost spike, operational handoff**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Claude Code — operational interpretation](../references/claude-code.md#operational-interpretation)
+- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories--transcripts)
+- [Demystifying Evals — regression evaluation](../references/demystifying-evals.md#regression-evaluation)
 
 ---
 
