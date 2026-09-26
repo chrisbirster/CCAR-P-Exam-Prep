@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import html
+import os
 import re
 import shutil
 from pathlib import Path
@@ -133,6 +134,14 @@ for source in sorted(REFERENCES_DIR.glob("*.md")):
         "objectives_href": objectives_href,
     })
 
+PAGE_OUTPUT_BY_SOURCE = {
+    page["source"].resolve(): page["output"].resolve()
+    for page in PAGES
+}
+
+CURRENT_SOURCE: Path | None = None
+CURRENT_OUTPUT: Path | None = None
+
 CODE_TOKEN = re.compile(r"`([^`]+)`")
 LINK_TOKEN = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 BOLD_TOKEN = re.compile(r"\*\*([^*]+)\*\*")
@@ -160,19 +169,37 @@ def inline(text: str) -> str:
         label = html.escape(match.group(1))
         href_raw = match.group(2)
 
-        # Markdown sources are published as directory-style Pages routes.
-        # Keep absolute/external URLs untouched.
-        if "://" not in href_raw and not href_raw.startswith("#"):
-            md_match = re.match(r"^(.*?)(?:/README)?\.md([#?].*)?$", href_raw)
+        # Resolve Markdown-source links to their generated Pages route. This
+        # preserves correct links both in the GitHub source tree and in the
+        # clean directory-style static site.
+        if (
+            "://" not in href_raw
+            and not href_raw.startswith("#")
+            and CURRENT_SOURCE is not None
+            and CURRENT_OUTPUT is not None
+        ):
+            md_match = re.match(r"^(.*?\.md)([#?].*)?$", href_raw)
             if md_match:
-                base = md_match.group(1)
+                source_href = md_match.group(1)
                 suffix = md_match.group(2) or ""
-                if href_raw.startswith("README.md"):
-                    href_raw = "./" + suffix
-                elif "/README.md" in href_raw:
-                    href_raw = base + "/" + suffix
-                else:
-                    href_raw = base + "/" + suffix
+                target_source = (CURRENT_SOURCE.parent / source_href).resolve()
+                target_output = PAGE_OUTPUT_BY_SOURCE.get(target_source)
+
+                if target_output is not None:
+                    target_dir = (
+                        target_output.parent
+                        if target_output.name == "index.html"
+                        else target_output
+                    )
+                    relative = os.path.relpath(
+                        target_dir,
+                        CURRENT_OUTPUT.parent,
+                    ).replace(os.sep, "/")
+                    if relative == ".":
+                        relative = "./"
+                    elif not relative.endswith("/"):
+                        relative += "/"
+                    href_raw = relative + suffix
 
         href = html.escape(href_raw, quote=True)
         return stash(f'<a href="{href}">{label}</a>')
@@ -370,6 +397,9 @@ def page_template(
       <nav aria-label="Primary">
         <a href="{home_href}">Home</a>
         <a href="{objectives_href}">Exam Objectives</a>
+        <a href="{home_href}concepts/">Concept Notes</a>
+        <a href="{home_href}references/">References</a>
+        <a href="{home_href}flashcards/">Flashcard Plan</a>
         <a href="https://github.com/chrisbirster/CCAR-P-Exam-Prep">GitHub</a>
       </nav>
     </header>
@@ -395,10 +425,14 @@ def main() -> None:
 
     shutil.copy2(ROOT / "site" / "style.css", DIST / "style.css")
 
+    global CURRENT_SOURCE, CURRENT_OUTPUT
+
     for page in PAGES:
         output: Path = page["output"]
         output.parent.mkdir(parents=True, exist_ok=True)
         source: Path = page["source"]
+        CURRENT_SOURCE = source.resolve()
+        CURRENT_OUTPUT = output.resolve()
         body = render_markdown(source.read_text(encoding="utf-8"))
         output.write_text(
             page_template(
