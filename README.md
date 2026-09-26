@@ -14,11 +14,12 @@ This repository is designed to help students move from “I know Claude” to **
 ## Start Here
 
 1. Read the [CCAR-P Exam Objectives](docs/exam-objectives.md).
-2. Use the checklist to mark weak areas.
-3. Study by **exam weight**, not by personal preference.
-4. Practice scenario questions that force you to make architecture trade-offs.
-5. Build flashcards for concepts you repeatedly miss.
-6. Re-check Anthropic's official guide before sitting the exam.
+2. Study the [Concept Notes](docs/concepts/README.md) for all 38 objectives.
+3. Use the [2,000-card Flashcard Plan](docs/flashcard-plan.md).
+4. Use the checklist to mark weak areas.
+5. Study by **exam weight**, not by personal preference.
+6. Practice scenario questions that force architecture trade-offs.
+7. Re-check Anthropic's official guide before sitting the exam.
 
 ## Exam Blueprint
 
