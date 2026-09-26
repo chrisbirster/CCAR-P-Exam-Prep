@@ -25,7 +25,8 @@ PAGES = [
         "asset_prefix": "../",
         "home_href": "../",
         "objectives_href": "./",
-    },    {
+    },
+    {
         "source": ROOT / "docs" / "flashcard-plan.md",
         "output": DIST / "flashcards" / "index.html",
         "title": "CCAR-P Flashcard Plan",
@@ -33,7 +34,70 @@ PAGES = [
         "home_href": "../",
         "objectives_href": "../objectives/",
     },
-
+    {
+        "source": ROOT / "docs" / "concepts" / "README.md",
+        "output": DIST / "concepts" / "index.html",
+        "title": "CCAR-P Concept Notes",
+        "asset_prefix": "../",
+        "home_href": "../",
+        "objectives_href": "../objectives/",
+    },
+    {
+        "source": ROOT / "docs" / "concepts" / "d1-solution-design.md",
+        "output": DIST / "concepts" / "d1-solution-design" / "index.html",
+        "title": "D1 — Solution Design & Architecture",
+        "asset_prefix": "../../",
+        "home_href": "../../",
+        "objectives_href": "../../objectives/",
+    },
+    {
+        "source": ROOT / "docs" / "concepts" / "d2-models-prompting-context.md",
+        "output": DIST / "concepts" / "d2-models-prompting-context" / "index.html",
+        "title": "D2 — Models, Prompting & Context",
+        "asset_prefix": "../../",
+        "home_href": "../../",
+        "objectives_href": "../../objectives/",
+    },
+    {
+        "source": ROOT / "docs" / "concepts" / "d3-integration.md",
+        "output": DIST / "concepts" / "d3-integration" / "index.html",
+        "title": "D3 — Integration",
+        "asset_prefix": "../../",
+        "home_href": "../../",
+        "objectives_href": "../../objectives/",
+    },
+    {
+        "source": ROOT / "docs" / "concepts" / "d4-evaluation-testing-optimization.md",
+        "output": DIST / "concepts" / "d4-evaluation-testing-optimization" / "index.html",
+        "title": "D4 — Evaluation, Testing & Optimization",
+        "asset_prefix": "../../",
+        "home_href": "../../",
+        "objectives_href": "../../objectives/",
+    },
+    {
+        "source": ROOT / "docs" / "concepts" / "d5-governance-safety-risk.md",
+        "output": DIST / "concepts" / "d5-governance-safety-risk" / "index.html",
+        "title": "D5 — Governance, Safety & Risk",
+        "asset_prefix": "../../",
+        "home_href": "../../",
+        "objectives_href": "../../objectives/",
+    },
+    {
+        "source": ROOT / "docs" / "concepts" / "d6-stakeholder-lifecycle.md",
+        "output": DIST / "concepts" / "d6-stakeholder-lifecycle" / "index.html",
+        "title": "D6 — Stakeholder & Lifecycle",
+        "asset_prefix": "../../",
+        "home_href": "../../",
+        "objectives_href": "../../objectives/",
+    },
+    {
+        "source": ROOT / "docs" / "concepts" / "d7-developer-productivity.md",
+        "output": DIST / "concepts" / "d7-developer-productivity" / "index.html",
+        "title": "D7 — Developer Productivity",
+        "asset_prefix": "../../",
+        "home_href": "../../",
+        "objectives_href": "../../objectives/",
+    },
 ]
 
 CODE_TOKEN = re.compile(r"`([^`]+)`")
