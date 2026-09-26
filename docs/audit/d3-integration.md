@@ -2,6 +2,8 @@
 
 ## D3.1 — Capability bloat
 
+**Source packet:** [D3.1-sources.md](D3.1-sources.md)
+
 **Status:** VERIFIED WITH INTERPRETATION  
 **Audited:** September 26, 2026
 
