@@ -132,7 +132,7 @@ Watch for: **end-to-end, failure handling, retry, fallback, state, system of rec
 ### References
 
 - [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
-- [Effective Context Engineering — structured note-taking / external memory](../references/effective-context-engineering.md#structured-note-taking--external-memory)
+- [Effective Context Engineering — structured note-taking / external memory](../references/effective-context-engineering.md#structured-note-taking-external-memory)
 - [Demystifying Evals — outcomes](../references/demystifying-evals.md#outcomes)
 
 ---
