@@ -34,6 +34,7 @@ jobs:
         run: |
           test -s dist/index.html
           test -s dist/objectives/index.html
+          test -s dist/flashcards/index.html
           test -s dist/style.css
           grep -q "CCAR-P Exam Prep" dist/index.html
           grep -q "Solution Design" dist/objectives/index.html
