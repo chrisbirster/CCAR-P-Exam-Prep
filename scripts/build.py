@@ -134,6 +134,31 @@ for source in sorted(REFERENCES_DIR.glob("*.md")):
         "objectives_href": objectives_href,
     })
 
+
+AUDIT_DIR = ROOT / "docs" / "audit"
+for source in sorted(AUDIT_DIR.glob("*.md")):
+    if source.name == "README.md":
+        output = DIST / "audit" / "index.html"
+        title = "CCAR-P Notes Audit"
+        asset_prefix = "../"
+        home_href = "../"
+        objectives_href = "../objectives/"
+    else:
+        output = DIST / "audit" / source.stem / "index.html"
+        title = source.stem.replace("-", " ").title()
+        asset_prefix = "../../"
+        home_href = "../../"
+        objectives_href = "../../objectives/"
+
+    PAGES.append({
+        "source": source,
+        "output": output,
+        "title": title,
+        "asset_prefix": asset_prefix,
+        "home_href": home_href,
+        "objectives_href": objectives_href,
+    })
+
 PAGE_OUTPUT_BY_SOURCE = {
     page["source"].resolve(): page["output"].resolve()
     for page in PAGES
@@ -399,6 +424,7 @@ def page_template(
         <a href="{objectives_href}">Exam Objectives</a>
         <a href="{home_href}concepts/">Concept Notes</a>
         <a href="{home_href}references/">References</a>
+        <a href="{home_href}audit/">Audit</a>
         <a href="{home_href}flashcards/">Flashcard Plan</a>
         <a href="https://github.com/chrisbirster/CCAR-P-Exam-Prep">GitHub</a>
       </nav>
