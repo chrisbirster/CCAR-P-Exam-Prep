@@ -145,7 +145,7 @@ Watch for: **eval dataset, grader, trial, trajectory, outcome, representative, a
 - [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
 - [Demystifying Evals — tasks and trials](../references/demystifying-evals.md#tasks-and-trials)
 - [Demystifying Evals — graders](../references/demystifying-evals.md#graders)
-- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories--transcripts)
+- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories-transcripts)
 
 ---
 
@@ -272,7 +272,7 @@ Watch for: **diagnose, root cause, drift, retrieval error, tool error, orchestra
 ### References
 
 - [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
-- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories--transcripts)
+- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories-transcripts)
 - [Demystifying Evals — outcomes](../references/demystifying-evals.md#outcomes)
 - [Demystifying Evals — regression evaluation](../references/demystifying-evals.md#regression-evaluation)
 
