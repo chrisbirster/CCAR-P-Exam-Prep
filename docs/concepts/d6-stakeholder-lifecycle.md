@@ -71,6 +71,11 @@ Convert adjectives into numbers or observable tests.
 
 Watch for: **discovery, requirements, stakeholder, assumptions, SLA, prohibited behavior, outcome**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+
 ---
 
 ## D6.2 — Communicate architecture decisions and trade-offs
@@ -135,6 +140,11 @@ The underlying decision remains the same; the emphasis changes.
 
 Watch for: **trade-off, executive, security review, recommendation, alternative, rationale**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+
 ---
 
 ## D6.3 — Manage stakeholder feedback and expectation alignment
@@ -186,6 +196,12 @@ Re-architect when a fundamental constraint changed or the pattern itself is the 
 ### Exam cues
 
 Watch for: **expectation, feedback loop, SLA, escalation, iterate, re-architect, forecast cost**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Demystifying Evals — production lifecycle](../references/demystifying-evals.md#production-lifecycle)
 
 ---
 
@@ -241,6 +257,11 @@ Keep docs close to the system/version they describe.
 ### Exam cues
 
 Watch for: **ADR, handoff, rationale, documentation, successor, runbook, decision record**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
 
 ---
 
@@ -312,6 +333,12 @@ Example: monitoring cannot compensate for undefined success criteria; a runbook 
 ### Exam cues
 
 Watch for: **discovery, design, handoff, monitoring, iteration, lifecycle, ownership**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Demystifying Evals — production lifecycle](../references/demystifying-evals.md#production-lifecycle)
 
 ---
 
