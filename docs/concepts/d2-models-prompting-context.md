@@ -30,7 +30,7 @@ Different workflow stages may justify different models.
 
 A high-capability model may plan or handle exceptional cases while a faster/cheaper model executes routine work. Conversely, using multiple models adds routing and regression complexity, so it should earn its place.
 
-Current model lineups also change. Anthropic maintains model lifecycle states such as active, deprecated, and retired. Architecture should therefore avoid assuming a model name is permanent.
+Current model lineups also change. Anthropic currently documents four model lifecycle states: **Active, Legacy, Deprecated, and Retired**. Architecture should therefore avoid assuming a model name is permanent.
 
 ### Decision rules
 
@@ -140,6 +140,9 @@ Separate instructions, context, examples, and inputs using explicit structure su
 **Structured output**  
 Specify a clear schema or output contract when downstream software must parse the result.
 
+**Chain-of-thought / thinking techniques**  
+The blueprint explicitly includes chain-of-thought as a prompting concept. Current Claude guidance is model-dependent: newer Claude models have native/adaptive thinking capabilities, while manual step-by-step prompting is a fallback rather than a universal default.
+
 **Decomposition**  
 Break a complex task into smaller reasoning or workflow stages when a single prompt is unreliable or intermediate validation is valuable.
 
@@ -156,7 +159,7 @@ If examples are used, make them representative rather than numerous.
 - Adding huge prompts before establishing a baseline.
 - Using examples that all cover the easy case.
 - Overfitting a prompt to the eval set.
-- Assuming "more reasoning" always improves output.
+- Assuming more visible or forced step-by-step reasoning always improves output.
 - Solving a data/retrieval problem by endlessly rewriting the prompt.
 
 ### Scenario
