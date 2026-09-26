@@ -58,6 +58,12 @@ A bounded workflow with deterministic policy checks and human approval may satis
 
 Watch for: **business outcome, requirements, constraints, SLA, data residency, budget, risk, human approval, success criteria**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Building Effective AI Agents — simple, composable architecture](../references/building-effective-ai-agents.md#simple-composable-architecture)
+
 ---
 
 ## D1.2 — Design end-to-end architectures
@@ -121,6 +127,13 @@ A customer-support assistant retrieves policy, drafts a response, and can issue 
 ### Exam cues
 
 Watch for: **end-to-end, failure handling, retry, fallback, state, system of record, trust boundary, observability**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Effective Context Engineering — structured note-taking / external memory](../references/effective-context-engineering.md#structured-note-taking--external-memory)
+- [Demystifying Evals — outcomes](../references/demystifying-evals.md#outcomes)
 
 ---
 
@@ -197,6 +210,13 @@ Escalate complexity only when an evaluation demonstrates that the simpler design
 
 Watch for: **predictable steps, open-ended task, dynamic planning, fixed sequence, autonomy, latency, cost, observability**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Building Effective AI Agents — workflows vs. agents](../references/building-effective-ai-agents.md#workflows-vs-agents)
+- [Building Effective AI Agents — complexity trade-off](../references/building-effective-ai-agents.md#complexity-trade-off)
+
 ---
 
 ## D1.4 — Design multi-agent systems and orchestration strategies
@@ -261,6 +281,13 @@ A due-diligence system must research financial, legal, and technical dimensions 
 
 Watch for: **parallel, specialist, coordinator, workers, context isolation, handoff, synthesis, disagreement**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Multi-Agent Research — orchestrator-worker architecture](../references/multi-agent-research-system.md#orchestrator-worker-architecture)
+- [Effective Context Engineering — context isolation](../references/effective-context-engineering.md#context-isolation)
+
 ---
 
 ## D1.5 — Apply decomposition techniques for complex problem solving
@@ -306,6 +333,15 @@ Keep work together when decomposition would force excessive context transfer or 
 ### Exam cues
 
 Watch for: **decompose, route, parallelize, validate intermediate output, isolate context, evaluator**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Building Effective AI Agents — prompt chaining](../references/building-effective-ai-agents.md#prompt-chaining)
+- [Building Effective AI Agents — routing](../references/building-effective-ai-agents.md#routing)
+- [Building Effective AI Agents — parallelization](../references/building-effective-ai-agents.md#parallelization)
+- [Building Effective AI Agents — evaluator-optimizer](../references/building-effective-ai-agents.md#evaluator-optimizer)
 
 ---
 
@@ -367,6 +403,12 @@ Architecture A costs half as much per request but doubles escalation to human re
 ### Exam cues
 
 Watch for: **ROI, baseline, productivity, total cost, throughput, SLO, measurable outcome**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Building Effective AI Agents — complexity trade-off](../references/building-effective-ai-agents.md#complexity-trade-off)
 
 ---
 
