@@ -155,3 +155,28 @@ Please **do not submit memorized, copied, reconstructed, or confidential live ex
 The CCAR-P program can change. Material in this repository should include a “last verified” date where appropriate.
 
 The master objectives document is currently based on **CCAR-P v1.0, effective July 2026**, and was last reviewed on **September 26, 2026**.
+
+
+## Website Build
+
+The public site is generated as static HTML and deployed with GitHub Pages.
+
+The build intentionally stays small:
+
+- `zig build` is the single build entrypoint.
+- `scripts/build.py` is a dependency-free Markdown-to-HTML generator using only Python's standard library.
+- `content/home.md` and `docs/exam-objectives.md` are the content sources.
+- `site/style.css` provides the minimal responsive light/dark styling.
+- output is written to `dist/`.
+- GitHub Actions deploys `dist/` to GitHub Pages on every push to `main`.
+
+To build locally:
+
+```bash
+zig build
+python3 -m http.server 8000 --directory dist
+```
+
+Then open `http://localhost:8000`.
+
+The static-site approach and restrained developer-site aesthetic were inspired by Andrew Kelley's public website repository, while the generator, templates, and styling in this repository are original.
