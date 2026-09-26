@@ -41,6 +41,7 @@ Reference notes are summaries and attribution aids; they are not copies of the s
 ### Safety and governance
 - [Prompt Injection Defenses](prompt-injection-defenses.md)
 - [Safe and Trustworthy Agents Framework](trustworthy-agents.md)
+- [How We Contain Claude Across Products](how-we-contain-claude.md)
 - [Regulatory Framework References](regulatory-frameworks.md)
 
 ### Developer enablement
