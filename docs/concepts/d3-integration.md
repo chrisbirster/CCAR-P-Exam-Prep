@@ -51,6 +51,14 @@ A support assistant needs order status and refund requests. It should not receiv
 
 Watch for: **least privilege, tool bloat, excessive capability, write access, attack surface, tool selection**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Writing Effective Tools — choose the right tools](../references/writing-effective-tools.md#choose-the-right-tools)
+- [Writing Effective Tools — avoid overlapping capability](../references/writing-effective-tools.md#avoid-overlapping-capability)
+- [Prompt Injection Defenses — architecture implication](../references/prompt-injection-defenses.md#architecture-implication)
+
 ---
 
 ## D3.2 — Analyze authentication and authorization requirements
@@ -100,6 +108,14 @@ For multi-tenant systems, authorization must also enforce tenant boundaries.
 
 Watch for: **identity, OAuth, scope, tenant, permission, delegated access, authorization, audit**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [MCP Specification — authorization](../references/mcp-specification.md#authorization)
+- [MCP Specification — security boundary](../references/mcp-specification.md#security-boundary)
+- [Safe and Trustworthy Agents — secure interactions](../references/trustworthy-agents.md#secure-interactions)
+
 ---
 
 ## D3.3 — Evaluate accuracy–latency trade-offs
@@ -147,6 +163,13 @@ A second retrieval/rerank stage improves grounded accuracy by 0.3% but adds 1.5 
 
 Watch for: **SLA, p95, p99, latency budget, parallel, reranking, trade-off**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Advanced Tool Use — programmatic tool use](../references/advanced-tool-use.md#programmatic-tool-use)
+- [Contextual Retrieval — reranking](../references/contextual-retrieval.md#reranking)
+
 ---
 
 ## D3.4 — Analyze observability challenges at scale
@@ -192,6 +215,13 @@ Log enough to reproduce a failure without turning logs into an uncontrolled copy
 ### Exam cues
 
 Watch for: **trace, telemetry, incident, reconstruct, correlation ID, audit, trajectory**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Multi-Agent Research — observability and evaluation](../references/multi-agent-research-system.md#observability-and-evaluation)
+- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories--transcripts)
 
 ---
 
@@ -250,6 +280,14 @@ A policy assistant answers incorrectly because the current policy document ranke
 ### Exam cues
 
 Watch for: **ingestion, chunking, embeddings, metadata, retrieve, rerank, grounding, citations**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Contextual Retrieval — Retrieval-Augmented Generation](../references/contextual-retrieval.md#retrieval-augmented-generation)
+- [Contextual Retrieval — contextualized chunks](../references/contextual-retrieval.md#contextualized-chunks)
+- [Contextual Retrieval — reranking](../references/contextual-retrieval.md#reranking)
 
 ---
 
@@ -321,6 +359,15 @@ If freshness must be exact, query the system of record rather than hoping an ind
 
 Watch for: **exact match, semantic similarity, hybrid, freshness, current state, system of record**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Contextual Retrieval — semantic retrieval](../references/contextual-retrieval.md#semantic-retrieval)
+- [Contextual Retrieval — lexical / BM25 retrieval](../references/contextual-retrieval.md#lexical--bm25-retrieval)
+- [Contextual Retrieval — hybrid retrieval](../references/contextual-retrieval.md#hybrid-retrieval)
+- [Contextual Retrieval — architecture interpretation: live state](../references/contextual-retrieval.md#architecture-interpretation-live-state)
+
 ---
 
 ## D3.7 — Select the appropriate integration mechanism
@@ -379,6 +426,14 @@ Ask:
 
 Watch for: **MCP, SDK, API, reusable tool surface, client interoperability, managed runtime**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [MCP Specification — what MCP provides](../references/mcp-specification.md#what-mcp-provides)
+- [MCP Specification — capability discovery](../references/mcp-specification.md#capability-discovery)
+- [MCP Specification — security boundary](../references/mcp-specification.md#security-boundary)
+
 ---
 
 ## D3.8 — Evaluate progressive discovery vs. monolithic context
@@ -419,6 +474,14 @@ Progressive discovery is a context optimization, not permission by itself. Disco
 ### Exam cues
 
 Watch for: **tool catalog, context bloat, dynamic discovery, defer loading, long tail, tool confusion**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Advanced Tool Use — tool-definition context bloat](../references/advanced-tool-use.md#tool-definition-context-bloat)
+- [Advanced Tool Use — on-demand tool discovery](../references/advanced-tool-use.md#on-demand-tool-discovery)
+- [Agent Skills — progressive disclosure](../references/agent-skills.md#progressive-disclosure)
 
 ---
 
