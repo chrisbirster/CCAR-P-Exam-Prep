@@ -86,6 +86,7 @@ For CCAR-P, **Decide** is the level that matters most.
 ## Planned course material
 
 - [Exam Objectives & Study Checklist](objectives/)
+- [Concept Notes — all 38 objectives](concepts/)
 - [2,000-Card Flashcard Plan](flashcards/)
 - Domain-by-domain lessons
 - 2,000-card Deez flashcard deck
