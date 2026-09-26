@@ -57,3 +57,15 @@ When sources disagree, use this order:
 Product capabilities and model names can change faster than architecture principles. The notes therefore emphasize durable decision-making concepts and call out time-sensitive product details only when useful.
 
 _Last reviewed: September 26, 2026._
+
+
+## Verification
+
+Before these notes become flashcards, use the [Sources & Verification](../sources-and-verification.md) matrix to distinguish:
+
+- official blueprint statements;
+- first-party Anthropic/MCP guidance;
+- architecture interpretations;
+- time-sensitive product details.
+
+No `.nut` note should be published without passing that evidence gate.
