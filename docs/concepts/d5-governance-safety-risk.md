@@ -64,6 +64,14 @@ Example: refund authorization belongs in the transaction/control layer, not sole
 
 Watch for: **guardrail, defense in depth, fail closed, sandbox, policy gate, least privilege**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Safe and Trustworthy Agents — secure interactions](../references/trustworthy-agents.md#secure-interactions)
+- [Prompt Injection Defenses — layered defenses](../references/prompt-injection-defenses.md#layered-defenses)
+- [Prompt Injection Defenses — prompt injection is not solved](../references/prompt-injection-defenses.md#prompt-injection-is-not-solved)
+
 ---
 
 ## D5.2 — Identify risks, limitations, and failure modes
@@ -159,6 +167,14 @@ Controls:
 
 Watch for: **prompt injection, hallucination, excessive agency, exfiltration, loop, supply chain, untrusted content**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Prompt Injection Defenses — indirect prompt injection](../references/prompt-injection-defenses.md#indirect-prompt-injection)
+- [Prompt Injection Defenses — untrusted-content risk](../references/prompt-injection-defenses.md#untrusted-content-risk)
+- [Safe and Trustworthy Agents — risk grows with consequential action](../references/trustworthy-agents.md#risk-grows-with-consequential-action)
+
 ---
 
 ## D5.3 — Apply human-in-the-loop validation
@@ -210,6 +226,13 @@ Do not ask a human to rubber-stamp opaque model output. Show source evidence, re
 ### Exam cues
 
 Watch for: **approval, escalation, confidence, irreversible, high impact, reviewer, oversight**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Safe and Trustworthy Agents — humans remain in control](../references/trustworthy-agents.md#humans-remain-in-control)
+- [Safe and Trustworthy Agents — architecture interpretation](../references/trustworthy-agents.md#architecture-interpretation)
 
 ---
 
@@ -287,6 +310,13 @@ The exam concept is not memorizing statutes. It is recognizing that compliance r
 
 Watch for: **GDPR, HIPAA, FedRAMP, retention, residency, audit evidence, control mapping**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Regulatory Framework References](../references/regulatory-frameworks.md)
+- [Safe and Trustworthy Agents — privacy](../references/trustworthy-agents.md#privacy)
+
 ---
 
 ## D5.5 — Address responsible/ethical AI considerations
@@ -338,6 +368,13 @@ Preserve enough evidence to reconstruct important decisions without retaining un
 ### Exam cues
 
 Watch for: **bias, subgroup, fairness, transparency, accountability, explainability, traceability**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Safe and Trustworthy Agents — transparency](../references/trustworthy-agents.md#transparency)
+- [Safe and Trustworthy Agents — privacy](../references/trustworthy-agents.md#privacy)
 
 ---
 
