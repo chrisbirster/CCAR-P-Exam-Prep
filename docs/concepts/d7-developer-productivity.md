@@ -185,7 +185,7 @@ Watch for: **runbook, incident, debug, latency, tool failure, cost spike, operat
 
 - [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
 - [Claude Code — operational interpretation](../references/claude-code.md#operational-interpretation)
-- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories--transcripts)
+- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories-transcripts)
 - [Demystifying Evals — regression evaluation](../references/demystifying-evals.md#regression-evaluation)
 
 ---
