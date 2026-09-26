@@ -54,7 +54,7 @@ D3.1 capability bloat
 
 | Objective | Status | Audit |
 | --- | --- | --- |
-| D3.1 | AI REVIEWED — AWAITING HUMAN | [Sources](D3.1-sources.md) · [Audit](d3-integration.md#d31--capability-bloat) |
+| D3.1 | AI REVIEWED — AWAITING HUMAN | [Sources](D3.1-sources.md) · [Audit](d3-integration.md#d3-1-capability-bloat) |
 | D3.2 | SOURCES READY — AWAITING HUMAN | [Sources](D3.2-sources.md) |
 | D3.3 | SOURCES READY — AWAITING HUMAN | [Sources](D3.3-sources.md) |
 | D3.4 | SOURCES READY — AWAITING HUMAN | [Sources](D3.4-sources.md) |
