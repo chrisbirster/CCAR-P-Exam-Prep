@@ -34,7 +34,7 @@ Give the model the smallest capability set that can accomplish the task.
 
 Separate read and write tools when their risk differs.
 
-Prefer bounded, task-level tools over generic "execute arbitrary query" or "run any command" interfaces when possible.
+Prefer bounded, task-level tools when the use case does not require general-purpose capability. When broad tools are necessary, constrain their environment, credentials, and permissions.
 
 ### Common traps
 
@@ -57,6 +57,8 @@ Watch for: **least privilege, tool bloat, excessive capability, write access, at
 - [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
 - [Writing Effective Tools — choose the right tools](../references/writing-effective-tools.md#choose-the-right-tools)
 - [Writing Effective Tools — avoid overlapping capability](../references/writing-effective-tools.md#avoid-overlapping-capability)
+- [How We Contain Claude — granular permissions](../references/how-we-contain-claude.md#granular-permissions)
+- [How We Contain Claude — environment boundaries](../references/how-we-contain-claude.md#environment-boundaries)
 - [Prompt Injection Defenses — architecture implication](../references/prompt-injection-defenses.md#architecture-implication)
 
 ---
