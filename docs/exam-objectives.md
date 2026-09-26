@@ -750,18 +750,18 @@ Before the exam, practice working through scenarios in this order:
 
 # Suggested Flashcard Coverage
 
-If using a 300-card study deck, a weight-proportional starting point is:
+For the current one-week sprint, the 2,000-card deck follows the exam weighting:
 
 | Domain | Suggested cards |
 |---|---:|
-| D1 — Solution Design & Architecture | 51 |
-| D2 — Models, Prompting & Context | 39 |
-| D3 — Integration | 57 |
-| D4 — Evaluation, Testing & Optimization | 48 |
-| D5 — Governance, Safety & Risk | 42 |
-| D6 — Stakeholder & Lifecycle | 42 |
-| D7 — Developer Productivity | 21 |
-| **Total** | **300** |
+| D1 — Solution Design & Architecture | 340 |
+| D2 — Models, Prompting & Context | 260 |
+| D3 — Integration | 380 |
+| D4 — Evaluation, Testing & Optimization | 320 |
+| D5 — Governance, Safety & Risk | 280 |
+| D6 — Stakeholder & Lifecycle | 280 |
+| D7 — Developer Productivity | 140 |
+| **Total** | **2,000** |
 
 Recommended mix:
 
