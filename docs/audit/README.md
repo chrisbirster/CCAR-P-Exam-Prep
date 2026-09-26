@@ -50,7 +50,7 @@ D3.1 capability bloat
 
 | Objective | Status | Audit |
 | --- | --- | --- |
-| D3.1 | VERIFIED WITH INTERPRETATION | [Audit](d3-integration.md#d31--capability-bloat) |
+| D3.1 | AI REVIEWED — AWAITING HUMAN | [Audit](d3-integration.md#d31--capability-bloat) |
 | D3.2 | UNREVIEWED | |
 | D3.3 | UNREVIEWED | |
 | D3.4 | UNREVIEWED | |
