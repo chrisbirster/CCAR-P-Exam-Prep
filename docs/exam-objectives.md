@@ -1,3 +1,10 @@
+---
+layout: default
+title: CCAR-P Exam Objectives
+description: A student-friendly checklist for all seven CCAR-P domains and 38 objectives.
+permalink: /objectives/
+---
+
 # CCAR-P Exam Objectives & Study Checklist
 
 **Certification:** Claude Certified Architect – Professional (CCAR-P)  
