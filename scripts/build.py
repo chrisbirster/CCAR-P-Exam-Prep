@@ -108,6 +108,31 @@ PAGES = [
     },
 ]
 
+
+REFERENCES_DIR = ROOT / "docs" / "references"
+for source in sorted(REFERENCES_DIR.glob("*.md")):
+    if source.name == "README.md":
+        output = DIST / "references" / "index.html"
+        title = "CCAR-P References"
+        asset_prefix = "../"
+        home_href = "../"
+        objectives_href = "../objectives/"
+    else:
+        output = DIST / "references" / source.stem / "index.html"
+        title = source.stem.replace("-", " ").title()
+        asset_prefix = "../../"
+        home_href = "../../"
+        objectives_href = "../../objectives/"
+
+    PAGES.append({
+        "source": source,
+        "output": output,
+        "title": title,
+        "asset_prefix": asset_prefix,
+        "home_href": home_href,
+        "objectives_href": objectives_href,
+    })
+
 CODE_TOKEN = re.compile(r"`([^`]+)`")
 LINK_TOKEN = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 BOLD_TOKEN = re.compile(r"\*\*([^*]+)\*\*")
@@ -138,12 +163,16 @@ def inline(text: str) -> str:
         # Markdown sources are published as directory-style Pages routes.
         # Keep absolute/external URLs untouched.
         if "://" not in href_raw and not href_raw.startswith("#"):
-            if href_raw.endswith("/README.md"):
-                href_raw = href_raw[:-len("README.md")]
-            elif href_raw == "README.md":
-                href_raw = "./"
-            elif href_raw.endswith(".md"):
-                href_raw = href_raw[:-3] + "/"
+            md_match = re.match(r"^(.*?)(?:/README)?\.md([#?].*)?$", href_raw)
+            if md_match:
+                base = md_match.group(1)
+                suffix = md_match.group(2) or ""
+                if href_raw.startswith("README.md"):
+                    href_raw = "./" + suffix
+                elif "/README.md" in href_raw:
+                    href_raw = base + "/" + suffix
+                else:
+                    href_raw = base + "/" + suffix
 
         href = html.escape(href_raw, quote=True)
         return stash(f'<a href="{href}">{label}</a>')
