@@ -64,6 +64,14 @@ A coding agent's primary metric is successful task completion, but a release gat
 
 Watch for: **metric, threshold, KPI, acceptance, quality, latency, cost, groundedness**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Demystifying Evals — why agent evaluation is different](../references/demystifying-evals.md#why-agent-evaluation-is-different)
+- [Demystifying Evals — graders](../references/demystifying-evals.md#graders)
+- [Demystifying Evals — outcomes](../references/demystifying-evals.md#outcomes)
+
 ---
 
 ## D4.2 — Design evaluation datasets and frameworks
@@ -131,6 +139,14 @@ Run multiple trials when model variance could change the conclusion.
 
 Watch for: **eval dataset, grader, trial, trajectory, outcome, representative, adversarial, regression**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Demystifying Evals — tasks and trials](../references/demystifying-evals.md#tasks-and-trials)
+- [Demystifying Evals — graders](../references/demystifying-evals.md#graders)
+- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories--transcripts)
+
 ---
 
 ## D4.3 — Conduct A/B testing and iterative improvements
@@ -184,6 +200,12 @@ Measure secondary impacts: latency, cost, safety, escalation.
 ### Exam cues
 
 Watch for: **hypothesis, A/B, control, treatment, shadow, significance, guardrail metric**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Demystifying Evals — production lifecycle](../references/demystifying-evals.md#production-lifecycle)
 
 ---
 
@@ -246,6 +268,14 @@ Do not compensate for a bad upstream stage by making downstream prompts increasi
 
 Watch for: **diagnose, root cause, drift, retrieval error, tool error, orchestration, regression**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories--transcripts)
+- [Demystifying Evals — outcomes](../references/demystifying-evals.md#outcomes)
+- [Demystifying Evals — regression evaluation](../references/demystifying-evals.md#regression-evaluation)
+
 ---
 
 ## D4.5 — Optimize token usage, latency, and cost-performance trade-offs
@@ -292,6 +322,14 @@ A cheaper request that fails more often can cost more overall.
 ### Exam cues
 
 Watch for: **token, cache, cost, p95, model routing, batch, efficiency**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Advanced Tool Use — programmatic tool use](../references/advanced-tool-use.md#programmatic-tool-use)
+- [Effective Context Engineering — context is finite](../references/effective-context-engineering.md#context-is-finite)
+- [Writing Effective Tools — return high-signal context](../references/writing-effective-tools.md#return-high-signal-context)
 
 ---
 
@@ -343,6 +381,14 @@ A maturing system should continuously protect known-good behavior while expandin
 ### Exam cues
 
 Watch for: **monitoring, drift, regression, alert, rollback, production, distribution**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Demystifying Evals — regression evaluation](../references/demystifying-evals.md#regression-evaluation)
+- [Demystifying Evals — production lifecycle](../references/demystifying-evals.md#production-lifecycle)
+- [Claude Model Lifecycle — migration testing](../references/model-lifecycle.md#migration-testing)
 
 ---
 
