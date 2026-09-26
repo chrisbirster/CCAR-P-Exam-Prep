@@ -56,6 +56,14 @@ A support workflow has 90% routine classification requests and 10% difficult exc
 
 Watch for: **capability, model selection, latency, cost, routing, migration, regression**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Claude Model Lifecycle — lifecycle states](../references/model-lifecycle.md#lifecycle-states)
+- [Claude Model Lifecycle — migration testing](../references/model-lifecycle.md#migration-testing)
+- [Demystifying Evals — regression evaluation](../references/demystifying-evals.md#regression-evaluation)
+
 ---
 
 ## D2.2 — Design system prompts, templates, and guardrails
@@ -118,6 +126,14 @@ Use prompts to explain *how to behave*. Use code, permissions, schemas, policies
 
 Watch for: **system prompt, template, guardrail, untrusted content, structural enforcement, authorization**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Prompting Best Practices — clear instructions](../references/prompting-best-practices.md#clear-instructions)
+- [Prompting Best Practices — structure](../references/prompting-best-practices.md#structure)
+- [Prompt Injection Defenses — untrusted-content risk](../references/prompt-injection-defenses.md#untrusted-content-risk)
+
 ---
 
 ## D2.3 — Apply prompt-engineering techniques
@@ -169,6 +185,13 @@ A classifier confuses two similar request types. Adding a few high-quality bound
 ### Exam cues
 
 Watch for: **zero-shot, few-shot, examples, structured output, XML, prompt iteration**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Prompting Best Practices — examples](../references/prompting-best-practices.md#examples)
+- [Prompting Best Practices — thinking guidance](../references/prompting-best-practices.md#thinking-guidance-is-model-dependent)
 
 ---
 
@@ -226,6 +249,15 @@ Keep identifiers and retrieval handles outside the context when full content can
 
 Watch for: **context window, token budget, compaction, memory, just-in-time, long horizon, context pollution**.
 
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Effective Context Engineering — context is finite](../references/effective-context-engineering.md#context-is-finite)
+- [Effective Context Engineering — just-in-time context](../references/effective-context-engineering.md#just-in-time-context)
+- [Effective Context Engineering — compaction](../references/effective-context-engineering.md#compaction)
+- [Effective Context Engineering — context isolation](../references/effective-context-engineering.md#context-isolation)
+
 ---
 
 ## D2.5 — Implement prompt reuse strategies
@@ -274,6 +306,14 @@ A legal-review workflow uses the same 80-page policy manual for thousands of req
 ### Exam cues
 
 Watch for: **prompt caching, stable prefix, reuse, Skills, versioning, freshness**.
+
+
+### References
+
+- [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
+- [Prompting Best Practices — templates and variables](../references/prompting-best-practices.md#templates-and-variables)
+- [Agent Skills — Skills package reusable expertise](../references/agent-skills.md#skills-package-reusable-expertise)
+- [Agent Skills — progressive disclosure](../references/agent-skills.md#progressive-disclosure)
 
 ---
 
