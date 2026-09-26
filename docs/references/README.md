@@ -18,6 +18,7 @@ Reference notes are summaries and attribution aids; they are not copies of the s
 
 ### Exam scope
 - [CCAR-P Exam Guide v1.0](ccar-p-exam-guide-v1.md)
+- [Secondary Blueprint Cross-Checks](secondary-blueprint-cross-checks.md) — corroboration only
 
 ### Architecture and agents
 - [Building Effective AI Agents](building-effective-ai-agents.md)
