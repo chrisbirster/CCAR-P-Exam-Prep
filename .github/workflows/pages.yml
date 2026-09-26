@@ -39,6 +39,13 @@ jobs:
           grep -q "CCAR-P Exam Prep" dist/index.html
           grep -q "Solution Design" dist/objectives/index.html
 
+      - name: Reject unresolved local Markdown links
+        run: |
+          if grep -R -E 'href="[^"]+\.md([#?][^"]*)?"' dist; then
+            echo "Generated site still contains .md links" >&2
+            exit 1
+          fi
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
