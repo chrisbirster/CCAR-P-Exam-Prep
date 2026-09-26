@@ -221,7 +221,7 @@ Watch for: **trace, telemetry, incident, reconstruct, correlation ID, audit, tra
 
 - [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
 - [Multi-Agent Research — observability and evaluation](../references/multi-agent-research-system.md#observability-and-evaluation)
-- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories--transcripts)
+- [Demystifying Evals — trajectories / transcripts](../references/demystifying-evals.md#trajectories-transcripts)
 
 ---
 
@@ -364,7 +364,7 @@ Watch for: **exact match, semantic similarity, hybrid, freshness, current state,
 
 - [CCAR-P Exam Guide v1.0](../references/ccar-p-exam-guide-v1.md)
 - [Contextual Retrieval — semantic retrieval](../references/contextual-retrieval.md#semantic-retrieval)
-- [Contextual Retrieval — lexical / BM25 retrieval](../references/contextual-retrieval.md#lexical--bm25-retrieval)
+- [Contextual Retrieval — lexical / BM25 retrieval](../references/contextual-retrieval.md#lexical-bm25-retrieval)
 - [Contextual Retrieval — hybrid retrieval](../references/contextual-retrieval.md#hybrid-retrieval)
 - [Contextual Retrieval — architecture interpretation: live state](../references/contextual-retrieval.md#architecture-interpretation-live-state)
 
