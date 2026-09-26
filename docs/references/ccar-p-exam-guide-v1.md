@@ -43,3 +43,12 @@ https://anthropic-partners.skilljar.com/page/faq-certifications
 ## Flashcard rule
 
 Every CCAR-P flashcard must map to at least one blueprint objective and therefore link back to this reference or an exact successor version of the Exam Guide.
+
+
+## Secondary cross-checks
+
+Because the official Partner Academy guide is not always publicly crawlable, the repository also records the public sources used to independently cross-check the blueprint structure:
+
+- [Secondary Blueprint Cross-Checks](secondary-blueprint-cross-checks.md)
+
+These are corroborating sources only. They do not replace the official Exam Guide.
