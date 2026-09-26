@@ -1,5 +1,7 @@
 # D3 — Integration Audit
 
+**Domain 3 source collection:** [D3.md](D3.md)
+
 ## D3.1 — Capability bloat
 
 **Source packet:** [D3.1-sources.md](D3.1-sources.md)
