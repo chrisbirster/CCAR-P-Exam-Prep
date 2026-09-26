@@ -46,18 +46,22 @@ D3.1 capability bloat
 → D3.4 observability
 ```
 
+## Domain collections
+
+- [Domain 3 collection](D3.md) — all 8 Integration source packets
+
 ## Progress
 
 | Objective | Status | Audit |
 | --- | --- | --- |
 | D3.1 | AI REVIEWED — AWAITING HUMAN | [Sources](D3.1-sources.md) · [Audit](d3-integration.md#d31--capability-bloat) |
-| D3.2 | UNREVIEWED | |
-| D3.3 | UNREVIEWED | |
-| D3.4 | UNREVIEWED | |
-| D3.5 | UNREVIEWED | |
-| D3.6 | UNREVIEWED | |
-| D3.7 | UNREVIEWED | |
-| D3.8 | UNREVIEWED | |
+| D3.2 | SOURCES READY — AWAITING HUMAN | [Sources](D3.2-sources.md) |
+| D3.3 | SOURCES READY — AWAITING HUMAN | [Sources](D3.3-sources.md) |
+| D3.4 | SOURCES READY — AWAITING HUMAN | [Sources](D3.4-sources.md) |
+| D3.5 | SOURCES READY — AWAITING HUMAN | [Sources](D3.5-sources.md) |
+| D3.6 | SOURCES READY — AWAITING HUMAN | [Sources](D3.6-sources.md) |
+| D3.7 | SOURCES READY — AWAITING HUMAN | [Sources](D3.7-sources.md) |
+| D3.8 | SOURCES READY — AWAITING HUMAN | [Sources](D3.8-sources.md) |
 | D2.1–D2.5 | UNREVIEWED | |
 | D5.1–D5.5 | UNREVIEWED | |
 | D4.1–D4.6 | UNREVIEWED | |
