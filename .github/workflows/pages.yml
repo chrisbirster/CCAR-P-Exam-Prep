@@ -35,6 +35,7 @@ jobs:
           test -s dist/index.html
           test -s dist/objectives/index.html
           test -s dist/flashcards/index.html
+          test -s dist/references/index.html
           test -s dist/style.css
           grep -q "CCAR-P Exam Prep" dist/index.html
           grep -q "Solution Design" dist/objectives/index.html
@@ -45,6 +46,44 @@ jobs:
             echo "Generated site still contains .md links" >&2
             exit 1
           fi
+
+      - name: Check internal reference targets
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urlsplit
+
+          root = Path("dist").resolve()
+          failures = []
+
+          class Links(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.hrefs = []
+              def handle_starttag(self, tag, attrs):
+                  if tag == "a":
+                      href = dict(attrs).get("href")
+                      if href:
+                          self.hrefs.append(href)
+
+          for page in root.rglob("*.html"):
+              parser = Links()
+              parser.feed(page.read_text(encoding="utf-8"))
+              for href in parser.hrefs:
+                  parts = urlsplit(href)
+                  if parts.scheme or parts.netloc or href.startswith("#"):
+                      continue
+                  target = (page.parent / parts.path).resolve()
+                  if parts.path.endswith("/") or not target.suffix:
+                      target = target / "index.html"
+                  if not target.exists():
+                      failures.append(f"{page.relative_to(root)} -> {href}")
+
+          if failures:
+              print("\n".join(failures))
+              raise SystemExit("broken internal links found")
+          PY
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
