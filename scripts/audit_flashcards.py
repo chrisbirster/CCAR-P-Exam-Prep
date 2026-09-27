@@ -29,6 +29,15 @@ PROFILES = {
         "logical_notes": 710,
         "generated_cards": 800,
     },
+    "p2": {
+        "domain_cards": {"d1":85,"d2":65,"d3":95,"d4":80,"d5":70,"d6":70,"d7":35},
+        "type_notes": {
+            "basic":90,"basic-reverse":60,"cloze":90,"type-answer":70,
+            "multiple-choice":60,"multiple-select":40,"ordering":30,
+        },
+        "logical_notes": 440,
+        "generated_cards": 500,
+    },
 }
 
 FIELD_COUNTS = {
