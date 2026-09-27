@@ -1,0 +1,1723 @@
+{
+  "domain": "d4",
+  "priority": "p2",
+  "notes": [
+    {
+      "id": "p2-d4.1-basic-001",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A team says its support agent is “very accurate.” What should an architect request next? Which recommendation should they defend?",
+        "A defined metric, representative measurement method, and acceptance threshold. Evaluation claims must be operationalized. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-basic-002",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved defining evaluation metrics guidance to this case: A candidate model improves task success but doubles safety-policy violations. What should the team conclude?",
+        "The candidate fails a critical guardrail even if the primary quality metric improved. Safety/security floors can constrain optimization. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-basic-003",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-multiple-choice-003",
+      "note_type": "basic",
+      "fields": [
+        "P2 judgment check for defining evaluation metrics: state the best recommendation without answer choices. Which response best preserves the architecture principles in this situation? A coding agent says it fixed a bug, but tests still fail. What is the stronger evaluation metric?",
+        "The external task outcome, such as passing the relevant tests. External outcome can be more authoritative than model claims. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-basic-reverse-001",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Outcome metric — D4.1 application — P2 synthesis lens for defining evaluation metrics",
+        "A measure of whether the task produced the desired real-world result."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-basic-reverse-002",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-basic-reverse-002",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Guardrail metric — D4.1 application — P2 synthesis lens for defining evaluation metrics",
+        "A secondary threshold that must not regress while optimizing a primary metric."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-cloze-001",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for defining evaluation metrics: the exact term for “Within defining evaluation metrics, what term matches this definition: A measure of whether the task produced the desired real-world result.” is {{c1::Outcome metric}}.",
+        "Exact-term reinforcement for D4.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-cloze-002",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for defining evaluation metrics: the exact term for “Within defining evaluation metrics, what term matches this definition: A secondary threshold that must not regress while optimizing a primary metric.” is {{c1::Guardrail metric}}.",
+        "Exact-term reinforcement for D4.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-cloze-003",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-type-answer-003",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for defining evaluation metrics: the exact term for “What phrase completes this approved defining evaluation metrics rule? A useful metric needs a definition, a measurement method, and an _____.” is {{c1::acceptance threshold}}.",
+        "Exact-term reinforcement for D4.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-type-answer-001",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for defining evaluation metrics: what phrase completes this rule? In defining evaluation metrics, _____ is the concept described as: A measure of whether the task produced the desired real-world result.",
+        "Outcome metric"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-type-answer-002",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for defining evaluation metrics: what phrase completes this rule? In defining evaluation metrics, _____ is the concept described as: A secondary threshold that must not regress while optimizing a primary metric.",
+        "Guardrail metric"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-multiple-choice-001",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for defining evaluation metrics: A design reviewer is evaluating this scenario: A team says its support agent is “very accurate.” What should an architect request next? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"More agents.\"},{\"id\":\"a\",\"text\":\"A defined metric, representative measurement method, and acceptance threshold.\"},{\"id\":\"b\",\"text\":\"A longer system prompt.\"},{\"id\":\"c\",\"text\":\"A larger context window.\"}]",
+        "a",
+        "Evaluation claims must be operationalized. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-multiple-choice-002",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-multiple-choice-002",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved defining evaluation metrics guidance to this case: A candidate model improves task success but doubles safety-policy violations. What should the team conclude?",
+        "[{\"id\":\"b\",\"text\":\"Ship it because primary accuracy is higher.\"},{\"id\":\"c\",\"text\":\"Ignore safety because it is hard to score.\"},{\"id\":\"d\",\"text\":\"Average the two metrics into one number and accept any positive result.\"},{\"id\":\"a\",\"text\":\"The candidate fails a critical guardrail even if the primary quality metric improved.\"}]",
+        "a",
+        "Safety/security floors can constrain optimization. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-multiple-select-001",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for defining evaluation metrics: which TWO controls or decisions still hold under scrutiny? During a defining evaluation metrics review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support defining evaluation metrics?",
+        "[{\"id\":\"d\",\"text\":\"Ignore tail behavior.\"},{\"id\":\"a\",\"text\":\"Define measurable thresholds before evaluation.\"},{\"id\":\"b\",\"text\":\"Use one vague “accuracy” number for everything.\"},{\"id\":\"c\",\"text\":\"Measure external outcomes where possible.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define measurable thresholds before evaluation.; Measure external outcomes where possible.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.1. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-basic-001",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A tool action should create exactly one database row. What is the best grader? Which recommendation should they defend?",
+        "A deterministic check of the database state. Exact external state should be verified deterministically. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-basic-002",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved evaluation datasets and frameworks guidance to this case: A style rubric is nuanced and cannot be checked with simple code. What grader may be appropriate after calibration?",
+        "A model-based grader evaluated against human-labeled examples. Model graders can score nuanced qualities but should be calibrated. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-basic-003",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-multiple-choice-003",
+      "note_type": "basic",
+      "fields": [
+        "P2 judgment check for evaluation datasets and frameworks: state the best recommendation without answer choices. Which response best preserves the architecture principles in this situation? An eval suite contains only easy happy-path requests. What is the biggest weakness?",
+        "It may miss boundary, adversarial, malformed, and historical failure modes. Representative coverage includes important failures, not just routine cases. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-basic-reverse-001",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Trial — D4.2 application — P2 synthesis lens for evaluation datasets and frameworks",
+        "One execution of an evaluation task."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-basic-reverse-002",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-basic-reverse-002",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Grader — D4.2 application — P2 synthesis lens for evaluation datasets and frameworks",
+        "The mechanism that scores whether a task/run met defined criteria."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-cloze-001",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for evaluation datasets and frameworks: the exact term for “Within evaluation datasets and frameworks, what term matches this definition: One execution of an evaluation task.” is {{c1::Trial}}.",
+        "Exact-term reinforcement for D4.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-cloze-002",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for evaluation datasets and frameworks: the exact term for “Within evaluation datasets and frameworks, what term matches this definition: The mechanism that scores whether a task/run met defined criteria.” is {{c1::Grader}}.",
+        "Exact-term reinforcement for D4.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-cloze-003",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-type-answer-003",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for evaluation datasets and frameworks: the exact term for “What phrase completes this approved evaluation datasets and frameworks rule? Use the _____ that can accurately measure the property of interest.” is {{c1::cheapest reliable grader}}.",
+        "Exact-term reinforcement for D4.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-type-answer-001",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for evaluation datasets and frameworks: what phrase completes this rule? In evaluation datasets and frameworks, _____ is the concept described as: One execution of an evaluation task.",
+        "Trial"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-type-answer-002",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for evaluation datasets and frameworks: what phrase completes this rule? In evaluation datasets and frameworks, _____ is the concept described as: The mechanism that scores whether a task/run met defined criteria.",
+        "Grader"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-multiple-choice-001",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for evaluation datasets and frameworks: A design reviewer is evaluating this scenario: A tool action should create exactly one database row. What is the best grader? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"The model's self-reported success.\"},{\"id\":\"a\",\"text\":\"A deterministic check of the database state.\"},{\"id\":\"b\",\"text\":\"An LLM judge reading the agent's explanation.\"},{\"id\":\"c\",\"text\":\"A human reviewer for every run.\"}]",
+        "a",
+        "Exact external state should be verified deterministically. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-multiple-choice-002",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-multiple-choice-002",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved evaluation datasets and frameworks guidance to this case: A style rubric is nuanced and cannot be checked with simple code. What grader may be appropriate after calibration?",
+        "[{\"id\":\"b\",\"text\":\"A schema validator only.\"},{\"id\":\"c\",\"text\":\"A random score.\"},{\"id\":\"d\",\"text\":\"No grader at all.\"},{\"id\":\"a\",\"text\":\"A model-based grader evaluated against human-labeled examples.\"}]",
+        "a",
+        "Model graders can score nuanced qualities but should be calibrated. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-multiple-select-001",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for evaluation datasets and frameworks: which TWO controls or decisions still hold under scrutiny? During a evaluation datasets and frameworks review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support evaluation datasets and frameworks?",
+        "[{\"id\":\"d\",\"text\":\"Use only happy-path data.\"},{\"id\":\"a\",\"text\":\"Include representative and difficult cases.\"},{\"id\":\"b\",\"text\":\"Evaluate only final prose.\"},{\"id\":\"c\",\"text\":\"Use deterministic graders for exact properties.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Include representative and difficult cases.; Use deterministic graders for exact properties.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.2. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-basic-001",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A team changes the model, prompt, retriever, and tool schema simultaneously, then sees improvement. What is the main problem? Which recommendation should they defend?",
+        "The experiment cannot attribute the change because several major variables moved together. Controlled experiments isolate specific hypotheses. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-basic-002",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved A/B testing and iterative improvement guidance to this case: A new agent can execute risky production writes. How can the team first test it on realistic traffic without exposing users to its actions?",
+        "Use shadow testing with outputs/actions prevented from affecting production. Shadow testing provides realistic input without direct production effect. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-basic-reverse-001",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Control — D4.3 application — P2 synthesis lens for A/B testing and iterative improvement",
+        "The baseline experience/system in a controlled experiment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-basic-reverse-002",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-basic-reverse-002",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Treatment — D4.3 application — P2 synthesis lens for A/B testing and iterative improvement",
+        "The candidate change being tested against the control."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-cloze-001",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for A/B testing and iterative improvement: the exact term for “Within A/B testing and iterative improvement, what term matches this definition: The baseline experience/system in a controlled experiment.” is {{c1::Control}}.",
+        "Exact-term reinforcement for D4.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-cloze-002",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for A/B testing and iterative improvement: the exact term for “Within A/B testing and iterative improvement, what term matches this definition: The candidate change being tested against the control.” is {{c1::Treatment}}.",
+        "Exact-term reinforcement for D4.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-type-answer-001",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for A/B testing and iterative improvement: what phrase completes this rule? In A/B testing and iterative improvement, _____ is the concept described as: The baseline experience/system in a controlled experiment.",
+        "Control"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-type-answer-002",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for A/B testing and iterative improvement: what phrase completes this rule? In A/B testing and iterative improvement, _____ is the concept described as: The candidate change being tested against the control.",
+        "Treatment"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-multiple-choice-001",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for A/B testing and iterative improvement: A design reviewer is evaluating this scenario: A team changes the model, prompt, retriever, and tool schema simultaneously, then sees improvement. What is the main problem? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Guardrail metrics are unnecessary.\"},{\"id\":\"a\",\"text\":\"The experiment cannot attribute the change because several major variables moved together.\"},{\"id\":\"b\",\"text\":\"A/B testing requires more than two models.\"},{\"id\":\"c\",\"text\":\"All variables should always change together.\"}]",
+        "a",
+        "Controlled experiments isolate specific hypotheses. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-multiple-choice-002",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-multiple-choice-002",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved A/B testing and iterative improvement guidance to this case: A new agent can execute risky production writes. How can the team first test it on realistic traffic without exposing users to its actions?",
+        "[{\"id\":\"b\",\"text\":\"Turn it on for every user immediately.\"},{\"id\":\"c\",\"text\":\"Disable logging.\"},{\"id\":\"d\",\"text\":\"Use only a synthetic prompt unrelated to production.\"},{\"id\":\"a\",\"text\":\"Use shadow testing with outputs/actions prevented from affecting production.\"}]",
+        "a",
+        "Shadow testing provides realistic input without direct production effect. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-multiple-select-001",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for A/B testing and iterative improvement: which TWO controls or decisions still hold under scrutiny? During a A/B testing and iterative improvement review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support A/B testing and iterative improvement?",
+        "[{\"id\":\"d\",\"text\":\"Ignore latency/cost after quality improves.\"},{\"id\":\"a\",\"text\":\"State the hypothesis before running the experiment.\"},{\"id\":\"b\",\"text\":\"Change many major variables at once.\"},{\"id\":\"c\",\"text\":\"Define primary and guardrail metrics.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: State the hypothesis before running the experiment.; Define primary and guardrail metrics.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.3. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-basic-001",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A model gives wrong answers because the retriever returns obsolete documents. What should change first? Which recommendation should they defend?",
+        "Fix the retrieval freshness/ranking problem. The failing layer is retrieval, not necessarily prompting. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-basic-002",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved diagnosing AI system failures guidance to this case: A tool returns malformed JSON and the agent fails. What is the most direct diagnosis?",
+        "Tool/interface contract failure. Inspect the interface actually producing the malformed data. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-basic-reverse-001",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Retrieval failure — D4.4 application — P2 synthesis lens for diagnosing AI system failures",
+        "The relevant evidence is not retrieved or is outranked by wrong evidence."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-basic-reverse-002",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-basic-reverse-002",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Orchestration failure — D4.4 application — P2 synthesis lens for diagnosing AI system failures",
+        "Correct components are coordinated incorrectly, such as dropped worker results or wrong ordering."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-cloze-001",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for diagnosing AI system failures: the exact term for “Within diagnosing AI system failures, what term matches this definition: The relevant evidence is not retrieved or is outranked by wrong evidence.” is {{c1::Retrieval failure}}.",
+        "Exact-term reinforcement for D4.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-cloze-002",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for diagnosing AI system failures: the exact term for “Within diagnosing AI system failures, what term matches this definition: Correct components are coordinated incorrectly, such as dropped worker results or wrong ordering.” is {{c1::Orchestration failure}}.",
+        "Exact-term reinforcement for D4.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-type-answer-001",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for diagnosing AI system failures: what phrase completes this rule? In diagnosing AI system failures, _____ is the concept described as: The relevant evidence is not retrieved or is outranked by wrong evidence.",
+        "Retrieval failure"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-type-answer-002",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for diagnosing AI system failures: what phrase completes this rule? In diagnosing AI system failures, _____ is the concept described as: Correct components are coordinated incorrectly, such as dropped worker results or wrong ordering.",
+        "Orchestration failure"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-multiple-choice-001",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for diagnosing AI system failures: A design reviewer is evaluating this scenario: A model gives wrong answers because the retriever returns obsolete documents. What should change first? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Retry the same stale evidence.\"},{\"id\":\"a\",\"text\":\"Fix the retrieval freshness/ranking problem.\"},{\"id\":\"b\",\"text\":\"Add more system-prompt warnings.\"},{\"id\":\"c\",\"text\":\"Upgrade the model without inspecting retrieval.\"}]",
+        "a",
+        "The failing layer is retrieval, not necessarily prompting. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-multiple-choice-002",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-multiple-choice-002",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved diagnosing AI system failures guidance to this case: A tool returns malformed JSON and the agent fails. What is the most direct diagnosis?",
+        "[{\"id\":\"b\",\"text\":\"Hallucination by definition.\"},{\"id\":\"c\",\"text\":\"Model lifecycle failure.\"},{\"id\":\"d\",\"text\":\"Business-value failure.\"},{\"id\":\"a\",\"text\":\"Tool/interface contract failure.\"}]",
+        "a",
+        "Inspect the interface actually producing the malformed data. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-multiple-select-001",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for diagnosing AI system failures: which TWO controls or decisions still hold under scrutiny? During a diagnosing AI system failures review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support diagnosing AI system failures?",
+        "[{\"id\":\"d\",\"text\":\"Upgrade the model to fix a broken API contract.\"},{\"id\":\"a\",\"text\":\"Reproduce the symptom.\"},{\"id\":\"b\",\"text\":\"Call every wrong answer a hallucination.\"},{\"id\":\"c\",\"text\":\"Inspect traces and external outcomes.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Reproduce the symptom.; Inspect traces and external outcomes.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.4. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.5-basic-001",
+      "objective": "D4.5",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "seed_id": "p1-d4.5-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A cheaper model causes twice as many retries and escalations. What metric should decide whether it is actually cheaper? Which recommendation should they defend?",
+        "Cost per successful outcome including retries/escalations. A cheap failing request can raise total cost. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.5-basic-002",
+      "objective": "D4.5",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "seed_id": "p1-d4.5-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved optimizing token, latency, and cost-performance guidance to this case: Tool results contain 100,000 rows but the model needs only an aggregate. What is a strong optimization?",
+        "Process/filter the data programmatically and pass only the high-signal result to the model. Programmatic processing reduces token/context overhead. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.5-basic-reverse-001",
+      "objective": "D4.5",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "seed_id": "p1-d4.5-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Cost per successful outcome — D4.5 application — P2 synthesis lens for optimizing token, latency, and cost-performance",
+        "Total resource cost divided by tasks that actually meet the success criteria."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.5-cloze-001",
+      "objective": "D4.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "seed_id": "p1-d4.5-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for optimizing token, latency, and cost-performance: the exact term for “Within optimizing token, latency, and cost-performance, what term matches this definition: Total resource cost divided by tasks that actually meet the success criteria.” is {{c1::Cost per successful outcome}}.",
+        "Exact-term reinforcement for D4.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.5-cloze-002",
+      "objective": "D4.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "seed_id": "p1-d4.5-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for optimizing token, latency, and cost-performance: the exact term for “Within optimizing token, latency, and cost-performance, what term matches this definition: Reusing eligible stable prompt/context content rather than recomputing/sending it as uncached work each time.” is {{c1::Prompt caching}}.",
+        "Exact-term reinforcement for D4.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.5-type-answer-001",
+      "objective": "D4.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "seed_id": "p1-d4.5-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for optimizing token, latency, and cost-performance: what phrase completes this rule? In optimizing token, latency, and cost-performance, _____ is the concept described as: Total resource cost divided by tasks that actually meet the success criteria.",
+        "Cost per successful outcome"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.5-type-answer-002",
+      "objective": "D4.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "seed_id": "p1-d4.5-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for optimizing token, latency, and cost-performance: what phrase completes this rule? In optimizing token, latency, and cost-performance, _____ is the concept described as: Reusing eligible stable prompt/context content rather than recomputing/sending it as uncached work each time.",
+        "Prompt caching"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.5-multiple-choice-001",
+      "objective": "D4.5",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "seed_id": "p1-d4.5-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for optimizing token, latency, and cost-performance: A design reviewer is evaluating this scenario: A cheaper model causes twice as many retries and escalations. What metric should decide whether it is actually cheaper? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Prompt token count alone.\"},{\"id\":\"a\",\"text\":\"Cost per successful outcome including retries/escalations.\"},{\"id\":\"b\",\"text\":\"Price per single API call only.\"},{\"id\":\"c\",\"text\":\"Model name length.\"}]",
+        "a",
+        "A cheap failing request can raise total cost. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.5-multiple-select-001",
+      "objective": "D4.5",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "seed_id": "p1-d4.5-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for optimizing token, latency, and cost-performance: which TWO controls or decisions still hold under scrutiny? During a optimizing token, latency, and cost-performance review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support optimizing token, latency, and cost-performance?",
+        "[{\"id\":\"d\",\"text\":\"Assume the cheapest model is cheapest end to end.\"},{\"id\":\"a\",\"text\":\"Measure cost per successful outcome.\"},{\"id\":\"b\",\"text\":\"Optimize cost per request regardless of failures.\"},{\"id\":\"c\",\"text\":\"Reduce irrelevant context.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Measure cost per successful outcome.; Reduce irrelevant context.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.5. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.6-basic-001",
+      "objective": "D4.6",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "seed_id": "p1-d4.6-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: Offline evals pass, but tool failures spike after launch because an external API changed. What caught this? Which recommendation should they defend?",
+        "Production monitoring of real dependencies and outcomes. Production monitoring detects real-world changes offline suites may not predict. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.6-basic-002",
+      "objective": "D4.6",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "seed_id": "p1-d4.6-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved production monitoring and regression protection guidance to this case: A new model version is deployed. What should protect known behavior?",
+        "Run the regression suite and monitor production after migration. Model changes can alter behavior and require regression testing. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.6-basic-reverse-001",
+      "objective": "D4.6",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "seed_id": "p1-d4.6-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Capability eval — D4.6 application — P2 synthesis lens for production monitoring and regression protection",
+        "An evaluation asking whether the system can perform a new or harder capability."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.6-cloze-001",
+      "objective": "D4.6",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "seed_id": "p1-d4.6-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for production monitoring and regression protection: the exact term for “Within production monitoring and regression protection, what term matches this definition: An evaluation asking whether the system can perform a new or harder capability.” is {{c1::Capability eval}}.",
+        "Exact-term reinforcement for D4.6."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.6-cloze-002",
+      "objective": "D4.6",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "seed_id": "p1-d4.6-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for production monitoring and regression protection: the exact term for “What phrase completes this approved production monitoring and regression protection rule? Production monitoring reveals whether the _____ are drifting from assumptions.” is {{c1::real workload or dependencies}}.",
+        "Exact-term reinforcement for D4.6."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.6-type-answer-001",
+      "objective": "D4.6",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "seed_id": "p1-d4.6-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for production monitoring and regression protection: what phrase completes this rule? In production monitoring and regression protection, _____ is the concept described as: An evaluation asking whether the system can perform a new or harder capability.",
+        "Capability eval"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.6-multiple-choice-001",
+      "objective": "D4.6",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "seed_id": "p1-d4.6-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for production monitoring and regression protection: A design reviewer is evaluating this scenario: Offline evals pass, but tool failures spike after launch because an external API changed. What caught this? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"A one-time prelaunch demo.\"},{\"id\":\"a\",\"text\":\"Production monitoring of real dependencies and outcomes.\"},{\"id\":\"b\",\"text\":\"A static benchmark alone.\"},{\"id\":\"c\",\"text\":\"The system prompt.\"}]",
+        "a",
+        "Production monitoring detects real-world changes offline suites may not predict. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.6-multiple-select-001",
+      "objective": "D4.6",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "seed_id": "p1-d4.6-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for production monitoring and regression protection: which TWO controls or decisions still hold under scrutiny? During a production monitoring and regression protection review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support production monitoring and regression protection?",
+        "[{\"id\":\"d\",\"text\":\"Deploy model changes without regression tests.\"},{\"id\":\"a\",\"text\":\"Monitor real outcomes and dependencies.\"},{\"id\":\"b\",\"text\":\"Monitor infrastructure uptime only.\"},{\"id\":\"c\",\"text\":\"Protect known behavior with regression evals.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Monitor real outcomes and dependencies.; Protect known behavior with regression evals.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.6. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-ordering-001",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p1-d4.1-ordering-001",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for defining evaluation metrics: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a metric-definition workflow.",
+        "[{\"id\":\"s1\",\"text\":\"Define the desired outcome\"},{\"id\":\"s2\",\"text\":\"Choose observable measures\"},{\"id\":\"s3\",\"text\":\"Specify how each measure is computed\"},{\"id\":\"s4\",\"text\":\"Set acceptance and guardrail thresholds\"},{\"id\":\"s5\",\"text\":\"Run representative evaluation and compare to thresholds\"}]",
+        "Metrics become useful only after outcome, measurement, and thresholds are explicit. Sequence reinforcement for D4.1. P2 sequence reinforcement for D4.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.2-ordering-002",
+      "objective": "D4.2",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "seed_id": "p1-d4.2-ordering-002",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for evaluation datasets and frameworks: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a basic evaluation-framework design.",
+        "[{\"id\":\"s1\",\"text\":\"Define representative tasks\"},{\"id\":\"s2\",\"text\":\"Choose appropriate graders\"},{\"id\":\"s3\",\"text\":\"Run one or more trials\"},{\"id\":\"s4\",\"text\":\"Collect trajectories/outcomes\"},{\"id\":\"s5\",\"text\":\"Aggregate results against thresholds\"}]",
+        "Task definition and grading come before execution and aggregation. Sequence reinforcement for D4.2. P2 sequence reinforcement for D4.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.3-ordering-003",
+      "objective": "D4.3",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "seed_id": "p1-d4.3-ordering-003",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for A/B testing and iterative improvement: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a controlled improvement experiment.",
+        "[{\"id\":\"s1\",\"text\":\"State the hypothesis\"},{\"id\":\"s2\",\"text\":\"Choose primary and guardrail metrics\"},{\"id\":\"s3\",\"text\":\"Define assignment and decision rule\"},{\"id\":\"s4\",\"text\":\"Run control/treatment or shadow evaluation\"},{\"id\":\"s5\",\"text\":\"Analyze results and decide whether to ship\"}]",
+        "Pre-specification precedes execution and interpretation. Sequence reinforcement for D4.3. P2 sequence reinforcement for D4.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.4-ordering-004",
+      "objective": "D4.4",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "seed_id": "p1-d4.4-ordering-004",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for diagnosing AI system failures: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a root-cause diagnostic loop.",
+        "[{\"id\":\"s1\",\"text\":\"Reproduce the symptom\"},{\"id\":\"s2\",\"text\":\"Inspect trace/outcome evidence\"},{\"id\":\"s3\",\"text\":\"Identify the likely failing stage\"},{\"id\":\"s4\",\"text\":\"Run a targeted isolation test\"},{\"id\":\"s5\",\"text\":\"Apply the fix and add regression coverage\"}]",
+        "Evidence-driven isolation precedes remediation. Sequence reinforcement for D4.4. P2 sequence reinforcement for D4.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d4.1-ordering-005",
+      "objective": "D4.1",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "seed_id": "p0-d4.1-ordering-200",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for defining evaluation metrics: place these steps in the order you would defend. Order a metric-definition workflow.",
+        "[{\"id\":\"s1\",\"text\":\"Define the desired outcome\"},{\"id\":\"s2\",\"text\":\"Choose observable measures\"},{\"id\":\"s3\",\"text\":\"Specify how each measure is computed\"},{\"id\":\"s4\",\"text\":\"Set acceptance and guardrail thresholds\"},{\"id\":\"s5\",\"text\":\"Run representative evaluation and compare to thresholds\"}]",
+        "Metrics become useful only after outcome, measurement, and thresholds are explicit. P2 sequence reinforcement for D4.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    }
+  ]
+}
