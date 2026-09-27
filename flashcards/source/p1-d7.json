@@ -974,7 +974,7 @@
       "seed_id": "p0-d7.3-basic-reverse-01",
       "note_type": "cloze",
       "fields": [
-        "In debugging and operational issue resolution, {{c1::Operational runbook}} is the concept described as: Documented operational steps for diagnosis, mitigation, rollback/fallback, escalation, and evidence preservation.",
+        "During an operational review, apply this debugging and operational issue resolution rule: In debugging and operational issue resolution, {{c1::Operational runbook}} is the concept described as: Documented operational steps for diagnosis, mitigation, rollback/fallback, escalation, and evidence preservation.",
         "Applied reinforcement for D7.3."
       ],
       "tags": [
