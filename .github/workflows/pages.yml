@@ -27,24 +27,31 @@ jobs:
         with:
           version: 0.16.0
 
-      - name: Reproduce P1 source notes
+      - name: Reproduce P1 and P2 source notes
         run: |
           python3 scripts/generate_p1.py
-          git diff --exit-code -- flashcards/source/p1-*.json
+          python3 scripts/generate_p2.py
+          git diff --exit-code -- flashcards/source/p1-*.json flashcards/source/p2-*.json
 
-      - name: Audit P0 and P1 flashcards
+      - name: Audit all flashcard tiers
         run: |
-          python3 scripts/audit_flashcards.py --priority p0 --priority p1 --cross-priority
+          python3 scripts/audit_flashcards.py --priority p0 --priority p1 --priority p2 --cross-priority
 
-      - name: Rebuild P0 and P1 flashcard artifacts
+      - name: Rebuild all flashcard artifacts
         run: |
           python3 scripts/build_flashcards.py --priority p0
           python3 scripts/build_flashcards.py --priority p1
+          python3 scripts/build_flashcards.py --priority p2
+          python3 scripts/build_combined_flashcards.py
           git diff --exit-code -- \
             flashcards/ccar-p-p0.nut \
             flashcards/ccar-p-p0-api.json \
             flashcards/ccar-p-p1.nut \
             flashcards/ccar-p-p1-api.json \
+            flashcards/ccar-p-p2.nut \
+            flashcards/ccar-p-p2-api.json \
+            flashcards/ccar-p-combined.nut \
+            flashcards/ccar-p-combined-api.json \
             flashcards/batches/
 
       - name: Build static site
@@ -60,10 +67,18 @@ jobs:
           test -s dist/flashcards/ccar-p-p0-api.json
           test -s dist/flashcards/ccar-p-p1.nut
           test -s dist/flashcards/ccar-p-p1-api.json
+          test -s dist/flashcards/ccar-p-p2.nut
+          test -s dist/flashcards/ccar-p-p2-api.json
+          test -s dist/flashcards/ccar-p-combined.nut
+          test -s dist/flashcards/ccar-p-combined-api.json
           test -s dist/flashcards/batches/p0-01.json
           test -s dist/flashcards/batches/p0-04.json
           test -s dist/flashcards/batches/p1-01.json
           test -s dist/flashcards/batches/p1-04.json
+          test -s dist/flashcards/batches/p2-01.json
+          test -s dist/flashcards/batches/p2-03.json
+          test -s dist/flashcards/batches/combined-01.json
+          test -s dist/flashcards/batches/combined-09.json
           test -s dist/style.css
           grep -q "CCAR-P Exam Prep" dist/index.html
           grep -q "Solution Design" dist/objectives/index.html
