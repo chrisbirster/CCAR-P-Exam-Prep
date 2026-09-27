@@ -1,0 +1,2477 @@
+{
+  "domain": "d6",
+  "priority": "p1",
+  "notes": [
+    {
+      "id": "p1-d6.1-basic-001",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A stakeholder says the assistant must be “very fast.” What should the architect ask next?",
+        "Define a measurable latency target such as an agreed percentile/SLA. Discovery converts adjectives into measurable criteria."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-basic-002",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for structured discovery and requirement gathering: A stakeholder asks for an agent but cannot explain the desired outcome. What is the best next step?",
+        "Clarify the workflow problem, baseline, users, constraints, and success criteria. Implementation language should not replace requirements discovery."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-basic-003",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this structured discovery and requirement gathering situation? A proposed workflow handles sensitive data, but nobody has identified who owns residual privacy risk. What is missing?",
+        "Explicit risk/decision ownership as part of requirements and governance. Ownership is a requirement for operating consequential systems."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-basic-004",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: Two teams disagree on what “correct” means for an extraction task. What should happen before architecture selection?",
+        "Agree on testable quality criteria and representative examples/evals. Quality requirements need a shared measurable definition."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-basic-reverse-001",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Functional requirement — D6.1 application",
+        "What the solution must do."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-basic-reverse-002",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Non-functional requirement — D6.1 application",
+        "How the solution must operate, such as latency, availability, scale, residency, or cost."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-basic-reverse-003",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-cloze-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "observable acceptance criteria — D6.1 application",
+        "Phrase that completes this structured discovery and requirement gathering rule: Discovery should turn vague goals into _____ before design."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-cloze-001",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In structured discovery and requirement gathering, {{c1::Functional requirement}} is the concept described as: What the solution must do.",
+        "Applied reinforcement for D6.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-cloze-002",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In structured discovery and requirement gathering, {{c1::Non-functional requirement}} is the concept described as: How the solution must operate, such as latency, availability, scale, residency, or cost.",
+        "Applied reinforcement for D6.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-cloze-003",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For structured discovery and requirement gathering, the precise answer to “What requirement category describes what the system must do?” is {{c1::Functional requirement}}.",
+        "Applied reinforcement for D6.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-cloze-004",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-type-answer-02",
+      "note_type": "cloze",
+      "fields": [
+        "For structured discovery and requirement gathering, the precise answer to “What requirement category covers latency, availability, scale, and cost?” is {{c1::Non-functional requirement}}.",
+        "Applied reinforcement for D6.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-type-answer-001",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within structured discovery and requirement gathering, what term matches this definition: What the solution must do.",
+        "Functional requirement"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-type-answer-002",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within structured discovery and requirement gathering, what term matches this definition: How the solution must operate, such as latency, availability, scale, residency, or cost.",
+        "Non-functional requirement"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-type-answer-003",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-cloze-01",
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved structured discovery and requirement gathering rule? Discovery should turn vague goals into _____ before design.",
+        "observable acceptance criteria"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-multiple-choice-001",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A stakeholder says the assistant must be “very fast.” What should the architect ask next? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Choose the fastest model immediately.\"},{\"id\":\"c\",\"text\":\"Assume “fast” means under one minute.\"},{\"id\":\"d\",\"text\":\"Ignore latency until after launch.\"},{\"id\":\"a\",\"text\":\"Define a measurable latency target such as an agreed percentile/SLA.\"}]",
+        "a",
+        "Discovery converts adjectives into measurable criteria. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-multiple-choice-002",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved structured discovery and requirement gathering guidance to this case: A stakeholder asks for an agent but cannot explain the desired outcome. What is the best next step?",
+        "[{\"id\":\"c\",\"text\":\"Pick tools before understanding users.\"},{\"id\":\"d\",\"text\":\"Treat “agent” as the business requirement.\"},{\"id\":\"a\",\"text\":\"Clarify the workflow problem, baseline, users, constraints, and success criteria.\"},{\"id\":\"b\",\"text\":\"Start implementing an autonomous agent.\"}]",
+        "a",
+        "Implementation language should not replace requirements discovery. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-multiple-choice-003",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A proposed workflow handles sensitive data, but nobody has identified who owns residual privacy risk. What is missing?",
+        "[{\"id\":\"d\",\"text\":\"A second classifier.\"},{\"id\":\"a\",\"text\":\"Explicit risk/decision ownership as part of requirements and governance.\"},{\"id\":\"b\",\"text\":\"A larger prompt.\"},{\"id\":\"c\",\"text\":\"More retrieval documents.\"}]",
+        "a",
+        "Ownership is a requirement for operating consequential systems. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-multiple-choice-004",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-choice-04",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: Two teams disagree on what “correct” means for an extraction task. What should happen before architecture selection? Which recommendation should they defend?",
+        "[{\"id\":\"a\",\"text\":\"Agree on testable quality criteria and representative examples/evals.\"},{\"id\":\"b\",\"text\":\"Choose the strongest model and let it decide.\"},{\"id\":\"c\",\"text\":\"Build two unrelated systems.\"},{\"id\":\"d\",\"text\":\"Delay defining correctness until production.\"}]",
+        "a",
+        "Quality requirements need a shared measurable definition. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-multiple-select-001",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a structured discovery and requirement gathering review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support structured discovery and requirement gathering?",
+        "[{\"id\":\"c\",\"text\":\"Establish a baseline.\"},{\"id\":\"d\",\"text\":\"Copy unrelated SLAs without justification.\"},{\"id\":\"a\",\"text\":\"Ask what changes if the project succeeds.\"},{\"id\":\"b\",\"text\":\"Accept implementation requests as final requirements.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Ask what changes if the project succeeds.; Establish a baseline.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-multiple-select-002",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on structured discovery and requirement gathering? Context: An architect is reviewing structured discovery and requirement gathering. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Leave risk ownership implicit.\"},{\"id\":\"a\",\"text\":\"Establish a baseline.\"},{\"id\":\"b\",\"text\":\"Design before defining success.\"},{\"id\":\"c\",\"text\":\"Quantify quality and latency requirements.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Establish a baseline.; Quantify quality and latency requirements.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-multiple-select-003",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-multiple-select-102",
+      "note_type": "multiple-select",
+      "fields": [
+        "For structured discovery and requirement gathering, select the TWO options that preserve the approved design principles. Which TWO decisions best improve structured discovery and requirement gathering?",
+        "[{\"id\":\"a\",\"text\":\"Quantify quality and latency requirements.\"},{\"id\":\"b\",\"text\":\"Copy unrelated SLAs without justification.\"},{\"id\":\"c\",\"text\":\"Identify prohibited/high-risk behavior early.\"},{\"id\":\"d\",\"text\":\"Wait until launch to decide what errors are catastrophic.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Quantify quality and latency requirements.; Identify prohibited/high-risk behavior early.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-basic-001",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? An executive asks why an agentic design costs more. Which explanation is most useful?",
+        "Connect added autonomy to expected business value, latency/cost impact, and residual risk. Executives need outcome, cost, timeline, and major risk implications."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-basic-002",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for communicating architecture decisions and trade-offs: A security reviewer evaluates the same architecture. What should communication emphasize?",
+        "Identity, trust boundaries, permissions, data flows, and threat controls. Audience-specific emphasis should address the reviewer's responsibilities."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-basic-003",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this communicating architecture decisions and trade-offs situation? A proposal lists only the preferred architecture and omits alternatives. What is missing?",
+        "Evidence-based trade-off comparison and rationale for rejecting alternatives. Decision quality is clearer when meaningful alternatives and concessions are visible."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-basic-004",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: Two architectures have different cost, quality, and reversibility. What should the recommendation include?",
+        "A comparison against the agreed constraints and the cost/risk of changing later. Trade-off communication is contextual."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-basic-reverse-001",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Trade-off — D6.2 application",
+        "A deliberate exchange where improving one property costs or constrains another."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-basic-reverse-002",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Reversibility — D6.2 application",
+        "How easily and cheaply an architecture decision can be changed later."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-basic-reverse-003",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-cloze-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "why the option fits the constraints — D6.2 application",
+        "Phrase that completes this communicating architecture decisions and trade-offs rule: A strong recommendation explains _____, not just what components it uses."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-cloze-001",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In communicating architecture decisions and trade-offs, {{c1::Trade-off}} is the concept described as: A deliberate exchange where improving one property costs or constrains another.",
+        "Applied reinforcement for D6.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-cloze-002",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In communicating architecture decisions and trade-offs, {{c1::Reversibility}} is the concept described as: How easily and cheaply an architecture decision can be changed later.",
+        "Applied reinforcement for D6.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-cloze-003",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For communicating architecture decisions and trade-offs, the precise answer to “What term describes the cost/ease of changing an architecture decision later?” is {{c1::Reversibility}}.",
+        "Applied reinforcement for D6.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-cloze-004",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-type-answer-02",
+      "note_type": "cloze",
+      "fields": [
+        "For communicating architecture decisions and trade-offs, the precise answer to “What term describes exchanging one architecture benefit for another cost or constraint?” is {{c1::Trade-off}}.",
+        "Applied reinforcement for D6.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-type-answer-001",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within communicating architecture decisions and trade-offs, what term matches this definition: A deliberate exchange where improving one property costs or constrains another.",
+        "Trade-off"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-type-answer-002",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within communicating architecture decisions and trade-offs, what term matches this definition: How easily and cheaply an architecture decision can be changed later.",
+        "Reversibility"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-type-answer-003",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-cloze-01",
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved communicating architecture decisions and trade-offs rule? A strong recommendation explains _____, not just what components it uses.",
+        "why the option fits the constraints"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-multiple-choice-001",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: An executive asks why an agentic design costs more. Which explanation is most useful? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"List every SDK method.\"},{\"id\":\"c\",\"text\":\"Show only a component diagram.\"},{\"id\":\"d\",\"text\":\"Say agents are the modern choice.\"},{\"id\":\"a\",\"text\":\"Connect added autonomy to expected business value, latency/cost impact, and residual risk.\"}]",
+        "a",
+        "Executives need outcome, cost, timeline, and major risk implications. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-multiple-choice-002",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved communicating architecture decisions and trade-offs guidance to this case: A security reviewer evaluates the same architecture. What should communication emphasize?",
+        "[{\"id\":\"c\",\"text\":\"Only UI screenshots.\"},{\"id\":\"d\",\"text\":\"Only token price.\"},{\"id\":\"a\",\"text\":\"Identity, trust boundaries, permissions, data flows, and threat controls.\"},{\"id\":\"b\",\"text\":\"Marketing slogans.\"}]",
+        "a",
+        "Audience-specific emphasis should address the reviewer's responsibilities. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-multiple-choice-003",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A proposal lists only the preferred architecture and omits alternatives. What is missing?",
+        "[{\"id\":\"d\",\"text\":\"More diagrams with no rationale.\"},{\"id\":\"a\",\"text\":\"Evidence-based trade-off comparison and rationale for rejecting alternatives.\"},{\"id\":\"b\",\"text\":\"More jargon.\"},{\"id\":\"c\",\"text\":\"A bigger model.\"}]",
+        "a",
+        "Decision quality is clearer when meaningful alternatives and concessions are visible. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-multiple-choice-004",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-choice-04",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: Two architectures have different cost, quality, and reversibility. What should the recommendation include? Which recommendation should they defend?",
+        "[{\"id\":\"a\",\"text\":\"A comparison against the agreed constraints and the cost/risk of changing later.\"},{\"id\":\"b\",\"text\":\"Only which is newest.\"},{\"id\":\"c\",\"text\":\"Only which uses MCP.\"},{\"id\":\"d\",\"text\":\"Only which has more components.\"}]",
+        "a",
+        "Trade-off communication is contextual. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-multiple-select-001",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a communicating architecture decisions and trade-offs review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support communicating architecture decisions and trade-offs?",
+        "[{\"id\":\"c\",\"text\":\"Compare alternatives against the same constraints.\"},{\"id\":\"d\",\"text\":\"Present diagrams without rationale.\"},{\"id\":\"a\",\"text\":\"Explain benefit, cost, and risk together.\"},{\"id\":\"b\",\"text\":\"Hide trade-offs to sell the proposal.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Explain benefit, cost, and risk together.; Compare alternatives against the same constraints.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-multiple-select-002",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on communicating architecture decisions and trade-offs? Context: An architect is reviewing communicating architecture decisions and trade-offs. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Compare options without shared constraints.\"},{\"id\":\"a\",\"text\":\"Compare alternatives against the same constraints.\"},{\"id\":\"b\",\"text\":\"Give every audience the same technical detail.\"},{\"id\":\"c\",\"text\":\"Adapt emphasis to stakeholder needs.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Compare alternatives against the same constraints.; Adapt emphasis to stakeholder needs.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-multiple-select-003",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-multiple-select-102",
+      "note_type": "multiple-select",
+      "fields": [
+        "For communicating architecture decisions and trade-offs, select the TWO options that preserve the approved design principles. Which TWO decisions best improve communicating architecture decisions and trade-offs?",
+        "[{\"id\":\"a\",\"text\":\"Adapt emphasis to stakeholder needs.\"},{\"id\":\"b\",\"text\":\"Present diagrams without rationale.\"},{\"id\":\"c\",\"text\":\"Discuss reversibility for costly decisions.\"},{\"id\":\"d\",\"text\":\"Recommend technology because it is fashionable.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Adapt emphasis to stakeholder needs.; Discuss reversibility for costly decisions.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-basic-001",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A stakeholder asks for 100% correctness from a probabilistic support assistant. What is the strongest response?",
+        "Define measurable quality targets, unacceptable failure classes, escalation, and verification rather than promise perfection. Expectations must reflect probabilistic behavior and controls."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-basic-002",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for stakeholder feedback and expectation alignment: Users click thumbs-down more often after a release. What should the team do?",
+        "Treat it as a signal, investigate affected cases/trajectories, identify cause, and verify a targeted fix. Feedback becomes useful through investigation and action."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-basic-003",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this stakeholder feedback and expectation alignment situation? Prompts have been tuned repeatedly, but the architecture cannot meet a new real-time latency requirement. What is likely needed?",
+        "Re-architecture because a fundamental constraint changed. Pattern-level constraints can require architectural change."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-basic-004",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: A safety incident occurs but no threshold defines when to rollback or escalate. What is missing?",
+        "Explicit response triggers, ownership, and expected actions. Feedback systems need actionable thresholds and owners."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-basic-reverse-001",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Feedback signal — D6.3 application",
+        "Observed evidence such as user reports, tool errors, cost drift, or safety incidents."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-basic-reverse-002",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "SLA — D6.3 application",
+        "An agreed service-level expectation/commitment for measurable service behavior."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-cloze-001",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In stakeholder feedback and expectation alignment, {{c1::Feedback signal}} is the concept described as: Observed evidence such as user reports, tool errors, cost drift, or safety incidents.",
+        "Applied reinforcement for D6.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-cloze-002",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In stakeholder feedback and expectation alignment, {{c1::SLA}} is the concept described as: An agreed service-level expectation/commitment for measurable service behavior.",
+        "Applied reinforcement for D6.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-cloze-003",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For stakeholder feedback and expectation alignment, the precise answer to “What agreement sets measurable service expectations such as latency or availability?” is {{c1::SLA}}.",
+        "Applied reinforcement for D6.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-cloze-004",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-type-answer-02",
+      "note_type": "cloze",
+      "fields": [
+        "For stakeholder feedback and expectation alignment, the precise answer to “What should happen after a feedback-driven change to confirm it worked?” is {{c1::Verification}}.",
+        "Applied reinforcement for D6.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-type-answer-001",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within stakeholder feedback and expectation alignment, what term matches this definition: Observed evidence such as user reports, tool errors, cost drift, or safety incidents.",
+        "Feedback signal"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-type-answer-002",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within stakeholder feedback and expectation alignment, what term matches this definition: An agreed service-level expectation/commitment for measurable service behavior.",
+        "SLA"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-type-answer-003",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-cloze-01",
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved stakeholder feedback and expectation alignment rule? A useful feedback loop has a signal, trigger, owner, action, and _____.",
+        "verification"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-multiple-choice-001",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A stakeholder asks for 100% correctness from a probabilistic support assistant. What is the strongest response? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Promise 100% if the prompt is long enough.\"},{\"id\":\"c\",\"text\":\"Hide error rates.\"},{\"id\":\"d\",\"text\":\"Use the strongest model and call it deterministic.\"},{\"id\":\"a\",\"text\":\"Define measurable quality targets, unacceptable failure classes, escalation, and verification rather than promise perfection.\"}]",
+        "a",
+        "Expectations must reflect probabilistic behavior and controls. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-multiple-choice-002",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved stakeholder feedback and expectation alignment guidance to this case: Users click thumbs-down more often after a release. What should the team do?",
+        "[{\"id\":\"c\",\"text\":\"Roll back every time without investigation.\"},{\"id\":\"d\",\"text\":\"Ignore it because thumbs-down is subjective.\"},{\"id\":\"a\",\"text\":\"Treat it as a signal, investigate affected cases/trajectories, identify cause, and verify a targeted fix.\"},{\"id\":\"b\",\"text\":\"Assume the model alone is at fault.\"}]",
+        "a",
+        "Feedback becomes useful through investigation and action. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-multiple-choice-003",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? Prompts have been tuned repeatedly, but the architecture cannot meet a new real-time latency requirement. What is likely needed?",
+        "[{\"id\":\"d\",\"text\":\"Remove monitoring.\"},{\"id\":\"a\",\"text\":\"Re-architecture because a fundamental constraint changed.\"},{\"id\":\"b\",\"text\":\"Only add more prompt text.\"},{\"id\":\"c\",\"text\":\"Keep the architecture forever.\"}]",
+        "a",
+        "Pattern-level constraints can require architectural change. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-multiple-choice-004",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-choice-04",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A safety incident occurs but no threshold defines when to rollback or escalate. What is missing? Which recommendation should they defend?",
+        "[{\"id\":\"a\",\"text\":\"Explicit response triggers, ownership, and expected actions.\"},{\"id\":\"b\",\"text\":\"A longer model response.\"},{\"id\":\"c\",\"text\":\"More unrelated metrics.\"},{\"id\":\"d\",\"text\":\"A second UI theme.\"}]",
+        "a",
+        "Feedback systems need actionable thresholds and owners. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-multiple-select-001",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a stakeholder feedback and expectation alignment review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support stakeholder feedback and expectation alignment?",
+        "[{\"id\":\"c\",\"text\":\"Define triggers and owners for feedback signals.\"},{\"id\":\"d\",\"text\":\"Treat every complaint as a model failure.\"},{\"id\":\"a\",\"text\":\"Set measurable expectations.\"},{\"id\":\"b\",\"text\":\"Promise deterministic perfection.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Set measurable expectations.; Define triggers and owners for feedback signals.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-multiple-select-002",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on stakeholder feedback and expectation alignment? Context: An architect is reviewing stakeholder feedback and expectation alignment. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Keep tuning prompts when architecture is the bottleneck.\"},{\"id\":\"a\",\"text\":\"Define triggers and owners for feedback signals.\"},{\"id\":\"b\",\"text\":\"Say “we'll improve from feedback” with no mechanism.\"},{\"id\":\"c\",\"text\":\"Investigate before attributing cause.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define triggers and owners for feedback signals.; Investigate before attributing cause.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-multiple-select-003",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-multiple-select-102",
+      "note_type": "multiple-select",
+      "fields": [
+        "For stakeholder feedback and expectation alignment, select the TWO options that preserve the approved design principles. Which TWO decisions best improve stakeholder feedback and expectation alignment?",
+        "[{\"id\":\"a\",\"text\":\"Investigate before attributing cause.\"},{\"id\":\"b\",\"text\":\"Treat every complaint as a model failure.\"},{\"id\":\"c\",\"text\":\"Verify changes after action.\"},{\"id\":\"d\",\"text\":\"Create SLAs with no monitoring or response plan.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Investigate before attributing cause.; Verify changes after action.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-basic-001",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? An ADR says only “Use MCP.” What key information is missing?",
+        "Context, alternatives, trade-offs, rationale, assumptions, and review triggers. A decision record should preserve why the choice was made."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-basic-002",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for architecture documentation and implementation guidance: A system works, but only the original architect knows how to recover from tool failures. What documentation is most needed?",
+        "Operational runbooks plus ownership and escalation guidance. Handoff requires operational knowledge, not just design diagrams."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-basic-003",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this architecture documentation and implementation guidance situation? A model/tool change invalidates assumptions in an old architecture document. What should happen?",
+        "Update or supersede the relevant decision/documentation so it matches the current system. Documentation should track the system/version it describes."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-basic-004",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: Which architecture decision most deserves an ADR?",
+        "A costly, risky, hard-to-reverse choice with meaningful alternatives. ADRs are most useful for consequential decisions."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-basic-reverse-001",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "ADR — D6.4 application",
+        "Architecture Decision Record documenting a significant decision, context, alternatives, and rationale."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-basic-reverse-002",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Runbook — D6.4 application",
+        "Operational guidance for diagnosing, responding to, and recovering from known conditions/incidents."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-cloze-001",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In architecture documentation and implementation guidance, {{c1::ADR}} is the concept described as: Architecture Decision Record documenting a significant decision, context, alternatives, and rationale.",
+        "Applied reinforcement for D6.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-cloze-002",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In architecture documentation and implementation guidance, {{c1::Runbook}} is the concept described as: Operational guidance for diagnosing, responding to, and recovering from known conditions/incidents.",
+        "Applied reinforcement for D6.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-cloze-003",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For architecture documentation and implementation guidance, the precise answer to “What document records an architecture decision, context, alternatives, and rationale?” is {{c1::ADR}}.",
+        "Applied reinforcement for D6.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-type-answer-001",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within architecture documentation and implementation guidance, what term matches this definition: Architecture Decision Record documenting a significant decision, context, alternatives, and rationale.",
+        "ADR"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-type-answer-002",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within architecture documentation and implementation guidance, what term matches this definition: Operational guidance for diagnosing, responding to, and recovering from known conditions/incidents.",
+        "Runbook"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-multiple-choice-001",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: An ADR says only “Use MCP.” What key information is missing? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"More screenshots.\"},{\"id\":\"c\",\"text\":\"A model-generated slogan.\"},{\"id\":\"d\",\"text\":\"A longer title.\"},{\"id\":\"a\",\"text\":\"Context, alternatives, trade-offs, rationale, assumptions, and review triggers.\"}]",
+        "a",
+        "A decision record should preserve why the choice was made. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-multiple-choice-002",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved architecture documentation and implementation guidance guidance to this case: A system works, but only the original architect knows how to recover from tool failures. What documentation is most needed?",
+        "[{\"id\":\"c\",\"text\":\"Only a component logo sheet.\"},{\"id\":\"d\",\"text\":\"A longer system prompt.\"},{\"id\":\"a\",\"text\":\"Operational runbooks plus ownership and escalation guidance.\"},{\"id\":\"b\",\"text\":\"More marketing documentation.\"}]",
+        "a",
+        "Handoff requires operational knowledge, not just design diagrams. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-multiple-choice-003",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A model/tool change invalidates assumptions in an old architecture document. What should happen?",
+        "[{\"id\":\"d\",\"text\":\"Assume code comments are enough.\"},{\"id\":\"a\",\"text\":\"Update or supersede the relevant decision/documentation so it matches the current system.\"},{\"id\":\"b\",\"text\":\"Keep docs unchanged forever.\"},{\"id\":\"c\",\"text\":\"Delete all history.\"}]",
+        "a",
+        "Documentation should track the system/version it describes. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-multiple-choice-004",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-choice-04",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: Which architecture decision most deserves an ADR? Which recommendation should they defend?",
+        "[{\"id\":\"a\",\"text\":\"A costly, risky, hard-to-reverse choice with meaningful alternatives.\"},{\"id\":\"b\",\"text\":\"A trivial typo fix.\"},{\"id\":\"c\",\"text\":\"A temporary local variable name.\"},{\"id\":\"d\",\"text\":\"A one-time console command with no architectural impact.\"}]",
+        "a",
+        "ADRs are most useful for consequential decisions. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-multiple-select-001",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a architecture documentation and implementation guidance review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support architecture documentation and implementation guidance?",
+        "[{\"id\":\"c\",\"text\":\"Document assumptions and review triggers.\"},{\"id\":\"d\",\"text\":\"Leave docs stale after major changes.\"},{\"id\":\"a\",\"text\":\"Record rationale and alternatives.\"},{\"id\":\"b\",\"text\":\"Produce diagrams with no rationale.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Record rationale and alternatives.; Document assumptions and review triggers.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-multiple-select-002",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on architecture documentation and implementation guidance? Context: An architect is reviewing architecture documentation and implementation guidance. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Record only the chosen technology name.\"},{\"id\":\"a\",\"text\":\"Document assumptions and review triggers.\"},{\"id\":\"b\",\"text\":\"Let critical knowledge live only in one person's head.\"},{\"id\":\"c\",\"text\":\"Keep implementation contracts close to the system.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Document assumptions and review triggers.; Keep implementation contracts close to the system.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-multiple-select-003",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-multiple-select-102",
+      "note_type": "multiple-select",
+      "fields": [
+        "For architecture documentation and implementation guidance, select the TWO options that preserve the approved design principles. Which TWO decisions best improve architecture documentation and implementation guidance?",
+        "[{\"id\":\"a\",\"text\":\"Keep implementation contracts close to the system.\"},{\"id\":\"b\",\"text\":\"Leave docs stale after major changes.\"},{\"id\":\"c\",\"text\":\"Provide runbooks for operations.\"},{\"id\":\"d\",\"text\":\"Omit rollback/operational guidance from handoff.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep implementation contracts close to the system.; Provide runbooks for operations.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-basic-001",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A team launches before agreeing on acceptance criteria, then tries to infer success from dashboards. Which lifecycle problem occurred?",
+        "Discovery/design did not define success before handoff/monitoring. Later phases cannot repair undefined earlier requirements."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-basic-002",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for solution lifecycle management: Architecture is complete, but no implementation owner or rollback plan exists. Which phase is not ready?",
+        "Handoff / implementation readiness. Handoff requires ownership and operational readiness."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-basic-003",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this solution lifecycle management situation? Production monitoring finds a new failure mode. What is the strongest lifecycle response?",
+        "Feed it into iteration: fix the system, update evals/docs/controls, and verify. Monitoring should inform evidence-driven iteration."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-basic-reverse-001",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Handoff — D6.5 application",
+        "Transition from architecture/design into implementation and operational ownership with acceptance criteria and guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-basic-reverse-002",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Iteration — D6.5 application",
+        "Evidence-driven changes after design/launch, accompanied by updated evaluation and documentation."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-cloze-001",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In solution lifecycle management, {{c1::Handoff}} is the concept described as: Transition from architecture/design into implementation and operational ownership with acceptance criteria and guidance.",
+        "Applied reinforcement for D6.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-cloze-002",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In solution lifecycle management, {{c1::Iteration}} is the concept described as: Evidence-driven changes after design/launch, accompanied by updated evaluation and documentation.",
+        "Applied reinforcement for D6.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-cloze-003",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For solution lifecycle management, the precise answer to “What lifecycle phase follows design before production operation?” is {{c1::Handoff}}.",
+        "Applied reinforcement for D6.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-type-answer-001",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within solution lifecycle management, what term matches this definition: Transition from architecture/design into implementation and operational ownership with acceptance criteria and guidance.",
+        "Handoff"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-type-answer-002",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within solution lifecycle management, what term matches this definition: Evidence-driven changes after design/launch, accompanied by updated evaluation and documentation.",
+        "Iteration"
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-multiple-choice-001",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A team launches before agreeing on acceptance criteria, then tries to infer success from dashboards. Which lifecycle problem occurred? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Monitoring should always define requirements retroactively.\"},{\"id\":\"c\",\"text\":\"Handoff should happen before design.\"},{\"id\":\"d\",\"text\":\"Iteration eliminates the need for acceptance criteria.\"},{\"id\":\"a\",\"text\":\"Discovery/design did not define success before handoff/monitoring.\"}]",
+        "a",
+        "Later phases cannot repair undefined earlier requirements. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-multiple-choice-002",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved solution lifecycle management guidance to this case: Architecture is complete, but no implementation owner or rollback plan exists. Which phase is not ready?",
+        "[{\"id\":\"c\",\"text\":\"Retrieval indexing.\"},{\"id\":\"d\",\"text\":\"Model prompting.\"},{\"id\":\"a\",\"text\":\"Handoff / implementation readiness.\"},{\"id\":\"b\",\"text\":\"Discovery only.\"}]",
+        "a",
+        "Handoff requires ownership and operational readiness. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-multiple-choice-003",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? Production monitoring finds a new failure mode. What is the strongest lifecycle response?",
+        "[{\"id\":\"d\",\"text\":\"Delete monitoring evidence.\"},{\"id\":\"a\",\"text\":\"Feed it into iteration: fix the system, update evals/docs/controls, and verify.\"},{\"id\":\"b\",\"text\":\"Ignore it because design is complete.\"},{\"id\":\"c\",\"text\":\"Change prompts without testing.\"}]",
+        "a",
+        "Monitoring should inform evidence-driven iteration. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-multiple-select-001",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a solution lifecycle management review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support solution lifecycle management?",
+        "[{\"id\":\"c\",\"text\":\"Define acceptance criteria before handoff.\"},{\"id\":\"d\",\"text\":\"Monitor infrastructure only.\"},{\"id\":\"a\",\"text\":\"Complete discovery before committing architecture.\"},{\"id\":\"b\",\"text\":\"Launch with no acceptance criteria.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Complete discovery before committing architecture.; Define acceptance criteria before handoff.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-multiple-select-002",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on solution lifecycle management? Context: An architect is reviewing solution lifecycle management. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Change behavior without updating evals.\"},{\"id\":\"a\",\"text\":\"Define acceptance criteria before handoff.\"},{\"id\":\"b\",\"text\":\"Handoff without ownership.\"},{\"id\":\"c\",\"text\":\"Assign implementation and operations ownership.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define acceptance criteria before handoff.; Assign implementation and operations ownership.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.1-ordering-001",
+      "objective": "D6.1",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.1-sources.md"
+      ],
+      "seed_id": "p0-d6.1-ordering-200",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a structured discovery flow.",
+        "[{\"id\":\"s1\",\"text\":\"Clarify the business outcome and baseline\"},{\"id\":\"s2\",\"text\":\"Map users and current workflow\"},{\"id\":\"s3\",\"text\":\"Define measurable quality/latency/scale constraints\"},{\"id\":\"s4\",\"text\":\"Identify risk/compliance boundaries\"},{\"id\":\"s5\",\"text\":\"Assign owners and acceptance criteria\"}]",
+        "Discovery progresses from outcome/workflow to measurable constraints and ownership. Sequence reinforcement for D6.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.1",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.2-ordering-002",
+      "objective": "D6.2",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.2-sources.md"
+      ],
+      "seed_id": "p0-d6.2-ordering-201",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a concise architecture-decision explanation.",
+        "[{\"id\":\"s1\",\"text\":\"State the decision context/constraints\"},{\"id\":\"s2\",\"text\":\"Present the recommended option\"},{\"id\":\"s3\",\"text\":\"Explain benefits and evidence\"},{\"id\":\"s4\",\"text\":\"Explain costs/risks and alternatives\"},{\"id\":\"s5\",\"text\":\"State ownership/review triggers\"}]",
+        "The audience first needs context, then recommendation and its trade-offs. Sequence reinforcement for D6.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.2",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.3-ordering-003",
+      "objective": "D6.3",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.3-sources.md"
+      ],
+      "seed_id": "p0-d6.3-ordering-202",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order an actionable stakeholder feedback loop.",
+        "[{\"id\":\"s1\",\"text\":\"Collect a signal\"},{\"id\":\"s2\",\"text\":\"Compare it to a trigger/threshold\"},{\"id\":\"s3\",\"text\":\"Assign investigation to the owner\"},{\"id\":\"s4\",\"text\":\"Take the targeted action\"},{\"id\":\"s5\",\"text\":\"Verify the outcome and update expectations/evals\"}]",
+        "Signals drive owned investigation, action, and verification. Sequence reinforcement for D6.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.3",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.4-ordering-004",
+      "objective": "D6.4",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.4-sources.md"
+      ],
+      "seed_id": "p0-d6.4-ordering-203",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a useful ADR structure.",
+        "[{\"id\":\"s1\",\"text\":\"Describe context and constraints\"},{\"id\":\"s2\",\"text\":\"State the decision\"},{\"id\":\"s3\",\"text\":\"Record meaningful alternatives\"},{\"id\":\"s4\",\"text\":\"Explain trade-offs and rationale\"},{\"id\":\"s5\",\"text\":\"Record assumptions, owner, and review trigger\"}]",
+        "ADRs preserve why a decision was made and when it may need revisiting. Sequence reinforcement for D6.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.4",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d6.5-ordering-005",
+      "objective": "D6.5",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D6.5-sources.md"
+      ],
+      "seed_id": "p0-d6.5-ordering-204",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order the CCAR-P solution lifecycle.",
+        "[{\"id\":\"s1\",\"text\":\"Discovery\"},{\"id\":\"s2\",\"text\":\"Design\"},{\"id\":\"s3\",\"text\":\"Handoff\"},{\"id\":\"s4\",\"text\":\"Monitoring\"},{\"id\":\"s5\",\"text\":\"Iteration\"}]",
+        "The blueprint explicitly frames these phases in this lifecycle order. Sequence reinforcement for D6.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d6",
+        "obj:d6.5",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    }
+  ]
+}
