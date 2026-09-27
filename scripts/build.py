@@ -36,6 +36,14 @@ PAGES = [
         "objectives_href": "../objectives/",
     },
     {
+        "source": ROOT / "flashcards" / "source" / "README.md",
+        "output": DIST / "flashcards" / "source" / "index.html",
+        "title": "CCAR-P Flashcard Source",
+        "asset_prefix": "../../",
+        "home_href": "../../",
+        "objectives_href": "../../objectives/",
+    },
+    {
         "source": ROOT / "docs" / "sources-and-verification.md",
         "output": DIST / "verification" / "index.html",
         "title": "CCAR-P Sources & Verification",
