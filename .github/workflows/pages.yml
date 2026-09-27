@@ -27,15 +27,24 @@ jobs:
         with:
           version: 0.16.0
 
-      - name: Audit P0 flashcards
-        run: python3 scripts/audit_flashcards.py
+      - name: Reproduce P1 source notes
+        run: |
+          python3 scripts/generate_p1.py
+          git diff --exit-code -- flashcards/source/p1-*.json
 
-      - name: Rebuild P0 flashcard artifacts
+      - name: Audit P0 and P1 flashcards
+        run: |
+          python3 scripts/audit_flashcards.py --priority p0 --priority p1 --cross-priority
+
+      - name: Rebuild P0 and P1 flashcard artifacts
         run: |
           python3 scripts/build_flashcards.py --priority p0
+          python3 scripts/build_flashcards.py --priority p1
           git diff --exit-code -- \
             flashcards/ccar-p-p0.nut \
             flashcards/ccar-p-p0-api.json \
+            flashcards/ccar-p-p1.nut \
+            flashcards/ccar-p-p1-api.json \
             flashcards/batches/
 
       - name: Build static site
@@ -49,8 +58,12 @@ jobs:
           test -s dist/references/index.html
           test -s dist/flashcards/ccar-p-p0.nut
           test -s dist/flashcards/ccar-p-p0-api.json
+          test -s dist/flashcards/ccar-p-p1.nut
+          test -s dist/flashcards/ccar-p-p1-api.json
           test -s dist/flashcards/batches/p0-01.json
           test -s dist/flashcards/batches/p0-04.json
+          test -s dist/flashcards/batches/p1-01.json
+          test -s dist/flashcards/batches/p1-04.json
           test -s dist/style.css
           grep -q "CCAR-P Exam Prep" dist/index.html
           grep -q "Solution Design" dist/objectives/index.html
