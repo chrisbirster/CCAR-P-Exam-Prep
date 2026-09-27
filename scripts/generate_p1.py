@@ -151,13 +151,23 @@ def generate_objective(domain: str, objective: str, seeds: list[dict], counts: d
     for seed in typed["cloze"]:
         term, context = extract_cloze(seed)
         reverse_pool.append((term, f"Phrase that completes this {title} rule: {context}", seed["id"], "rule application"))
+    seen_terms: set[str] = set()
     for i in range(counts["basic-reverse"]):
         term, definition, seed_id, lens = reverse_pool[i % len(reverse_pool)]
         cycle = i // len(reverse_pool)
-        suffix = "" if cycle == 0 else (" — operational lens" if cycle % 2 else " — design-review lens")
+        term_key = term.casefold()
+        if cycle == 0 and term_key in seen_terms:
+            label = f"{term} — {lens} in {title}"
+        elif cycle == 0:
+            label = f"{term} — {objective} application"
+        elif cycle % 2 == 1:
+            label = f"{term} — operational use in {title}"
+        else:
+            label = f"{term} — design-review use in {title}"
+        seen_terms.add(term_key)
         out.append(make_note(
             domain, objective, "basic-reverse", i + 1,
-            [f"{term} — {lens} in {title}{suffix}", definition],
+            [label, definition],
             "compare", seed_id,
         ))
 
