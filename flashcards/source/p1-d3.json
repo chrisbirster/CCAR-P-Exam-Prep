@@ -2254,7 +2254,7 @@
       "seed_id": "p0-d3.6-basic-reverse-01",
       "note_type": "cloze",
       "fields": [
-        "In retrieval strategy selection, {{c1::Lexical retrieval}} is the concept described as: Retrieval based on exact words/terms, such as BM25.",
+        "During an operational review, apply this retrieval strategy selection rule: In retrieval strategy selection, {{c1::Lexical retrieval}} is the concept described as: Retrieval based on exact words/terms, such as BM25.",
         "Applied reinforcement for D3.6."
       ],
       "tags": [
@@ -2624,7 +2624,7 @@
       "seed_id": "p0-d3.7-basic-reverse-01",
       "note_type": "cloze",
       "fields": [
-        "In integration mechanism selection, {{c1::MCP}} is the concept described as: A standard protocol for AI applications to discover/use external capabilities exposed by compatible servers.",
+        "During an operational review, apply this integration mechanism selection rule: In integration mechanism selection, {{c1::MCP}} is the concept described as: A standard protocol for AI applications to discover/use external capabilities exposed by compatible servers.",
         "Applied reinforcement for D3.7."
       ],
       "tags": [
@@ -2994,7 +2994,7 @@
       "seed_id": "p0-d3.8-basic-reverse-01",
       "note_type": "cloze",
       "fields": [
-        "In progressive discovery versus monolithic context, {{c1::Progressive discovery}} is the concept described as: Finding/loading relevant tools on demand instead of preloading the full catalog.",
+        "During an operational review, apply this progressive discovery versus monolithic context rule: In progressive discovery versus monolithic context, {{c1::Progressive discovery}} is the concept described as: Finding/loading relevant tools on demand instead of preloading the full catalog.",
         "Applied reinforcement for D3.8."
       ],
       "tags": [
