@@ -1,0 +1,1061 @@
+{
+  "domain": "d7",
+  "priority": "p0",
+  "notes": [
+    {
+      "id": "p0-d7.1-basic-01",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What is the key distinction between an instruction and a control?",
+        "An instruction influences model behavior; a control enforces what the runtime is permitted to do."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-basic-02",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Why should team-level Claude configuration be standardized?",
+        "Shared guidance, tools, permissions, and Skills reduce inconsistent behavior and operational drift."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-basic-01",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What should AI-assisted development optimize?",
+        "Developer throughput while preserving independent verification, security boundaries, and human accountability."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-basic-02",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "How should verification strength change with consequence?",
+        "More consequential changes require stronger independent tests, review, and approval."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-basic-01",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What is the core operational debugging loop?",
+        "Move from symptom to evidence to likely layer to fix to verification."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-basic-02",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Why should a runbook include rollback/fallback and an owner?",
+        "Operators need safe recovery actions and clear escalation responsibility during incidents."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-basic-reverse-01",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Instruction",
+        "Guidance intended to influence model behavior."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-basic-reverse-02",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Control",
+        "An enforceable runtime, permission, sandbox, policy, or CI boundary."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-basic-reverse-01",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Verification tool",
+        "An independent mechanism such as tests, linters, type checks, security scans, or CI used to check generated changes."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-basic-reverse-02",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Reviewability",
+        "The ability for developers to understand and own an AI-generated change."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-basic-reverse-01",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Runbook",
+        "Documented operational steps for diagnosis, mitigation, rollback/fallback, escalation, and evidence preservation."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-cloze-01",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "“Do not modify production” is an instruction; removing production credentials is an enforceable {{c1::control}}.",
+        "D7.1"
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-cloze-02",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Shared Skills and configuration should be {{c1::versioned and reviewed}} like other operational assets.",
+        "D7.1"
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-cloze-01",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "AI assistance should accelerate the engineering loop, not bypass {{c1::CI, code review, or security boundaries}}.",
+        "D7.2"
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-cloze-02",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "The more consequential the change, the stronger the {{c1::independent verification}} required.",
+        "D7.2"
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-cloze-01",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Operational debugging should proceed from symptom → evidence → likely layer → fix → {{c1::verification}}.",
+        "D7.3"
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-cloze-02",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "A production incident fix should become a {{c1::regression test}} when possible.",
+        "D7.3"
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-type-answer-01",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What mechanism enforces what the runtime is permitted to do?",
+        "Control"
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-type-answer-02",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What reusable Anthropic package can contain instructions, scripts, and resources?",
+        "Agent Skill"
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-type-answer-01",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What quality means developers can understand and own an AI-generated change?",
+        "Reviewability"
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-type-answer-01",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What document gives repeatable incident diagnosis and recovery steps?",
+        "Runbook"
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-multiple-choice-01",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A team tells Claude Code “never touch production,” but every developer environment has production admin credentials. What is strongest?",
+        "[{\"id\":\"a\",\"text\":\"Remove/restrict production credentials and permissions; keep the instruction as supplemental guidance.\"},{\"id\":\"b\",\"text\":\"Repeat the instruction more often.\"},{\"id\":\"c\",\"text\":\"Disable code review.\"},{\"id\":\"d\",\"text\":\"Give the model more context about production.\"}]",
+        "a",
+        "Hard permission boundaries should not depend on model compliance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-multiple-choice-02",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Each developer has a different MCP/tool configuration and shared workflows behave inconsistently. What should the team do?",
+        "[{\"id\":\"a\",\"text\":\"Standardize high-value repository/team configuration and version it.\"},{\"id\":\"b\",\"text\":\"Encourage every developer to improvise permanently.\"},{\"id\":\"c\",\"text\":\"Hide configuration from version control.\"},{\"id\":\"d\",\"text\":\"Give all developers broader credentials.\"}]",
+        "a",
+        "Shared configuration improves reproducibility and governance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-multiple-choice-03",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A third-party Skill contains scripts and external resources. What should happen before team-wide adoption?",
+        "[{\"id\":\"a\",\"text\":\"Review provenance/content, test it, and constrain permissions appropriately.\"},{\"id\":\"b\",\"text\":\"Trust it because it is called a Skill.\"},{\"id\":\"c\",\"text\":\"Give it full production access first.\"},{\"id\":\"d\",\"text\":\"Skip review because Skills are only text.\"}]",
+        "a",
+        "Skills can affect behavior and execution and should be governed."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-multiple-choice-04",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which is an enforceable control rather than an instruction?",
+        "[{\"id\":\"a\",\"text\":\"A sandbox/network policy that prevents access to production.\"},{\"id\":\"b\",\"text\":\"A sentence saying “be careful.”\"},{\"id\":\"c\",\"text\":\"A README asking the agent not to deploy.\"},{\"id\":\"d\",\"text\":\"A prompt example showing a safe action.\"}]",
+        "a",
+        "Enforceable boundaries restrict capability independently of model choice."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-multiple-choice-01",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "An agent writes a large refactor and tests pass, but nobody reviews whether the tests cover the risk. What is missing?",
+        "[{\"id\":\"a\",\"text\":\"Independent human/system verification of both the change and test adequacy.\"},{\"id\":\"b\",\"text\":\"A larger model.\"},{\"id\":\"c\",\"text\":\"Production credentials.\"},{\"id\":\"d\",\"text\":\"Fewer tests.\"}]",
+        "a",
+        "Passing tests are evidence, not a substitute for judging whether verification is sufficient."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-multiple-choice-02",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A developer asks an agent to “make it work” using production admin credentials. What is the strongest correction?",
+        "[{\"id\":\"a\",\"text\":\"Use a scoped development/test environment and require approval for shared/destructive actions.\"},{\"id\":\"b\",\"text\":\"Let the agent proceed because the developer asked.\"},{\"id\":\"c\",\"text\":\"Disable logs.\"},{\"id\":\"d\",\"text\":\"Remove rollback mechanisms.\"}]",
+        "a",
+        "Developer productivity should not expand unnecessary production capability."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-multiple-choice-03",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "AI-generated code is merged, but no team member understands it well enough to maintain it. What principle was violated?",
+        "[{\"id\":\"a\",\"text\":\"Reviewability and human accountability for the change.\"},{\"id\":\"b\",\"text\":\"Prompt caching.\"},{\"id\":\"c\",\"text\":\"Semantic retrieval.\"},{\"id\":\"d\",\"text\":\"Model lifecycle.\"}]",
+        "a",
+        "Teams must be able to own and maintain generated changes."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-multiple-choice-01",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Quality drops after a deployment. Which evidence should be checked first?",
+        "[{\"id\":\"a\",\"text\":\"Model/prompt versions, retrieval/index changes, traces, and input-distribution changes around the deployment.\"},{\"id\":\"b\",\"text\":\"Only ask the model why it failed.\"},{\"id\":\"c\",\"text\":\"Delete old logs.\"},{\"id\":\"d\",\"text\":\"Immediately add production admin access.\"}]",
+        "a",
+        "Debugging starts from correlated evidence around the affected layer/change."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-multiple-choice-02",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "An agent suddenly receives “permission denied” from a tool. What areas are most relevant?",
+        "[{\"id\":\"a\",\"text\":\"Credentials, scopes, authorization policy, tool contract, and dependency status.\"},{\"id\":\"b\",\"text\":\"RAG chunk size only.\"},{\"id\":\"c\",\"text\":\"Model temperature only.\"},{\"id\":\"d\",\"text\":\"Business ROI only.\"}]",
+        "a",
+        "Tool failures should be diagnosed at the integration/permission boundary."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-multiple-choice-03",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A cross-tenant data leak is observed. How should it be treated?",
+        "[{\"id\":\"a\",\"text\":\"As a security incident focused on authorization/filtering boundaries, with containment and evidence preservation.\"},{\"id\":\"b\",\"text\":\"As an ordinary style-quality issue.\"},{\"id\":\"c\",\"text\":\"By only rewriting the prompt.\"},{\"id\":\"d\",\"text\":\"By deleting logs immediately.\"}]",
+        "a",
+        "Cross-tenant exposure is a security boundary failure."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-multiple-select-100",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support team-level Claude tools and environments?",
+        "[{\"id\":\"a\",\"text\":\"Standardize shared high-value configuration.\"},{\"id\":\"b\",\"text\":\"Rely on one giant instruction file for enforcement.\"},{\"id\":\"c\",\"text\":\"Use permission and sandbox boundaries for hard restrictions.\"},{\"id\":\"d\",\"text\":\"Let each developer use unreviewed global Skills.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Standardize shared high-value configuration.; Use permission and sandbox boundaries for hard restrictions.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-multiple-select-101",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing team-level Claude tools and environments. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Use permission and sandbox boundaries for hard restrictions.\"},{\"id\":\"b\",\"text\":\"Give broad credentials because setup is easier.\"},{\"id\":\"c\",\"text\":\"Review third-party tools/Skills.\"},{\"id\":\"d\",\"text\":\"Treat prompts as equivalent to permissions.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use permission and sandbox boundaries for hard restrictions.; Review third-party tools/Skills.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-multiple-select-102",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions best improve team-level Claude tools and environments?",
+        "[{\"id\":\"a\",\"text\":\"Review third-party tools/Skills.\"},{\"id\":\"b\",\"text\":\"Let each developer use unreviewed global Skills.\"},{\"id\":\"c\",\"text\":\"Version shared instructions and Skills.\"},{\"id\":\"d\",\"text\":\"Keep critical team configuration undocumented.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Review third-party tools/Skills.; Version shared instructions and Skills.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-multiple-select-103",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production team focused on team-level Claude tools and environments, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Version shared instructions and Skills.\"},{\"id\":\"b\",\"text\":\"Treat prompts as equivalent to permissions.\"},{\"id\":\"c\",\"text\":\"Keep credentials scoped to the environment's needs.\"},{\"id\":\"d\",\"text\":\"Rely on one giant instruction file for enforcement.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Version shared instructions and Skills.; Keep credentials scoped to the environment's needs.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-multiple-select-100",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support AI-assisted developer workflows?",
+        "[{\"id\":\"a\",\"text\":\"Provide goals, constraints, and acceptance criteria.\"},{\"id\":\"b\",\"text\":\"Merge solely because the agent says tests passed.\"},{\"id\":\"c\",\"text\":\"Use tests/linters/type checks/security scans.\"},{\"id\":\"d\",\"text\":\"Disable safeguards the agent finds inconvenient.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Provide goals, constraints, and acceptance criteria.; Use tests/linters/type checks/security scans.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-multiple-select-101",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing AI-assisted developer workflows. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Use tests/linters/type checks/security scans.\"},{\"id\":\"b\",\"text\":\"Use production admin credentials for convenience.\"},{\"id\":\"c\",\"text\":\"Scope permissions to reversible local work by default.\"},{\"id\":\"d\",\"text\":\"Accept generated code nobody can maintain.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use tests/linters/type checks/security scans.; Scope permissions to reversible local work by default.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-multiple-select-102",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions best improve AI-assisted developer workflows?",
+        "[{\"id\":\"a\",\"text\":\"Scope permissions to reversible local work by default.\"},{\"id\":\"b\",\"text\":\"Disable safeguards the agent finds inconvenient.\"},{\"id\":\"c\",\"text\":\"Require stronger review for consequential changes.\"},{\"id\":\"d\",\"text\":\"Treat AI assistance as a replacement for accountability.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Scope permissions to reversible local work by default.; Require stronger review for consequential changes.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-multiple-select-100",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support debugging and operational issue resolution?",
+        "[{\"id\":\"a\",\"text\":\"Use correlated traces/evidence to isolate failures.\"},{\"id\":\"b\",\"text\":\"Ask the model why it failed as the only incident process.\"},{\"id\":\"c\",\"text\":\"Maintain runbooks with safe diagnostic steps.\"},{\"id\":\"d\",\"text\":\"Assume every operator needs production admin access.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use correlated traces/evidence to isolate failures.; Maintain runbooks with safe diagnostic steps.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-multiple-select-101",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing debugging and operational issue resolution. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Maintain runbooks with safe diagnostic steps.\"},{\"id\":\"b\",\"text\":\"Keep logs that cannot correlate components.\"},{\"id\":\"c\",\"text\":\"Define rollback/fallback and escalation owners.\"},{\"id\":\"d\",\"text\":\"Fix incidents without regression tests.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Maintain runbooks with safe diagnostic steps.; Define rollback/fallback and escalation owners.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-multiple-select-102",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions best improve debugging and operational issue resolution?",
+        "[{\"id\":\"a\",\"text\":\"Define rollback/fallback and escalation owners.\"},{\"id\":\"b\",\"text\":\"Assume every operator needs production admin access.\"},{\"id\":\"c\",\"text\":\"Preserve evidence appropriately.\"},{\"id\":\"d\",\"text\":\"Treat security boundary failures as ordinary quality bugs.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define rollback/fallback and escalation owners.; Preserve evidence appropriately.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.1-ordering-200",
+      "objective": "D7.1",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.1-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a team enablement flow for a new Claude tool/Skill.",
+        "[{\"id\":\"s1\",\"text\":\"Define the intended team use case\"},{\"id\":\"s2\",\"text\":\"Review provenance and required permissions\"},{\"id\":\"s3\",\"text\":\"Configure the tool/Skill in a scoped environment\"},{\"id\":\"s4\",\"text\":\"Test behavior and controls\"},{\"id\":\"s5\",\"text\":\"Version and roll out the approved configuration\"}]",
+        "Use case and security review precede scoped rollout."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.1",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.2-ordering-201",
+      "objective": "D7.2",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.2-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a safe AI-assisted coding loop.",
+        "[{\"id\":\"s1\",\"text\":\"Define the task and acceptance criteria\"},{\"id\":\"s2\",\"text\":\"Let the agent explore/implement within scoped permissions\"},{\"id\":\"s3\",\"text\":\"Run independent automated checks\"},{\"id\":\"s4\",\"text\":\"Review the change and evidence\"},{\"id\":\"s5\",\"text\":\"Merge/deploy through normal controlled processes\"}]",
+        "AI generation is followed by independent verification and normal release controls."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.2",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d7.3-ordering-202",
+      "objective": "D7.3",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D7.3-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a repeatable incident-resolution loop.",
+        "[{\"id\":\"s1\",\"text\":\"Detect the symptom/alert\"},{\"id\":\"s2\",\"text\":\"Collect correlated evidence\"},{\"id\":\"s3\",\"text\":\"Identify and isolate the likely failing layer\"},{\"id\":\"s4\",\"text\":\"Mitigate/fix with rollback or safe recovery as needed\"},{\"id\":\"s5\",\"text\":\"Verify and add regression coverage\"}]",
+        "Evidence-driven diagnosis precedes mitigation and regression protection."
+      ],
+      "tags": [
+        "ccarp",
+        "d7",
+        "obj:d7.3",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    }
+  ]
+}
