@@ -151,11 +151,17 @@ def generate_objective(domain: str, objective: str, seeds: list[dict], counts: d
     for seed in typed["cloze"]:
         term, context = extract_cloze(seed)
         reverse_pool.append((term, f"Phrase that completes this {title} rule: {context}", seed["id"]))
+    reverse_labels = [
+        lambda term: f"{term} — {objective} application",
+        lambda term: f"{term} — operational use in {title}",
+        lambda term: f"{term} — design-review use in {title}",
+    ]
     for i in range(counts["basic-reverse"]):
         term, definition, seed_id = reverse_pool[i % len(reverse_pool)]
+        cycle = i // len(reverse_pool)
         out.append(make_note(
             domain, objective, "basic-reverse", i + 1,
-            [f"{term} — {objective} application", definition],
+            [reverse_labels[cycle % len(reverse_labels)](term), definition],
             "compare", seed_id,
         ))
 
@@ -175,7 +181,12 @@ def generate_objective(domain: str, objective: str, seeds: list[dict], counts: d
         ))
     for i in range(counts["cloze"]):
         term, template, seed_id = cloze_pool[i % len(cloze_pool)]
+        cycle = i // len(cloze_pool)
         sentence = template.replace("{term}", f"{{{{c1::{term}}}}}")
+        if cycle % 3 == 1:
+            sentence = f"During an operational review, apply this {title} rule: {sentence}"
+        elif cycle % 3 == 2:
+            sentence = f"In a design-review context for {title}: {sentence}"
         out.append(make_note(
             domain, objective, "cloze", i + 1,
             [sentence, f"Applied reinforcement for {objective}."],
