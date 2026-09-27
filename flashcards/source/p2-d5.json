@@ -1,0 +1,1526 @@
+{
+  "domain": "d5",
+  "priority": "p2",
+  "notes": [
+    {
+      "id": "p2-d5.1-basic-001",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A refund tool can transfer money. The system prompt says “never refund more than $500,” but the API accepts any amount. What is the strongest improvement? Which recommendation should they defend?",
+        "Enforce the limit in deterministic transaction/authorization logic before execution. Hard financial limits belong at the execution boundary. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-basic-002",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved guardrails and safety controls guidance to this case: A required authorization service is unavailable during a high-risk transaction. What is usually safest?",
+        "Block or defer the action until authorization can be verified. High-risk controls commonly fail closed. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-basic-003",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-multiple-choice-003",
+      "note_type": "basic",
+      "fields": [
+        "P2 judgment check for guardrails and safety controls: state the best recommendation without answer choices. Which response best preserves the architecture principles in this situation? An agent reads untrusted web content and can also modify production systems. Which safety posture is strongest?",
+        "Layer prompt-injection defenses with scoped tools, sandboxing/permissions, authorization, and approval where needed. No single prompt-level defense is sufficient. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-basic-reverse-001",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Defense in depth — D5.1 application — P2 synthesis lens for guardrails and safety controls",
+        "Using multiple independent layers so failure of one control does not remove all protection."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-basic-reverse-002",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-basic-reverse-002",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Fail closed — D5.1 application — P2 synthesis lens for guardrails and safety controls",
+        "Block the protected action when a required safety or authorization check cannot complete."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-cloze-001",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for guardrails and safety controls: the exact term for “Within guardrails and safety controls, what term matches this definition: Using multiple independent layers so failure of one control does not remove all protection.” is {{c1::Defense in depth}}.",
+        "Exact-term reinforcement for D5.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-cloze-002",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for guardrails and safety controls: the exact term for “Within guardrails and safety controls, what term matches this definition: Block the protected action when a required safety or authorization check cannot complete.” is {{c1::Fail closed}}.",
+        "Exact-term reinforcement for D5.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-cloze-003",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-type-answer-003",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for guardrails and safety controls: the exact term for “What phrase completes this approved guardrails and safety controls rule? Hard safety properties should be enforced by _____, not only by prompt text.” is {{c1::controls at the relevant system boundary}}.",
+        "Exact-term reinforcement for D5.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-type-answer-001",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for guardrails and safety controls: what phrase completes this rule? In guardrails and safety controls, _____ is the concept described as: Using multiple independent layers so failure of one control does not remove all protection.",
+        "Defense in depth"
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-type-answer-002",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for guardrails and safety controls: what phrase completes this rule? In guardrails and safety controls, _____ is the concept described as: Block the protected action when a required safety or authorization check cannot complete.",
+        "Fail closed"
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-multiple-choice-001",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for guardrails and safety controls: A design reviewer is evaluating this scenario: A refund tool can transfer money. The system prompt says “never refund more than $500,” but the API accepts any amount. What is the strongest improvement? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Log over-$500 refunds after they happen.\"},{\"id\":\"a\",\"text\":\"Enforce the limit in deterministic transaction/authorization logic before execution.\"},{\"id\":\"b\",\"text\":\"Repeat the warning five times in the prompt.\"},{\"id\":\"c\",\"text\":\"Use a more persuasive role description.\"}]",
+        "a",
+        "Hard financial limits belong at the execution boundary. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-multiple-choice-002",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-multiple-choice-002",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved guardrails and safety controls guidance to this case: A required authorization service is unavailable during a high-risk transaction. What is usually safest?",
+        "[{\"id\":\"b\",\"text\":\"Allow the action and audit later.\"},{\"id\":\"c\",\"text\":\"Ask the model to guess authorization.\"},{\"id\":\"d\",\"text\":\"Disable the authorization layer permanently.\"},{\"id\":\"a\",\"text\":\"Block or defer the action until authorization can be verified.\"}]",
+        "a",
+        "High-risk controls commonly fail closed. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-multiple-select-001",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for guardrails and safety controls: which TWO controls or decisions still hold under scrutiny? During a guardrails and safety controls review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support guardrails and safety controls?",
+        "[{\"id\":\"d\",\"text\":\"Give admin tools and rely on instructions not to misuse them.\"},{\"id\":\"a\",\"text\":\"Use layered independent controls.\"},{\"id\":\"b\",\"text\":\"Use one giant safety prompt as the only protection.\"},{\"id\":\"c\",\"text\":\"Put hard authorization at the protected action boundary.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use layered independent controls.; Put hard authorization at the protected action boundary.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.1. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-multiple-select-002",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-multiple-select-002",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 edge-case review for guardrails and safety controls: select the TWO recommendations that remain valid. Which TWO recommendations should survive an architecture review focused on guardrails and safety controls? Context: An architect is reviewing guardrails and safety controls. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"b\",\"text\":\"Log dangerous actions instead of preventing them.\"},{\"id\":\"c\",\"text\":\"Scope tools and permissions.\"},{\"id\":\"d\",\"text\":\"Moderate only after irreversible actions.\"},{\"id\":\"a\",\"text\":\"Put hard authorization at the protected action boundary.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Put hard authorization at the protected action boundary.; Scope tools and permissions.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.1. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-basic-001",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A web page contains hidden text telling the browsing agent to upload secrets to an attacker. What failure mode is this? Which recommendation should they defend?",
+        "Indirect prompt injection. The malicious instruction is delivered through external content. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-basic-002",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved LLM and agent risks, limitations, and failure modes guidance to this case: An agent has production write access even though its task is read-only analysis. Which risk is most direct?",
+        "Excessive agency / unnecessary capability. Permissions exceed what the task requires. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-basic-003",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-multiple-choice-003",
+      "note_type": "basic",
+      "fields": [
+        "P2 judgment check for LLM and agent risks, limitations, and failure modes: state the best recommendation without answer choices. Which response best preserves the architecture principles in this situation? An agent loops through tools for hours and consumes a large budget. Which controls are most relevant?",
+        "Iteration/token/cost budgets, timeouts, rate limits, and stopping conditions. Resource exhaustion needs enforceable execution limits. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-basic-reverse-001",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Indirect prompt injection — D5.2 application — P2 synthesis lens for LLM and agent risks, limitations, and failure modes",
+        "Adversarial instructions hidden in external content such as pages, documents, email, or tool results."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-basic-reverse-002",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-basic-reverse-002",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Excessive agency — D5.2 application — P2 synthesis lens for LLM and agent risks, limitations, and failure modes",
+        "More autonomy or capability than is necessary for the intended task."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-cloze-001",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for LLM and agent risks, limitations, and failure modes: the exact term for “Within LLM and agent risks, limitations, and failure modes, what term matches this definition: Adversarial instructions hidden in external content such as pages, documents, email, or tool results.” is {{c1::Indirect prompt injection}}.",
+        "Exact-term reinforcement for D5.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-cloze-002",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for LLM and agent risks, limitations, and failure modes: the exact term for “Within LLM and agent risks, limitations, and failure modes, what term matches this definition: More autonomy or capability than is necessary for the intended task.” is {{c1::Excessive agency}}.",
+        "Exact-term reinforcement for D5.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-cloze-003",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-type-answer-003",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for LLM and agent risks, limitations, and failure modes: the exact term for “What phrase completes this approved LLM and agent risks, limitations, and failure modes rule? External content consumed by an agent should be treated as _____ because it may contain indirect prompt injection.” is {{c1::untrusted}}.",
+        "Exact-term reinforcement for D5.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-type-answer-001",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for LLM and agent risks, limitations, and failure modes: what phrase completes this rule? In LLM and agent risks, limitations, and failure modes, _____ is the concept described as: Adversarial instructions hidden in external content such as pages, documents, email, or tool results.",
+        "Indirect prompt injection"
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-type-answer-002",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for LLM and agent risks, limitations, and failure modes: what phrase completes this rule? In LLM and agent risks, limitations, and failure modes, _____ is the concept described as: More autonomy or capability than is necessary for the intended task.",
+        "Excessive agency"
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-multiple-choice-001",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for LLM and agent risks, limitations, and failure modes: A design reviewer is evaluating this scenario: A web page contains hidden text telling the browsing agent to upload secrets to an attacker. What failure mode is this? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"A/B contamination.\"},{\"id\":\"a\",\"text\":\"Indirect prompt injection.\"},{\"id\":\"b\",\"text\":\"Model deprecation.\"},{\"id\":\"c\",\"text\":\"Ordinary lexical retrieval.\"}]",
+        "a",
+        "The malicious instruction is delivered through external content. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-multiple-choice-002",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-multiple-choice-002",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved LLM and agent risks, limitations, and failure modes guidance to this case: An agent has production write access even though its task is read-only analysis. Which risk is most direct?",
+        "[{\"id\":\"b\",\"text\":\"Insufficient context length.\"},{\"id\":\"c\",\"text\":\"Prompt caching.\"},{\"id\":\"d\",\"text\":\"Underfitting a grader.\"},{\"id\":\"a\",\"text\":\"Excessive agency / unnecessary capability.\"}]",
+        "a",
+        "Permissions exceed what the task requires. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-multiple-select-001",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for LLM and agent risks, limitations, and failure modes: which TWO controls or decisions still hold under scrutiny? During a LLM and agent risks, limitations, and failure modes review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support LLM and agent risks, limitations, and failure modes?",
+        "[{\"id\":\"d\",\"text\":\"Give agents secrets they never need.\"},{\"id\":\"a\",\"text\":\"Treat external content as untrusted.\"},{\"id\":\"b\",\"text\":\"Assume a better model eliminates prompt injection.\"},{\"id\":\"c\",\"text\":\"Minimize capability and secret exposure.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Treat external content as untrusted.; Minimize capability and secret exposure.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.2. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-basic-001",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: An AI proposes a large irreversible wire transfer. Which review pattern is strongest? Which recommendation should they defend?",
+        "Human approval before the transfer executes. High-consequence irreversible actions favor pre-action approval. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-basic-002",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved human-in-the-loop validation guidance to this case: A mature low-risk classification workflow needs ongoing quality oversight without reviewing every case. What fits?",
+        "Sampled human review combined with monitoring. Sampling can monitor a mature lower-risk process without erasing automation value. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-basic-003",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-multiple-choice-003",
+      "note_type": "basic",
+      "fields": [
+        "P2 judgment check for human-in-the-loop validation: state the best recommendation without answer choices. Which response best preserves the architecture principles in this situation? A reviewer sees only “Approve? yes/no” with no source evidence or policy. What is the main weakness?",
+        "The human cannot exercise meaningful judgment and may become a rubber stamp. HITL must provide enough context for a real decision. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-basic-reverse-001",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Pre-action approval — D5.3 application — P2 synthesis lens for human-in-the-loop validation",
+        "Human authorization before a consequential action occurs."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-basic-reverse-002",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-basic-reverse-002",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Sampled review — D5.3 application — P2 synthesis lens for human-in-the-loop validation",
+        "Reviewing a subset of lower-risk cases to monitor quality and drift."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-cloze-001",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for human-in-the-loop validation: the exact term for “Within human-in-the-loop validation, what term matches this definition: Human authorization before a consequential action occurs.” is {{c1::Pre-action approval}}.",
+        "Exact-term reinforcement for D5.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-cloze-002",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for human-in-the-loop validation: the exact term for “Within human-in-the-loop validation, what term matches this definition: Reviewing a subset of lower-risk cases to monitor quality and drift.” is {{c1::Sampled review}}.",
+        "Exact-term reinforcement for D5.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-cloze-003",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 edge case for human-in-the-loop validation: the exact term for “Within human-in-the-loop validation, what term matches this definition: Human authorization before a consequential action occurs.” is {{c1::Pre-action approval}}.",
+        "Exact-term reinforcement for D5.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-type-answer-001",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for human-in-the-loop validation: what phrase completes this rule? In human-in-the-loop validation, _____ is the concept described as: Human authorization before a consequential action occurs.",
+        "Pre-action approval"
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-type-answer-002",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for human-in-the-loop validation: what phrase completes this rule? In human-in-the-loop validation, _____ is the concept described as: Reviewing a subset of lower-risk cases to monitor quality and drift.",
+        "Sampled review"
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-multiple-choice-001",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for human-in-the-loop validation: A design reviewer is evaluating this scenario: An AI proposes a large irreversible wire transfer. Which review pattern is strongest? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Let model confidence determine authorization.\"},{\"id\":\"a\",\"text\":\"Human approval before the transfer executes.\"},{\"id\":\"b\",\"text\":\"Review the transfer a week later.\"},{\"id\":\"c\",\"text\":\"Sample 1% after execution only.\"}]",
+        "a",
+        "High-consequence irreversible actions favor pre-action approval. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-multiple-choice-002",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-multiple-choice-002",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved human-in-the-loop validation guidance to this case: A mature low-risk classification workflow needs ongoing quality oversight without reviewing every case. What fits?",
+        "[{\"id\":\"b\",\"text\":\"Pre-approve every single low-risk label.\"},{\"id\":\"c\",\"text\":\"Remove all human oversight permanently.\"},{\"id\":\"d\",\"text\":\"Review only when the model says it is confident.\"},{\"id\":\"a\",\"text\":\"Sampled human review combined with monitoring.\"}]",
+        "a",
+        "Sampling can monitor a mature lower-risk process without erasing automation value. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-multiple-select-001",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for human-in-the-loop validation: which TWO controls or decisions still hold under scrutiny? During a human-in-the-loop validation review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support human-in-the-loop validation?",
+        "[{\"id\":\"d\",\"text\":\"Review every trivial case regardless of cost.\"},{\"id\":\"a\",\"text\":\"Use pre-action review for high-consequence irreversible actions.\"},{\"id\":\"b\",\"text\":\"Place human approval after an irreversible action.\"},{\"id\":\"c\",\"text\":\"Give reviewers relevant evidence and policy.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use pre-action review for high-consequence irreversible actions.; Give reviewers relevant evidence and policy.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.3. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.4-basic-001",
+      "objective": "D5.4",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.4-sources.md"
+      ],
+      "seed_id": "p1-d5.4-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A team says, “Our model provider is HIPAA compliant, so our whole app is compliant.” What is wrong? Which recommendation should they defend?",
+        "Application compliance depends on the full system, data flows, controls, agreements, and responsibilities—not one provider alone. Compliance is a system-level responsibility. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.4",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.4-basic-002",
+      "objective": "D5.4",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.4-sources.md"
+      ],
+      "seed_id": "p1-d5.4-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved regulatory compliance architecture guidance to this case: A GDPR-related requirement affects deletion/retention of personal data. What should the architect do?",
+        "Map the requirement to specific data lifecycle controls, ownership, and evidence. Regulatory obligations must become operational controls. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.4",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.4-basic-reverse-001",
+      "objective": "D5.4",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.4-sources.md"
+      ],
+      "seed_id": "p1-d5.4-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Control evidence — D5.4 application — P2 synthesis lens for regulatory compliance architecture",
+        "Records/artifacts demonstrating that a required control is implemented and operating."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.4",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.4-cloze-001",
+      "objective": "D5.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.4-sources.md"
+      ],
+      "seed_id": "p1-d5.4-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for regulatory compliance architecture: the exact term for “Within regulatory compliance architecture, what term matches this definition: Records/artifacts demonstrating that a required control is implemented and operating.” is {{c1::Control evidence}}.",
+        "Exact-term reinforcement for D5.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.4-cloze-002",
+      "objective": "D5.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.4-sources.md"
+      ],
+      "seed_id": "p1-d5.4-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for regulatory compliance architecture: the exact term for “Within regulatory compliance architecture, what term matches this definition: The systems, data, services, and responsibilities included in the regulated/authorized scope.” is {{c1::Compliance boundary}}.",
+        "Exact-term reinforcement for D5.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.4-type-answer-001",
+      "objective": "D5.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.4-sources.md"
+      ],
+      "seed_id": "p1-d5.4-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for regulatory compliance architecture: what phrase completes this rule? In regulatory compliance architecture, _____ is the concept described as: Records/artifacts demonstrating that a required control is implemented and operating.",
+        "Control evidence"
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.4-type-answer-002",
+      "objective": "D5.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.4-sources.md"
+      ],
+      "seed_id": "p1-d5.4-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for regulatory compliance architecture: what phrase completes this rule? In regulatory compliance architecture, _____ is the concept described as: The systems, data, services, and responsibilities included in the regulated/authorized scope.",
+        "Compliance boundary"
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.4-multiple-choice-001",
+      "objective": "D5.4",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.4-sources.md"
+      ],
+      "seed_id": "p1-d5.4-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for regulatory compliance architecture: A design reviewer is evaluating this scenario: A team says, “Our model provider is HIPAA compliant, so our whole app is compliant.” What is wrong? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Compliance can be implemented solely in the system prompt.\"},{\"id\":\"a\",\"text\":\"Application compliance depends on the full system, data flows, controls, agreements, and responsibilities—not one provider alone.\"},{\"id\":\"b\",\"text\":\"Provider status never matters.\"},{\"id\":\"c\",\"text\":\"HIPAA applies only to prompts.\"}]",
+        "a",
+        "Compliance is a system-level responsibility. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.4",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.4-multiple-select-001",
+      "objective": "D5.4",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.4-sources.md"
+      ],
+      "seed_id": "p1-d5.4-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for regulatory compliance architecture: which TWO controls or decisions still hold under scrutiny? During a regulatory compliance architecture review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support regulatory compliance architecture?",
+        "[{\"id\":\"d\",\"text\":\"Keep sensitive logs indefinitely without policy.\"},{\"id\":\"a\",\"text\":\"Map obligations to enforceable controls.\"},{\"id\":\"b\",\"text\":\"Put “comply with GDPR” in a prompt and stop there.\"},{\"id\":\"c\",\"text\":\"Assign control ownership.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Map obligations to enforceable controls.; Assign control ownership.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.4. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.4",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.5-basic-001",
+      "objective": "D5.5",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.5-sources.md"
+      ],
+      "seed_id": "p1-d5.5-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: An AI system has 95% aggregate accuracy but performs much worse for an important subgroup. What should the team do? Which recommendation should they defend?",
+        "Evaluate relevant slices and address the disparity rather than relying only on aggregate accuracy. Aggregate metrics can conceal uneven outcomes. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.5",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.5-basic-002",
+      "objective": "D5.5",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.5-sources.md"
+      ],
+      "seed_id": "p1-d5.5-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved responsible and ethical AI guidance to this case: After a harmful automated decision, the team says “the AI decided.” What governance problem is most direct?",
+        "Lack of accountability and ownership. Organizations remain responsible for system decisions and controls. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.5",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.5-basic-reverse-001",
+      "objective": "D5.5",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.5-sources.md"
+      ],
+      "seed_id": "p1-d5.5-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Fairness evaluation — D5.5 application — P2 synthesis lens for responsible and ethical AI",
+        "Assessing relevant performance/outcomes across appropriate groups or slices instead of relying only on aggregate metrics."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.5",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.5-cloze-001",
+      "objective": "D5.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.5-sources.md"
+      ],
+      "seed_id": "p1-d5.5-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for responsible and ethical AI: the exact term for “Within responsible and ethical AI, what term matches this definition: Assessing relevant performance/outcomes across appropriate groups or slices instead of relying only on aggregate metrics.” is {{c1::Fairness evaluation}}.",
+        "Exact-term reinforcement for D5.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.5-cloze-002",
+      "objective": "D5.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.5-sources.md"
+      ],
+      "seed_id": "p1-d5.5-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for responsible and ethical AI: the exact term for “Within responsible and ethical AI, what term matches this definition: Clear ownership for architecture decisions, residual risk, monitoring, and incident response.” is {{c1::Accountability}}.",
+        "Exact-term reinforcement for D5.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.5-type-answer-001",
+      "objective": "D5.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.5-sources.md"
+      ],
+      "seed_id": "p1-d5.5-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for responsible and ethical AI: what phrase completes this rule? In responsible and ethical AI, _____ is the concept described as: Assessing relevant performance/outcomes across appropriate groups or slices instead of relying only on aggregate metrics.",
+        "Fairness evaluation"
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.5-type-answer-002",
+      "objective": "D5.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.5-sources.md"
+      ],
+      "seed_id": "p1-d5.5-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for responsible and ethical AI: what phrase completes this rule? In responsible and ethical AI, _____ is the concept described as: Clear ownership for architecture decisions, residual risk, monitoring, and incident response.",
+        "Accountability"
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.5-multiple-choice-001",
+      "objective": "D5.5",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.5-sources.md"
+      ],
+      "seed_id": "p1-d5.5-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for responsible and ethical AI: A design reviewer is evaluating this scenario: An AI system has 95% aggregate accuracy but performs much worse for an important subgroup. What should the team do? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Increase logging retention indefinitely.\"},{\"id\":\"a\",\"text\":\"Evaluate relevant slices and address the disparity rather than relying only on aggregate accuracy.\"},{\"id\":\"b\",\"text\":\"Ignore subgroup results because aggregate accuracy is high.\"},{\"id\":\"c\",\"text\":\"Hide the subgroup metrics.\"}]",
+        "a",
+        "Aggregate metrics can conceal uneven outcomes. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.5",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.5-multiple-select-001",
+      "objective": "D5.5",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.5-sources.md"
+      ],
+      "seed_id": "p1-d5.5-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for responsible and ethical AI: which TWO controls or decisions still hold under scrutiny? During a responsible and ethical AI review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support responsible and ethical AI?",
+        "[{\"id\":\"d\",\"text\":\"Treat transparency as raw chain-of-thought disclosure.\"},{\"id\":\"a\",\"text\":\"Evaluate relevant outcome slices.\"},{\"id\":\"b\",\"text\":\"Use aggregate accuracy as the only fairness evidence.\"},{\"id\":\"c\",\"text\":\"Keep human/organizational accountability explicit.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Evaluate relevant outcome slices.; Keep human/organizational accountability explicit.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.5. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.5",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.1-ordering-001",
+      "objective": "D5.1",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.1-sources.md"
+      ],
+      "seed_id": "p1-d5.1-ordering-001",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for guardrails and safety controls: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a defense-in-depth path for a consequential action.",
+        "[{\"id\":\"s1\",\"text\":\"Validate/classify the request\"},{\"id\":\"s2\",\"text\":\"Let the model reason within scoped context/tools\"},{\"id\":\"s3\",\"text\":\"Apply deterministic policy and authorization checks\"},{\"id\":\"s4\",\"text\":\"Require human approval when risk demands it\"},{\"id\":\"s5\",\"text\":\"Execute and record the authorized action\"}]",
+        "Probabilistic reasoning is surrounded by enforceable controls before execution. Sequence reinforcement for D5.1. P2 sequence reinforcement for D5.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.1",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-ordering-002",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-ordering-002",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for LLM and agent risks, limitations, and failure modes: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a risk-treatment cycle for an identified agent failure mode.",
+        "[{\"id\":\"s1\",\"text\":\"Identify the threat/failure mode\"},{\"id\":\"s2\",\"text\":\"Reduce likelihood with preventive controls\"},{\"id\":\"s3\",\"text\":\"Detect attempts or failures with monitoring\"},{\"id\":\"s4\",\"text\":\"Contain/stop harmful effects\"},{\"id\":\"s5\",\"text\":\"Recover and add regression/response improvements\"}]",
+        "Risk treatment combines prevention, detection, containment, and recovery. Sequence reinforcement for D5.2. P2 sequence reinforcement for D5.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.2-ordering-003",
+      "objective": "D5.2",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.2-sources.md"
+      ],
+      "seed_id": "p1-d5.2-ordering-003",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for LLM and agent risks, limitations, and failure modes: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order an indirect-prompt-injection defense path.",
+        "[{\"id\":\"s1\",\"text\":\"Treat external content as untrusted data\"},{\"id\":\"s2\",\"text\":\"Limit the agent's reachable tools/secrets\"},{\"id\":\"s3\",\"text\":\"Detect suspicious instructions/behavior where possible\"},{\"id\":\"s4\",\"text\":\"Re-authorize consequential actions outside the model\"},{\"id\":\"s5\",\"text\":\"Block or escalate unsafe execution\"}]",
+        "Untrusted content is paired with limited capability and independent action controls. Sequence reinforcement for D5.2. P2 sequence reinforcement for D5.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.2",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d5.3-ordering-004",
+      "objective": "D5.3",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D5.3-sources.md"
+      ],
+      "seed_id": "p1-d5.3-ordering-004",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for human-in-the-loop validation: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a meaningful pre-action HITL flow.",
+        "[{\"id\":\"s1\",\"text\":\"Model proposes the consequential action\"},{\"id\":\"s2\",\"text\":\"Collect the evidence/policy relevant to review\"},{\"id\":\"s3\",\"text\":\"Present proposal and context to the authorized reviewer\"},{\"id\":\"s4\",\"text\":\"Reviewer approves or rejects\"},{\"id\":\"s5\",\"text\":\"Execute only approved actions and record the decision\"}]",
+        "The human decision occurs before execution and is informed by evidence. Sequence reinforcement for D5.3. P2 sequence reinforcement for D5.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d5",
+        "obj:d5.3",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    }
+  ]
+}
