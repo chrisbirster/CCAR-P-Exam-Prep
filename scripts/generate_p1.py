@@ -151,20 +151,21 @@ def generate_objective(domain: str, objective: str, seeds: list[dict], counts: d
     for seed in typed["cloze"]:
         term, context = extract_cloze(seed)
         reverse_pool.append((term, f"Phrase that completes this {title} rule: {context}", seed["id"], "rule application"))
-    seen_terms: set[str] = set()
+    seen_terms: dict[str,str] = {}
     for i in range(counts["basic-reverse"]):
         term, definition, seed_id, lens = reverse_pool[i % len(reverse_pool)]
         cycle = i // len(reverse_pool)
         term_key = term.casefold()
+        display_term = seen_terms.get(term_key, term)
         if cycle == 0 and term_key in seen_terms:
-            label = f"{term} — {lens} in {title}"
+            label = f"{display_term} — {lens} in {title}"
         elif cycle == 0:
-            label = f"{term} — {objective} application"
+            label = f"{display_term} — {objective} application"
         elif cycle % 2 == 1:
-            label = f"{term} — operational use in {title}"
+            label = f"{display_term} — operational use in {title}"
         else:
-            label = f"{term} — design-review use in {title}"
-        seen_terms.add(term_key)
+            label = f"{display_term} — design-review use in {title}"
+        seen_terms.setdefault(term_key, term)
         out.append(make_note(
             domain, objective, "basic-reverse", i + 1,
             [label, definition],
@@ -237,7 +238,7 @@ def generate_objective(domain: str, objective: str, seeds: list[dict], counts: d
             domain, objective, "multiple-choice", i + 1,
             [
                 mcq_templates[i % len(mcq_templates)].format(title=title, q=seed["fields"][0]),
-                json.dumps(rotated, separators=(",", ":")),
+                json.dumps(rotated, ensure_ascii=False, separators=(",", ":")),
                 correct[0],
                 f"{seed['fields'][3]} This P1 variant tests the same approved principle in a re-framed design review.",
             ],
@@ -260,8 +261,8 @@ def generate_objective(domain: str, objective: str, seeds: list[dict], counts: d
             domain, objective, "multiple-select", i + 1,
             [
                 ms_templates[i % len(ms_templates)].format(title=title, q=seed["fields"][0]),
-                json.dumps(rotated, separators=(",", ":")),
-                json.dumps(correct, separators=(",", ":")),
+                json.dumps(rotated, ensure_ascii=False, separators=(",", ":")),
+                json.dumps(correct, ensure_ascii=False, separators=(",", ":")),
                 f"{seed['fields'][3]} This variant reinforces the approved decision set for {objective}.",
             ],
             "decision", seed["id"],
@@ -297,7 +298,7 @@ def main() -> None:
                 domain, seed["objective"], "ordering", i,
                 [
                     f"Put these steps in the operational order you would defend during a P1 design review: {seed['fields'][0]}",
-                    json.dumps(items, separators=(",", ":")),
+                    json.dumps(items, ensure_ascii=False, separators=(",", ":")),
                     f"{seed['fields'][2]} Sequence reinforcement for {seed['objective']}.",
                 ],
                 "sequence", seed["id"],
