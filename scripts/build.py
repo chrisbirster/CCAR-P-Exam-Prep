@@ -477,7 +477,7 @@ def main() -> None:
     if source_batches.exists():
         batch_dist = flashcard_dist / "batches"
         batch_dist.mkdir(parents=True, exist_ok=True)
-        for priority in ("p0", "p1"):
+        for priority in ("p0", "p1", "p2"):
             for source in sorted(source_batches.glob(f"{priority}-*.json")):
                 shutil.copy2(source, batch_dist / source.name)
         for source in sorted(source_batches.glob("combined-*.json")):
