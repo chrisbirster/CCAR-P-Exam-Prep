@@ -1,0 +1,2572 @@
+{
+  "domain": "d1",
+  "priority": "p0",
+  "notes": [
+    {
+      "id": "p0-d1.1-basic-01",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What should an architect define before selecting Claude architecture components?",
+        "The measurable business outcome, constraints, and success criteria."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-basic-02",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Why is “we need an AI agent” not a complete requirement?",
+        "It names an implementation preference rather than the underlying outcome and constraints."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-basic-03",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Which requirements should remain deterministic when correctness must not depend on probabilistic output?",
+        "Hard rules such as authorization, numeric thresholds, and schema validation."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-basic-01",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Why is a production Claude system more than a model call?",
+        "Because the request path also includes identity, context, tools, state, verification, outputs, observability, and recovery."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-basic-02",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What should be designed alongside the happy path?",
+        "The failure and recovery path."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-basic-03",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What should remain authoritative for current transactional facts?",
+        "The system of record, not chat history, a vector index, or a cached summary."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-basic-01",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What distinguishes a workflow from an agent in Anthropic's architecture guidance?",
+        "A workflow follows predefined code paths; an agent dynamically decides how to accomplish the task and use tools."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-basic-02",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "When is a workflow generally preferable to an agent?",
+        "When the process can be enumerated in advance and benefits from predictability and control."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-basic-03",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "When is an agent justified?",
+        "When required steps cannot be reliably predetermined and dynamic planning/tool use provides measured benefit."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-basic-01",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What is the orchestrator-worker pattern?",
+        "A lead agent decomposes work, delegates bounded subtasks, and synthesizes worker results."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-basic-02",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What are strong reasons to use multiple agents?",
+        "Context isolation, parallel independent work, and meaningful specialization."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-basic-01",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What is prompt chaining?",
+        "A sequence where each stage consumes the previous stage's output."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-basic-02",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What is routing?",
+        "Classifying an input and sending it to the appropriate specialized path."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-basic-01",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Why is model-token cost alone insufficient for architecture comparison?",
+        "Total solution cost also includes engineering, infrastructure, human review, monitoring, incidents, and compliance overhead."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-basic-02",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What must exist before claiming a business improvement?",
+        "A baseline and measurable outcome."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-basic-reverse-04",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Outcome requirement",
+        "The measurable value or change the solution should create."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-basic-reverse-05",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Risk constraint",
+        "A condition defining what the system must not do without stronger controls."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-basic-reverse-04",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "System of record",
+        "The authoritative source for current operational state."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-basic-reverse-05",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Idempotent retry",
+        "A retry that can safely repeat without duplicating an unintended side effect."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-basic-reverse-04",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Workflow",
+        "LLM/tool orchestration through predefined code paths."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-basic-reverse-05",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Agent",
+        "A system where the model dynamically directs its own process and tool use."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-basic-reverse-03",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Orchestrator",
+        "The component that interprets the goal, decomposes work, delegates, and synthesizes results."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-basic-reverse-04",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Context isolation",
+        "Keeping independent worker contexts separate to reduce interference and pollution."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-basic-reverse-03",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Parallelization",
+        "Run independent subtasks concurrently and combine their results."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-basic-reverse-04",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Routing",
+        "Classify an input and send it to the appropriate specialized path."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-basic-reverse-03",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Technical metric",
+        "A system measure such as task success, latency, throughput, token use, or cost per task."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-basic-reverse-04",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Business metric",
+        "An outcome such as time saved, cases resolved, error reduction, revenue impact, or customer satisfaction."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-cloze-06",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Architecture should begin with the {{c1::business outcome}}, not the preferred AI component.",
+        "D1.1"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-cloze-07",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Hard authorization rules belong in {{c1::deterministic controls}} rather than relying only on prompts.",
+        "D1.1"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-cloze-08",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Convert vague goals into {{c1::measurable targets}} before choosing a model or pattern.",
+        "D1.1"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-cloze-06",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "For stateful workflows, define {{c1::state ownership}} explicitly rather than treating model context as durable state.",
+        "D1.2"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-cloze-07",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Design the {{c1::failure path}} at the same time as the happy path.",
+        "D1.2"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-cloze-08",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Current transactional facts should come from the {{c1::system of record}}.",
+        "D1.2"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-cloze-06",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "A {{c1::workflow}} follows predefined paths, while an agent dynamically chooses its process.",
+        "D1.3"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-cloze-07",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Prefer the {{c1::least autonomous}} pattern that still meets the requirement.",
+        "D1.3"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-cloze-05",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Multi-agent systems are justified by meaningful {{c1::isolation, parallelism, or specialization}}, not by novelty.",
+        "D1.4"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-cloze-06",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "The orchestrator should verify {{c1::coverage and worker outputs}} before synthesis.",
+        "D1.4"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-cloze-05",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Use {{c1::parallelization}} only when subtasks are genuinely independent.",
+        "D1.5"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-cloze-06",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "An {{c1::evaluator-optimizer}} loop needs measurable evaluation criteria, not vague critique.",
+        "D1.5"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-cloze-05",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Before claiming improvement, define a measurable {{c1::baseline}}.",
+        "D1.6"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-cloze-06",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Compare architectures using {{c1::total solution cost}}, not model-token cost alone.",
+        "D1.6"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-type-answer-09",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What requirement category includes latency, availability, residency, throughput, and cost constraints?",
+        "Non-functional requirements"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-type-answer-10",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What implementation request should be treated as a hypothesis rather than a requirement when a stakeholder asks for one?",
+        "Agent"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-type-answer-09",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What term describes the authoritative source for current operational state?",
+        "System of record"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-type-answer-10",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What property allows a side effect to be safely retried without unintended duplication?",
+        "Idempotency"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-type-answer-08",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What pattern uses predefined LLM/tool code paths?",
+        "Workflow"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-type-answer-09",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What pattern lets the model dynamically choose steps and tool use?",
+        "Agent"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-type-answer-07",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What multi-agent pattern uses a lead agent to delegate bounded subtasks?",
+        "Orchestrator-workers"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-type-answer-08",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What term describes keeping worker contexts separate to reduce interference?",
+        "Context isolation"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-type-answer-07",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What decomposition pattern classifies a request and sends it to a specialized path?",
+        "Routing"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-type-answer-07",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What term describes the starting measurement used to quantify improvement?",
+        "Baseline"
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-multiple-choice-11",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A stakeholder says, “Build us an autonomous agent.” What should the architect do first?",
+        "[{\"id\":\"a\",\"text\":\"Clarify the business outcome, constraints, and measurable success criteria.\"},{\"id\":\"b\",\"text\":\"Choose the most capable Claude model.\"},{\"id\":\"c\",\"text\":\"Create a multi-agent architecture.\"},{\"id\":\"d\",\"text\":\"Implement MCP for every backend.\"}]",
+        "a",
+        "Architecture starts from the outcome and constraints; “agent” is an implementation hypothesis."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-multiple-choice-12",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A finance workflow must classify expenses but refunds over $500 require exact enforcement. Where should the $500 rule live?",
+        "[{\"id\":\"a\",\"text\":\"In deterministic policy/authorization logic outside the model.\"},{\"id\":\"b\",\"text\":\"Only in the system prompt.\"},{\"id\":\"c\",\"text\":\"In a few-shot example.\"},{\"id\":\"d\",\"text\":\"Only in the model's explanation.\"}]",
+        "a",
+        "Hard thresholds should not depend on probabilistic model compliance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-multiple-choice-13",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A team has not defined what “better customer support” means. What is the best architecture next step?",
+        "[{\"id\":\"a\",\"text\":\"Define measurable outcome and acceptance criteria before selecting components.\"},{\"id\":\"b\",\"text\":\"Add retrieval immediately.\"},{\"id\":\"c\",\"text\":\"Benchmark the largest model.\"},{\"id\":\"d\",\"text\":\"Start with an autonomous agent and refine later.\"}]",
+        "a",
+        "A solution cannot be evaluated without a measurable target."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-multiple-choice-14",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which requirement should most strongly constrain architecture before model selection?",
+        "[{\"id\":\"a\",\"text\":\"A rule that regulated decisions require human approval.\"},{\"id\":\"b\",\"text\":\"A preference for a fashionable framework.\"},{\"id\":\"c\",\"text\":\"A desire to use as many tools as possible.\"},{\"id\":\"d\",\"text\":\"A preference for longer prompts.\"}]",
+        "a",
+        "Risk constraints can rule out otherwise capable architectures."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-multiple-choice-15",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A task is exact schema validation after Claude generates JSON. What is the strongest design?",
+        "[{\"id\":\"a\",\"text\":\"Validate the schema deterministically after generation.\"},{\"id\":\"b\",\"text\":\"Tell Claude to be extra careful.\"},{\"id\":\"c\",\"text\":\"Use a second model only.\"},{\"id\":\"d\",\"text\":\"Add more examples but no validator.\"}]",
+        "a",
+        "Exact invariants are best enforced by deterministic software."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-multiple-choice-11",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A support agent can issue account credits. Which architecture is strongest?",
+        "[{\"id\":\"a\",\"text\":\"Let Claude propose the credit, then deterministically verify identity, amount, and permission before execution.\"},{\"id\":\"b\",\"text\":\"Let Claude issue the credit directly if the prompt says to be cautious.\"},{\"id\":\"c\",\"text\":\"Store account balance in conversation memory.\"},{\"id\":\"d\",\"text\":\"Retry the credit call automatically after any timeout without idempotency.\"}]",
+        "a",
+        "Consequential actions need explicit authorization and safe failure behavior."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-multiple-choice-12",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A tool times out after a payment request, and the client cannot tell whether the payment executed. What must the architecture consider before retrying?",
+        "[{\"id\":\"a\",\"text\":\"Whether the operation is idempotent or has an idempotency key.\"},{\"id\":\"b\",\"text\":\"Whether the prompt is long enough.\"},{\"id\":\"c\",\"text\":\"Whether the model is the largest available.\"},{\"id\":\"d\",\"text\":\"Whether the response was friendly.\"}]",
+        "a",
+        "Blind retries of non-idempotent side effects can duplicate actions."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-multiple-choice-13",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A vector index contains yesterday's account balance. The user asks for the current balance. What should supply the answer?",
+        "[{\"id\":\"a\",\"text\":\"The authoritative account system/API.\"},{\"id\":\"b\",\"text\":\"The vector index because retrieval is faster.\"},{\"id\":\"c\",\"text\":\"Conversation memory.\"},{\"id\":\"d\",\"text\":\"A cached summary from yesterday.\"}]",
+        "a",
+        "Current operational state should come from the system of record."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-multiple-choice-14",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A multi-step agent fails intermittently, but no component shares a trace identifier. What architecture capability is missing?",
+        "[{\"id\":\"a\",\"text\":\"End-to-end observability/correlation across the request path.\"},{\"id\":\"b\",\"text\":\"A larger context window.\"},{\"id\":\"c\",\"text\":\"More worker agents.\"},{\"id\":\"d\",\"text\":\"More verbose system prompts.\"}]",
+        "a",
+        "The system must be reconstructable across components."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-multiple-choice-10",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A request always follows classify → retrieve → draft → validate. Which pattern best fits?",
+        "[{\"id\":\"a\",\"text\":\"A deterministic workflow.\"},{\"id\":\"b\",\"text\":\"A fully autonomous agent.\"},{\"id\":\"c\",\"text\":\"A multi-agent swarm.\"},{\"id\":\"d\",\"text\":\"An open-ended planner with unrestricted tools.\"}]",
+        "a",
+        "The steps are known in advance, so a workflow offers control without unnecessary autonomy."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-multiple-choice-11",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A research task requires discovering unknown subquestions and adapting to tool results. Which pattern is most appropriate?",
+        "[{\"id\":\"a\",\"text\":\"A bounded agent with dynamic planning.\"},{\"id\":\"b\",\"text\":\"A fixed one-step prompt only.\"},{\"id\":\"c\",\"text\":\"A rigid workflow with every path enumerated.\"},{\"id\":\"d\",\"text\":\"A schema validator alone.\"}]",
+        "a",
+        "Dynamic planning is valuable when the necessary steps cannot be predicted reliably."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-multiple-choice-12",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "One model call plus retrieval reliably solves a bounded classification task. What should the architect do?",
+        "[{\"id\":\"a\",\"text\":\"Keep the simple augmented-LLM design unless evaluation shows a need for more orchestration.\"},{\"id\":\"b\",\"text\":\"Add multiple agents for resilience.\"},{\"id\":\"c\",\"text\":\"Add an evaluator loop by default.\"},{\"id\":\"d\",\"text\":\"Split every label into a separate agent.\"}]",
+        "a",
+        "Complexity should earn measurable value."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-multiple-choice-13",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A system needs flexible investigation but exact approval before money moves. Which architecture is strongest?",
+        "[{\"id\":\"a\",\"text\":\"A hybrid: bounded agent for investigation plus deterministic approval/execution gates.\"},{\"id\":\"b\",\"text\":\"A fully autonomous agent with a warning prompt.\"},{\"id\":\"c\",\"text\":\"A fixed workflow that cannot adapt to evidence.\"},{\"id\":\"d\",\"text\":\"Only a human with no automation.\"}]",
+        "a",
+        "Hybrid designs place flexibility where useful and deterministic controls at consequential boundaries."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-multiple-choice-09",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Financial, legal, and technical diligence can be researched independently. What architecture best exploits this?",
+        "[{\"id\":\"a\",\"text\":\"Parallel specialist workers coordinated by an orchestrator.\"},{\"id\":\"b\",\"text\":\"One shared mutable prompt for all workers.\"},{\"id\":\"c\",\"text\":\"A worker agent for every sentence.\"},{\"id\":\"d\",\"text\":\"A fixed sequential chain even though tasks are independent.\"}]",
+        "a",
+        "Independent specialist work benefits from parallelism and context isolation."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-multiple-choice-10",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Three workers write into one mutable state object and overwrite each other's assumptions. What should be improved first?",
+        "[{\"id\":\"a\",\"text\":\"Define state ownership and explicit handoff/output contracts.\"},{\"id\":\"b\",\"text\":\"Increase model temperature.\"},{\"id\":\"c\",\"text\":\"Add more workers.\"},{\"id\":\"d\",\"text\":\"Remove tracing to reduce overhead.\"}]",
+        "a",
+        "Coordination boundaries and state ownership are core multi-agent design concerns."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-multiple-choice-11",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A single agent with two tools already completes a task reliably. What is the strongest reason NOT to add three specialist agents?",
+        "[{\"id\":\"a\",\"text\":\"The extra coordination complexity has no demonstrated benefit.\"},{\"id\":\"b\",\"text\":\"Agents cannot call tools.\"},{\"id\":\"c\",\"text\":\"Parallelism is never useful.\"},{\"id\":\"d\",\"text\":\"Subagents cannot have separate context.\"}]",
+        "a",
+        "Multi-agent complexity should be justified by isolation, parallelism, or specialization."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-multiple-choice-12",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "An orchestrator assumes every worker completed its assigned section and publishes an incomplete report. What control is missing?",
+        "[{\"id\":\"a\",\"text\":\"Coverage/completeness validation before synthesis.\"},{\"id\":\"b\",\"text\":\"A larger font in the final report.\"},{\"id\":\"c\",\"text\":\"More token budget for the orchestrator only.\"},{\"id\":\"d\",\"text\":\"Removing worker boundaries.\"}]",
+        "a",
+        "The coordinator must verify required work, not merely concatenate outputs."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-multiple-choice-08",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A document must be translated, then summarized, then checked for required fields. Which decomposition pattern best fits?",
+        "[{\"id\":\"a\",\"text\":\"Prompt chaining with validation between stages.\"},{\"id\":\"b\",\"text\":\"Unbounded multi-agent exploration.\"},{\"id\":\"c\",\"text\":\"Parallel execution of all stages.\"},{\"id\":\"d\",\"text\":\"No decomposition because multiple calls are always bad.\"}]",
+        "a",
+        "Each stage depends on the preceding output, so chaining is appropriate."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-multiple-choice-09",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Independent searches across four jurisdictions are required. Which pattern best reduces wall-clock time?",
+        "[{\"id\":\"a\",\"text\":\"Parallelize the independent searches and combine results.\"},{\"id\":\"b\",\"text\":\"Run them sequentially by default.\"},{\"id\":\"c\",\"text\":\"Route all four to one identical result.\"},{\"id\":\"d\",\"text\":\"Use evaluator-optimizer without parallel work.\"}]",
+        "a",
+        "Independent work can be parallelized safely."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-multiple-choice-10",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Requests belong to billing, technical support, or sales, each with different tools. Which pattern best fits?",
+        "[{\"id\":\"a\",\"text\":\"Routing to specialized paths.\"},{\"id\":\"b\",\"text\":\"One giant prompt with every tool.\"},{\"id\":\"c\",\"text\":\"Evaluator-optimizer only.\"},{\"id\":\"d\",\"text\":\"A random worker selection.\"}]",
+        "a",
+        "Classification followed by specialized handling is the routing pattern."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-multiple-choice-11",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A generated report can be scored against a precise rubric and revised until it passes. Which pattern fits?",
+        "[{\"id\":\"a\",\"text\":\"Evaluator-optimizer.\"},{\"id\":\"b\",\"text\":\"Routing.\"},{\"id\":\"c\",\"text\":\"Simple parallelization.\"},{\"id\":\"d\",\"text\":\"Unconditional retries.\"}]",
+        "a",
+        "The evaluator provides criterion-based feedback to an optimizer/generator."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-multiple-choice-08",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Architecture A halves token cost but doubles human-review time. Architecture B costs more in tokens but sharply reduces review. What should decide?",
+        "[{\"id\":\"a\",\"text\":\"Compare total operating cost and business outcome, not token cost alone.\"},{\"id\":\"b\",\"text\":\"Always choose the cheaper model call.\"},{\"id\":\"c\",\"text\":\"Always choose the higher-capability model.\"},{\"id\":\"d\",\"text\":\"Ignore human-review cost because it is not AI spend.\"}]",
+        "a",
+        "Business value depends on end-to-end cost and outcome."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-multiple-choice-09",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A team reports 95% model accuracy but cannot say whether customer resolution time improved. What is missing?",
+        "[{\"id\":\"a\",\"text\":\"A link between technical performance and a business outcome/baseline.\"},{\"id\":\"b\",\"text\":\"A larger model.\"},{\"id\":\"c\",\"text\":\"More agent autonomy.\"},{\"id\":\"d\",\"text\":\"A second vector database.\"}]",
+        "a",
+        "Technical metrics must connect to value."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-multiple-choice-10",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which measurement best supports an ROI claim for an automation project?",
+        "[{\"id\":\"a\",\"text\":\"Change from a pre-defined baseline in a business-relevant outcome, including ongoing costs.\"},{\"id\":\"b\",\"text\":\"Number of prompts written.\"},{\"id\":\"c\",\"text\":\"Total tokens consumed.\"},{\"id\":\"d\",\"text\":\"Number of tools exposed.\"}]",
+        "a",
+        "ROI requires baseline, outcome, and cost."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-multiple-choice-11",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A complex multi-agent design is 1% more accurate but doubles latency and operational burden. What should the architect do?",
+        "[{\"id\":\"a\",\"text\":\"Evaluate whether the measurable business gain justifies the added total cost and SLA impact.\"},{\"id\":\"b\",\"text\":\"Choose multi-agent because accuracy is always dominant.\"},{\"id\":\"c\",\"text\":\"Ignore operational burden.\"},{\"id\":\"d\",\"text\":\"Remove evaluation and decide by architecture sophistication.\"}]",
+        "a",
+        "Architecture trade-offs must be justified by business value and constraints."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-multiple-select-100",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support translating business problems into Claude-based solutions?",
+        "[{\"id\":\"a\",\"text\":\"Define the measurable business outcome before the component diagram.\"},{\"id\":\"b\",\"text\":\"Select the strongest model before clarifying the workload.\"},{\"id\":\"c\",\"text\":\"Identify hard risk constraints before choosing an autonomy level.\"},{\"id\":\"d\",\"text\":\"Use prompt wording as the only authorization control.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define the measurable business outcome before the component diagram.; Identify hard risk constraints before choosing an autonomy level.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-multiple-select-101",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing translating business problems into Claude-based solutions. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Identify hard risk constraints before choosing an autonomy level.\"},{\"id\":\"b\",\"text\":\"Treat the word “agent” as a mandatory architecture requirement.\"},{\"id\":\"c\",\"text\":\"Separate probabilistic language work from deterministic enforcement.\"},{\"id\":\"d\",\"text\":\"Skip measurable targets until after launch.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Identify hard risk constraints before choosing an autonomy level.; Separate probabilistic language work from deterministic enforcement.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-multiple-select-102",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in translating business problems into Claude-based solutions?",
+        "[{\"id\":\"a\",\"text\":\"Separate probabilistic language work from deterministic enforcement.\"},{\"id\":\"b\",\"text\":\"Use prompt wording as the only authorization control.\"},{\"id\":\"c\",\"text\":\"Define success and failure criteria before implementation.\"},{\"id\":\"d\",\"text\":\"Assume every step should use an LLM.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Separate probabilistic language work from deterministic enforcement.; Define success and failure criteria before implementation.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-multiple-select-103",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on translating business problems into Claude-based solutions, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Define success and failure criteria before implementation.\"},{\"id\":\"b\",\"text\":\"Skip measurable targets until after launch.\"},{\"id\":\"c\",\"text\":\"Treat stakeholder implementation preferences as hypotheses.\"},{\"id\":\"d\",\"text\":\"Select the strongest model before clarifying the workload.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define success and failure criteria before implementation.; Treat stakeholder implementation preferences as hypotheses.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-multiple-select-100",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support end-to-end Claude architecture?",
+        "[{\"id\":\"a\",\"text\":\"Define retry/fallback/escalation behavior for external dependencies.\"},{\"id\":\"b\",\"text\":\"Treat vector retrieval as the source of truth for current transactions.\"},{\"id\":\"c\",\"text\":\"Keep durable application state outside model context.\"},{\"id\":\"d\",\"text\":\"Assume chat history is durable application state.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define retry/fallback/escalation behavior for external dependencies.; Keep durable application state outside model context.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-multiple-select-101",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing end-to-end Claude architecture. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Keep durable application state outside model context.\"},{\"id\":\"b\",\"text\":\"Retry every failed side effect blindly.\"},{\"id\":\"c\",\"text\":\"Preserve trusted identity across boundaries.\"},{\"id\":\"d\",\"text\":\"Design only the happy path.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep durable application state outside model context.; Preserve trusted identity across boundaries.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-multiple-select-102",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in end-to-end Claude architecture?",
+        "[{\"id\":\"a\",\"text\":\"Preserve trusted identity across boundaries.\"},{\"id\":\"b\",\"text\":\"Assume chat history is durable application state.\"},{\"id\":\"c\",\"text\":\"Make failures visible to operators.\"},{\"id\":\"d\",\"text\":\"Let each worker keep conflicting copies of critical state.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Preserve trusted identity across boundaries.; Make failures visible to operators.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-multiple-select-103",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on end-to-end Claude architecture, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Make failures visible to operators.\"},{\"id\":\"b\",\"text\":\"Design only the happy path.\"},{\"id\":\"c\",\"text\":\"Use the authoritative source for live transactional state.\"},{\"id\":\"d\",\"text\":\"Treat vector retrieval as the source of truth for current transactions.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Make failures visible to operators.; Use the authoritative source for live transactional state.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-multiple-select-100",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support choosing augmented LLM, workflow, agent, or hybrid patterns?",
+        "[{\"id\":\"a\",\"text\":\"Use a workflow when steps are predictable.\"},{\"id\":\"b\",\"text\":\"Use an agent whenever a task has more than one step.\"},{\"id\":\"c\",\"text\":\"Use an agent when dynamic planning is necessary and measured.\"},{\"id\":\"d\",\"text\":\"Add multiple agents before testing a single-agent design.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use a workflow when steps are predictable.; Use an agent when dynamic planning is necessary and measured.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-multiple-select-101",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing choosing augmented LLM, workflow, agent, or hybrid patterns. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Use an agent when dynamic planning is necessary and measured.\"},{\"id\":\"b\",\"text\":\"Assume tool use automatically makes a system an agent.\"},{\"id\":\"c\",\"text\":\"Keep simple augmented calls when they already meet quality.\"},{\"id\":\"d\",\"text\":\"Treat autonomy as inherently better.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use an agent when dynamic planning is necessary and measured.; Keep simple augmented calls when they already meet quality.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-multiple-select-102",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in choosing augmented LLM, workflow, agent, or hybrid patterns?",
+        "[{\"id\":\"a\",\"text\":\"Keep simple augmented calls when they already meet quality.\"},{\"id\":\"b\",\"text\":\"Add multiple agents before testing a single-agent design.\"},{\"id\":\"c\",\"text\":\"Use hybrids to combine flexible reasoning with deterministic gates.\"},{\"id\":\"d\",\"text\":\"Ignore repeated-inference latency and cost.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep simple augmented calls when they already meet quality.; Use hybrids to combine flexible reasoning with deterministic gates.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-multiple-select-103",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on choosing augmented LLM, workflow, agent, or hybrid patterns, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Use hybrids to combine flexible reasoning with deterministic gates.\"},{\"id\":\"b\",\"text\":\"Treat autonomy as inherently better.\"},{\"id\":\"c\",\"text\":\"Evaluate complexity against latency, cost, and reliability.\"},{\"id\":\"d\",\"text\":\"Use an agent whenever a task has more than one step.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use hybrids to combine flexible reasoning with deterministic gates.; Evaluate complexity against latency, cost, and reliability.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-multiple-select-100",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support multi-agent orchestration?",
+        "[{\"id\":\"a\",\"text\":\"Use workers for independent parallelizable subtasks.\"},{\"id\":\"b\",\"text\":\"Create one agent per trivial step.\"},{\"id\":\"c\",\"text\":\"Define explicit worker inputs and outputs.\"},{\"id\":\"d\",\"text\":\"Assume worker completion without validation.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use workers for independent parallelizable subtasks.; Define explicit worker inputs and outputs.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-multiple-select-101",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing multi-agent orchestration. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Define explicit worker inputs and outputs.\"},{\"id\":\"b\",\"text\":\"Share mutable critical state without ownership.\"},{\"id\":\"c\",\"text\":\"Propagate trace identity across workers.\"},{\"id\":\"d\",\"text\":\"Lose trace continuity at handoffs.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define explicit worker inputs and outputs.; Propagate trace identity across workers.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-multiple-select-102",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in multi-agent orchestration?",
+        "[{\"id\":\"a\",\"text\":\"Propagate trace identity across workers.\"},{\"id\":\"b\",\"text\":\"Assume worker completion without validation.\"},{\"id\":\"c\",\"text\":\"Assign state ownership deliberately.\"},{\"id\":\"d\",\"text\":\"Use multi-agent architecture when one agent already meets requirements.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Propagate trace identity across workers.; Assign state ownership deliberately.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-multiple-select-103",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on multi-agent orchestration, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Assign state ownership deliberately.\"},{\"id\":\"b\",\"text\":\"Lose trace continuity at handoffs.\"},{\"id\":\"c\",\"text\":\"Validate coverage before synthesizing.\"},{\"id\":\"d\",\"text\":\"Create one agent per trivial step.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Assign state ownership deliberately.; Validate coverage before synthesizing.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-multiple-select-100",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support decomposing complex problems?",
+        "[{\"id\":\"a\",\"text\":\"Decompose when stages need different context or tools.\"},{\"id\":\"b\",\"text\":\"Split work by organizational chart instead of information boundary.\"},{\"id\":\"c\",\"text\":\"Validate useful intermediate outputs.\"},{\"id\":\"d\",\"text\":\"Use an LLM for every deterministic transformation.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Decompose when stages need different context or tools.; Validate useful intermediate outputs.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-multiple-select-101",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing decomposing complex problems. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Validate useful intermediate outputs.\"},{\"id\":\"b\",\"text\":\"Pass entire worker transcripts when concise outputs suffice.\"},{\"id\":\"c\",\"text\":\"Parallelize only independent work.\"},{\"id\":\"d\",\"text\":\"Add critique loops with no measurable rubric.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Validate useful intermediate outputs.; Parallelize only independent work.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-multiple-select-102",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in decomposing complex problems?",
+        "[{\"id\":\"a\",\"text\":\"Parallelize only independent work.\"},{\"id\":\"b\",\"text\":\"Use an LLM for every deterministic transformation.\"},{\"id\":\"c\",\"text\":\"Keep deterministic transforms in code when appropriate.\"},{\"id\":\"d\",\"text\":\"Parallelize steps with hidden dependencies.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Parallelize only independent work.; Keep deterministic transforms in code when appropriate.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-multiple-select-103",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on decomposing complex problems, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Keep deterministic transforms in code when appropriate.\"},{\"id\":\"b\",\"text\":\"Add critique loops with no measurable rubric.\"},{\"id\":\"c\",\"text\":\"Avoid decomposition when coordination cost exceeds benefit.\"},{\"id\":\"d\",\"text\":\"Split work by organizational chart instead of information boundary.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep deterministic transforms in code when appropriate.; Avoid decomposition when coordination cost exceeds benefit.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-multiple-select-100",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support aligning architecture to business value?",
+        "[{\"id\":\"a\",\"text\":\"Define a baseline before claiming improvement.\"},{\"id\":\"b\",\"text\":\"Optimize token cost even when task success drops.\"},{\"id\":\"c\",\"text\":\"Connect technical metrics to business outcomes.\"},{\"id\":\"d\",\"text\":\"Treat human review as free.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define a baseline before claiming improvement.; Connect technical metrics to business outcomes.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-multiple-select-101",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing aligning architecture to business value. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Connect technical metrics to business outcomes.\"},{\"id\":\"b\",\"text\":\"Report model accuracy without business context.\"},{\"id\":\"c\",\"text\":\"Include human review and operational complexity in cost.\"},{\"id\":\"d\",\"text\":\"Ignore operations and compliance cost.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Connect technical metrics to business outcomes.; Include human review and operational complexity in cost.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-multiple-select-102",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in aligning architecture to business value?",
+        "[{\"id\":\"a\",\"text\":\"Include human review and operational complexity in cost.\"},{\"id\":\"b\",\"text\":\"Treat human review as free.\"},{\"id\":\"c\",\"text\":\"Evaluate SLA effects alongside quality.\"},{\"id\":\"d\",\"text\":\"Prefer sophistication over measurable value.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Include human review and operational complexity in cost.; Evaluate SLA effects alongside quality.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-multiple-select-103",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on aligning architecture to business value, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Evaluate SLA effects alongside quality.\"},{\"id\":\"b\",\"text\":\"Ignore operations and compliance cost.\"},{\"id\":\"c\",\"text\":\"Measure cost per successful outcome.\"},{\"id\":\"d\",\"text\":\"Optimize token cost even when task success drops.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Evaluate SLA effects alongside quality.; Measure cost per successful outcome.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.1-ordering-200",
+      "objective": "D1.1",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.1-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a sound discovery-to-architecture flow.",
+        "[{\"id\":\"s1\",\"text\":\"Define the business outcome\"},{\"id\":\"s2\",\"text\":\"Quantify success and constraints\"},{\"id\":\"s3\",\"text\":\"Separate model vs deterministic responsibilities\"},{\"id\":\"s4\",\"text\":\"Select the simplest viable architecture\"}]",
+        "The architecture follows the outcome and constraints, not the reverse."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.1",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.2-ordering-201",
+      "objective": "D1.2",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.2-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a typical protected request path.",
+        "[{\"id\":\"s1\",\"text\":\"Authenticate the caller\"},{\"id\":\"s2\",\"text\":\"Validate input and gather context\"},{\"id\":\"s3\",\"text\":\"Run model/tool work\"},{\"id\":\"s4\",\"text\":\"Apply deterministic verification\"},{\"id\":\"s5\",\"text\":\"Execute output/action and record telemetry\"}]",
+        "Identity and validation precede model/tool work; protected execution follows verification."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.2",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.3-ordering-202",
+      "objective": "D1.3",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.3-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a sensible architecture-escalation strategy.",
+        "[{\"id\":\"s1\",\"text\":\"Test a simple augmented model call\"},{\"id\":\"s2\",\"text\":\"Add a workflow if predictable stages are needed\"},{\"id\":\"s3\",\"text\":\"Use a bounded agent if dynamic planning is required\"},{\"id\":\"s4\",\"text\":\"Add multi-agent complexity only when evaluation justifies it\"}]",
+        "Start simple and escalate only when measured requirements demand it."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.3",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.4-ordering-203",
+      "objective": "D1.4",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.4-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order the orchestrator-worker pattern.",
+        "[{\"id\":\"s1\",\"text\":\"Interpret the overall goal\"},{\"id\":\"s2\",\"text\":\"Decompose into bounded subtasks\"},{\"id\":\"s3\",\"text\":\"Delegate work to workers\"},{\"id\":\"s4\",\"text\":\"Collect and validate results\"},{\"id\":\"s5\",\"text\":\"Synthesize the final result\"}]",
+        "The orchestrator plans, delegates, validates, then synthesizes."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.4",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-ordering-204",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a prompt-chaining workflow.",
+        "[{\"id\":\"s1\",\"text\":\"Run the first bounded stage\"},{\"id\":\"s2\",\"text\":\"Validate its intermediate output\"},{\"id\":\"s3\",\"text\":\"Pass the validated result to the next stage\"},{\"id\":\"s4\",\"text\":\"Produce and verify the final output\"}]",
+        "Dependent stages execute in order with validation at useful boundaries."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.5-ordering-205",
+      "objective": "D1.5",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.5-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a routing workflow.",
+        "[{\"id\":\"s1\",\"text\":\"Receive the request\"},{\"id\":\"s2\",\"text\":\"Classify the request type\"},{\"id\":\"s3\",\"text\":\"Select the specialized path/tools\"},{\"id\":\"s4\",\"text\":\"Execute that path and return the result\"}]",
+        "Routing first identifies the category, then chooses the corresponding path."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.5",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d1.6-ordering-206",
+      "objective": "D1.6",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D1.6-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a simple value chain for an AI architecture.",
+        "[{\"id\":\"s1\",\"text\":\"Establish the baseline\"},{\"id\":\"s2\",\"text\":\"Measure the technical improvement\"},{\"id\":\"s3\",\"text\":\"Observe the operational change\"},{\"id\":\"s4\",\"text\":\"Measure the business outcome\"},{\"id\":\"s5\",\"text\":\"Compare against ongoing total cost\"}]",
+        "Value is established by comparing measurable outcome changes and ongoing cost to the baseline."
+      ],
+      "tags": [
+        "ccarp",
+        "d1",
+        "obj:d1.6",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    }
+  ]
+}
