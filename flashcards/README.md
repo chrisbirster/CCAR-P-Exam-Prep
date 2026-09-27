@@ -4,42 +4,55 @@ The CCAR-P deck targets **2,000 generated Deez cards** across P0, P1, and P2.
 
 ## P0 — complete
 
-The must-know P0 tier is now built and audited:
-
-- **630 logical Deez notes**
-- **700 generated study cards**
-- **all 38 objectives covered**
-- exact domain-weighted allocation
-- exact planned P0 note-type mix
-- human-approved source packet attached to every objective
-- zero duplicate normalized prompts
+- **630 logical notes**
+- **700 generated cards**
+- all 38 objectives
+- must-know architecture/security/evaluation coverage
 
 Artifacts:
 
-- [ccar-p-p0.nut](ccar-p-p0.nut) — shareable Deez v2 deck
-- [ccar-p-p0-api.json](ccar-p-p0-api.json) — full bulk API payload
-- [batches/p0-01.json](batches/p0-01.json) — 200 logical notes
-- [batches/p0-02.json](batches/p0-02.json) — 200 logical notes
-- [batches/p0-03.json](batches/p0-03.json) — 200 logical notes
-- [batches/p0-04.json](batches/p0-04.json) — 30 logical notes
-- [source/](source/) — inspectable source-of-truth logical notes
+- [ccar-p-p0.nut](ccar-p-p0.nut)
+- [ccar-p-p0-api.json](ccar-p-p0-api.json)
+- [batches/p0-01.json](batches/p0-01.json)
+- [batches/p0-02.json](batches/p0-02.json)
+- [batches/p0-03.json](batches/p0-03.json)
+- [batches/p0-04.json](batches/p0-04.json)
+
+## P1 — complete
+
+- **710 logical notes**
+- **800 generated cards**
+- all 38 objectives
+- broader scenarios, applied recall, nuance, and operational trade-offs
+- zero duplicate normalized prompts across P0 + P1
+
+Artifacts:
+
+- [ccar-p-p1.nut](ccar-p-p1.nut)
+- [ccar-p-p1-api.json](ccar-p-p1-api.json)
+- [batches/p1-01.json](batches/p1-01.json) — 200 notes
+- [batches/p1-02.json](batches/p1-02.json) — 200 notes
+- [batches/p1-03.json](batches/p1-03.json) — 200 notes
+- [batches/p1-04.json](batches/p1-04.json) — 110 notes
+
+[Inspect the source contract](source/).
+
+## Progress
+
+- P0 — 700 cards — **complete**
+- P1 — 800 cards — **complete**
+- P2 — 500 cards — pending
+- **Built so far: 1,500 / 2,000 generated cards**
 
 Build and audit:
 
 ```bash
-python3 scripts/audit_flashcards.py
+python3 scripts/generate_p1.py
+python3 scripts/audit_flashcards.py --priority p0 --priority p1 --cross-priority
 python3 scripts/build_flashcards.py --priority p0
+python3 scripts/build_flashcards.py --priority p1
 ```
 
-## Remaining deck
-
-The full plan remains:
-
-- P0 — 700 generated cards — **complete**
-- P1 — 800 generated cards — pending
-- P2 — 500 generated cards — pending
-- Total — 2,000 generated cards
-
-See [the flashcard plan](../docs/flashcard-plan.md) for the allocation, note-type rules, quality gate, and one-week study strategy.
+See [the flashcard plan](../docs/flashcard-plan.md) for the final allocation and one-week study strategy.
 
 The deck contains original study material derived from the published exam objectives and approved public references. Do not contribute memorized, copied, reconstructed, or confidential live exam questions.
