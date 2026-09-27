@@ -36,7 +36,8 @@ def main() -> None:
     parser.add_argument("--batch-size", type=int, default=200)
     args = parser.parse_args()
 
-    deck_name = deck_name or f"CCAR-P Exam Prep — {args.priority.upper()}"\n    notes = load_notes(args.priority)
+    deck_name = args.deck_name or f"CCAR-P Exam Prep — {args.priority.upper()}"
+    notes = load_notes(args.priority)
     BATCHES.mkdir(parents=True, exist_ok=True)
     nut_path = FLASH / f"ccar-p-{args.priority}.nut"
     api_path = FLASH / f"ccar-p-{args.priority}-api.json"
