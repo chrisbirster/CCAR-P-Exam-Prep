@@ -187,6 +187,46 @@ Verified P0 logical-note mix:
 
 The committed source files are audited in CI and must reproduce the committed `.nut`, API payload, and batches byte-for-byte.
 
+## P1 build status
+
+**P1 is complete:** 710 logical Deez notes generate exactly **800 study cards** across all 38 objectives.
+
+Download/import:
+
+- [P1 Deez deck](../flashcards/ccar-p-p1.nut)
+- [P1 API payload](../flashcards/ccar-p-p1-api.json)
+- [P0/P1 source notes](../flashcards/source/README.md)
+
+Verified P1 generated-card allocation:
+
+| Domain | P1 cards |
+| --- | ---: |
+| D1 | 136 |
+| D2 | 104 |
+| D3 | 152 |
+| D4 | 128 |
+| D5 | 112 |
+| D6 | 112 |
+| D7 | 56 |
+| **Total** | **800** |
+
+Verified P1 logical-note mix:
+
+| Type | Logical notes | Generated cards |
+| --- | ---: | ---: |
+| Basic | 140 | 140 |
+| Basic + Reverse | 90 | 180 |
+| Cloze | 130 | 130 |
+| Type Answer | 90 | 90 |
+| Multiple Choice | 130 | 130 |
+| Multiple Select | 100 | 100 |
+| Ordering | 30 | 30 |
+| **Total** | **710** | **800** |
+
+P0 + P1 now provide **1,500 generated cards**. The cross-priority audit rejects duplicate normalized prompts across both tiers.
+
+The remaining P2 allocation is intentionally preserved at exactly 500 generated cards.
+
 ## Priority tiers
 
 Two thousand cards is more material than most people can deeply learn from zero in seven days. Every note therefore receives a priority tag.
@@ -201,7 +241,7 @@ Study these first and repeatedly.
 
 ### P1 — Strong coverage
 
-**800 generated cards**
+**800 generated cards — complete**
 
 Broader scenarios, nuances, integrations, operational trade-offs, and secondary concepts.
 
