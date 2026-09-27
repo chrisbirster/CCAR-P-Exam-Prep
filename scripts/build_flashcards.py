@@ -48,9 +48,12 @@ def main() -> None:
         encoding="utf-8",
     )
 
+    generated_cards = sum(2 if n["note_type"] == "basic-reverse" else 1 for n in notes)
     api_payload = {
         "deck_name": args.deck_name,
         "priority": args.priority,
+        "generated_cards": generated_cards,
+        "logical_notes": len(notes),
         "notes": [
             {
                 "note_type": n["note_type"],
