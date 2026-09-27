@@ -145,23 +145,19 @@ def generate_objective(domain: str, objective: str, seeds: list[dict], counts: d
         ))
 
     # Bidirectional reinforcement: approved term/definition plus cloze terms.
-    reverse_pool: list[tuple[str,str,str]] = []
+    reverse_pool: list[tuple[str,str,str,str]] = []
     for seed in typed["basic-reverse"]:
-        reverse_pool.append((seed["fields"][0], seed["fields"][1], seed["id"]))
+        reverse_pool.append((seed["fields"][0], seed["fields"][1], seed["id"], "definition"))
     for seed in typed["cloze"]:
         term, context = extract_cloze(seed)
-        reverse_pool.append((term, f"Phrase that completes this {title} rule: {context}", seed["id"]))
-    reverse_labels = [
-        lambda term: f"{term} — {objective} application",
-        lambda term: f"{term} — operational use in {title}",
-        lambda term: f"{term} — design-review use in {title}",
-    ]
+        reverse_pool.append((term, f"Phrase that completes this {title} rule: {context}", seed["id"], "rule application"))
     for i in range(counts["basic-reverse"]):
-        term, definition, seed_id = reverse_pool[i % len(reverse_pool)]
+        term, definition, seed_id, lens = reverse_pool[i % len(reverse_pool)]
         cycle = i // len(reverse_pool)
+        suffix = "" if cycle == 0 else (" — operational lens" if cycle % 2 else " — design-review lens")
         out.append(make_note(
             domain, objective, "basic-reverse", i + 1,
-            [reverse_labels[cycle % len(reverse_labels)](term), definition],
+            [f"{term} — {lens} in {title}{suffix}", definition],
             "compare", seed_id,
         ))
 
