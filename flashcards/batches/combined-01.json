@@ -1,0 +1,1790 @@
+{
+  "notes": [
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect define before selecting Claude architecture components?",
+        "The measurable business outcome, constraints, and success criteria."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why is “we need an AI agent” not a complete requirement?",
+        "It names an implementation preference rather than the underlying outcome and constraints."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Which requirements should remain deterministic when correctness must not depend on probabilistic output?",
+        "Hard rules such as authorization, numeric thresholds, and schema validation."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why is a production Claude system more than a model call?",
+        "Because the request path also includes identity, context, tools, state, verification, outputs, observability, and recovery."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should be designed alongside the happy path?",
+        "The failure and recovery path."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should remain authoritative for current transactional facts?",
+        "The system of record, not chat history, a vector index, or a cached summary."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What distinguishes a workflow from an agent in Anthropic's architecture guidance?",
+        "A workflow follows predefined code paths; an agent dynamically decides how to accomplish the task and use tools."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "When is a workflow generally preferable to an agent?",
+        "When the process can be enumerated in advance and benefits from predictability and control."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "When is an agent justified?",
+        "When required steps cannot be reliably predetermined and dynamic planning/tool use provides measured benefit."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What is the orchestrator-worker pattern?",
+        "A lead agent decomposes work, delegates bounded subtasks, and synthesizes worker results."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What are strong reasons to use multiple agents?",
+        "Context isolation, parallel independent work, and meaningful specialization."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What is prompt chaining?",
+        "A sequence where each stage consumes the previous stage's output."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What is routing?",
+        "Classifying an input and sending it to the appropriate specialized path."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why is model-token cost alone insufficient for architecture comparison?",
+        "Total solution cost also includes engineering, infrastructure, human review, monitoring, incidents, and compliance overhead."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What must exist before claiming a business improvement?",
+        "A baseline and measurable outcome."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Outcome requirement",
+        "The measurable value or change the solution should create."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Risk constraint",
+        "A condition defining what the system must not do without stronger controls."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "System of record",
+        "The authoritative source for current operational state."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Idempotent retry",
+        "A retry that can safely repeat without duplicating an unintended side effect."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Workflow",
+        "LLM/tool orchestration through predefined code paths."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Agent",
+        "A system where the model dynamically directs its own process and tool use."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Orchestrator",
+        "The component that interprets the goal, decomposes work, delegates, and synthesizes results."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Context isolation",
+        "Keeping independent worker contexts separate to reduce interference and pollution."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Parallelization",
+        "Run independent subtasks concurrently and combine their results."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Routing",
+        "Classify an input and send it to the appropriate specialized path."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Technical metric",
+        "A system measure such as task success, latency, throughput, token use, or cost per task."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Business metric",
+        "An outcome such as time saved, cases resolved, error reduction, revenue impact, or customer satisfaction."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Architecture should begin with the {{c1::business outcome}}, not the preferred AI component.",
+        "D1.1"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Hard authorization rules belong in {{c1::deterministic controls}} rather than relying only on prompts.",
+        "D1.1"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Convert vague goals into {{c1::measurable targets}} before choosing a model or pattern.",
+        "D1.1"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For stateful workflows, define {{c1::state ownership}} explicitly rather than treating model context as durable state.",
+        "D1.2"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Design the {{c1::failure path}} at the same time as the happy path.",
+        "D1.2"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Current transactional facts should come from the {{c1::system of record}}.",
+        "D1.2"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "A {{c1::workflow}} follows predefined paths, while an agent dynamically chooses its process.",
+        "D1.3"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Prefer the {{c1::least autonomous}} pattern that still meets the requirement.",
+        "D1.3"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Multi-agent systems are justified by meaningful {{c1::isolation, parallelism, or specialization}}, not by novelty.",
+        "D1.4"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "The orchestrator should verify {{c1::coverage and worker outputs}} before synthesis.",
+        "D1.4"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Use {{c1::parallelization}} only when subtasks are genuinely independent.",
+        "D1.5"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "An {{c1::evaluator-optimizer}} loop needs measurable evaluation criteria, not vague critique.",
+        "D1.5"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Before claiming improvement, define a measurable {{c1::baseline}}.",
+        "D1.6"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Compare architectures using {{c1::total solution cost}}, not model-token cost alone.",
+        "D1.6"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What requirement category includes latency, availability, residency, throughput, and cost constraints?",
+        "Non-functional requirements"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What implementation request should be treated as a hypothesis rather than a requirement when a stakeholder asks for one?",
+        "Agent"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What term describes the authoritative source for current operational state?",
+        "System of record"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What property allows a side effect to be safely retried without unintended duplication?",
+        "Idempotency"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What pattern uses predefined LLM/tool code paths?",
+        "Workflow"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What pattern lets the model dynamically choose steps and tool use?",
+        "Agent"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What multi-agent pattern uses a lead agent to delegate bounded subtasks?",
+        "Orchestrator-workers"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What term describes keeping worker contexts separate to reduce interference?",
+        "Context isolation"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What decomposition pattern classifies a request and sends it to a specialized path?",
+        "Routing"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What term describes the starting measurement used to quantify improvement?",
+        "Baseline"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A stakeholder says, “Build us an autonomous agent.” What should the architect do first?",
+        "[{\"id\":\"a\",\"text\":\"Clarify the business outcome, constraints, and measurable success criteria.\"},{\"id\":\"b\",\"text\":\"Choose the most capable Claude model.\"},{\"id\":\"c\",\"text\":\"Create a multi-agent architecture.\"},{\"id\":\"d\",\"text\":\"Implement MCP for every backend.\"}]",
+        "a",
+        "Architecture starts from the outcome and constraints; “agent” is an implementation hypothesis."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A finance workflow must classify expenses but refunds over $500 require exact enforcement. Where should the $500 rule live?",
+        "[{\"id\":\"a\",\"text\":\"In deterministic policy/authorization logic outside the model.\"},{\"id\":\"b\",\"text\":\"Only in the system prompt.\"},{\"id\":\"c\",\"text\":\"In a few-shot example.\"},{\"id\":\"d\",\"text\":\"Only in the model's explanation.\"}]",
+        "a",
+        "Hard thresholds should not depend on probabilistic model compliance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A team has not defined what “better customer support” means. What is the best architecture next step?",
+        "[{\"id\":\"a\",\"text\":\"Define measurable outcome and acceptance criteria before selecting components.\"},{\"id\":\"b\",\"text\":\"Add retrieval immediately.\"},{\"id\":\"c\",\"text\":\"Benchmark the largest model.\"},{\"id\":\"d\",\"text\":\"Start with an autonomous agent and refine later.\"}]",
+        "a",
+        "A solution cannot be evaluated without a measurable target."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which requirement should most strongly constrain architecture before model selection?",
+        "[{\"id\":\"a\",\"text\":\"A rule that regulated decisions require human approval.\"},{\"id\":\"b\",\"text\":\"A preference for a fashionable framework.\"},{\"id\":\"c\",\"text\":\"A desire to use as many tools as possible.\"},{\"id\":\"d\",\"text\":\"A preference for longer prompts.\"}]",
+        "a",
+        "Risk constraints can rule out otherwise capable architectures."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A task is exact schema validation after Claude generates JSON. What is the strongest design?",
+        "[{\"id\":\"a\",\"text\":\"Validate the schema deterministically after generation.\"},{\"id\":\"b\",\"text\":\"Tell Claude to be extra careful.\"},{\"id\":\"c\",\"text\":\"Use a second model only.\"},{\"id\":\"d\",\"text\":\"Add more examples but no validator.\"}]",
+        "a",
+        "Exact invariants are best enforced by deterministic software."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A support agent can issue account credits. Which architecture is strongest?",
+        "[{\"id\":\"a\",\"text\":\"Let Claude propose the credit, then deterministically verify identity, amount, and permission before execution.\"},{\"id\":\"b\",\"text\":\"Let Claude issue the credit directly if the prompt says to be cautious.\"},{\"id\":\"c\",\"text\":\"Store account balance in conversation memory.\"},{\"id\":\"d\",\"text\":\"Retry the credit call automatically after any timeout without idempotency.\"}]",
+        "a",
+        "Consequential actions need explicit authorization and safe failure behavior."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A tool times out after a payment request, and the client cannot tell whether the payment executed. What must the architecture consider before retrying?",
+        "[{\"id\":\"a\",\"text\":\"Whether the operation is idempotent or has an idempotency key.\"},{\"id\":\"b\",\"text\":\"Whether the prompt is long enough.\"},{\"id\":\"c\",\"text\":\"Whether the model is the largest available.\"},{\"id\":\"d\",\"text\":\"Whether the response was friendly.\"}]",
+        "a",
+        "Blind retries of non-idempotent side effects can duplicate actions."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A vector index contains yesterday's account balance. The user asks for the current balance. What should supply the answer?",
+        "[{\"id\":\"a\",\"text\":\"The authoritative account system/API.\"},{\"id\":\"b\",\"text\":\"The vector index because retrieval is faster.\"},{\"id\":\"c\",\"text\":\"Conversation memory.\"},{\"id\":\"d\",\"text\":\"A cached summary from yesterday.\"}]",
+        "a",
+        "Current operational state should come from the system of record."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A multi-step agent fails intermittently, but no component shares a trace identifier. What architecture capability is missing?",
+        "[{\"id\":\"a\",\"text\":\"End-to-end observability/correlation across the request path.\"},{\"id\":\"b\",\"text\":\"A larger context window.\"},{\"id\":\"c\",\"text\":\"More worker agents.\"},{\"id\":\"d\",\"text\":\"More verbose system prompts.\"}]",
+        "a",
+        "The system must be reconstructable across components."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A request always follows classify → retrieve → draft → validate. Which pattern best fits?",
+        "[{\"id\":\"a\",\"text\":\"A deterministic workflow.\"},{\"id\":\"b\",\"text\":\"A fully autonomous agent.\"},{\"id\":\"c\",\"text\":\"A multi-agent swarm.\"},{\"id\":\"d\",\"text\":\"An open-ended planner with unrestricted tools.\"}]",
+        "a",
+        "The steps are known in advance, so a workflow offers control without unnecessary autonomy."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A research task requires discovering unknown subquestions and adapting to tool results. Which pattern is most appropriate?",
+        "[{\"id\":\"a\",\"text\":\"A bounded agent with dynamic planning.\"},{\"id\":\"b\",\"text\":\"A fixed one-step prompt only.\"},{\"id\":\"c\",\"text\":\"A rigid workflow with every path enumerated.\"},{\"id\":\"d\",\"text\":\"A schema validator alone.\"}]",
+        "a",
+        "Dynamic planning is valuable when the necessary steps cannot be predicted reliably."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "One model call plus retrieval reliably solves a bounded classification task. What should the architect do?",
+        "[{\"id\":\"a\",\"text\":\"Keep the simple augmented-LLM design unless evaluation shows a need for more orchestration.\"},{\"id\":\"b\",\"text\":\"Add multiple agents for resilience.\"},{\"id\":\"c\",\"text\":\"Add an evaluator loop by default.\"},{\"id\":\"d\",\"text\":\"Split every label into a separate agent.\"}]",
+        "a",
+        "Complexity should earn measurable value."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A system needs flexible investigation but exact approval before money moves. Which architecture is strongest?",
+        "[{\"id\":\"a\",\"text\":\"A hybrid: bounded agent for investigation plus deterministic approval/execution gates.\"},{\"id\":\"b\",\"text\":\"A fully autonomous agent with a warning prompt.\"},{\"id\":\"c\",\"text\":\"A fixed workflow that cannot adapt to evidence.\"},{\"id\":\"d\",\"text\":\"Only a human with no automation.\"}]",
+        "a",
+        "Hybrid designs place flexibility where useful and deterministic controls at consequential boundaries."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Financial, legal, and technical diligence can be researched independently. What architecture best exploits this?",
+        "[{\"id\":\"a\",\"text\":\"Parallel specialist workers coordinated by an orchestrator.\"},{\"id\":\"b\",\"text\":\"One shared mutable prompt for all workers.\"},{\"id\":\"c\",\"text\":\"A worker agent for every sentence.\"},{\"id\":\"d\",\"text\":\"A fixed sequential chain even though tasks are independent.\"}]",
+        "a",
+        "Independent specialist work benefits from parallelism and context isolation."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Three workers write into one mutable state object and overwrite each other's assumptions. What should be improved first?",
+        "[{\"id\":\"a\",\"text\":\"Define state ownership and explicit handoff/output contracts.\"},{\"id\":\"b\",\"text\":\"Increase model temperature.\"},{\"id\":\"c\",\"text\":\"Add more workers.\"},{\"id\":\"d\",\"text\":\"Remove tracing to reduce overhead.\"}]",
+        "a",
+        "Coordination boundaries and state ownership are core multi-agent design concerns."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A single agent with two tools already completes a task reliably. What is the strongest reason NOT to add three specialist agents?",
+        "[{\"id\":\"a\",\"text\":\"The extra coordination complexity has no demonstrated benefit.\"},{\"id\":\"b\",\"text\":\"Agents cannot call tools.\"},{\"id\":\"c\",\"text\":\"Parallelism is never useful.\"},{\"id\":\"d\",\"text\":\"Subagents cannot have separate context.\"}]",
+        "a",
+        "Multi-agent complexity should be justified by isolation, parallelism, or specialization."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "An orchestrator assumes every worker completed its assigned section and publishes an incomplete report. What control is missing?",
+        "[{\"id\":\"a\",\"text\":\"Coverage/completeness validation before synthesis.\"},{\"id\":\"b\",\"text\":\"A larger font in the final report.\"},{\"id\":\"c\",\"text\":\"More token budget for the orchestrator only.\"},{\"id\":\"d\",\"text\":\"Removing worker boundaries.\"}]",
+        "a",
+        "The coordinator must verify required work, not merely concatenate outputs."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A document must be translated, then summarized, then checked for required fields. Which decomposition pattern best fits?",
+        "[{\"id\":\"a\",\"text\":\"Prompt chaining with validation between stages.\"},{\"id\":\"b\",\"text\":\"Unbounded multi-agent exploration.\"},{\"id\":\"c\",\"text\":\"Parallel execution of all stages.\"},{\"id\":\"d\",\"text\":\"No decomposition because multiple calls are always bad.\"}]",
+        "a",
+        "Each stage depends on the preceding output, so chaining is appropriate."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Independent searches across four jurisdictions are required. Which pattern best reduces wall-clock time?",
+        "[{\"id\":\"a\",\"text\":\"Parallelize the independent searches and combine results.\"},{\"id\":\"b\",\"text\":\"Run them sequentially by default.\"},{\"id\":\"c\",\"text\":\"Route all four to one identical result.\"},{\"id\":\"d\",\"text\":\"Use evaluator-optimizer without parallel work.\"}]",
+        "a",
+        "Independent work can be parallelized safely."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Requests belong to billing, technical support, or sales, each with different tools. Which pattern best fits?",
+        "[{\"id\":\"a\",\"text\":\"Routing to specialized paths.\"},{\"id\":\"b\",\"text\":\"One giant prompt with every tool.\"},{\"id\":\"c\",\"text\":\"Evaluator-optimizer only.\"},{\"id\":\"d\",\"text\":\"A random worker selection.\"}]",
+        "a",
+        "Classification followed by specialized handling is the routing pattern."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A generated report can be scored against a precise rubric and revised until it passes. Which pattern fits?",
+        "[{\"id\":\"a\",\"text\":\"Evaluator-optimizer.\"},{\"id\":\"b\",\"text\":\"Routing.\"},{\"id\":\"c\",\"text\":\"Simple parallelization.\"},{\"id\":\"d\",\"text\":\"Unconditional retries.\"}]",
+        "a",
+        "The evaluator provides criterion-based feedback to an optimizer/generator."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Architecture A halves token cost but doubles human-review time. Architecture B costs more in tokens but sharply reduces review. What should decide?",
+        "[{\"id\":\"a\",\"text\":\"Compare total operating cost and business outcome, not token cost alone.\"},{\"id\":\"b\",\"text\":\"Always choose the cheaper model call.\"},{\"id\":\"c\",\"text\":\"Always choose the higher-capability model.\"},{\"id\":\"d\",\"text\":\"Ignore human-review cost because it is not AI spend.\"}]",
+        "a",
+        "Business value depends on end-to-end cost and outcome."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A team reports 95% model accuracy but cannot say whether customer resolution time improved. What is missing?",
+        "[{\"id\":\"a\",\"text\":\"A link between technical performance and a business outcome/baseline.\"},{\"id\":\"b\",\"text\":\"A larger model.\"},{\"id\":\"c\",\"text\":\"More agent autonomy.\"},{\"id\":\"d\",\"text\":\"A second vector database.\"}]",
+        "a",
+        "Technical metrics must connect to value."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which measurement best supports an ROI claim for an automation project?",
+        "[{\"id\":\"a\",\"text\":\"Change from a pre-defined baseline in a business-relevant outcome, including ongoing costs.\"},{\"id\":\"b\",\"text\":\"Number of prompts written.\"},{\"id\":\"c\",\"text\":\"Total tokens consumed.\"},{\"id\":\"d\",\"text\":\"Number of tools exposed.\"}]",
+        "a",
+        "ROI requires baseline, outcome, and cost."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A complex multi-agent design is 1% more accurate but doubles latency and operational burden. What should the architect do?",
+        "[{\"id\":\"a\",\"text\":\"Evaluate whether the measurable business gain justifies the added total cost and SLA impact.\"},{\"id\":\"b\",\"text\":\"Choose multi-agent because accuracy is always dominant.\"},{\"id\":\"c\",\"text\":\"Ignore operational burden.\"},{\"id\":\"d\",\"text\":\"Remove evaluation and decide by architecture sophistication.\"}]",
+        "a",
+        "Architecture trade-offs must be justified by business value and constraints."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support translating business problems into Claude-based solutions?",
+        "[{\"id\":\"a\",\"text\":\"Define the measurable business outcome before the component diagram.\"},{\"id\":\"b\",\"text\":\"Select the strongest model before clarifying the workload.\"},{\"id\":\"c\",\"text\":\"Identify hard risk constraints before choosing an autonomy level.\"},{\"id\":\"d\",\"text\":\"Use prompt wording as the only authorization control.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define the measurable business outcome before the component diagram.; Identify hard risk constraints before choosing an autonomy level.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing translating business problems into Claude-based solutions. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Identify hard risk constraints before choosing an autonomy level.\"},{\"id\":\"b\",\"text\":\"Treat the word “agent” as a mandatory architecture requirement.\"},{\"id\":\"c\",\"text\":\"Separate probabilistic language work from deterministic enforcement.\"},{\"id\":\"d\",\"text\":\"Skip measurable targets until after launch.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Identify hard risk constraints before choosing an autonomy level.; Separate probabilistic language work from deterministic enforcement.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in translating business problems into Claude-based solutions?",
+        "[{\"id\":\"a\",\"text\":\"Separate probabilistic language work from deterministic enforcement.\"},{\"id\":\"b\",\"text\":\"Use prompt wording as the only authorization control.\"},{\"id\":\"c\",\"text\":\"Define success and failure criteria before implementation.\"},{\"id\":\"d\",\"text\":\"Assume every step should use an LLM.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Separate probabilistic language work from deterministic enforcement.; Define success and failure criteria before implementation.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on translating business problems into Claude-based solutions, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Define success and failure criteria before implementation.\"},{\"id\":\"b\",\"text\":\"Skip measurable targets until after launch.\"},{\"id\":\"c\",\"text\":\"Treat stakeholder implementation preferences as hypotheses.\"},{\"id\":\"d\",\"text\":\"Select the strongest model before clarifying the workload.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define success and failure criteria before implementation.; Treat stakeholder implementation preferences as hypotheses.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support end-to-end Claude architecture?",
+        "[{\"id\":\"a\",\"text\":\"Define retry/fallback/escalation behavior for external dependencies.\"},{\"id\":\"b\",\"text\":\"Treat vector retrieval as the source of truth for current transactions.\"},{\"id\":\"c\",\"text\":\"Keep durable application state outside model context.\"},{\"id\":\"d\",\"text\":\"Assume chat history is durable application state.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define retry/fallback/escalation behavior for external dependencies.; Keep durable application state outside model context.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing end-to-end Claude architecture. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Keep durable application state outside model context.\"},{\"id\":\"b\",\"text\":\"Retry every failed side effect blindly.\"},{\"id\":\"c\",\"text\":\"Preserve trusted identity across boundaries.\"},{\"id\":\"d\",\"text\":\"Design only the happy path.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep durable application state outside model context.; Preserve trusted identity across boundaries.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in end-to-end Claude architecture?",
+        "[{\"id\":\"a\",\"text\":\"Preserve trusted identity across boundaries.\"},{\"id\":\"b\",\"text\":\"Assume chat history is durable application state.\"},{\"id\":\"c\",\"text\":\"Make failures visible to operators.\"},{\"id\":\"d\",\"text\":\"Let each worker keep conflicting copies of critical state.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Preserve trusted identity across boundaries.; Make failures visible to operators.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on end-to-end Claude architecture, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Make failures visible to operators.\"},{\"id\":\"b\",\"text\":\"Design only the happy path.\"},{\"id\":\"c\",\"text\":\"Use the authoritative source for live transactional state.\"},{\"id\":\"d\",\"text\":\"Treat vector retrieval as the source of truth for current transactions.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Make failures visible to operators.; Use the authoritative source for live transactional state.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support choosing augmented LLM, workflow, agent, or hybrid patterns?",
+        "[{\"id\":\"a\",\"text\":\"Use a workflow when steps are predictable.\"},{\"id\":\"b\",\"text\":\"Use an agent whenever a task has more than one step.\"},{\"id\":\"c\",\"text\":\"Use an agent when dynamic planning is necessary and measured.\"},{\"id\":\"d\",\"text\":\"Add multiple agents before testing a single-agent design.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use a workflow when steps are predictable.; Use an agent when dynamic planning is necessary and measured.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing choosing augmented LLM, workflow, agent, or hybrid patterns. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Use an agent when dynamic planning is necessary and measured.\"},{\"id\":\"b\",\"text\":\"Assume tool use automatically makes a system an agent.\"},{\"id\":\"c\",\"text\":\"Keep simple augmented calls when they already meet quality.\"},{\"id\":\"d\",\"text\":\"Treat autonomy as inherently better.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use an agent when dynamic planning is necessary and measured.; Keep simple augmented calls when they already meet quality.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in choosing augmented LLM, workflow, agent, or hybrid patterns?",
+        "[{\"id\":\"a\",\"text\":\"Keep simple augmented calls when they already meet quality.\"},{\"id\":\"b\",\"text\":\"Add multiple agents before testing a single-agent design.\"},{\"id\":\"c\",\"text\":\"Use hybrids to combine flexible reasoning with deterministic gates.\"},{\"id\":\"d\",\"text\":\"Ignore repeated-inference latency and cost.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep simple augmented calls when they already meet quality.; Use hybrids to combine flexible reasoning with deterministic gates.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on choosing augmented LLM, workflow, agent, or hybrid patterns, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Use hybrids to combine flexible reasoning with deterministic gates.\"},{\"id\":\"b\",\"text\":\"Treat autonomy as inherently better.\"},{\"id\":\"c\",\"text\":\"Evaluate complexity against latency, cost, and reliability.\"},{\"id\":\"d\",\"text\":\"Use an agent whenever a task has more than one step.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use hybrids to combine flexible reasoning with deterministic gates.; Evaluate complexity against latency, cost, and reliability.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support multi-agent orchestration?",
+        "[{\"id\":\"a\",\"text\":\"Use workers for independent parallelizable subtasks.\"},{\"id\":\"b\",\"text\":\"Create one agent per trivial step.\"},{\"id\":\"c\",\"text\":\"Define explicit worker inputs and outputs.\"},{\"id\":\"d\",\"text\":\"Assume worker completion without validation.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use workers for independent parallelizable subtasks.; Define explicit worker inputs and outputs.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing multi-agent orchestration. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Define explicit worker inputs and outputs.\"},{\"id\":\"b\",\"text\":\"Share mutable critical state without ownership.\"},{\"id\":\"c\",\"text\":\"Propagate trace identity across workers.\"},{\"id\":\"d\",\"text\":\"Lose trace continuity at handoffs.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define explicit worker inputs and outputs.; Propagate trace identity across workers.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in multi-agent orchestration?",
+        "[{\"id\":\"a\",\"text\":\"Propagate trace identity across workers.\"},{\"id\":\"b\",\"text\":\"Assume worker completion without validation.\"},{\"id\":\"c\",\"text\":\"Assign state ownership deliberately.\"},{\"id\":\"d\",\"text\":\"Use multi-agent architecture when one agent already meets requirements.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Propagate trace identity across workers.; Assign state ownership deliberately.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on multi-agent orchestration, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Assign state ownership deliberately.\"},{\"id\":\"b\",\"text\":\"Lose trace continuity at handoffs.\"},{\"id\":\"c\",\"text\":\"Validate coverage before synthesizing.\"},{\"id\":\"d\",\"text\":\"Create one agent per trivial step.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Assign state ownership deliberately.; Validate coverage before synthesizing.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support decomposing complex problems?",
+        "[{\"id\":\"a\",\"text\":\"Decompose when stages need different context or tools.\"},{\"id\":\"b\",\"text\":\"Split work by organizational chart instead of information boundary.\"},{\"id\":\"c\",\"text\":\"Validate useful intermediate outputs.\"},{\"id\":\"d\",\"text\":\"Use an LLM for every deterministic transformation.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Decompose when stages need different context or tools.; Validate useful intermediate outputs.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing decomposing complex problems. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Validate useful intermediate outputs.\"},{\"id\":\"b\",\"text\":\"Pass entire worker transcripts when concise outputs suffice.\"},{\"id\":\"c\",\"text\":\"Parallelize only independent work.\"},{\"id\":\"d\",\"text\":\"Add critique loops with no measurable rubric.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Validate useful intermediate outputs.; Parallelize only independent work.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in decomposing complex problems?",
+        "[{\"id\":\"a\",\"text\":\"Parallelize only independent work.\"},{\"id\":\"b\",\"text\":\"Use an LLM for every deterministic transformation.\"},{\"id\":\"c\",\"text\":\"Keep deterministic transforms in code when appropriate.\"},{\"id\":\"d\",\"text\":\"Parallelize steps with hidden dependencies.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Parallelize only independent work.; Keep deterministic transforms in code when appropriate.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on decomposing complex problems, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Keep deterministic transforms in code when appropriate.\"},{\"id\":\"b\",\"text\":\"Add critique loops with no measurable rubric.\"},{\"id\":\"c\",\"text\":\"Avoid decomposition when coordination cost exceeds benefit.\"},{\"id\":\"d\",\"text\":\"Split work by organizational chart instead of information boundary.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep deterministic transforms in code when appropriate.; Avoid decomposition when coordination cost exceeds benefit.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support aligning architecture to business value?",
+        "[{\"id\":\"a\",\"text\":\"Define a baseline before claiming improvement.\"},{\"id\":\"b\",\"text\":\"Optimize token cost even when task success drops.\"},{\"id\":\"c\",\"text\":\"Connect technical metrics to business outcomes.\"},{\"id\":\"d\",\"text\":\"Treat human review as free.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define a baseline before claiming improvement.; Connect technical metrics to business outcomes.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing aligning architecture to business value. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Connect technical metrics to business outcomes.\"},{\"id\":\"b\",\"text\":\"Report model accuracy without business context.\"},{\"id\":\"c\",\"text\":\"Include human review and operational complexity in cost.\"},{\"id\":\"d\",\"text\":\"Ignore operations and compliance cost.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Connect technical metrics to business outcomes.; Include human review and operational complexity in cost.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main architecture risk in aligning architecture to business value?",
+        "[{\"id\":\"a\",\"text\":\"Include human review and operational complexity in cost.\"},{\"id\":\"b\",\"text\":\"Treat human review as free.\"},{\"id\":\"c\",\"text\":\"Evaluate SLA effects alongside quality.\"},{\"id\":\"d\",\"text\":\"Prefer sophistication over measurable value.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Include human review and operational complexity in cost.; Evaluate SLA effects alongside quality.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on aligning architecture to business value, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Evaluate SLA effects alongside quality.\"},{\"id\":\"b\",\"text\":\"Ignore operations and compliance cost.\"},{\"id\":\"c\",\"text\":\"Measure cost per successful outcome.\"},{\"id\":\"d\",\"text\":\"Optimize token cost even when task success drops.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Evaluate SLA effects alongside quality.; Measure cost per successful outcome.. The other choices conflict with the approved architecture guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order a sound discovery-to-architecture flow.",
+        "[{\"id\":\"s1\",\"text\":\"Define the business outcome\"},{\"id\":\"s2\",\"text\":\"Quantify success and constraints\"},{\"id\":\"s3\",\"text\":\"Separate model vs deterministic responsibilities\"},{\"id\":\"s4\",\"text\":\"Select the simplest viable architecture\"}]",
+        "The architecture follows the outcome and constraints, not the reverse."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order a typical protected request path.",
+        "[{\"id\":\"s1\",\"text\":\"Authenticate the caller\"},{\"id\":\"s2\",\"text\":\"Validate input and gather context\"},{\"id\":\"s3\",\"text\":\"Run model/tool work\"},{\"id\":\"s4\",\"text\":\"Apply deterministic verification\"},{\"id\":\"s5\",\"text\":\"Execute output/action and record telemetry\"}]",
+        "Identity and validation precede model/tool work; protected execution follows verification."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order a sensible architecture-escalation strategy.",
+        "[{\"id\":\"s1\",\"text\":\"Test a simple augmented model call\"},{\"id\":\"s2\",\"text\":\"Add a workflow if predictable stages are needed\"},{\"id\":\"s3\",\"text\":\"Use a bounded agent if dynamic planning is required\"},{\"id\":\"s4\",\"text\":\"Add multi-agent complexity only when evaluation justifies it\"}]",
+        "Start simple and escalate only when measured requirements demand it."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order the orchestrator-worker pattern.",
+        "[{\"id\":\"s1\",\"text\":\"Interpret the overall goal\"},{\"id\":\"s2\",\"text\":\"Decompose into bounded subtasks\"},{\"id\":\"s3\",\"text\":\"Delegate work to workers\"},{\"id\":\"s4\",\"text\":\"Collect and validate results\"},{\"id\":\"s5\",\"text\":\"Synthesize the final result\"}]",
+        "The orchestrator plans, delegates, validates, then synthesizes."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order a prompt-chaining workflow.",
+        "[{\"id\":\"s1\",\"text\":\"Run the first bounded stage\"},{\"id\":\"s2\",\"text\":\"Validate its intermediate output\"},{\"id\":\"s3\",\"text\":\"Pass the validated result to the next stage\"},{\"id\":\"s4\",\"text\":\"Produce and verify the final output\"}]",
+        "Dependent stages execute in order with validation at useful boundaries."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order a routing workflow.",
+        "[{\"id\":\"s1\",\"text\":\"Receive the request\"},{\"id\":\"s2\",\"text\":\"Classify the request type\"},{\"id\":\"s3\",\"text\":\"Select the specialized path/tools\"},{\"id\":\"s4\",\"text\":\"Execute that path and return the result\"}]",
+        "Routing first identifies the category, then chooses the corresponding path."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order a simple value chain for an AI architecture.",
+        "[{\"id\":\"s1\",\"text\":\"Establish the baseline\"},{\"id\":\"s2\",\"text\":\"Measure the technical improvement\"},{\"id\":\"s3\",\"text\":\"Observe the operational change\"},{\"id\":\"s4\",\"text\":\"Measure the business outcome\"},{\"id\":\"s5\",\"text\":\"Compare against ongoing total cost\"}]",
+        "Value is established by comparing measurable outcome changes and ongoing cost to the baseline."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.6\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should drive Claude model selection?",
+        "Measured workload requirements across quality, latency, cost, tool use, context needs, and risk."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why should model names not be hard-coded as permanent architecture assumptions?",
+        "Model lineups have lifecycle states and change over time."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should happen after changing the model in production?",
+        "Re-run workload-specific regression, latency, safety, and cost evaluations."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What is the role of a system prompt in architecture?",
+        "To provide trusted behavioral instructions, scope, constraints, and output expectations."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why is a system prompt not an authorization boundary?",
+        "Model compliance is probabilistic; protected actions need enforceable controls outside the model."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "How should untrusted retrieved/user content be handled relative to trusted instructions?",
+        "Keep it structurally separated and do not allow it to silently redefine policy."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "When should few-shot examples be added?",
+        "When representative examples measurably improve ambiguous behavior, formatting, tone, or boundary cases."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What is zero-shot prompting?",
+        "Giving clear task instructions without examples."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What is the key principle of context engineering?",
+        "Put the smallest useful set of high-signal information in the model's active context for the current decision."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why is more context not automatically better?",
+        "Irrelevant or stale context consumes tokens and can compete with relevant information."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What content is a strong candidate for prompt reuse/caching?",
+        "Large stable instructions or reference material reused across many requests."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What content is a poor caching candidate?",
+        "Frequently changing transactional state that must be current."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Active model",
+        "A fully supported model recommended for current use."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Deprecated model",
+        "A model still functional for a period but no longer recommended and scheduled for retirement."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Behavioral instruction",
+        "Prompt guidance that influences how the model should act."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Enforceable control",
+        "Code, permissions, schema, policy, or approval logic that guarantees a boundary outside model compliance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Zero-shot",
+        "Clear direct instructions without worked examples."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Few-shot / multishot",
+        "Representative examples included to demonstrate desired behavior."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Active context",
+        "Information currently visible to the model for the present inference."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Compaction",
+        "Compressing a long interaction into a smaller representation that preserves important state and decisions."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Prompt template",
+        "Reusable stable prompt structure with request-specific variables."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Choose the model that meets the workload's {{c1::quality threshold}} at acceptable latency and cost.",
+        "D2.1"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Model migration should be treated as a {{c1::production change}} and re-evaluated.",
+        "D2.1"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Use prompts to guide behavior; use {{c1::deterministic controls}} to enforce hard security and policy invariants.",
+        "D2.2"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Keep trusted instructions structurally separate from {{c1::untrusted user or retrieved content}}.",
+        "D2.2"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "If a clear zero-shot prompt already passes the eval, extra examples may add {{c1::unnecessary tokens and maintenance}}.",
+        "D2.3"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Prompt engineering should respond to {{c1::observed evaluation failures}}, not ritual complexity.",
+        "D2.3"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "The context window should be treated as a finite {{c1::working set}}, not a database.",
+        "D2.4"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Large corpora are often better handled with {{c1::just-in-time retrieval}} than by preloading everything.",
+        "D2.4"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Reuse is safest when the content is {{c1::stable enough}} that freshness is not compromised.",
+        "D2.5"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "Agent Skills use {{c1::progressive disclosure}} so detailed resources can load only when relevant.",
+        "D2.5"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What lifecycle state follows Active in the documented set Active, Legacy, Deprecated, Retired?",
+        "Legacy"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What should compare candidate models on the real workload rather than generic reputation?",
+        "Evaluation suite"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What prompt layer should hold stable high-trust behavioral instructions?",
+        "System prompt"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What should enforce authorization rather than relying on the model?",
+        "Deterministic control"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What prompting technique provides representative examples?",
+        "Few-shot prompting"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What structured markup style can separate instructions, context, and examples in complex Claude prompts?",
+        "XML tags"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What technique summarizes a long trace while preserving critical state?",
+        "Compaction"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What Anthropic mechanism packages reusable instructions, scripts, and resources for agents?",
+        "Agent Skills"
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A routine classifier passes all quality thresholds on a faster model while a stronger model costs much more. What is the best choice?",
+        "[{\"id\":\"a\",\"text\":\"Use the faster model for that workload unless other constraints justify the stronger model.\"},{\"id\":\"b\",\"text\":\"Always use the strongest model.\"},{\"id\":\"c\",\"text\":\"Always use the cheapest model even if it fails quality.\"},{\"id\":\"d\",\"text\":\"Route randomly between models.\"}]",
+        "a",
+        "Model choice is a workload-specific trade-off, not a prestige decision."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A model is being retired. What should the team do before switching to its replacement?",
+        "[{\"id\":\"a\",\"text\":\"Run task-specific regression, safety, latency, and cost evaluation.\"},{\"id\":\"b\",\"text\":\"Assume the newer model is behaviorally identical.\"},{\"id\":\"c\",\"text\":\"Only compare benchmark scores.\"},{\"id\":\"d\",\"text\":\"Change the model without testing because the API shape is similar.\"}]",
+        "a",
+        "Model migration can change behavior and should be evaluated."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A workflow has easy classification cases and rare complex exceptions. What design may improve economics if validated?",
+        "[{\"id\":\"a\",\"text\":\"Route routine cases to a fast model and difficult cases to a stronger model.\"},{\"id\":\"b\",\"text\":\"Use the strongest model for every request by default.\"},{\"id\":\"c\",\"text\":\"Use the cheapest model for every request regardless of errors.\"},{\"id\":\"d\",\"text\":\"Remove evaluation and route by input length only.\"}]",
+        "a",
+        "Evaluated routing can match model capability to workload difficulty."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which evidence is strongest for choosing between two Claude models for a production task?",
+        "[{\"id\":\"a\",\"text\":\"Results on a representative eval suite for that task plus latency/cost measurements.\"},{\"id\":\"b\",\"text\":\"A generic leaderboard alone.\"},{\"id\":\"c\",\"text\":\"Which model name sounds newer.\"},{\"id\":\"d\",\"text\":\"A single anecdotal prompt.\"}]",
+        "a",
+        "Architecture should use representative workload evidence."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A refund policy says amounts over $500 require manager approval. What is the strongest implementation?",
+        "[{\"id\":\"a\",\"text\":\"Explain the rule in the prompt and enforce the threshold in deterministic approval logic.\"},{\"id\":\"b\",\"text\":\"Put the rule only in the system prompt.\"},{\"id\":\"c\",\"text\":\"Use a longer example showing a $499 refund.\"},{\"id\":\"d\",\"text\":\"Ask the model to self-check twice.\"}]",
+        "a",
+        "Prompts guide behavior; protected thresholds need enforceable controls."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Retrieved documents may contain malicious instructions. What prompt design is strongest?",
+        "[{\"id\":\"a\",\"text\":\"Clearly separate untrusted retrieved content from trusted instructions and restrict capabilities independently.\"},{\"id\":\"b\",\"text\":\"Concatenate all text into one unstructured prompt.\"},{\"id\":\"c\",\"text\":\"Tell retrieved text it is trusted.\"},{\"id\":\"d\",\"text\":\"Rely on the model to always ignore injections.\"}]",
+        "a",
+        "Trust boundaries should be explicit and backed by controls."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Downstream software requires valid structured output. What should the architecture add?",
+        "[{\"id\":\"a\",\"text\":\"An explicit output contract plus schema validation.\"},{\"id\":\"b\",\"text\":\"Only ask for JSON politely.\"},{\"id\":\"c\",\"text\":\"Increase temperature.\"},{\"id\":\"d\",\"text\":\"Remove the system prompt.\"}]",
+        "a",
+        "Structure should be specified and validated when machines depend on it."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A team wants reusable prompts with changing request data. Which design is best?",
+        "[{\"id\":\"a\",\"text\":\"Keep stable instructions in a template and inject request-specific variables separately.\"},{\"id\":\"b\",\"text\":\"Copy-paste a new giant prompt for every request.\"},{\"id\":\"c\",\"text\":\"Put all user data into the system policy section.\"},{\"id\":\"d\",\"text\":\"Mix examples, policy, and untrusted data without structure.\"}]",
+        "a",
+        "Templates separate stable instructions from variable content."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A classifier confuses two boundary cases even with clear instructions. What is a strong next step?",
+        "[{\"id\":\"a\",\"text\":\"Add a few representative examples that demonstrate the boundary distinction and re-evaluate.\"},{\"id\":\"b\",\"text\":\"Add dozens of irrelevant examples.\"},{\"id\":\"c\",\"text\":\"Switch to an agent immediately.\"},{\"id\":\"d\",\"text\":\"Hide the labels from the prompt.\"}]",
+        "a",
+        "Few-shot examples are useful when they target observed ambiguity."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A straightforward extraction task already meets its quality target zero-shot. What should the team do?",
+        "[{\"id\":\"a\",\"text\":\"Keep the simpler prompt unless evaluation identifies a failure.\"},{\"id\":\"b\",\"text\":\"Add chain-of-thought instructions automatically.\"},{\"id\":\"c\",\"text\":\"Add ten examples for safety.\"},{\"id\":\"d\",\"text\":\"Create a multi-agent workflow.\"}]",
+        "a",
+        "Use the lightest technique that passes the evaluation."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A long prompt mixes policy, examples, retrieved text, and user data. What improvement is most direct?",
+        "[{\"id\":\"a\",\"text\":\"Structure the prompt so trusted instructions, examples, context, and inputs are clearly separated.\"},{\"id\":\"b\",\"text\":\"Increase temperature.\"},{\"id\":\"c\",\"text\":\"Repeat every instruction three times.\"},{\"id\":\"d\",\"text\":\"Remove all examples regardless of performance.\"}]",
+        "a",
+        "Clear structure reduces ambiguity about the role of each section."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A retrieval system is returning the wrong document. What is the least promising first response?",
+        "[{\"id\":\"a\",\"text\":\"Endlessly rewrite the prompt without fixing retrieval.\"},{\"id\":\"b\",\"text\":\"Inspect retrieval results.\"},{\"id\":\"c\",\"text\":\"Evaluate chunking/ranking.\"},{\"id\":\"d\",\"text\":\"Correct the retrieval layer.\"}]",
+        "a",
+        "Prompting cannot compensate for missing or wrong evidence indefinitely."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "An agent preloads thousands of pages although each task uses only a few. What is the strongest change?",
+        "[{\"id\":\"a\",\"text\":\"Retrieve relevant content just in time instead of preloading the corpus.\"},{\"id\":\"b\",\"text\":\"Increase prompt verbosity.\"},{\"id\":\"c\",\"text\":\"Duplicate the corpus in conversation history.\"},{\"id\":\"d\",\"text\":\"Always use multiple agents.\"}]",
+        "a",
+        "JIT retrieval preserves context for relevant information."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A long-running agent approaches practical context limits. What should compaction preserve?",
+        "[{\"id\":\"a\",\"text\":\"Key decisions, constraints, unresolved work, and important evidence.\"},{\"id\":\"b\",\"text\":\"Every raw tool response verbatim.\"},{\"id\":\"c\",\"text\":\"Only the last user message.\"},{\"id\":\"d\",\"text\":\"Nothing; simply drop all prior state.\"}]",
+        "a",
+        "Compaction reduces size while preserving decision-critical information."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Two independent research tasks pollute each other's context. What pattern can help?",
+        "[{\"id\":\"a\",\"text\":\"Use context isolation with separate workers/subagents.\"},{\"id\":\"b\",\"text\":\"Merge all transcripts into one prompt.\"},{\"id\":\"c\",\"text\":\"Increase temperature.\"},{\"id\":\"d\",\"text\":\"Cache every tool result forever.\"}]",
+        "a",
+        "Separate contexts reduce interference between independent workstreams."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A team stores the only copy of an order's authoritative state in conversation history. What is wrong?",
+        "[{\"id\":\"a\",\"text\":\"Application state should live in an authoritative external store, not depend on the model context.\"},{\"id\":\"b\",\"text\":\"Conversation history is always more durable than databases.\"},{\"id\":\"c\",\"text\":\"The context should be made longer.\"},{\"id\":\"d\",\"text\":\"Only the system prompt needs changing.\"}]",
+        "a",
+        "Model context is a working set, not durable system state."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A legal workflow reuses the same large policy manual for thousands of requests. What is a strong optimization?",
+        "[{\"id\":\"a\",\"text\":\"Reuse/cache the stable reference content while fetching case-specific current state separately.\"},{\"id\":\"b\",\"text\":\"Cache each client's live case status indefinitely.\"},{\"id\":\"c\",\"text\":\"Duplicate the manual into every variable section.\"},{\"id\":\"d\",\"text\":\"Remove freshness checks from current data.\"}]",
+        "a",
+        "Stable repeated context is a good reuse target; volatile state is not."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A shared Skill changes how production agents perform a regulated workflow. How should it be managed?",
+        "[{\"id\":\"a\",\"text\":\"Version, review, test, and control changes like other operational assets.\"},{\"id\":\"b\",\"text\":\"Treat it as harmless prose with no review.\"},{\"id\":\"c\",\"text\":\"Let every user edit it globally.\"},{\"id\":\"d\",\"text\":\"Never regression-test Skill changes.\"}]",
+        "a",
+        "Reusable agent instructions/resources can change behavior and should be governed."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which data is the worst prompt-caching candidate?",
+        "[{\"id\":\"a\",\"text\":\"A user's current account balance that changes frequently.\"},{\"id\":\"b\",\"text\":\"A stable policy manual.\"},{\"id\":\"c\",\"text\":\"A fixed system instruction block.\"},{\"id\":\"d\",\"text\":\"A reusable set of examples.\"}]",
+        "a",
+        "Caching must not undermine freshness for live state."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A huge Skill library exists, but only one Skill is relevant per task. What design principle helps?",
+        "[{\"id\":\"a\",\"text\":\"Progressive disclosure/loading of the relevant Skill details.\"},{\"id\":\"b\",\"text\":\"Load every Skill in full on every request.\"},{\"id\":\"c\",\"text\":\"Disable Skills entirely.\"},{\"id\":\"d\",\"text\":\"Store live transactional state inside every Skill.\"}]",
+        "a",
+        "Progressive disclosure limits context to relevant reusable expertise."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support Claude model selection?",
+        "[{\"id\":\"a\",\"text\":\"Evaluate models on the actual workload.\"},{\"id\":\"b\",\"text\":\"Assume the newest model is always best.\"},{\"id\":\"c\",\"text\":\"Re-run regressions after model changes.\"},{\"id\":\"d\",\"text\":\"Swap models without regression testing.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Evaluate models on the actual workload.; Re-run regressions after model changes.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing Claude model selection. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Re-run regressions after model changes.\"},{\"id\":\"b\",\"text\":\"Choose solely from generic benchmark rank.\"},{\"id\":\"c\",\"text\":\"Include latency and cost alongside quality.\"},{\"id\":\"d\",\"text\":\"Hard-code permanent assumptions about one model name.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Re-run regressions after model changes.; Include latency and cost alongside quality.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in Claude model selection?",
+        "[{\"id\":\"a\",\"text\":\"Include latency and cost alongside quality.\"},{\"id\":\"b\",\"text\":\"Swap models without regression testing.\"},{\"id\":\"c\",\"text\":\"Treat current model availability as time-sensitive.\"},{\"id\":\"d\",\"text\":\"Route only to reduce price even if quality falls below threshold.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Include latency and cost alongside quality.; Treat current model availability as time-sensitive.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on Claude model selection, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Treat current model availability as time-sensitive.\"},{\"id\":\"b\",\"text\":\"Hard-code permanent assumptions about one model name.\"},{\"id\":\"c\",\"text\":\"Use routing only when it improves measured outcomes.\"},{\"id\":\"d\",\"text\":\"Assume the newest model is always best.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Treat current model availability as time-sensitive.; Use routing only when it improves measured outcomes.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support system prompts, templates, and guardrails?",
+        "[{\"id\":\"a\",\"text\":\"Use clear trusted instructions.\"},{\"id\":\"b\",\"text\":\"Treat a system prompt as an access-control list.\"},{\"id\":\"c\",\"text\":\"Separate untrusted content from policy.\"},{\"id\":\"d\",\"text\":\"Assume asking for JSON guarantees validity.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use clear trusted instructions.; Separate untrusted content from policy.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing system prompts, templates, and guardrails. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Separate untrusted content from policy.\"},{\"id\":\"b\",\"text\":\"Let retrieved text rewrite policy.\"},{\"id\":\"c\",\"text\":\"Validate machine-readable outputs.\"},{\"id\":\"d\",\"text\":\"Mix policy and user data indiscriminately.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Separate untrusted content from policy.; Validate machine-readable outputs.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in system prompts, templates, and guardrails?",
+        "[{\"id\":\"a\",\"text\":\"Validate machine-readable outputs.\"},{\"id\":\"b\",\"text\":\"Assume asking for JSON guarantees validity.\"},{\"id\":\"c\",\"text\":\"Enforce authorization outside the model.\"},{\"id\":\"d\",\"text\":\"Rely only on model refusal for irreversible actions.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Validate machine-readable outputs.; Enforce authorization outside the model.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on system prompts, templates, and guardrails, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Enforce authorization outside the model.\"},{\"id\":\"b\",\"text\":\"Mix policy and user data indiscriminately.\"},{\"id\":\"c\",\"text\":\"Use templates for stable reusable structure.\"},{\"id\":\"d\",\"text\":\"Treat a system prompt as an access-control list.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Enforce authorization outside the model.; Use templates for stable reusable structure.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support prompt engineering techniques?",
+        "[{\"id\":\"a\",\"text\":\"Start with clear direct instructions.\"},{\"id\":\"b\",\"text\":\"Force visible step-by-step reasoning for every task.\"},{\"id\":\"c\",\"text\":\"Add representative examples when evaluation shows ambiguity.\"},{\"id\":\"d\",\"text\":\"Use only easy examples.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Start with clear direct instructions.; Add representative examples when evaluation shows ambiguity.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing prompt engineering techniques. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Add representative examples when evaluation shows ambiguity.\"},{\"id\":\"b\",\"text\":\"Add examples before establishing a baseline.\"},{\"id\":\"c\",\"text\":\"Structure complex prompts explicitly.\"},{\"id\":\"d\",\"text\":\"Treat retrieval failures as prompt failures.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Add representative examples when evaluation shows ambiguity.; Structure complex prompts explicitly.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in prompt engineering techniques?",
+        "[{\"id\":\"a\",\"text\":\"Structure complex prompts explicitly.\"},{\"id\":\"b\",\"text\":\"Use only easy examples.\"},{\"id\":\"c\",\"text\":\"Use current model-specific thinking guidance.\"},{\"id\":\"d\",\"text\":\"Overfit a prompt to a tiny static eval.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Structure complex prompts explicitly.; Use current model-specific thinking guidance.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on prompt engineering techniques, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Use current model-specific thinking guidance.\"},{\"id\":\"b\",\"text\":\"Treat retrieval failures as prompt failures.\"},{\"id\":\"c\",\"text\":\"Change prompts in response to measured failures.\"},{\"id\":\"d\",\"text\":\"Force visible step-by-step reasoning for every task.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use current model-specific thinking guidance.; Change prompts in response to measured failures.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support context-window and token management?",
+        "[{\"id\":\"a\",\"text\":\"Load information when it is relevant to the next decision.\"},{\"id\":\"b\",\"text\":\"Preload every available document.\"},{\"id\":\"c\",\"text\":\"Compact long histories while preserving critical facts.\"},{\"id\":\"d\",\"text\":\"Assume larger windows eliminate relevance problems.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Load information when it is relevant to the next decision.; Compact long histories while preserving critical facts.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing context-window and token management. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Compact long histories while preserving critical facts.\"},{\"id\":\"b\",\"text\":\"Treat chat history as the database.\"},{\"id\":\"c\",\"text\":\"Keep durable state outside model context.\"},{\"id\":\"d\",\"text\":\"Summarize away hard constraints.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Compact long histories while preserving critical facts.; Keep durable state outside model context.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in context-window and token management?",
+        "[{\"id\":\"a\",\"text\":\"Keep durable state outside model context.\"},{\"id\":\"b\",\"text\":\"Assume larger windows eliminate relevance problems.\"},{\"id\":\"c\",\"text\":\"Use separate contexts for independent work.\"},{\"id\":\"d\",\"text\":\"Keep raw intermediate data forever.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep durable state outside model context.; Use separate contexts for independent work.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support prompt reuse, caching, and Skills?",
+        "[{\"id\":\"a\",\"text\":\"Reuse stable expensive context.\"},{\"id\":\"b\",\"text\":\"Cache rapidly changing business state indefinitely.\"},{\"id\":\"c\",\"text\":\"Keep volatile state fresh.\"},{\"id\":\"d\",\"text\":\"Use one giant reusable prompt for unrelated workloads.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Reuse stable expensive context.; Keep volatile state fresh.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing prompt reuse, caching, and Skills. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Keep volatile state fresh.\"},{\"id\":\"b\",\"text\":\"Let shared Skills change without review.\"},{\"id\":\"c\",\"text\":\"Version shared prompt assets and Skills.\"},{\"id\":\"d\",\"text\":\"Treat cache freshness as irrelevant.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep volatile state fresh.; Version shared prompt assets and Skills.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in prompt reuse, caching, and Skills?",
+        "[{\"id\":\"a\",\"text\":\"Version shared prompt assets and Skills.\"},{\"id\":\"b\",\"text\":\"Use one giant reusable prompt for unrelated workloads.\"},{\"id\":\"c\",\"text\":\"Use templates to separate stable and variable content.\"},{\"id\":\"d\",\"text\":\"Assume reusable instructions cannot create operational risk.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Version shared prompt assets and Skills.; Use templates to separate stable and variable content.. The other choices conflict with the approved guidance."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order a sound model-selection process.",
+        "[{\"id\":\"s1\",\"text\":\"Define task quality and operational thresholds\"},{\"id\":\"s2\",\"text\":\"Evaluate candidate models on representative cases\"},{\"id\":\"s3\",\"text\":\"Compare quality, latency, cost, and risk\"},{\"id\":\"s4\",\"text\":\"Select the model/routing policy\"},{\"id\":\"s5\",\"text\":\"Re-test when the model or workload changes\"}]",
+        "Requirements and evaluation precede selection; changes trigger re-evaluation."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.1\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order a secure prompt-to-action pattern.",
+        "[{\"id\":\"s1\",\"text\":\"Establish trusted system instructions\"},{\"id\":\"s2\",\"text\":\"Insert user/retrieved content as untrusted data\"},{\"id\":\"s3\",\"text\":\"Let the model propose an output/action\"},{\"id\":\"s4\",\"text\":\"Validate schema and authorization deterministically\"},{\"id\":\"s5\",\"text\":\"Execute only if controls pass\"}]",
+        "Behavioral prompting precedes deterministic validation and execution."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.2\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order an evidence-driven prompt-improvement loop.",
+        "[{\"id\":\"s1\",\"text\":\"Establish a simple baseline prompt\"},{\"id\":\"s2\",\"text\":\"Run representative evaluations\"},{\"id\":\"s3\",\"text\":\"Identify a specific failure mode\"},{\"id\":\"s4\",\"text\":\"Apply the lightest targeted prompting change\"},{\"id\":\"s5\",\"text\":\"Re-run evaluation and regression checks\"}]",
+        "Prompt complexity should be added in response to observed failures."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.3\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order a long-horizon context-management approach.",
+        "[{\"id\":\"s1\",\"text\":\"Keep authoritative state externally\"},{\"id\":\"s2\",\"text\":\"Retrieve only information relevant to the current step\"},{\"id\":\"s3\",\"text\":\"Work within the active context\"},{\"id\":\"s4\",\"text\":\"Compact older interactions when needed\"},{\"id\":\"s5\",\"text\":\"Reload external state/evidence for later decisions\"}]",
+        "External state and JIT context keep the working set bounded over time."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.4\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Order a safe prompt-reuse decision.",
+        "[{\"id\":\"s1\",\"text\":\"Identify repeated context\"},{\"id\":\"s2\",\"text\":\"Determine whether it is stable enough to reuse\"},{\"id\":\"s3\",\"text\":\"Separate volatile request/user state\"},{\"id\":\"s4\",\"text\":\"Cache or package the stable portion\"},{\"id\":\"s5\",\"text\":\"Invalidate or bypass reuse when freshness changes\"}]",
+        "Reuse follows stability analysis and must preserve freshness."
+      ],
+      "tags_json": "[\"ccarp\",\"d2\",\"obj:d2.5\",\"priority:p0\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why can exposing more tools to an agent be harmful?",
+        "It expands potential blast radius and can also make tool selection harder."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What is the least-privilege goal for agent tools?",
+        "Expose only the capabilities, data, credentials, and side effects required for the task."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "When can broad shell or filesystem tools be appropriate?",
+        "When the use case truly needs general-purpose capability and the environment, credentials, and permissions are strongly constrained."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.1\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What is the difference between authentication and authorization?",
+        "Authentication establishes identity; authorization determines what that identity may do."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why is a user message saying “I am an administrator” not authentication?",
+        "Identity must come from a trusted authentication mechanism, not untrusted prompt text."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.2\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why can adding a reranker or extra tool/model stage hurt a system even if quality improves?",
+        "Each extra stage adds latency and often cost, so the gain must justify the operational impact."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What work should be parallelized to reduce wall-clock latency?",
+        "Truly independent operations with no hidden dependency."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.3\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why is logging only the final model answer insufficient for agent debugging?",
+        "Failures can occur in retrieval, tool calls, orchestration, or external state before the final answer."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What does an agent trajectory capture?",
+        "The sequence of model decisions, tool calls, and intermediate interactions during a run."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.4\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What is the core purpose of RAG?",
+        "Retrieve relevant external knowledge and place it in model context at inference time."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Why does chunking matter in RAG?",
+        "Poor chunk boundaries can split semantic units and reduce retrieval relevance or interpretability."
+      ],
+      "tags_json": "[\"ccarp\",\"d3\",\"obj:d3.5\",\"priority:p0\",\"kind:concept\",\"source:approved\"]"
+    }
+  ]
+}
