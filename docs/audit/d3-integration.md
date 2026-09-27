@@ -1,12 +1,14 @@
 # D3 — Integration Audit
 
+**Human approval:** All Domain 3 objectives approved September 26, 2026. Evidence and interpretation caveats remain in force.
+
 **Domain 3 source collection:** [D3.md](D3.md)
 
 ## D3.1 — Capability bloat
 
 **Source packet:** [D3.1-sources.md](D3.1-sources.md)
 
-**Status:** VERIFIED WITH INTERPRETATION  
+**Status:** HUMAN APPROVED  
 **Audited:** September 26, 2026
 
 ### Blueprint fit
