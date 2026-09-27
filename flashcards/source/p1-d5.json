@@ -1736,7 +1736,7 @@
       "seed_id": "p0-d5.4-basic-reverse-01",
       "note_type": "cloze",
       "fields": [
-        "In regulatory compliance architecture, {{c1::Control evidence}} is the concept described as: Records/artifacts demonstrating that a required control is implemented and operating.",
+        "During an operational review, apply this regulatory compliance architecture rule: In regulatory compliance architecture, {{c1::Control evidence}} is the concept described as: Records/artifacts demonstrating that a required control is implemented and operating.",
         "Applied reinforcement for D5.4."
       ],
       "tags": [
