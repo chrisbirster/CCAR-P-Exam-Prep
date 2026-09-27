@@ -2006,7 +2006,7 @@
       "seed_id": "p0-d2.5-basic-reverse-01",
       "note_type": "cloze",
       "fields": [
-        "In prompt reuse, caching, and Skills, {{c1::Prompt template}} is the concept described as: Reusable stable prompt structure with request-specific variables.",
+        "During an operational review, apply this prompt reuse, caching, and Skills rule: In prompt reuse, caching, and Skills, {{c1::Prompt template}} is the concept described as: Reusable stable prompt structure with request-specific variables.",
         "Applied reinforcement for D2.5."
       ],
       "tags": [
