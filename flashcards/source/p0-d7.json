@@ -174,7 +174,7 @@
       ],
       "note_type": "basic-reverse",
       "fields": [
-        "Control",
+        "Enforceable control",
         "An enforceable runtime, permission, sandbox, policy, or CI boundary."
       ],
       "tags": [
@@ -243,7 +243,7 @@
       ],
       "note_type": "basic-reverse",
       "fields": [
-        "Runbook",
+        "Operational runbook",
         "Documented operational steps for diagnosis, mitigation, rollback/fallback, escalation, and evidence preservation."
       ],
       "tags": [
