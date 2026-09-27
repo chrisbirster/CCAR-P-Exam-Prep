@@ -27,6 +27,17 @@ jobs:
         with:
           version: 0.16.0
 
+      - name: Audit P0 flashcards
+        run: python3 scripts/audit_flashcards.py
+
+      - name: Rebuild P0 flashcard artifacts
+        run: |
+          python3 scripts/build_flashcards.py --priority p0
+          git diff --exit-code -- \
+            flashcards/ccar-p-p0.nut \
+            flashcards/ccar-p-p0-api.json \
+            flashcards/batches/
+
       - name: Build static site
         run: zig build
 
@@ -36,6 +47,10 @@ jobs:
           test -s dist/objectives/index.html
           test -s dist/flashcards/index.html
           test -s dist/references/index.html
+          test -s dist/flashcards/ccar-p-p0.nut
+          test -s dist/flashcards/ccar-p-p0-api.json
+          test -s dist/flashcards/batches/p0-01.json
+          test -s dist/flashcards/batches/p0-04.json
           test -s dist/style.css
           grep -q "CCAR-P Exam Prep" dist/index.html
           grep -q "Solution Design" dist/objectives/index.html
