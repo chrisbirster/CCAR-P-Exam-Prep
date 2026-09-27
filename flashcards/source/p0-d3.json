@@ -519,7 +519,7 @@
       ],
       "note_type": "basic-reverse",
       "fields": [
-        "Parallelization",
+        "Parallelization for latency",
         "Executing independent operations concurrently to reduce wall-clock time."
       ],
       "tags": [
