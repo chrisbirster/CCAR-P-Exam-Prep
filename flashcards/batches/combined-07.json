@@ -1227,6 +1227,516 @@
         "Evidence-driven diagnosis precedes mitigation and regression protection. Sequence reinforcement for D7.3."
       ],
       "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.3\",\"priority:p1\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A stakeholder says, “Build us an autonomous agent.” What should the architect do first? Which recommendation should they defend?",
+        "Clarify the business outcome, constraints, and measurable success criteria. Architecture starts from the outcome and constraints; “agent” is an implementation hypothesis. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved translating business problems into Claude-based solutions guidance to this case: A finance workflow must classify expenses but refunds over $500 require exact enforcement. Where should the $500 rule live?",
+        "In deterministic policy/authorization logic outside the model. Hard thresholds should not depend on probabilistic model compliance. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 judgment check for translating business problems into Claude-based solutions: state the best recommendation without answer choices. Which response best preserves the architecture principles in this situation? A team has not defined what “better customer support” means. What is the best architecture next step?",
+        "Define measurable outcome and acceptance criteria before selecting components. A solution cannot be evaluated without a measurable target. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Outcome requirement — D1.1 application — P2 synthesis lens for translating business problems into Claude-based solutions",
+        "The measurable value or change the solution should create."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Risk constraint — D1.1 application — P2 synthesis lens for translating business problems into Claude-based solutions",
+        "A condition defining what the system must not do without stronger controls."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for translating business problems into Claude-based solutions: the exact term for “Within translating business problems into Claude-based solutions, what term matches this definition: The measurable value or change the solution should create.” is {{c1::Outcome requirement}}.",
+        "Exact-term reinforcement for D1.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for translating business problems into Claude-based solutions: the exact term for “Within translating business problems into Claude-based solutions, what term matches this definition: A condition defining what the system must not do without stronger controls.” is {{c1::Risk constraint}}.",
+        "Exact-term reinforcement for D1.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for translating business problems into Claude-based solutions: the exact term for “What phrase completes this approved translating business problems into Claude-based solutions rule? Architecture should begin with the _____, not the preferred AI component.” is {{c1::business outcome}}.",
+        "Exact-term reinforcement for D1.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for translating business problems into Claude-based solutions: what phrase completes this rule? In translating business problems into Claude-based solutions, _____ is the concept described as: The measurable value or change the solution should create.",
+        "Outcome requirement"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for translating business problems into Claude-based solutions: what phrase completes this rule? In translating business problems into Claude-based solutions, _____ is the concept described as: A condition defining what the system must not do without stronger controls.",
+        "Risk constraint"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for translating business problems into Claude-based solutions: A design reviewer is evaluating this scenario: A stakeholder says, “Build us an autonomous agent.” What should the architect do first? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Implement MCP for every backend.\"},{\"id\":\"a\",\"text\":\"Clarify the business outcome, constraints, and measurable success criteria.\"},{\"id\":\"b\",\"text\":\"Choose the most capable Claude model.\"},{\"id\":\"c\",\"text\":\"Create a multi-agent architecture.\"}]",
+        "a",
+        "Architecture starts from the outcome and constraints; “agent” is an implementation hypothesis. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved translating business problems into Claude-based solutions guidance to this case: A finance workflow must classify expenses but refunds over $500 require exact enforcement. Where should the $500 rule live?",
+        "[{\"id\":\"b\",\"text\":\"Only in the system prompt.\"},{\"id\":\"c\",\"text\":\"In a few-shot example.\"},{\"id\":\"d\",\"text\":\"Only in the model's explanation.\"},{\"id\":\"a\",\"text\":\"In deterministic policy/authorization logic outside the model.\"}]",
+        "a",
+        "Hard thresholds should not depend on probabilistic model compliance. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for translating business problems into Claude-based solutions: which TWO controls or decisions still hold under scrutiny? During a translating business problems into Claude-based solutions review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support translating business problems into Claude-based solutions?",
+        "[{\"id\":\"d\",\"text\":\"Use prompt wording as the only authorization control.\"},{\"id\":\"a\",\"text\":\"Define the measurable business outcome before the component diagram.\"},{\"id\":\"b\",\"text\":\"Select the strongest model before clarifying the workload.\"},{\"id\":\"c\",\"text\":\"Identify hard risk constraints before choosing an autonomy level.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define the measurable business outcome before the component diagram.; Identify hard risk constraints before choosing an autonomy level.. The other choices conflict with the approved architecture guidance. This variant reinforces the approved decision set for D1.1. P2 reinforces the surviving decision set."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 edge-case review for translating business problems into Claude-based solutions: select the TWO recommendations that remain valid. Which TWO recommendations should survive an architecture review focused on translating business problems into Claude-based solutions? Context: An architect is reviewing translating business problems into Claude-based solutions. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"b\",\"text\":\"Treat the word “agent” as a mandatory architecture requirement.\"},{\"id\":\"c\",\"text\":\"Separate probabilistic language work from deterministic enforcement.\"},{\"id\":\"d\",\"text\":\"Skip measurable targets until after launch.\"},{\"id\":\"a\",\"text\":\"Identify hard risk constraints before choosing an autonomy level.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Identify hard risk constraints before choosing an autonomy level.; Separate probabilistic language work from deterministic enforcement.. The other choices conflict with the approved architecture guidance. This variant reinforces the approved decision set for D1.1. P2 reinforces the surviving decision set."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.1\",\"priority:p2\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A support agent can issue account credits. Which architecture is strongest? Which recommendation should they defend?",
+        "Let Claude propose the credit, then deterministically verify identity, amount, and permission before execution. Consequential actions need explicit authorization and safe failure behavior. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved end-to-end Claude architecture guidance to this case: A tool times out after a payment request, and the client cannot tell whether the payment executed. What must the architecture consider before retrying?",
+        "Whether the operation is idempotent or has an idempotency key. Blind retries of non-idempotent side effects can duplicate actions. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 judgment check for end-to-end Claude architecture: state the best recommendation without answer choices. Which response best preserves the architecture principles in this situation? A vector index contains yesterday's account balance. The user asks for the current balance. What should supply the answer?",
+        "The authoritative account system/API. Current operational state should come from the system of record. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "System of record — D1.2 application — P2 synthesis lens for end-to-end Claude architecture",
+        "The authoritative source for current operational state."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Idempotent retry — D1.2 application — P2 synthesis lens for end-to-end Claude architecture",
+        "A retry that can safely repeat without duplicating an unintended side effect."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for end-to-end Claude architecture: the exact term for “Within end-to-end Claude architecture, what term matches this definition: The authoritative source for current operational state.” is {{c1::System of record}}.",
+        "Exact-term reinforcement for D1.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for end-to-end Claude architecture: the exact term for “Within end-to-end Claude architecture, what term matches this definition: A retry that can safely repeat without duplicating an unintended side effect.” is {{c1::Idempotent retry}}.",
+        "Exact-term reinforcement for D1.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for end-to-end Claude architecture: the exact term for “What phrase completes this approved end-to-end Claude architecture rule? For stateful workflows, define _____ explicitly rather than treating model context as durable state.” is {{c1::state ownership}}.",
+        "Exact-term reinforcement for D1.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for end-to-end Claude architecture: what phrase completes this rule? In end-to-end Claude architecture, _____ is the concept described as: The authoritative source for current operational state.",
+        "System of record"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for end-to-end Claude architecture: what phrase completes this rule? In end-to-end Claude architecture, _____ is the concept described as: A retry that can safely repeat without duplicating an unintended side effect.",
+        "Idempotent retry"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for end-to-end Claude architecture: A design reviewer is evaluating this scenario: A support agent can issue account credits. Which architecture is strongest? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Retry the credit call automatically after any timeout without idempotency.\"},{\"id\":\"a\",\"text\":\"Let Claude propose the credit, then deterministically verify identity, amount, and permission before execution.\"},{\"id\":\"b\",\"text\":\"Let Claude issue the credit directly if the prompt says to be cautious.\"},{\"id\":\"c\",\"text\":\"Store account balance in conversation memory.\"}]",
+        "a",
+        "Consequential actions need explicit authorization and safe failure behavior. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved end-to-end Claude architecture guidance to this case: A tool times out after a payment request, and the client cannot tell whether the payment executed. What must the architecture consider before retrying?",
+        "[{\"id\":\"b\",\"text\":\"Whether the prompt is long enough.\"},{\"id\":\"c\",\"text\":\"Whether the model is the largest available.\"},{\"id\":\"d\",\"text\":\"Whether the response was friendly.\"},{\"id\":\"a\",\"text\":\"Whether the operation is idempotent or has an idempotency key.\"}]",
+        "a",
+        "Blind retries of non-idempotent side effects can duplicate actions. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for end-to-end Claude architecture: which TWO controls or decisions still hold under scrutiny? During a end-to-end Claude architecture review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support end-to-end Claude architecture?",
+        "[{\"id\":\"d\",\"text\":\"Assume chat history is durable application state.\"},{\"id\":\"a\",\"text\":\"Define retry/fallback/escalation behavior for external dependencies.\"},{\"id\":\"b\",\"text\":\"Treat vector retrieval as the source of truth for current transactions.\"},{\"id\":\"c\",\"text\":\"Keep durable application state outside model context.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define retry/fallback/escalation behavior for external dependencies.; Keep durable application state outside model context.. The other choices conflict with the approved architecture guidance. This variant reinforces the approved decision set for D1.2. P2 reinforces the surviving decision set."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 edge-case review for end-to-end Claude architecture: select the TWO recommendations that remain valid. Which TWO recommendations should survive an architecture review focused on end-to-end Claude architecture? Context: An architect is reviewing end-to-end Claude architecture. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"b\",\"text\":\"Retry every failed side effect blindly.\"},{\"id\":\"c\",\"text\":\"Preserve trusted identity across boundaries.\"},{\"id\":\"d\",\"text\":\"Design only the happy path.\"},{\"id\":\"a\",\"text\":\"Keep durable application state outside model context.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep durable application state outside model context.; Preserve trusted identity across boundaries.. The other choices conflict with the approved architecture guidance. This variant reinforces the approved decision set for D1.2. P2 reinforces the surviving decision set."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.2\",\"priority:p2\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A request always follows classify → retrieve → draft → validate. Which pattern best fits? Which recommendation should they defend?",
+        "A deterministic workflow. The steps are known in advance, so a workflow offers control without unnecessary autonomy. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved choosing augmented LLM, workflow, agent, or hybrid patterns guidance to this case: A research task requires discovering unknown subquestions and adapting to tool results. Which pattern is most appropriate?",
+        "A bounded agent with dynamic planning. Dynamic planning is valuable when the necessary steps cannot be predicted reliably. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 judgment check for choosing augmented LLM, workflow, agent, or hybrid patterns: state the best recommendation without answer choices. Which response best preserves the architecture principles in this situation? One model call plus retrieval reliably solves a bounded classification task. What should the architect do?",
+        "Keep the simple augmented-LLM design unless evaluation shows a need for more orchestration. Complexity should earn measurable value. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Workflow — D1.3 application — P2 synthesis lens for choosing augmented LLM, workflow, agent, or hybrid patterns",
+        "LLM/tool orchestration through predefined code paths."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Agent — D1.3 application — P2 synthesis lens for choosing augmented LLM, workflow, agent, or hybrid patterns",
+        "A system where the model dynamically directs its own process and tool use."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for choosing augmented LLM, workflow, agent, or hybrid patterns: the exact term for “Within choosing augmented LLM, workflow, agent, or hybrid patterns, what term matches this definition: LLM/tool orchestration through predefined code paths.” is {{c1::Workflow}}.",
+        "Exact-term reinforcement for D1.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for choosing augmented LLM, workflow, agent, or hybrid patterns: the exact term for “Within choosing augmented LLM, workflow, agent, or hybrid patterns, what term matches this definition: A system where the model dynamically directs its own process and tool use.” is {{c1::Agent}}.",
+        "Exact-term reinforcement for D1.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for choosing augmented LLM, workflow, agent, or hybrid patterns: the exact term for “What phrase completes this approved choosing augmented LLM, workflow, agent, or hybrid patterns rule? A _____ follows predefined paths, while an agent dynamically chooses its process.” is {{c1::workflow}}.",
+        "Exact-term reinforcement for D1.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for choosing augmented LLM, workflow, agent, or hybrid patterns: what phrase completes this rule? In choosing augmented LLM, workflow, agent, or hybrid patterns, _____ is the concept described as: LLM/tool orchestration through predefined code paths.",
+        "Workflow"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for choosing augmented LLM, workflow, agent, or hybrid patterns: what phrase completes this rule? In choosing augmented LLM, workflow, agent, or hybrid patterns, _____ is the concept described as: A system where the model dynamically directs its own process and tool use.",
+        "Agent"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for choosing augmented LLM, workflow, agent, or hybrid patterns: A design reviewer is evaluating this scenario: A request always follows classify → retrieve → draft → validate. Which pattern best fits? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"An open-ended planner with unrestricted tools.\"},{\"id\":\"a\",\"text\":\"A deterministic workflow.\"},{\"id\":\"b\",\"text\":\"A fully autonomous agent.\"},{\"id\":\"c\",\"text\":\"A multi-agent swarm.\"}]",
+        "a",
+        "The steps are known in advance, so a workflow offers control without unnecessary autonomy. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved choosing augmented LLM, workflow, agent, or hybrid patterns guidance to this case: A research task requires discovering unknown subquestions and adapting to tool results. Which pattern is most appropriate?",
+        "[{\"id\":\"b\",\"text\":\"A fixed one-step prompt only.\"},{\"id\":\"c\",\"text\":\"A rigid workflow with every path enumerated.\"},{\"id\":\"d\",\"text\":\"A schema validator alone.\"},{\"id\":\"a\",\"text\":\"A bounded agent with dynamic planning.\"}]",
+        "a",
+        "Dynamic planning is valuable when the necessary steps cannot be predicted reliably. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for choosing augmented LLM, workflow, agent, or hybrid patterns: which TWO controls or decisions still hold under scrutiny? During a choosing augmented LLM, workflow, agent, or hybrid patterns review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support choosing augmented LLM, workflow, agent, or hybrid patterns?",
+        "[{\"id\":\"d\",\"text\":\"Add multiple agents before testing a single-agent design.\"},{\"id\":\"a\",\"text\":\"Use a workflow when steps are predictable.\"},{\"id\":\"b\",\"text\":\"Use an agent whenever a task has more than one step.\"},{\"id\":\"c\",\"text\":\"Use an agent when dynamic planning is necessary and measured.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use a workflow when steps are predictable.; Use an agent when dynamic planning is necessary and measured.. The other choices conflict with the approved architecture guidance. This variant reinforces the approved decision set for D1.3. P2 reinforces the surviving decision set."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.3\",\"priority:p2\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: Financial, legal, and technical diligence can be researched independently. What architecture best exploits this? Which recommendation should they defend?",
+        "Parallel specialist workers coordinated by an orchestrator. Independent specialist work benefits from parallelism and context isolation. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved multi-agent orchestration guidance to this case: Three workers write into one mutable state object and overwrite each other's assumptions. What should be improved first?",
+        "Define state ownership and explicit handoff/output contracts. Coordination boundaries and state ownership are core multi-agent design concerns. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Orchestrator — D1.4 application — P2 synthesis lens for multi-agent orchestration",
+        "The component that interprets the goal, decomposes work, delegates, and synthesizes results."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Context isolation — D1.4 application — P2 synthesis lens for multi-agent orchestration",
+        "Keeping independent worker contexts separate to reduce interference and pollution."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for multi-agent orchestration: the exact term for “Within multi-agent orchestration, what term matches this definition: The component that interprets the goal, decomposes work, delegates, and synthesizes results.” is {{c1::Orchestrator}}.",
+        "Exact-term reinforcement for D1.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for multi-agent orchestration: the exact term for “Within multi-agent orchestration, what term matches this definition: Keeping independent worker contexts separate to reduce interference and pollution.” is {{c1::Context isolation}}.",
+        "Exact-term reinforcement for D1.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for multi-agent orchestration: what phrase completes this rule? In multi-agent orchestration, _____ is the concept described as: The component that interprets the goal, decomposes work, delegates, and synthesizes results.",
+        "Orchestrator"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for multi-agent orchestration: what phrase completes this rule? In multi-agent orchestration, _____ is the concept described as: Keeping independent worker contexts separate to reduce interference and pollution.",
+        "Context isolation"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for multi-agent orchestration: A design reviewer is evaluating this scenario: Financial, legal, and technical diligence can be researched independently. What architecture best exploits this? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"A fixed sequential chain even though tasks are independent.\"},{\"id\":\"a\",\"text\":\"Parallel specialist workers coordinated by an orchestrator.\"},{\"id\":\"b\",\"text\":\"One shared mutable prompt for all workers.\"},{\"id\":\"c\",\"text\":\"A worker agent for every sentence.\"}]",
+        "a",
+        "Independent specialist work benefits from parallelism and context isolation. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved multi-agent orchestration guidance to this case: Three workers write into one mutable state object and overwrite each other's assumptions. What should be improved first?",
+        "[{\"id\":\"b\",\"text\":\"Increase model temperature.\"},{\"id\":\"c\",\"text\":\"Add more workers.\"},{\"id\":\"d\",\"text\":\"Remove tracing to reduce overhead.\"},{\"id\":\"a\",\"text\":\"Define state ownership and explicit handoff/output contracts.\"}]",
+        "a",
+        "Coordination boundaries and state ownership are core multi-agent design concerns. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for multi-agent orchestration: which TWO controls or decisions still hold under scrutiny? During a multi-agent orchestration review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support multi-agent orchestration?",
+        "[{\"id\":\"d\",\"text\":\"Assume worker completion without validation.\"},{\"id\":\"a\",\"text\":\"Use workers for independent parallelizable subtasks.\"},{\"id\":\"b\",\"text\":\"Create one agent per trivial step.\"},{\"id\":\"c\",\"text\":\"Define explicit worker inputs and outputs.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use workers for independent parallelizable subtasks.; Define explicit worker inputs and outputs.. The other choices conflict with the approved architecture guidance. This variant reinforces the approved decision set for D1.4. P2 reinforces the surviving decision set."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.4\",\"priority:p2\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A document must be translated, then summarized, then checked for required fields. Which decomposition pattern best fits? Which recommendation should they defend?",
+        "Prompt chaining with validation between stages. Each stage depends on the preceding output, so chaining is appropriate. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved decomposing complex problems guidance to this case: Independent searches across four jurisdictions are required. Which pattern best reduces wall-clock time?",
+        "Parallelize the independent searches and combine results. Independent work can be parallelized safely. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Parallelization — D1.5 application — P2 synthesis lens for decomposing complex problems",
+        "Run independent subtasks concurrently and combine their results."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for decomposing complex problems: the exact term for “Within decomposing complex problems, what term matches this definition: Run independent subtasks concurrently and combine their results.” is {{c1::Parallelization}}.",
+        "Exact-term reinforcement for D1.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for decomposing complex problems: the exact term for “Within decomposing complex problems, what term matches this definition: Classify an input and send it to the appropriate specialized path.” is {{c1::Routing}}.",
+        "Exact-term reinforcement for D1.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for decomposing complex problems: what phrase completes this rule? In decomposing complex problems, _____ is the concept described as: Run independent subtasks concurrently and combine their results.",
+        "Parallelization"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for decomposing complex problems: what phrase completes this rule? In decomposing complex problems, _____ is the concept described as: Classify an input and send it to the appropriate specialized path.",
+        "Routing"
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for decomposing complex problems: A design reviewer is evaluating this scenario: A document must be translated, then summarized, then checked for required fields. Which decomposition pattern best fits? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"No decomposition because multiple calls are always bad.\"},{\"id\":\"a\",\"text\":\"Prompt chaining with validation between stages.\"},{\"id\":\"b\",\"text\":\"Unbounded multi-agent exploration.\"},{\"id\":\"c\",\"text\":\"Parallel execution of all stages.\"}]",
+        "a",
+        "Each stage depends on the preceding output, so chaining is appropriate. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d1\",\"obj:d1.5\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
     }
   ]
 }
