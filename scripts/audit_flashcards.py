@@ -56,8 +56,9 @@ def validate_note(note: dict, errors: list[str]) -> int:
         fail(errors, f"{note_id}: {nt} requires {FIELD_COUNTS[nt]} fields")
 
     obj = note["objective"].lower()
+    domain = obj.split(".", 1)[0]
     tags = note["tags"]
-    required_tags = {"ccarp",obj,f"obj:{obj}",f"priority:{note['priority']}",f"kind:{note['kind']}","source:approved"}
+    required_tags = {"ccarp",domain,f"obj:{obj}",f"priority:{note['priority']}",f"kind:{note['kind']}","source:approved"}
     missing_tags = required_tags - set(tags)
     if missing_tags:
         fail(errors, f"{note_id}: missing tags {sorted(missing_tags)}")
