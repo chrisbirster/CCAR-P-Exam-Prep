@@ -462,7 +462,7 @@ def main() -> None:
     # Publish generated study artifacts alongside the flashcard-plan page.
     flashcard_dist = DIST / "flashcards"
     flashcard_dist.mkdir(parents=True, exist_ok=True)
-    for priority in ("p0", "p1"):
+    for priority in ("p0", "p1", "p2"):
         for suffix in (".nut", "-api.json"):
             source = ROOT / "flashcards" / f"ccar-p-{priority}{suffix}"
             if source.exists():
