@@ -468,6 +468,11 @@ def main() -> None:
             if source.exists():
                 shutil.copy2(source, flashcard_dist / source.name)
 
+    for name in ("ccar-p-combined.nut", "ccar-p-combined-api.json"):
+        source = ROOT / "flashcards" / name
+        if source.exists():
+            shutil.copy2(source, flashcard_dist / name)
+
     source_batches = ROOT / "flashcards" / "batches"
     if source_batches.exists():
         batch_dist = flashcard_dist / "batches"
@@ -475,6 +480,8 @@ def main() -> None:
         for priority in ("p0", "p1"):
             for source in sorted(source_batches.glob(f"{priority}-*.json")):
                 shutil.copy2(source, batch_dist / source.name)
+        for source in sorted(source_batches.glob("combined-*.json")):
+            shutil.copy2(source, batch_dist / source.name)
 
     global CURRENT_SOURCE, CURRENT_OUTPUT
 
