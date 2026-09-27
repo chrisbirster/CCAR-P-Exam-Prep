@@ -1,0 +1,348 @@
+{
+  "notes": [
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for solution lifecycle management: the exact term for “Within solution lifecycle management, what term matches this definition: Evidence-driven changes after design/launch, accompanied by updated evaluation and documentation.” is {{c1::Iteration}}.",
+        "Exact-term reinforcement for D6.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.5\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for solution lifecycle management: what phrase completes this rule? In solution lifecycle management, _____ is the concept described as: Transition from architecture/design into implementation and operational ownership with acceptance criteria and guidance.",
+        "Handoff"
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.5\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for solution lifecycle management: what phrase completes this rule? In solution lifecycle management, _____ is the concept described as: Evidence-driven changes after design/launch, accompanied by updated evaluation and documentation.",
+        "Iteration"
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.5\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for solution lifecycle management: A design reviewer is evaluating this scenario: A team launches before agreeing on acceptance criteria, then tries to infer success from dashboards. Which lifecycle problem occurred? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Iteration eliminates the need for acceptance criteria.\"},{\"id\":\"a\",\"text\":\"Discovery/design did not define success before handoff/monitoring.\"},{\"id\":\"b\",\"text\":\"Monitoring should always define requirements retroactively.\"},{\"id\":\"c\",\"text\":\"Handoff should happen before design.\"}]",
+        "a",
+        "Later phases cannot repair undefined earlier requirements. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.5\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for solution lifecycle management: which TWO controls or decisions still hold under scrutiny? During a solution lifecycle management review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support solution lifecycle management?",
+        "[{\"id\":\"d\",\"text\":\"Monitor infrastructure only.\"},{\"id\":\"a\",\"text\":\"Complete discovery before committing architecture.\"},{\"id\":\"b\",\"text\":\"Launch with no acceptance criteria.\"},{\"id\":\"c\",\"text\":\"Define acceptance criteria before handoff.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Complete discovery before committing architecture.; Define acceptance criteria before handoff.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D6.5. P2 reinforces the surviving decision set."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.5\",\"priority:p2\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for structured discovery and requirement gathering: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a structured discovery flow.",
+        "[{\"id\":\"s1\",\"text\":\"Clarify the business outcome and baseline\"},{\"id\":\"s2\",\"text\":\"Map users and current workflow\"},{\"id\":\"s3\",\"text\":\"Define measurable quality/latency/scale constraints\"},{\"id\":\"s4\",\"text\":\"Identify risk/compliance boundaries\"},{\"id\":\"s5\",\"text\":\"Assign owners and acceptance criteria\"}]",
+        "Discovery progresses from outcome/workflow to measurable constraints and ownership. Sequence reinforcement for D6.1. P2 sequence reinforcement for D6.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p2\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for communicating architecture decisions and trade-offs: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a concise architecture-decision explanation.",
+        "[{\"id\":\"s1\",\"text\":\"State the decision context/constraints\"},{\"id\":\"s2\",\"text\":\"Present the recommended option\"},{\"id\":\"s3\",\"text\":\"Explain benefits and evidence\"},{\"id\":\"s4\",\"text\":\"Explain costs/risks and alternatives\"},{\"id\":\"s5\",\"text\":\"State ownership/review triggers\"}]",
+        "The audience first needs context, then recommendation and its trade-offs. Sequence reinforcement for D6.2. P2 sequence reinforcement for D6.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.2\",\"priority:p2\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for stakeholder feedback and expectation alignment: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order an actionable stakeholder feedback loop.",
+        "[{\"id\":\"s1\",\"text\":\"Collect a signal\"},{\"id\":\"s2\",\"text\":\"Compare it to a trigger/threshold\"},{\"id\":\"s3\",\"text\":\"Assign investigation to the owner\"},{\"id\":\"s4\",\"text\":\"Take the targeted action\"},{\"id\":\"s5\",\"text\":\"Verify the outcome and update expectations/evals\"}]",
+        "Signals drive owned investigation, action, and verification. Sequence reinforcement for D6.3. P2 sequence reinforcement for D6.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.3\",\"priority:p2\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for architecture documentation and implementation guidance: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a useful ADR structure.",
+        "[{\"id\":\"s1\",\"text\":\"Describe context and constraints\"},{\"id\":\"s2\",\"text\":\"State the decision\"},{\"id\":\"s3\",\"text\":\"Record meaningful alternatives\"},{\"id\":\"s4\",\"text\":\"Explain trade-offs and rationale\"},{\"id\":\"s5\",\"text\":\"Record assumptions, owner, and review trigger\"}]",
+        "ADRs preserve why a decision was made and when it may need revisiting. Sequence reinforcement for D6.4. P2 sequence reinforcement for D6.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.4\",\"priority:p2\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A team tells Claude Code “never touch production,” but every developer environment has production admin credentials. What is strongest? Which recommendation should they defend?",
+        "Remove/restrict production credentials and permissions; keep the instruction as supplemental guidance. Hard permission boundaries should not depend on model compliance. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved team-level Claude tools and environments guidance to this case: Each developer has a different MCP/tool configuration and shared workflows behave inconsistently. What should the team do?",
+        "Standardize high-value repository/team configuration and version it. Shared configuration improves reproducibility and governance. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Instruction — D7.1 application — P2 synthesis lens for team-level Claude tools and environments",
+        "Guidance intended to influence model behavior."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Runtime control — D7.1 application — P2 synthesis lens for team-level Claude tools and environments",
+        "An enforceable runtime, permission, sandbox, policy, or CI boundary."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for team-level Claude tools and environments: the exact term for “Within team-level Claude tools and environments, what term matches this definition: Guidance intended to influence model behavior.” is {{c1::Instruction}}.",
+        "Exact-term reinforcement for D7.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for team-level Claude tools and environments: the exact term for “Within team-level Claude tools and environments, what term matches this definition: An enforceable runtime, permission, sandbox, policy, or CI boundary.” is {{c1::Runtime control}}.",
+        "Exact-term reinforcement for D7.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 edge case for team-level Claude tools and environments: the exact term for “Within team-level Claude tools and environments, what term matches this definition: Guidance intended to influence model behavior.” is {{c1::Instruction}}.",
+        "Exact-term reinforcement for D7.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for team-level Claude tools and environments: what phrase completes this rule? In team-level Claude tools and environments, _____ is the concept described as: Guidance intended to influence model behavior.",
+        "Instruction"
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for team-level Claude tools and environments: what phrase completes this rule? In team-level Claude tools and environments, _____ is the concept described as: An enforceable runtime, permission, sandbox, policy, or CI boundary.",
+        "Runtime control"
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for team-level Claude tools and environments: A design reviewer is evaluating this scenario: A team tells Claude Code “never touch production,” but every developer environment has production admin credentials. What is strongest? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Give the model more context about production.\"},{\"id\":\"a\",\"text\":\"Remove/restrict production credentials and permissions; keep the instruction as supplemental guidance.\"},{\"id\":\"b\",\"text\":\"Repeat the instruction more often.\"},{\"id\":\"c\",\"text\":\"Disable code review.\"}]",
+        "a",
+        "Hard permission boundaries should not depend on model compliance. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved team-level Claude tools and environments guidance to this case: Each developer has a different MCP/tool configuration and shared workflows behave inconsistently. What should the team do?",
+        "[{\"id\":\"b\",\"text\":\"Encourage every developer to improvise permanently.\"},{\"id\":\"c\",\"text\":\"Hide configuration from version control.\"},{\"id\":\"d\",\"text\":\"Give all developers broader credentials.\"},{\"id\":\"a\",\"text\":\"Standardize high-value repository/team configuration and version it.\"}]",
+        "a",
+        "Shared configuration improves reproducibility and governance. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for team-level Claude tools and environments: which TWO controls or decisions still hold under scrutiny? During a team-level Claude tools and environments review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support team-level Claude tools and environments?",
+        "[{\"id\":\"d\",\"text\":\"Let each developer use unreviewed global Skills.\"},{\"id\":\"a\",\"text\":\"Standardize shared high-value configuration.\"},{\"id\":\"b\",\"text\":\"Rely on one giant instruction file for enforcement.\"},{\"id\":\"c\",\"text\":\"Use permission and sandbox boundaries for hard restrictions.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Standardize shared high-value configuration.; Use permission and sandbox boundaries for hard restrictions.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D7.1. P2 reinforces the surviving decision set."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: An agent writes a large refactor and tests pass, but nobody reviews whether the tests cover the risk. What is missing? Which recommendation should they defend?",
+        "Independent human/system verification of both the change and test adequacy. Passing tests are evidence, not a substitute for judging whether verification is sufficient. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved AI-assisted developer workflows guidance to this case: A developer asks an agent to “make it work” using production admin credentials. What is the strongest correction?",
+        "Use a scoped development/test environment and require approval for shared/destructive actions. Developer productivity should not expand unnecessary production capability. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Verification tool — D7.2 application — P2 synthesis lens for AI-assisted developer workflows",
+        "An independent mechanism such as tests, linters, type checks, security scans, or CI used to check generated changes."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for AI-assisted developer workflows: the exact term for “Within AI-assisted developer workflows, what term matches this definition: An independent mechanism such as tests, linters, type checks, security scans, or CI used to check generated changes.” is {{c1::Verification tool}}.",
+        "Exact-term reinforcement for D7.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for AI-assisted developer workflows: the exact term for “Within AI-assisted developer workflows, what term matches this definition: The ability for developers to understand and own an AI-generated change.” is {{c1::Reviewability}}.",
+        "Exact-term reinforcement for D7.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for AI-assisted developer workflows: what phrase completes this rule? In AI-assisted developer workflows, _____ is the concept described as: An independent mechanism such as tests, linters, type checks, security scans, or CI used to check generated changes.",
+        "Verification tool"
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for AI-assisted developer workflows: what phrase completes this rule? In AI-assisted developer workflows, _____ is the concept described as: The ability for developers to understand and own an AI-generated change.",
+        "Reviewability"
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for AI-assisted developer workflows: A design reviewer is evaluating this scenario: An agent writes a large refactor and tests pass, but nobody reviews whether the tests cover the risk. What is missing? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Fewer tests.\"},{\"id\":\"a\",\"text\":\"Independent human/system verification of both the change and test adequacy.\"},{\"id\":\"b\",\"text\":\"A larger model.\"},{\"id\":\"c\",\"text\":\"Production credentials.\"}]",
+        "a",
+        "Passing tests are evidence, not a substitute for judging whether verification is sufficient. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved AI-assisted developer workflows guidance to this case: A developer asks an agent to “make it work” using production admin credentials. What is the strongest correction?",
+        "[{\"id\":\"b\",\"text\":\"Let the agent proceed because the developer asked.\"},{\"id\":\"c\",\"text\":\"Disable logs.\"},{\"id\":\"d\",\"text\":\"Remove rollback mechanisms.\"},{\"id\":\"a\",\"text\":\"Use a scoped development/test environment and require approval for shared/destructive actions.\"}]",
+        "a",
+        "Developer productivity should not expand unnecessary production capability. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for AI-assisted developer workflows: which TWO controls or decisions still hold under scrutiny? During a AI-assisted developer workflows review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support AI-assisted developer workflows?",
+        "[{\"id\":\"d\",\"text\":\"Disable safeguards the agent finds inconvenient.\"},{\"id\":\"a\",\"text\":\"Provide goals, constraints, and acceptance criteria.\"},{\"id\":\"b\",\"text\":\"Merge solely because the agent says tests passed.\"},{\"id\":\"c\",\"text\":\"Use tests/linters/type checks/security scans.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Provide goals, constraints, and acceptance criteria.; Use tests/linters/type checks/security scans.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D7.2. P2 reinforces the surviving decision set."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: Quality drops after a deployment. Which evidence should be checked first? Which recommendation should they defend?",
+        "Model/prompt versions, retrieval/index changes, traces, and input-distribution changes around the deployment. Debugging starts from correlated evidence around the affected layer/change. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.3\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved debugging and operational issue resolution guidance to this case: An agent suddenly receives “permission denied” from a tool. What areas are most relevant?",
+        "Credentials, scopes, authorization policy, tool contract, and dependency status. Tool failures should be diagnosed at the integration/permission boundary. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.3\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Operational runbook — D7.3 application — P2 synthesis lens for debugging and operational issue resolution",
+        "Documented operational steps for diagnosis, mitigation, rollback/fallback, escalation, and evidence preservation."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.3\",\"priority:p2\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for debugging and operational issue resolution: the exact term for “Within debugging and operational issue resolution, what term matches this definition: Documented operational steps for diagnosis, mitigation, rollback/fallback, escalation, and evidence preservation.” is {{c1::Operational runbook}}.",
+        "Exact-term reinforcement for D7.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.3\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for debugging and operational issue resolution: the exact term for “What phrase completes this approved debugging and operational issue resolution rule? Operational debugging should proceed from symptom → evidence → likely layer → fix → _____.” is {{c1::verification}}.",
+        "Exact-term reinforcement for D7.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.3\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for debugging and operational issue resolution: what phrase completes this rule? In debugging and operational issue resolution, _____ is the concept described as: Documented operational steps for diagnosis, mitigation, rollback/fallback, escalation, and evidence preservation.",
+        "Operational runbook"
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.3\",\"priority:p2\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for debugging and operational issue resolution: A design reviewer is evaluating this scenario: Quality drops after a deployment. Which evidence should be checked first? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Immediately add production admin access.\"},{\"id\":\"a\",\"text\":\"Model/prompt versions, retrieval/index changes, traces, and input-distribution changes around the deployment.\"},{\"id\":\"b\",\"text\":\"Only ask the model why it failed.\"},{\"id\":\"c\",\"text\":\"Delete old logs.\"}]",
+        "a",
+        "Debugging starts from correlated evidence around the affected layer/change. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.3\",\"priority:p2\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for team-level Claude tools and environments: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a team enablement flow for a new Claude tool/Skill.",
+        "[{\"id\":\"s1\",\"text\":\"Define the intended team use case\"},{\"id\":\"s2\",\"text\":\"Review provenance and required permissions\"},{\"id\":\"s3\",\"text\":\"Configure the tool/Skill in a scoped environment\"},{\"id\":\"s4\",\"text\":\"Test behavior and controls\"},{\"id\":\"s5\",\"text\":\"Version and roll out the approved configuration\"}]",
+        "Use case and security review precede scoped rollout. Sequence reinforcement for D7.1. P2 sequence reinforcement for D7.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.1\",\"priority:p2\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for AI-assisted developer workflows: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a safe AI-assisted coding loop.",
+        "[{\"id\":\"s1\",\"text\":\"Define the task and acceptance criteria\"},{\"id\":\"s2\",\"text\":\"Let the agent explore/implement within scoped permissions\"},{\"id\":\"s3\",\"text\":\"Run independent automated checks\"},{\"id\":\"s4\",\"text\":\"Review the change and evidence\"},{\"id\":\"s5\",\"text\":\"Merge/deploy through normal controlled processes\"}]",
+        "AI generation is followed by independent verification and normal release controls. Sequence reinforcement for D7.2. P2 sequence reinforcement for D7.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d7\",\"obj:d7.2\",\"priority:p2\",\"kind:sequence\",\"source:approved\"]"
+    }
+  ]
+}
