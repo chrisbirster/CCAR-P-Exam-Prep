@@ -1,0 +1,1402 @@
+{
+  "domain": "d2",
+  "priority": "p2",
+  "notes": [
+    {
+      "id": "p2-d2.1-basic-001",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A routine classifier passes all quality thresholds on a faster model while a stronger model costs much more. What is the best choice? Which recommendation should they defend?",
+        "Use the faster model for that workload unless other constraints justify the stronger model. Model choice is a workload-specific trade-off, not a prestige decision. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-basic-002",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved Claude model selection guidance to this case: A model is being retired. What should the team do before switching to its replacement?",
+        "Run task-specific regression, safety, latency, and cost evaluation. Model migration can change behavior and should be evaluated. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-basic-003",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-multiple-choice-003",
+      "note_type": "basic",
+      "fields": [
+        "P2 judgment check for Claude model selection: state the best recommendation without answer choices. Which response best preserves the architecture principles in this situation? A workflow has easy classification cases and rare complex exceptions. What design may improve economics if validated?",
+        "Route routine cases to a fast model and difficult cases to a stronger model. Evaluated routing can match model capability to workload difficulty. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-basic-reverse-001",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Active model — D2.1 application — P2 synthesis lens for Claude model selection",
+        "A fully supported model recommended for current use."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-basic-reverse-002",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-basic-reverse-002",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Deprecated model — D2.1 application — P2 synthesis lens for Claude model selection",
+        "A model still functional for a period but no longer recommended and scheduled for retirement."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-cloze-001",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for Claude model selection: the exact term for “Within Claude model selection, what term matches this definition: A fully supported model recommended for current use.” is {{c1::Active model}}.",
+        "Exact-term reinforcement for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-cloze-002",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for Claude model selection: the exact term for “Within Claude model selection, what term matches this definition: A model still functional for a period but no longer recommended and scheduled for retirement.” is {{c1::Deprecated model}}.",
+        "Exact-term reinforcement for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-cloze-003",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-type-answer-003",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for Claude model selection: the exact term for “What phrase completes this approved Claude model selection rule? Choose the model that meets the workload's _____ at acceptable latency and cost.” is {{c1::quality threshold}}.",
+        "Exact-term reinforcement for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-type-answer-001",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for Claude model selection: what phrase completes this rule? In Claude model selection, _____ is the concept described as: A fully supported model recommended for current use.",
+        "Active model"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-type-answer-002",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for Claude model selection: what phrase completes this rule? In Claude model selection, _____ is the concept described as: A model still functional for a period but no longer recommended and scheduled for retirement.",
+        "Deprecated model"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-multiple-choice-001",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for Claude model selection: A design reviewer is evaluating this scenario: A routine classifier passes all quality thresholds on a faster model while a stronger model costs much more. What is the best choice? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Route randomly between models.\"},{\"id\":\"a\",\"text\":\"Use the faster model for that workload unless other constraints justify the stronger model.\"},{\"id\":\"b\",\"text\":\"Always use the strongest model.\"},{\"id\":\"c\",\"text\":\"Always use the cheapest model even if it fails quality.\"}]",
+        "a",
+        "Model choice is a workload-specific trade-off, not a prestige decision. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-multiple-choice-002",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-multiple-choice-002",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved Claude model selection guidance to this case: A model is being retired. What should the team do before switching to its replacement?",
+        "[{\"id\":\"b\",\"text\":\"Assume the newer model is behaviorally identical.\"},{\"id\":\"c\",\"text\":\"Only compare benchmark scores.\"},{\"id\":\"d\",\"text\":\"Change the model without testing because the API shape is similar.\"},{\"id\":\"a\",\"text\":\"Run task-specific regression, safety, latency, and cost evaluation.\"}]",
+        "a",
+        "Model migration can change behavior and should be evaluated. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-multiple-select-001",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for Claude model selection: which TWO controls or decisions still hold under scrutiny? During a Claude model selection review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support Claude model selection?",
+        "[{\"id\":\"d\",\"text\":\"Swap models without regression testing.\"},{\"id\":\"a\",\"text\":\"Evaluate models on the actual workload.\"},{\"id\":\"b\",\"text\":\"Assume the newest model is always best.\"},{\"id\":\"c\",\"text\":\"Re-run regressions after model changes.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Evaluate models on the actual workload.; Re-run regressions after model changes.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.1. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-basic-001",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A refund policy says amounts over $500 require manager approval. What is the strongest implementation? Which recommendation should they defend?",
+        "Explain the rule in the prompt and enforce the threshold in deterministic approval logic. Prompts guide behavior; protected thresholds need enforceable controls. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-basic-002",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved system prompts, templates, and guardrails guidance to this case: Retrieved documents may contain malicious instructions. What prompt design is strongest?",
+        "Clearly separate untrusted retrieved content from trusted instructions and restrict capabilities independently. Trust boundaries should be explicit and backed by controls. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-basic-003",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-multiple-choice-003",
+      "note_type": "basic",
+      "fields": [
+        "P2 judgment check for system prompts, templates, and guardrails: state the best recommendation without answer choices. Which response best preserves the architecture principles in this situation? Downstream software requires valid structured output. What should the architecture add?",
+        "An explicit output contract plus schema validation. Structure should be specified and validated when machines depend on it. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-basic-reverse-001",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Behavioral instruction — D2.2 application — P2 synthesis lens for system prompts, templates, and guardrails",
+        "Prompt guidance that influences how the model should act."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-basic-reverse-002",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-basic-reverse-002",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Enforceable control — D2.2 application — P2 synthesis lens for system prompts, templates, and guardrails",
+        "Code, permissions, schema, policy, or approval logic that guarantees a boundary outside model compliance."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-cloze-001",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for system prompts, templates, and guardrails: the exact term for “Within system prompts, templates, and guardrails, what term matches this definition: Prompt guidance that influences how the model should act.” is {{c1::Behavioral instruction}}.",
+        "Exact-term reinforcement for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-cloze-002",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for system prompts, templates, and guardrails: the exact term for “Within system prompts, templates, and guardrails, what term matches this definition: Code, permissions, schema, policy, or approval logic that guarantees a boundary outside model compliance.” is {{c1::Enforceable control}}.",
+        "Exact-term reinforcement for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-cloze-003",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-type-answer-003",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for system prompts, templates, and guardrails: the exact term for “What phrase completes this approved system prompts, templates, and guardrails rule? Use prompts to guide behavior; use _____ to enforce hard security and policy invariants.” is {{c1::deterministic controls}}.",
+        "Exact-term reinforcement for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-type-answer-001",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for system prompts, templates, and guardrails: what phrase completes this rule? In system prompts, templates, and guardrails, _____ is the concept described as: Prompt guidance that influences how the model should act.",
+        "Behavioral instruction"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-type-answer-002",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for system prompts, templates, and guardrails: what phrase completes this rule? In system prompts, templates, and guardrails, _____ is the concept described as: Code, permissions, schema, policy, or approval logic that guarantees a boundary outside model compliance.",
+        "Enforceable control"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-multiple-choice-001",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for system prompts, templates, and guardrails: A design reviewer is evaluating this scenario: A refund policy says amounts over $500 require manager approval. What is the strongest implementation? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Ask the model to self-check twice.\"},{\"id\":\"a\",\"text\":\"Explain the rule in the prompt and enforce the threshold in deterministic approval logic.\"},{\"id\":\"b\",\"text\":\"Put the rule only in the system prompt.\"},{\"id\":\"c\",\"text\":\"Use a longer example showing a $499 refund.\"}]",
+        "a",
+        "Prompts guide behavior; protected thresholds need enforceable controls. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-multiple-choice-002",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-multiple-choice-002",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 architecture review — which answer best survives the trade-offs in this case? Apply the approved system prompts, templates, and guardrails guidance to this case: Retrieved documents may contain malicious instructions. What prompt design is strongest?",
+        "[{\"id\":\"b\",\"text\":\"Concatenate all text into one unstructured prompt.\"},{\"id\":\"c\",\"text\":\"Tell retrieved text it is trusted.\"},{\"id\":\"d\",\"text\":\"Rely on the model to always ignore injections.\"},{\"id\":\"a\",\"text\":\"Clearly separate untrusted retrieved content from trusted instructions and restrict capabilities independently.\"}]",
+        "a",
+        "Trust boundaries should be explicit and backed by controls. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-multiple-select-001",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for system prompts, templates, and guardrails: which TWO controls or decisions still hold under scrutiny? During a system prompts, templates, and guardrails review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support system prompts, templates, and guardrails?",
+        "[{\"id\":\"d\",\"text\":\"Assume asking for JSON guarantees validity.\"},{\"id\":\"a\",\"text\":\"Use clear trusted instructions.\"},{\"id\":\"b\",\"text\":\"Treat a system prompt as an access-control list.\"},{\"id\":\"c\",\"text\":\"Separate untrusted content from policy.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use clear trusted instructions.; Separate untrusted content from policy.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.2. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-basic-001",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A classifier confuses two boundary cases even with clear instructions. What is a strong next step? Which recommendation should they defend?",
+        "Add a few representative examples that demonstrate the boundary distinction and re-evaluate. Few-shot examples are useful when they target observed ambiguity. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-basic-002",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved prompt engineering techniques guidance to this case: A straightforward extraction task already meets its quality target zero-shot. What should the team do?",
+        "Keep the simpler prompt unless evaluation identifies a failure. Use the lightest technique that passes the evaluation. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-basic-reverse-001",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Zero-shot — D2.3 application — P2 synthesis lens for prompt engineering techniques",
+        "Clear direct instructions without worked examples."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-basic-reverse-002",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-basic-reverse-002",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Few-shot / multishot — D2.3 application — P2 synthesis lens for prompt engineering techniques",
+        "Representative examples included to demonstrate desired behavior."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-cloze-001",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for prompt engineering techniques: the exact term for “Within prompt engineering techniques, what term matches this definition: Clear direct instructions without worked examples.” is {{c1::Zero-shot}}.",
+        "Exact-term reinforcement for D2.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-cloze-002",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for prompt engineering techniques: the exact term for “Within prompt engineering techniques, what term matches this definition: Representative examples included to demonstrate desired behavior.” is {{c1::Few-shot / multishot}}.",
+        "Exact-term reinforcement for D2.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-type-answer-001",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for prompt engineering techniques: what phrase completes this rule? In prompt engineering techniques, _____ is the concept described as: Clear direct instructions without worked examples.",
+        "Zero-shot"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-type-answer-002",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for prompt engineering techniques: what phrase completes this rule? In prompt engineering techniques, _____ is the concept described as: Representative examples included to demonstrate desired behavior.",
+        "Few-shot / multishot"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-multiple-choice-001",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for prompt engineering techniques: A design reviewer is evaluating this scenario: A classifier confuses two boundary cases even with clear instructions. What is a strong next step? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Hide the labels from the prompt.\"},{\"id\":\"a\",\"text\":\"Add a few representative examples that demonstrate the boundary distinction and re-evaluate.\"},{\"id\":\"b\",\"text\":\"Add dozens of irrelevant examples.\"},{\"id\":\"c\",\"text\":\"Switch to an agent immediately.\"}]",
+        "a",
+        "Few-shot examples are useful when they target observed ambiguity. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-multiple-select-001",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for prompt engineering techniques: which TWO controls or decisions still hold under scrutiny? During a prompt engineering techniques review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support prompt engineering techniques?",
+        "[{\"id\":\"d\",\"text\":\"Use only easy examples.\"},{\"id\":\"a\",\"text\":\"Start with clear direct instructions.\"},{\"id\":\"b\",\"text\":\"Force visible step-by-step reasoning for every task.\"},{\"id\":\"c\",\"text\":\"Add representative examples when evaluation shows ambiguity.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Start with clear direct instructions.; Add representative examples when evaluation shows ambiguity.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.3. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.4-basic-001",
+      "objective": "D2.4",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p1-d2.4-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: An agent preloads thousands of pages although each task uses only a few. What is the strongest change? Which recommendation should they defend?",
+        "Retrieve relevant content just in time instead of preloading the corpus. JIT retrieval preserves context for relevant information. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.4-basic-002",
+      "objective": "D2.4",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p1-d2.4-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved context-window and token management guidance to this case: A long-running agent approaches practical context limits. What should compaction preserve?",
+        "Key decisions, constraints, unresolved work, and important evidence. Compaction reduces size while preserving decision-critical information. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.4-basic-reverse-001",
+      "objective": "D2.4",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p1-d2.4-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Active context — D2.4 application — P2 synthesis lens for context-window and token management",
+        "Information currently visible to the model for the present inference."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.4-cloze-001",
+      "objective": "D2.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p1-d2.4-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for context-window and token management: the exact term for “Within context-window and token management, what term matches this definition: Information currently visible to the model for the present inference.” is {{c1::Active context}}.",
+        "Exact-term reinforcement for D2.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.4-cloze-002",
+      "objective": "D2.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p1-d2.4-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for context-window and token management: the exact term for “Within context-window and token management, what term matches this definition: Compressing a long interaction into a smaller representation that preserves important state and decisions.” is {{c1::Compaction}}.",
+        "Exact-term reinforcement for D2.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.4-type-answer-001",
+      "objective": "D2.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p1-d2.4-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for context-window and token management: what phrase completes this rule? In context-window and token management, _____ is the concept described as: Information currently visible to the model for the present inference.",
+        "Active context"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.4-type-answer-002",
+      "objective": "D2.4",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p1-d2.4-cloze-002",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for context-window and token management: what phrase completes this rule? In context-window and token management, _____ is the concept described as: Compressing a long interaction into a smaller representation that preserves important state and decisions.",
+        "Compaction"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.4-multiple-choice-001",
+      "objective": "D2.4",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p1-d2.4-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for context-window and token management: A design reviewer is evaluating this scenario: An agent preloads thousands of pages although each task uses only a few. What is the strongest change? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Always use multiple agents.\"},{\"id\":\"a\",\"text\":\"Retrieve relevant content just in time instead of preloading the corpus.\"},{\"id\":\"b\",\"text\":\"Increase prompt verbosity.\"},{\"id\":\"c\",\"text\":\"Duplicate the corpus in conversation history.\"}]",
+        "a",
+        "JIT retrieval preserves context for relevant information. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.4-multiple-select-001",
+      "objective": "D2.4",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p1-d2.4-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for context-window and token management: which TWO controls or decisions still hold under scrutiny? During a context-window and token management review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support context-window and token management?",
+        "[{\"id\":\"d\",\"text\":\"Assume larger windows eliminate relevance problems.\"},{\"id\":\"a\",\"text\":\"Load information when it is relevant to the next decision.\"},{\"id\":\"b\",\"text\":\"Preload every available document.\"},{\"id\":\"c\",\"text\":\"Compact long histories while preserving critical facts.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Load information when it is relevant to the next decision.; Compact long histories while preserving critical facts.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.4. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.5-basic-001",
+      "objective": "D2.5",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p1-d2.5-multiple-choice-001",
+      "note_type": "basic",
+      "fields": [
+        "P2 synthesis — defend the architecture choice for this case: A design reviewer is evaluating this scenario: A legal workflow reuses the same large policy manual for thousands of requests. What is a strong optimization? Which recommendation should they defend?",
+        "Reuse/cache the stable reference content while fetching case-specific current state separately. Stable repeated context is a good reuse target; volatile state is not. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.5-basic-002",
+      "objective": "D2.5",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p1-d2.5-multiple-choice-002",
+      "note_type": "basic",
+      "fields": [
+        "P2 edge-case review — what action should survive scrutiny here? Apply the approved prompt reuse, caching, and Skills guidance to this case: A shared Skill changes how production agents perform a regulated workflow. How should it be managed?",
+        "Version, review, test, and control changes like other operational assets. Reusable agent instructions/resources can change behavior and should be governed. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.5-basic-reverse-001",
+      "objective": "D2.5",
+      "priority": "p2",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p1-d2.5-basic-reverse-001",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Prompt template — D2.5 application — P2 synthesis lens for prompt reuse, caching, and Skills",
+        "Reusable stable prompt structure with request-specific variables."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p2",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.5-cloze-001",
+      "objective": "D2.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p1-d2.5-type-answer-001",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for prompt reuse, caching, and Skills: the exact term for “Within prompt reuse, caching, and Skills, what term matches this definition: Reusable stable prompt structure with request-specific variables.” is {{c1::Prompt template}}.",
+        "Exact-term reinforcement for D2.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.5-cloze-002",
+      "objective": "D2.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p1-d2.5-type-answer-002",
+      "note_type": "cloze",
+      "fields": [
+        "P2 synthesis for prompt reuse, caching, and Skills: the exact term for “What phrase completes this approved prompt reuse, caching, and Skills rule? Reuse is safest when the content is _____ that freshness is not compromised.” is {{c1::stable enough}}.",
+        "Exact-term reinforcement for D2.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.5-type-answer-001",
+      "objective": "D2.5",
+      "priority": "p2",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p1-d2.5-cloze-001",
+      "note_type": "type-answer",
+      "fields": [
+        "P2 exact recall for prompt reuse, caching, and Skills: what phrase completes this rule? In prompt reuse, caching, and Skills, _____ is the concept described as: Reusable stable prompt structure with request-specific variables.",
+        "Prompt template"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p2",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.5-multiple-choice-001",
+      "objective": "D2.5",
+      "priority": "p2",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p1-d2.5-multiple-choice-001",
+      "note_type": "multiple-choice",
+      "fields": [
+        "P2 exam synthesis for prompt reuse, caching, and Skills: A design reviewer is evaluating this scenario: A legal workflow reuses the same large policy manual for thousands of requests. What is a strong optimization? Which recommendation should they defend?",
+        "[{\"id\":\"d\",\"text\":\"Remove freshness checks from current data.\"},{\"id\":\"a\",\"text\":\"Reuse/cache the stable reference content while fetching case-specific current state separately.\"},{\"id\":\"b\",\"text\":\"Cache each client's live case status indefinitely.\"},{\"id\":\"c\",\"text\":\"Duplicate the manual into every variable section.\"}]",
+        "a",
+        "Stable repeated context is a good reuse target; volatile state is not. This P1 variant tests the same approved principle in a re-framed design review. P2 emphasizes synthesis and edge-case judgment."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p2",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.5-multiple-select-001",
+      "objective": "D2.5",
+      "priority": "p2",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p1-d2.5-multiple-select-001",
+      "note_type": "multiple-select",
+      "fields": [
+        "P2 synthesis for prompt reuse, caching, and Skills: which TWO controls or decisions still hold under scrutiny? During a prompt reuse, caching, and Skills review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support prompt reuse, caching, and Skills?",
+        "[{\"id\":\"d\",\"text\":\"Use one giant reusable prompt for unrelated workloads.\"},{\"id\":\"a\",\"text\":\"Reuse stable expensive context.\"},{\"id\":\"b\",\"text\":\"Cache rapidly changing business state indefinitely.\"},{\"id\":\"c\",\"text\":\"Keep volatile state fresh.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Reuse stable expensive context.; Keep volatile state fresh.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.5. P2 reinforces the surviving decision set."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p2",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-ordering-001",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p1-d2.1-ordering-001",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for Claude model selection: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a sound model-selection process.",
+        "[{\"id\":\"s1\",\"text\":\"Define task quality and operational thresholds\"},{\"id\":\"s2\",\"text\":\"Evaluate candidate models on representative cases\"},{\"id\":\"s3\",\"text\":\"Compare quality, latency, cost, and risk\"},{\"id\":\"s4\",\"text\":\"Select the model/routing policy\"},{\"id\":\"s5\",\"text\":\"Re-test when the model or workload changes\"}]",
+        "Requirements and evaluation precede selection; changes trigger re-evaluation. Sequence reinforcement for D2.1. P2 sequence reinforcement for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.2-ordering-002",
+      "objective": "D2.2",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p1-d2.2-ordering-002",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for system prompts, templates, and guardrails: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order a secure prompt-to-action pattern.",
+        "[{\"id\":\"s1\",\"text\":\"Establish trusted system instructions\"},{\"id\":\"s2\",\"text\":\"Insert user/retrieved content as untrusted data\"},{\"id\":\"s3\",\"text\":\"Let the model propose an output/action\"},{\"id\":\"s4\",\"text\":\"Validate schema and authorization deterministically\"},{\"id\":\"s5\",\"text\":\"Execute only if controls pass\"}]",
+        "Behavioral prompting precedes deterministic validation and execution. Sequence reinforcement for D2.2. P2 sequence reinforcement for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.3-ordering-003",
+      "objective": "D2.3",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p1-d2.3-ordering-003",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for prompt engineering techniques: place these steps in the order you would defend. Put these steps in the operational order you would defend during a P1 design review: Order an evidence-driven prompt-improvement loop.",
+        "[{\"id\":\"s1\",\"text\":\"Establish a simple baseline prompt\"},{\"id\":\"s2\",\"text\":\"Run representative evaluations\"},{\"id\":\"s3\",\"text\":\"Identify a specific failure mode\"},{\"id\":\"s4\",\"text\":\"Apply the lightest targeted prompting change\"},{\"id\":\"s5\",\"text\":\"Re-run evaluation and regression checks\"}]",
+        "Prompt complexity should be added in response to observed failures. Sequence reinforcement for D2.3. P2 sequence reinforcement for D2.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p2-d2.1-ordering-004",
+      "objective": "D2.1",
+      "priority": "p2",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-ordering-200",
+      "note_type": "ordering",
+      "fields": [
+        "P2 synthesis sequence for Claude model selection: place these steps in the order you would defend. Order a sound model-selection process.",
+        "[{\"id\":\"s1\",\"text\":\"Define task quality and operational thresholds\"},{\"id\":\"s2\",\"text\":\"Evaluate candidate models on representative cases\"},{\"id\":\"s3\",\"text\":\"Compare quality, latency, cost, and risk\"},{\"id\":\"s4\",\"text\":\"Select the model/routing policy\"},{\"id\":\"s5\",\"text\":\"Re-test when the model or workload changes\"}]",
+        "Requirements and evaluation precede selection; changes trigger re-evaluation. P2 sequence reinforcement for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p2",
+        "kind:sequence",
+        "source:approved"
+      ]
+    }
+  ]
+}
