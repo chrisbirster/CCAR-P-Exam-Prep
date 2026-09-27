@@ -1,0 +1,2429 @@
+{
+  "domain": "d4",
+  "priority": "p0",
+  "notes": [
+    {
+      "id": "p0-d4.1-basic-01",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Why is “good responses” an inadequate evaluation goal?",
+        "It is not operationally defined or measurable against a threshold."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-basic-02",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What dimensions should an AI system evaluation consider?",
+        "Task quality plus relevant latency, cost, safety, security, and business outcomes."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-basic-03",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Why can a single aggregate score be misleading?",
+        "A system can pass overall while failing important safety, subgroup, or tail-latency constraints."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-basic-01",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What should an eval suite represent?",
+        "The real workload, important edge cases, historical failures, adversarial cases, and multi-turn behavior where relevant."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-basic-02",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "When is a deterministic grader preferable to an LLM judge?",
+        "When correctness can be checked exactly with code, schema, tests, or external state."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-basic-03",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Why run repeated trials for some agent tasks?",
+        "Model/agent behavior can be stochastic, so one run may not characterize reliability."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-basic-01",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What should an A/B test begin with?",
+        "A specific hypothesis and pre-defined primary and guardrail metrics."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-basic-02",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What is shadow testing?",
+        "Running a candidate on real traffic without allowing its outputs to affect users or production state."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-basic-01",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What is the key diagnostic principle for AI systems?",
+        "Identify and fix the layer causing the failure rather than masking it downstream."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-basic-02",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Why is “hallucination” an incomplete diagnosis?",
+        "Wrong output can originate from retrieval, tools, orchestration, stale data, model mismatch, or prompting."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-basic-01",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What should optimization minimize?",
+        "Resource use per successful outcome while preserving required quality, safety, and reliability."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-basic-02",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "How can context engineering reduce cost?",
+        "Remove low-value context, use just-in-time retrieval/compaction, and avoid repeatedly sending unnecessary data."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-basic-01",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "Why must evaluation continue after launch?",
+        "Real traffic, dependencies, models, and data distributions change over time."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-basic-02",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "basic",
+      "fields": [
+        "What is a regression eval?",
+        "A test that checks known-good behavior still works after changes."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-basic-reverse-01",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Outcome metric",
+        "A measure of whether the task produced the desired real-world result."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-basic-reverse-02",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Guardrail metric",
+        "A secondary threshold that must not regress while optimizing a primary metric."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-basic-reverse-01",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Trial",
+        "One execution of an evaluation task."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-basic-reverse-02",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Grader",
+        "The mechanism that scores whether a task/run met defined criteria."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-basic-reverse-01",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Control",
+        "The baseline experience/system in a controlled experiment."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-basic-reverse-02",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Treatment",
+        "The candidate change being tested against the control."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-basic-reverse-01",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Retrieval failure",
+        "The relevant evidence is not retrieved or is outranked by wrong evidence."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-basic-reverse-02",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Orchestration failure",
+        "Correct components are coordinated incorrectly, such as dropped worker results or wrong ordering."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-basic-reverse-01",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Cost per successful outcome",
+        "Total resource cost divided by tasks that actually meet the success criteria."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-basic-reverse-02",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Prompt caching",
+        "Reusing eligible stable prompt/context content rather than recomputing/sending it as uncached work each time."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-basic-reverse-01",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "basic-reverse",
+      "fields": [
+        "Capability eval",
+        "An evaluation asking whether the system can perform a new or harder capability."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-cloze-01",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "A useful metric needs a definition, a measurement method, and an {{c1::acceptance threshold}}.",
+        "D4.1"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-cloze-02",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Agent evaluation should include {{c1::external outcomes}} when model claims alone are insufficient.",
+        "D4.1"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-cloze-03",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Multi-dimensional systems should not be reduced to a single vague {{c1::accuracy score}}.",
+        "D4.1"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-cloze-01",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Use the {{c1::cheapest reliable grader}} that can accurately measure the property of interest.",
+        "D4.2"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-cloze-02",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "For agents, inspect both final {{c1::outcomes and trajectories}} when intermediate behavior matters.",
+        "D4.2"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-cloze-01",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "An A/B experiment should define the hypothesis, primary metric, guardrails, assignment, and {{c1::decision/stopping rule}} before interpreting results.",
+        "D4.3"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-cloze-02",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "{{c1::Shadow testing}} uses real traffic while preventing candidate outputs from affecting production behavior.",
+        "D4.3"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-cloze-01",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Diagnose from {{c1::symptom → evidence → failing stage → targeted fix}}, rather than rewriting prompts blindly.",
+        "D4.4"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-cloze-02",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "A fixed production failure should become a {{c1::regression case}}.",
+        "D4.4"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-cloze-01",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Optimize {{c1::cost per successful outcome}}, not just cost per request.",
+        "D4.5"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-cloze-02",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Removing tokens is useful only if required {{c1::quality and safety thresholds}} still pass.",
+        "D4.5"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-cloze-01",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Production monitoring reveals whether the {{c1::real workload or dependencies}} are drifting from assumptions.",
+        "D4.6"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-cloze-02",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "cloze",
+      "fields": [
+        "Known failures should be converted into {{c1::regression tests/evals}} after remediation.",
+        "D4.6"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-type-answer-01",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What term describes a threshold metric that must not regress during optimization?",
+        "Guardrail metric"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-type-answer-02",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What should define the minimum acceptable value for a metric?",
+        "Acceptance threshold"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-type-answer-01",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What evaluation component scores a task result?",
+        "Grader"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-type-answer-02",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What term describes one execution of an eval task?",
+        "Trial"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-type-answer-01",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What experiment mode runs a candidate on real traffic without exposing users to its outputs?",
+        "Shadow testing"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-type-answer-02",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What is the baseline arm of an A/B experiment called?",
+        "Control"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-type-answer-01",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What failure class occurs when relevant evidence never reaches the model?",
+        "Retrieval failure"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-type-answer-02",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What failure class occurs when correct components are sequenced or coordinated incorrectly?",
+        "Orchestration failure"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-type-answer-01",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What efficiency metric accounts for failures/retries rather than only request price?",
+        "Cost per successful outcome"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-type-answer-01",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "type-answer",
+      "fields": [
+        "What evaluation protects known-good behavior from breaking after changes?",
+        "Regression evaluation"
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-multiple-choice-01",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A team says its support agent is “very accurate.” What should an architect request next?",
+        "[{\"id\":\"a\",\"text\":\"A defined metric, representative measurement method, and acceptance threshold.\"},{\"id\":\"b\",\"text\":\"A longer system prompt.\"},{\"id\":\"c\",\"text\":\"A larger context window.\"},{\"id\":\"d\",\"text\":\"More agents.\"}]",
+        "a",
+        "Evaluation claims must be operationalized."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-multiple-choice-02",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A candidate model improves task success but doubles safety-policy violations. What should the team conclude?",
+        "[{\"id\":\"a\",\"text\":\"The candidate fails a critical guardrail even if the primary quality metric improved.\"},{\"id\":\"b\",\"text\":\"Ship it because primary accuracy is higher.\"},{\"id\":\"c\",\"text\":\"Ignore safety because it is hard to score.\"},{\"id\":\"d\",\"text\":\"Average the two metrics into one number and accept any positive result.\"}]",
+        "a",
+        "Safety/security floors can constrain optimization."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-multiple-choice-03",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A coding agent says it fixed a bug, but tests still fail. What is the stronger evaluation metric?",
+        "[{\"id\":\"a\",\"text\":\"The external task outcome, such as passing the relevant tests.\"},{\"id\":\"b\",\"text\":\"The agent's confidence.\"},{\"id\":\"c\",\"text\":\"Length of the explanation.\"},{\"id\":\"d\",\"text\":\"Number of tool calls.\"}]",
+        "a",
+        "External outcome can be more authoritative than model claims."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-multiple-choice-04",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which metric best represents user-facing responsiveness when occasional slow requests matter?",
+        "[{\"id\":\"a\",\"text\":\"A tail-latency percentile such as p95, paired with an SLA threshold.\"},{\"id\":\"b\",\"text\":\"Only average latency.\"},{\"id\":\"c\",\"text\":\"Total tokens ever used.\"},{\"id\":\"d\",\"text\":\"Number of prompt lines.\"}]",
+        "a",
+        "Tail latency matters when a minority of very slow requests harm the experience."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-multiple-choice-01",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A tool action should create exactly one database row. What is the best grader?",
+        "[{\"id\":\"a\",\"text\":\"A deterministic check of the database state.\"},{\"id\":\"b\",\"text\":\"An LLM judge reading the agent's explanation.\"},{\"id\":\"c\",\"text\":\"A human reviewer for every run.\"},{\"id\":\"d\",\"text\":\"The model's self-reported success.\"}]",
+        "a",
+        "Exact external state should be verified deterministically."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-multiple-choice-02",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A style rubric is nuanced and cannot be checked with simple code. What grader may be appropriate after calibration?",
+        "[{\"id\":\"a\",\"text\":\"A model-based grader evaluated against human-labeled examples.\"},{\"id\":\"b\",\"text\":\"A schema validator only.\"},{\"id\":\"c\",\"text\":\"A random score.\"},{\"id\":\"d\",\"text\":\"No grader at all.\"}]",
+        "a",
+        "Model graders can score nuanced qualities but should be calibrated."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-multiple-choice-03",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "An eval suite contains only easy happy-path requests. What is the biggest weakness?",
+        "[{\"id\":\"a\",\"text\":\"It may miss boundary, adversarial, malformed, and historical failure modes.\"},{\"id\":\"b\",\"text\":\"It contains too many tasks.\"},{\"id\":\"c\",\"text\":\"It should use only one trial.\"},{\"id\":\"d\",\"text\":\"It should never include production failures.\"}]",
+        "a",
+        "Representative coverage includes important failures, not just routine cases."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-multiple-choice-04",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "An agent's performance varies significantly between runs of the same task. What should the eval framework add?",
+        "[{\"id\":\"a\",\"text\":\"Multiple trials per task to measure reliability under stochastic behavior.\"},{\"id\":\"b\",\"text\":\"One carefully chosen run only.\"},{\"id\":\"c\",\"text\":\"A longer deck name.\"},{\"id\":\"d\",\"text\":\"Fewer measurements.\"}]",
+        "a",
+        "Repeated trials characterize variance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-multiple-choice-01",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A team changes the model, prompt, retriever, and tool schema simultaneously, then sees improvement. What is the main problem?",
+        "[{\"id\":\"a\",\"text\":\"The experiment cannot attribute the change because several major variables moved together.\"},{\"id\":\"b\",\"text\":\"A/B testing requires more than two models.\"},{\"id\":\"c\",\"text\":\"All variables should always change together.\"},{\"id\":\"d\",\"text\":\"Guardrail metrics are unnecessary.\"}]",
+        "a",
+        "Controlled experiments isolate specific hypotheses."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-multiple-choice-02",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A new agent can execute risky production writes. How can the team first test it on realistic traffic without exposing users to its actions?",
+        "[{\"id\":\"a\",\"text\":\"Use shadow testing with outputs/actions prevented from affecting production.\"},{\"id\":\"b\",\"text\":\"Turn it on for every user immediately.\"},{\"id\":\"c\",\"text\":\"Disable logging.\"},{\"id\":\"d\",\"text\":\"Use only a synthetic prompt unrelated to production.\"}]",
+        "a",
+        "Shadow testing provides realistic input without direct production effect."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-multiple-choice-03",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A treatment improves accuracy by 0.05% with strong statistical significance but adds major cost. What should the architect consider?",
+        "[{\"id\":\"a\",\"text\":\"Whether the improvement is practically valuable enough to justify the cost.\"},{\"id\":\"b\",\"text\":\"Statistical significance guarantees business value.\"},{\"id\":\"c\",\"text\":\"Ignore cost once p<0.05.\"},{\"id\":\"d\",\"text\":\"Always ship any measurable improvement.\"}]",
+        "a",
+        "Practical significance and guardrails matter."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-multiple-choice-04",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "An experiment's primary quality metric rises while latency breaches the SLA. What should happen?",
+        "[{\"id\":\"a\",\"text\":\"Treat the latency SLA as a guardrail and reject or revise the treatment.\"},{\"id\":\"b\",\"text\":\"Ship because primary quality improved.\"},{\"id\":\"c\",\"text\":\"Remove the SLA from reporting.\"},{\"id\":\"d\",\"text\":\"Average quality and latency into one unbounded score.\"}]",
+        "a",
+        "Guardrails prevent one metric from improving by violating another requirement."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-multiple-choice-01",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A model gives wrong answers because the retriever returns obsolete documents. What should change first?",
+        "[{\"id\":\"a\",\"text\":\"Fix the retrieval freshness/ranking problem.\"},{\"id\":\"b\",\"text\":\"Add more system-prompt warnings.\"},{\"id\":\"c\",\"text\":\"Upgrade the model without inspecting retrieval.\"},{\"id\":\"d\",\"text\":\"Retry the same stale evidence.\"}]",
+        "a",
+        "The failing layer is retrieval, not necessarily prompting."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-multiple-choice-02",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A tool returns malformed JSON and the agent fails. What is the most direct diagnosis?",
+        "[{\"id\":\"a\",\"text\":\"Tool/interface contract failure.\"},{\"id\":\"b\",\"text\":\"Hallucination by definition.\"},{\"id\":\"c\",\"text\":\"Model lifecycle failure.\"},{\"id\":\"d\",\"text\":\"Business-value failure.\"}]",
+        "a",
+        "Inspect the interface actually producing the malformed data."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-multiple-choice-03",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A worker computes the correct result, but the orchestrator drops it before synthesis. What failure class is this?",
+        "[{\"id\":\"a\",\"text\":\"Orchestration failure.\"},{\"id\":\"b\",\"text\":\"Retrieval failure.\"},{\"id\":\"c\",\"text\":\"Prompt injection.\"},{\"id\":\"d\",\"text\":\"Model deprecation.\"}]",
+        "a",
+        "The component result is correct; coordination is wrong."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-multiple-choice-04",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "After repairing a recurrent production failure, what should the team add?",
+        "[{\"id\":\"a\",\"text\":\"A regression test/eval reproducing the failure so it stays fixed.\"},{\"id\":\"b\",\"text\":\"Remove observability.\"},{\"id\":\"c\",\"text\":\"Delete historical evidence.\"},{\"id\":\"d\",\"text\":\"Only document that someone remembers the fix.\"}]",
+        "a",
+        "Known failures should become protected regression cases."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-multiple-choice-01",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A cheaper model causes twice as many retries and escalations. What metric should decide whether it is actually cheaper?",
+        "[{\"id\":\"a\",\"text\":\"Cost per successful outcome including retries/escalations.\"},{\"id\":\"b\",\"text\":\"Price per single API call only.\"},{\"id\":\"c\",\"text\":\"Model name length.\"},{\"id\":\"d\",\"text\":\"Prompt token count alone.\"}]",
+        "a",
+        "A cheap failing request can raise total cost."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-multiple-choice-02",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Tool results contain 100,000 rows but the model needs only an aggregate. What is a strong optimization?",
+        "[{\"id\":\"a\",\"text\":\"Process/filter the data programmatically and pass only the high-signal result to the model.\"},{\"id\":\"b\",\"text\":\"Send every row through multiple model turns.\"},{\"id\":\"c\",\"text\":\"Duplicate the rows in the system prompt.\"},{\"id\":\"d\",\"text\":\"Disable the tool.\"}]",
+        "a",
+        "Programmatic processing reduces token/context overhead."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-multiple-choice-03",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A prompt includes large historical logs that never affect decisions. What should the team test?",
+        "[{\"id\":\"a\",\"text\":\"Remove or compact low-value context and confirm quality still passes.\"},{\"id\":\"b\",\"text\":\"Add more logs to improve cost.\"},{\"id\":\"c\",\"text\":\"Increase output length.\"},{\"id\":\"d\",\"text\":\"Use the strongest model only.\"}]",
+        "a",
+        "Low-value context wastes tokens and may harm relevance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-multiple-choice-04",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "An optimization removes a safety validation step and lowers p95 latency. Is it acceptable?",
+        "[{\"id\":\"a\",\"text\":\"Only if the validation was not required; required safety controls must remain even when they cost latency.\"},{\"id\":\"b\",\"text\":\"Yes, lower latency always dominates.\"},{\"id\":\"c\",\"text\":\"Yes, if average accuracy rises.\"},{\"id\":\"d\",\"text\":\"Yes, if the model promises to self-check.\"}]",
+        "a",
+        "Optimization is constrained by required safety/security thresholds."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-multiple-choice-01",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Offline evals pass, but tool failures spike after launch because an external API changed. What caught this?",
+        "[{\"id\":\"a\",\"text\":\"Production monitoring of real dependencies and outcomes.\"},{\"id\":\"b\",\"text\":\"A static benchmark alone.\"},{\"id\":\"c\",\"text\":\"The system prompt.\"},{\"id\":\"d\",\"text\":\"A one-time prelaunch demo.\"}]",
+        "a",
+        "Production monitoring detects real-world changes offline suites may not predict."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-multiple-choice-02",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "A new model version is deployed. What should protect known behavior?",
+        "[{\"id\":\"a\",\"text\":\"Run the regression suite and monitor production after migration.\"},{\"id\":\"b\",\"text\":\"Assume newer means identical.\"},{\"id\":\"c\",\"text\":\"Delete old evals.\"},{\"id\":\"d\",\"text\":\"Only compare price.\"}]",
+        "a",
+        "Model changes can alter behavior and require regression testing."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-multiple-choice-03",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "Users report a novel failure pattern. What should happen after root cause is fixed?",
+        "[{\"id\":\"a\",\"text\":\"Add representative cases to the regression suite and monitor the corrected behavior.\"},{\"id\":\"b\",\"text\":\"Ignore it because launch evals already passed.\"},{\"id\":\"c\",\"text\":\"Remove the complaint from logs.\"},{\"id\":\"d\",\"text\":\"Only increase model temperature.\"}]",
+        "a",
+        "Production failures improve future evaluation coverage."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-multiple-choice-04",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "multiple-choice",
+      "fields": [
+        "An alert fires but no team owns the metric or runbook. What is missing?",
+        "[{\"id\":\"a\",\"text\":\"Operational ownership and a defined response action.\"},{\"id\":\"b\",\"text\":\"Another model.\"},{\"id\":\"c\",\"text\":\"More prompt examples.\"},{\"id\":\"d\",\"text\":\"A second vector database.\"}]",
+        "a",
+        "Monitoring without action/ownership does not close the loop."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-multiple-select-100",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support defining evaluation metrics?",
+        "[{\"id\":\"a\",\"text\":\"Define measurable thresholds before evaluation.\"},{\"id\":\"b\",\"text\":\"Use one vague “accuracy” number for everything.\"},{\"id\":\"c\",\"text\":\"Measure external outcomes where possible.\"},{\"id\":\"d\",\"text\":\"Ignore tail behavior.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define measurable thresholds before evaluation.; Measure external outcomes where possible.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-multiple-select-101",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing defining evaluation metrics. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Measure external outcomes where possible.\"},{\"id\":\"b\",\"text\":\"Optimize only the easiest metric.\"},{\"id\":\"c\",\"text\":\"Use multiple metrics for multi-dimensional success.\"},{\"id\":\"d\",\"text\":\"Declare success without a threshold.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Measure external outcomes where possible.; Use multiple metrics for multi-dimensional success.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-multiple-select-102",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in defining evaluation metrics?",
+        "[{\"id\":\"a\",\"text\":\"Use multiple metrics for multi-dimensional success.\"},{\"id\":\"b\",\"text\":\"Ignore tail behavior.\"},{\"id\":\"c\",\"text\":\"Keep safety/security guardrails alongside quality.\"},{\"id\":\"d\",\"text\":\"Trust model self-reports over authoritative outcomes.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use multiple metrics for multi-dimensional success.; Keep safety/security guardrails alongside quality.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-multiple-select-103",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on defining evaluation metrics, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Keep safety/security guardrails alongside quality.\"},{\"id\":\"b\",\"text\":\"Declare success without a threshold.\"},{\"id\":\"c\",\"text\":\"Connect technical measures to user/business outcomes.\"},{\"id\":\"d\",\"text\":\"Use one vague “accuracy” number for everything.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep safety/security guardrails alongside quality.; Connect technical measures to user/business outcomes.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-multiple-select-100",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support evaluation datasets and frameworks?",
+        "[{\"id\":\"a\",\"text\":\"Include representative and difficult cases.\"},{\"id\":\"b\",\"text\":\"Evaluate only final prose.\"},{\"id\":\"c\",\"text\":\"Use deterministic graders for exact properties.\"},{\"id\":\"d\",\"text\":\"Use only happy-path data.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Include representative and difficult cases.; Use deterministic graders for exact properties.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-multiple-select-101",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing evaluation datasets and frameworks. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Use deterministic graders for exact properties.\"},{\"id\":\"b\",\"text\":\"Use an LLM judge when code can verify exactly.\"},{\"id\":\"c\",\"text\":\"Calibrate model graders.\"},{\"id\":\"d\",\"text\":\"Assume one stochastic trial is definitive.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use deterministic graders for exact properties.; Calibrate model graders.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-multiple-select-102",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in evaluation datasets and frameworks?",
+        "[{\"id\":\"a\",\"text\":\"Calibrate model graders.\"},{\"id\":\"b\",\"text\":\"Use only happy-path data.\"},{\"id\":\"c\",\"text\":\"Inspect external outcomes for agent actions.\"},{\"id\":\"d\",\"text\":\"Overfit the system to a tiny static eval set.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Calibrate model graders.; Inspect external outcomes for agent actions.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-multiple-select-103",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on evaluation datasets and frameworks, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Inspect external outcomes for agent actions.\"},{\"id\":\"b\",\"text\":\"Assume one stochastic trial is definitive.\"},{\"id\":\"c\",\"text\":\"Add production failures to regression suites.\"},{\"id\":\"d\",\"text\":\"Evaluate only final prose.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Inspect external outcomes for agent actions.; Add production failures to regression suites.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-multiple-select-100",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support A/B testing and iterative improvement?",
+        "[{\"id\":\"a\",\"text\":\"State the hypothesis before running the experiment.\"},{\"id\":\"b\",\"text\":\"Change many major variables at once.\"},{\"id\":\"c\",\"text\":\"Define primary and guardrail metrics.\"},{\"id\":\"d\",\"text\":\"Ignore latency/cost after quality improves.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: State the hypothesis before running the experiment.; Define primary and guardrail metrics.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-multiple-select-101",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing A/B testing and iterative improvement. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Define primary and guardrail metrics.\"},{\"id\":\"b\",\"text\":\"Look at metrics until something becomes significant.\"},{\"id\":\"c\",\"text\":\"Use consistent assignment where cross-exposure would confound results.\"},{\"id\":\"d\",\"text\":\"Live-test risky irreversible actions unnecessarily.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define primary and guardrail metrics.; Use consistent assignment where cross-exposure would confound results.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-multiple-select-102",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in A/B testing and iterative improvement?",
+        "[{\"id\":\"a\",\"text\":\"Use consistent assignment where cross-exposure would confound results.\"},{\"id\":\"b\",\"text\":\"Ignore latency/cost after quality improves.\"},{\"id\":\"c\",\"text\":\"Use shadow testing for risky candidates.\"},{\"id\":\"d\",\"text\":\"Define success criteria after seeing results.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use consistent assignment where cross-exposure would confound results.; Use shadow testing for risky candidates.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-multiple-select-103",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on A/B testing and iterative improvement, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Use shadow testing for risky candidates.\"},{\"id\":\"b\",\"text\":\"Live-test risky irreversible actions unnecessarily.\"},{\"id\":\"c\",\"text\":\"Evaluate practical as well as statistical impact.\"},{\"id\":\"d\",\"text\":\"Change many major variables at once.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use shadow testing for risky candidates.; Evaluate practical as well as statistical impact.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-multiple-select-100",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support diagnosing AI system failures?",
+        "[{\"id\":\"a\",\"text\":\"Reproduce the symptom.\"},{\"id\":\"b\",\"text\":\"Call every wrong answer a hallucination.\"},{\"id\":\"c\",\"text\":\"Inspect traces and external outcomes.\"},{\"id\":\"d\",\"text\":\"Upgrade the model to fix a broken API contract.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Reproduce the symptom.; Inspect traces and external outcomes.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-multiple-select-101",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing diagnosing AI system failures. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Inspect traces and external outcomes.\"},{\"id\":\"b\",\"text\":\"Rewrite prompts when retrieval is stale.\"},{\"id\":\"c\",\"text\":\"Identify the specific failing layer.\"},{\"id\":\"d\",\"text\":\"Retry authorization failures blindly.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Inspect traces and external outcomes.; Identify the specific failing layer.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-multiple-select-102",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in diagnosing AI system failures?",
+        "[{\"id\":\"a\",\"text\":\"Identify the specific failing layer.\"},{\"id\":\"b\",\"text\":\"Upgrade the model to fix a broken API contract.\"},{\"id\":\"c\",\"text\":\"Use targeted tests to validate the hypothesis.\"},{\"id\":\"d\",\"text\":\"Fix production bugs without regression coverage.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Identify the specific failing layer.; Use targeted tests to validate the hypothesis.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-multiple-select-103",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on diagnosing AI system failures, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Use targeted tests to validate the hypothesis.\"},{\"id\":\"b\",\"text\":\"Retry authorization failures blindly.\"},{\"id\":\"c\",\"text\":\"Add a regression case after the fix.\"},{\"id\":\"d\",\"text\":\"Call every wrong answer a hallucination.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use targeted tests to validate the hypothesis.; Add a regression case after the fix.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-multiple-select-100",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support optimizing token, latency, and cost-performance?",
+        "[{\"id\":\"a\",\"text\":\"Measure cost per successful outcome.\"},{\"id\":\"b\",\"text\":\"Optimize cost per request regardless of failures.\"},{\"id\":\"c\",\"text\":\"Reduce irrelevant context.\"},{\"id\":\"d\",\"text\":\"Assume the cheapest model is cheapest end to end.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Measure cost per successful outcome.; Reduce irrelevant context.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-multiple-select-101",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing optimizing token, latency, and cost-performance. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Reduce irrelevant context.\"},{\"id\":\"b\",\"text\":\"Remove required safety checks for speed.\"},{\"id\":\"c\",\"text\":\"Use programmatic processing for large intermediate data.\"},{\"id\":\"d\",\"text\":\"Add caches without freshness policy.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Reduce irrelevant context.; Use programmatic processing for large intermediate data.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-multiple-select-102",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in optimizing token, latency, and cost-performance?",
+        "[{\"id\":\"a\",\"text\":\"Use programmatic processing for large intermediate data.\"},{\"id\":\"b\",\"text\":\"Assume the cheapest model is cheapest end to end.\"},{\"id\":\"c\",\"text\":\"Parallelize independent work where appropriate.\"},{\"id\":\"d\",\"text\":\"Optimize tiny token savings while causing major quality regression.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use programmatic processing for large intermediate data.; Parallelize independent work where appropriate.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-multiple-select-103",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "For a production system focused on optimizing token, latency, and cost-performance, which TWO statements are strongest?",
+        "[{\"id\":\"a\",\"text\":\"Parallelize independent work where appropriate.\"},{\"id\":\"b\",\"text\":\"Add caches without freshness policy.\"},{\"id\":\"c\",\"text\":\"Re-evaluate quality after optimization.\"},{\"id\":\"d\",\"text\":\"Optimize cost per request regardless of failures.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Parallelize independent work where appropriate.; Re-evaluate quality after optimization.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-multiple-select-100",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO practices best support production monitoring and regression protection?",
+        "[{\"id\":\"a\",\"text\":\"Monitor real outcomes and dependencies.\"},{\"id\":\"b\",\"text\":\"Monitor infrastructure uptime only.\"},{\"id\":\"c\",\"text\":\"Protect known behavior with regression evals.\"},{\"id\":\"d\",\"text\":\"Deploy model changes without regression tests.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Monitor real outcomes and dependencies.; Protect known behavior with regression evals.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-multiple-select-101",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "An architect is reviewing production monitoring and regression protection. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"a\",\"text\":\"Protect known behavior with regression evals.\"},{\"id\":\"b\",\"text\":\"Keep eval suites frozen forever.\"},{\"id\":\"c\",\"text\":\"Test model/version migrations.\"},{\"id\":\"d\",\"text\":\"Create alerts with no owner.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Protect known behavior with regression evals.; Test model/version migrations.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-multiple-select-102",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "evaluation",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO decisions reduce the main risk in production monitoring and regression protection?",
+        "[{\"id\":\"a\",\"text\":\"Test model/version migrations.\"},{\"id\":\"b\",\"text\":\"Deploy model changes without regression tests.\"},{\"id\":\"c\",\"text\":\"Assign owners and response actions to alerts.\"},{\"id\":\"d\",\"text\":\"Assume offline success guarantees production success.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Test model/version migrations.; Assign owners and response actions to alerts.. The other choices conflict with the approved guidance."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:evaluation",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.1-ordering-200",
+      "objective": "D4.1",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.1-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a metric-definition workflow.",
+        "[{\"id\":\"s1\",\"text\":\"Define the desired outcome\"},{\"id\":\"s2\",\"text\":\"Choose observable measures\"},{\"id\":\"s3\",\"text\":\"Specify how each measure is computed\"},{\"id\":\"s4\",\"text\":\"Set acceptance and guardrail thresholds\"},{\"id\":\"s5\",\"text\":\"Run representative evaluation and compare to thresholds\"}]",
+        "Metrics become useful only after outcome, measurement, and thresholds are explicit."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.1",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.2-ordering-201",
+      "objective": "D4.2",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.2-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a basic evaluation-framework design.",
+        "[{\"id\":\"s1\",\"text\":\"Define representative tasks\"},{\"id\":\"s2\",\"text\":\"Choose appropriate graders\"},{\"id\":\"s3\",\"text\":\"Run one or more trials\"},{\"id\":\"s4\",\"text\":\"Collect trajectories/outcomes\"},{\"id\":\"s5\",\"text\":\"Aggregate results against thresholds\"}]",
+        "Task definition and grading come before execution and aggregation."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.2",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.3-ordering-202",
+      "objective": "D4.3",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.3-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a controlled improvement experiment.",
+        "[{\"id\":\"s1\",\"text\":\"State the hypothesis\"},{\"id\":\"s2\",\"text\":\"Choose primary and guardrail metrics\"},{\"id\":\"s3\",\"text\":\"Define assignment and decision rule\"},{\"id\":\"s4\",\"text\":\"Run control/treatment or shadow evaluation\"},{\"id\":\"s5\",\"text\":\"Analyze results and decide whether to ship\"}]",
+        "Pre-specification precedes execution and interpretation."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.3",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.4-ordering-203",
+      "objective": "D4.4",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.4-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a root-cause diagnostic loop.",
+        "[{\"id\":\"s1\",\"text\":\"Reproduce the symptom\"},{\"id\":\"s2\",\"text\":\"Inspect trace/outcome evidence\"},{\"id\":\"s3\",\"text\":\"Identify the likely failing stage\"},{\"id\":\"s4\",\"text\":\"Run a targeted isolation test\"},{\"id\":\"s5\",\"text\":\"Apply the fix and add regression coverage\"}]",
+        "Evidence-driven isolation precedes remediation."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.4",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.5-ordering-204",
+      "objective": "D4.5",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.5-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a safe optimization cycle.",
+        "[{\"id\":\"s1\",\"text\":\"Measure baseline quality, latency, and cost\"},{\"id\":\"s2\",\"text\":\"Identify the dominant resource driver\"},{\"id\":\"s3\",\"text\":\"Apply one targeted optimization\"},{\"id\":\"s4\",\"text\":\"Re-run quality/safety/latency evals\"},{\"id\":\"s5\",\"text\":\"Keep the change only if all required thresholds pass\"}]",
+        "Optimization remains constrained by outcome quality and safety."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.5",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p0-d4.6-ordering-205",
+      "objective": "D4.6",
+      "priority": "p0",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D4.6-sources.md"
+      ],
+      "note_type": "ordering",
+      "fields": [
+        "Order a production learning loop.",
+        "[{\"id\":\"s1\",\"text\":\"Monitor real system behavior\"},{\"id\":\"s2\",\"text\":\"Detect and investigate a failure/drift signal\"},{\"id\":\"s3\",\"text\":\"Fix the root cause\"},{\"id\":\"s4\",\"text\":\"Add a regression case\"},{\"id\":\"s5\",\"text\":\"Verify the fix in evaluation and production\"}]",
+        "Production evidence feeds back into regression protection."
+      ],
+      "tags": [
+        "ccarp",
+        "d4",
+        "obj:d4.6",
+        "priority:p0",
+        "kind:sequence",
+        "source:approved"
+      ]
+    }
+  ]
+}
