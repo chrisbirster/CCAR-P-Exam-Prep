@@ -451,6 +451,21 @@ def main() -> None:
 
     shutil.copy2(ROOT / "site" / "style.css", DIST / "style.css")
 
+    # Publish generated P0 study artifacts alongside the flashcard-plan page.
+    flashcard_dist = DIST / "flashcards"
+    flashcard_dist.mkdir(parents=True, exist_ok=True)
+    for name in ("ccar-p-p0.nut", "ccar-p-p0-api.json"):
+        source = ROOT / "flashcards" / name
+        if source.exists():
+            shutil.copy2(source, flashcard_dist / name)
+
+    source_batches = ROOT / "flashcards" / "batches"
+    if source_batches.exists():
+        batch_dist = flashcard_dist / "batches"
+        batch_dist.mkdir(parents=True, exist_ok=True)
+        for source in sorted(source_batches.glob("p0-*.json")):
+            shutil.copy2(source, batch_dist / source.name)
+
     global CURRENT_SOURCE, CURRENT_OUTPUT
 
     for page in PAGES:
