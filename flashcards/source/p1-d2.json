@@ -1,0 +1,2275 @@
+{
+  "domain": "d2",
+  "priority": "p1",
+  "notes": [
+    {
+      "id": "p1-d2.1-basic-001",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A routine classifier passes all quality thresholds on a faster model while a stronger model costs much more. What is the best choice?",
+        "Use the faster model for that workload unless other constraints justify the stronger model. Model choice is a workload-specific trade-off, not a prestige decision."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-basic-002",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for Claude model selection: A model is being retired. What should the team do before switching to its replacement?",
+        "Run task-specific regression, safety, latency, and cost evaluation. Model migration can change behavior and should be evaluated."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-basic-003",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this Claude model selection situation? A workflow has easy classification cases and rare complex exceptions. What design may improve economics if validated?",
+        "Route routine cases to a fast model and difficult cases to a stronger model. Evaluated routing can match model capability to workload difficulty."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-basic-004",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: Which evidence is strongest for choosing between two Claude models for a production task?",
+        "Results on a representative eval suite for that task plus latency/cost measurements. Architecture should use representative workload evidence."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-basic-reverse-001",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Active model — D2.1 application",
+        "A fully supported model recommended for current use."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-basic-reverse-002",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Deprecated model — D2.1 application",
+        "A model still functional for a period but no longer recommended and scheduled for retirement."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-basic-reverse-003",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-cloze-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "quality threshold — D2.1 application",
+        "Phrase that completes this Claude model selection rule: Choose the model that meets the workload's _____ at acceptable latency and cost."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-cloze-001",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In Claude model selection, {{c1::Active model}} is the concept described as: A fully supported model recommended for current use.",
+        "Applied reinforcement for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-cloze-002",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In Claude model selection, {{c1::Deprecated model}} is the concept described as: A model still functional for a period but no longer recommended and scheduled for retirement.",
+        "Applied reinforcement for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-cloze-003",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For Claude model selection, the precise answer to “What lifecycle state follows Active in the documented set Active, Legacy, Deprecated, Retired?” is {{c1::Legacy}}.",
+        "Applied reinforcement for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-cloze-004",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-type-answer-02",
+      "note_type": "cloze",
+      "fields": [
+        "For Claude model selection, the precise answer to “What should compare candidate models on the real workload rather than generic reputation?” is {{c1::Evaluation suite}}.",
+        "Applied reinforcement for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-type-answer-001",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within Claude model selection, what term matches this definition: A fully supported model recommended for current use.",
+        "Active model"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-type-answer-002",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within Claude model selection, what term matches this definition: A model still functional for a period but no longer recommended and scheduled for retirement.",
+        "Deprecated model"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-type-answer-003",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-cloze-01",
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved Claude model selection rule? Choose the model that meets the workload's _____ at acceptable latency and cost.",
+        "quality threshold"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-multiple-choice-001",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A routine classifier passes all quality thresholds on a faster model while a stronger model costs much more. What is the best choice? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Always use the strongest model.\"},{\"id\":\"c\",\"text\":\"Always use the cheapest model even if it fails quality.\"},{\"id\":\"d\",\"text\":\"Route randomly between models.\"},{\"id\":\"a\",\"text\":\"Use the faster model for that workload unless other constraints justify the stronger model.\"}]",
+        "a",
+        "Model choice is a workload-specific trade-off, not a prestige decision. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-multiple-choice-002",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved Claude model selection guidance to this case: A model is being retired. What should the team do before switching to its replacement?",
+        "[{\"id\":\"c\",\"text\":\"Only compare benchmark scores.\"},{\"id\":\"d\",\"text\":\"Change the model without testing because the API shape is similar.\"},{\"id\":\"a\",\"text\":\"Run task-specific regression, safety, latency, and cost evaluation.\"},{\"id\":\"b\",\"text\":\"Assume the newer model is behaviorally identical.\"}]",
+        "a",
+        "Model migration can change behavior and should be evaluated. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-multiple-choice-003",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A workflow has easy classification cases and rare complex exceptions. What design may improve economics if validated?",
+        "[{\"id\":\"d\",\"text\":\"Remove evaluation and route by input length only.\"},{\"id\":\"a\",\"text\":\"Route routine cases to a fast model and difficult cases to a stronger model.\"},{\"id\":\"b\",\"text\":\"Use the strongest model for every request by default.\"},{\"id\":\"c\",\"text\":\"Use the cheapest model for every request regardless of errors.\"}]",
+        "a",
+        "Evaluated routing can match model capability to workload difficulty. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-multiple-choice-004",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-choice-04",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: Which evidence is strongest for choosing between two Claude models for a production task? Which recommendation should they defend?",
+        "[{\"id\":\"a\",\"text\":\"Results on a representative eval suite for that task plus latency/cost measurements.\"},{\"id\":\"b\",\"text\":\"A generic leaderboard alone.\"},{\"id\":\"c\",\"text\":\"Which model name sounds newer.\"},{\"id\":\"d\",\"text\":\"A single anecdotal prompt.\"}]",
+        "a",
+        "Architecture should use representative workload evidence. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-multiple-select-001",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a Claude model selection review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support Claude model selection?",
+        "[{\"id\":\"c\",\"text\":\"Re-run regressions after model changes.\"},{\"id\":\"d\",\"text\":\"Swap models without regression testing.\"},{\"id\":\"a\",\"text\":\"Evaluate models on the actual workload.\"},{\"id\":\"b\",\"text\":\"Assume the newest model is always best.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Evaluate models on the actual workload.; Re-run regressions after model changes.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-multiple-select-002",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on Claude model selection? Context: An architect is reviewing Claude model selection. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Hard-code permanent assumptions about one model name.\"},{\"id\":\"a\",\"text\":\"Re-run regressions after model changes.\"},{\"id\":\"b\",\"text\":\"Choose solely from generic benchmark rank.\"},{\"id\":\"c\",\"text\":\"Include latency and cost alongside quality.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Re-run regressions after model changes.; Include latency and cost alongside quality.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-multiple-select-003",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-multiple-select-102",
+      "note_type": "multiple-select",
+      "fields": [
+        "For Claude model selection, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in Claude model selection?",
+        "[{\"id\":\"a\",\"text\":\"Include latency and cost alongside quality.\"},{\"id\":\"b\",\"text\":\"Swap models without regression testing.\"},{\"id\":\"c\",\"text\":\"Treat current model availability as time-sensitive.\"},{\"id\":\"d\",\"text\":\"Route only to reduce price even if quality falls below threshold.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Include latency and cost alongside quality.; Treat current model availability as time-sensitive.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-basic-001",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A refund policy says amounts over $500 require manager approval. What is the strongest implementation?",
+        "Explain the rule in the prompt and enforce the threshold in deterministic approval logic. Prompts guide behavior; protected thresholds need enforceable controls."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-basic-002",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for system prompts, templates, and guardrails: Retrieved documents may contain malicious instructions. What prompt design is strongest?",
+        "Clearly separate untrusted retrieved content from trusted instructions and restrict capabilities independently. Trust boundaries should be explicit and backed by controls."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-basic-003",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this system prompts, templates, and guardrails situation? Downstream software requires valid structured output. What should the architecture add?",
+        "An explicit output contract plus schema validation. Structure should be specified and validated when machines depend on it."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-basic-004",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: A team wants reusable prompts with changing request data. Which design is best?",
+        "Keep stable instructions in a template and inject request-specific variables separately. Templates separate stable instructions from variable content."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-basic-reverse-001",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Behavioral instruction — D2.2 application",
+        "Prompt guidance that influences how the model should act."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-basic-reverse-002",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Enforceable control — D2.2 application",
+        "Code, permissions, schema, policy, or approval logic that guarantees a boundary outside model compliance."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-basic-reverse-003",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-cloze-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "deterministic controls — D2.2 application",
+        "Phrase that completes this system prompts, templates, and guardrails rule: Use prompts to guide behavior; use _____ to enforce hard security and policy invariants."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-cloze-001",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In system prompts, templates, and guardrails, {{c1::Behavioral instruction}} is the concept described as: Prompt guidance that influences how the model should act.",
+        "Applied reinforcement for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-cloze-002",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In system prompts, templates, and guardrails, {{c1::Enforceable control}} is the concept described as: Code, permissions, schema, policy, or approval logic that guarantees a boundary outside model compliance.",
+        "Applied reinforcement for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-cloze-003",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For system prompts, templates, and guardrails, the precise answer to “What prompt layer should hold stable high-trust behavioral instructions?” is {{c1::System prompt}}.",
+        "Applied reinforcement for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-cloze-004",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-type-answer-02",
+      "note_type": "cloze",
+      "fields": [
+        "For system prompts, templates, and guardrails, the precise answer to “What should enforce authorization rather than relying on the model?” is {{c1::Deterministic control}}.",
+        "Applied reinforcement for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-type-answer-001",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within system prompts, templates, and guardrails, what term matches this definition: Prompt guidance that influences how the model should act.",
+        "Behavioral instruction"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-type-answer-002",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within system prompts, templates, and guardrails, what term matches this definition: Code, permissions, schema, policy, or approval logic that guarantees a boundary outside model compliance.",
+        "Enforceable control"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-type-answer-003",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-cloze-01",
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved system prompts, templates, and guardrails rule? Use prompts to guide behavior; use _____ to enforce hard security and policy invariants.",
+        "deterministic controls"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-multiple-choice-001",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A refund policy says amounts over $500 require manager approval. What is the strongest implementation? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Put the rule only in the system prompt.\"},{\"id\":\"c\",\"text\":\"Use a longer example showing a $499 refund.\"},{\"id\":\"d\",\"text\":\"Ask the model to self-check twice.\"},{\"id\":\"a\",\"text\":\"Explain the rule in the prompt and enforce the threshold in deterministic approval logic.\"}]",
+        "a",
+        "Prompts guide behavior; protected thresholds need enforceable controls. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-multiple-choice-002",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved system prompts, templates, and guardrails guidance to this case: Retrieved documents may contain malicious instructions. What prompt design is strongest?",
+        "[{\"id\":\"c\",\"text\":\"Tell retrieved text it is trusted.\"},{\"id\":\"d\",\"text\":\"Rely on the model to always ignore injections.\"},{\"id\":\"a\",\"text\":\"Clearly separate untrusted retrieved content from trusted instructions and restrict capabilities independently.\"},{\"id\":\"b\",\"text\":\"Concatenate all text into one unstructured prompt.\"}]",
+        "a",
+        "Trust boundaries should be explicit and backed by controls. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-multiple-choice-003",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? Downstream software requires valid structured output. What should the architecture add?",
+        "[{\"id\":\"d\",\"text\":\"Remove the system prompt.\"},{\"id\":\"a\",\"text\":\"An explicit output contract plus schema validation.\"},{\"id\":\"b\",\"text\":\"Only ask for JSON politely.\"},{\"id\":\"c\",\"text\":\"Increase temperature.\"}]",
+        "a",
+        "Structure should be specified and validated when machines depend on it. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-multiple-select-001",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a system prompts, templates, and guardrails review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support system prompts, templates, and guardrails?",
+        "[{\"id\":\"c\",\"text\":\"Separate untrusted content from policy.\"},{\"id\":\"d\",\"text\":\"Assume asking for JSON guarantees validity.\"},{\"id\":\"a\",\"text\":\"Use clear trusted instructions.\"},{\"id\":\"b\",\"text\":\"Treat a system prompt as an access-control list.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use clear trusted instructions.; Separate untrusted content from policy.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-multiple-select-002",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on system prompts, templates, and guardrails? Context: An architect is reviewing system prompts, templates, and guardrails. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Mix policy and user data indiscriminately.\"},{\"id\":\"a\",\"text\":\"Separate untrusted content from policy.\"},{\"id\":\"b\",\"text\":\"Let retrieved text rewrite policy.\"},{\"id\":\"c\",\"text\":\"Validate machine-readable outputs.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Separate untrusted content from policy.; Validate machine-readable outputs.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-multiple-select-003",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-multiple-select-102",
+      "note_type": "multiple-select",
+      "fields": [
+        "For system prompts, templates, and guardrails, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in system prompts, templates, and guardrails?",
+        "[{\"id\":\"a\",\"text\":\"Validate machine-readable outputs.\"},{\"id\":\"b\",\"text\":\"Assume asking for JSON guarantees validity.\"},{\"id\":\"c\",\"text\":\"Enforce authorization outside the model.\"},{\"id\":\"d\",\"text\":\"Rely only on model refusal for irreversible actions.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Validate machine-readable outputs.; Enforce authorization outside the model.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-basic-001",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A classifier confuses two boundary cases even with clear instructions. What is a strong next step?",
+        "Add a few representative examples that demonstrate the boundary distinction and re-evaluate. Few-shot examples are useful when they target observed ambiguity."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-basic-002",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for prompt engineering techniques: A straightforward extraction task already meets its quality target zero-shot. What should the team do?",
+        "Keep the simpler prompt unless evaluation identifies a failure. Use the lightest technique that passes the evaluation."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-basic-003",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this prompt engineering techniques situation? A long prompt mixes policy, examples, retrieved text, and user data. What improvement is most direct?",
+        "Structure the prompt so trusted instructions, examples, context, and inputs are clearly separated. Clear structure reduces ambiguity about the role of each section."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-basic-004",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: A retrieval system is returning the wrong document. What is the least promising first response?",
+        "Endlessly rewrite the prompt without fixing retrieval. Prompting cannot compensate for missing or wrong evidence indefinitely."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-basic-reverse-001",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Zero-shot — D2.3 application",
+        "Clear direct instructions without worked examples."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-basic-reverse-002",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Few-shot / multishot — D2.3 application",
+        "Representative examples included to demonstrate desired behavior."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-cloze-001",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In prompt engineering techniques, {{c1::Zero-shot}} is the concept described as: Clear direct instructions without worked examples.",
+        "Applied reinforcement for D2.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-cloze-002",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In prompt engineering techniques, {{c1::Few-shot / multishot}} is the concept described as: Representative examples included to demonstrate desired behavior.",
+        "Applied reinforcement for D2.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-cloze-003",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For prompt engineering techniques, the precise answer to “What prompting technique provides representative examples?” is {{c1::Few-shot prompting}}.",
+        "Applied reinforcement for D2.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-type-answer-001",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within prompt engineering techniques, what term matches this definition: Clear direct instructions without worked examples.",
+        "Zero-shot"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-type-answer-002",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within prompt engineering techniques, what term matches this definition: Representative examples included to demonstrate desired behavior.",
+        "Few-shot / multishot"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-multiple-choice-001",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A classifier confuses two boundary cases even with clear instructions. What is a strong next step? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Add dozens of irrelevant examples.\"},{\"id\":\"c\",\"text\":\"Switch to an agent immediately.\"},{\"id\":\"d\",\"text\":\"Hide the labels from the prompt.\"},{\"id\":\"a\",\"text\":\"Add a few representative examples that demonstrate the boundary distinction and re-evaluate.\"}]",
+        "a",
+        "Few-shot examples are useful when they target observed ambiguity. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-multiple-choice-002",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved prompt engineering techniques guidance to this case: A straightforward extraction task already meets its quality target zero-shot. What should the team do?",
+        "[{\"id\":\"c\",\"text\":\"Add ten examples for safety.\"},{\"id\":\"d\",\"text\":\"Create a multi-agent workflow.\"},{\"id\":\"a\",\"text\":\"Keep the simpler prompt unless evaluation identifies a failure.\"},{\"id\":\"b\",\"text\":\"Add chain-of-thought instructions automatically.\"}]",
+        "a",
+        "Use the lightest technique that passes the evaluation. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-multiple-choice-003",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A long prompt mixes policy, examples, retrieved text, and user data. What improvement is most direct?",
+        "[{\"id\":\"d\",\"text\":\"Remove all examples regardless of performance.\"},{\"id\":\"a\",\"text\":\"Structure the prompt so trusted instructions, examples, context, and inputs are clearly separated.\"},{\"id\":\"b\",\"text\":\"Increase temperature.\"},{\"id\":\"c\",\"text\":\"Repeat every instruction three times.\"}]",
+        "a",
+        "Clear structure reduces ambiguity about the role of each section. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-multiple-select-001",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a prompt engineering techniques review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support prompt engineering techniques?",
+        "[{\"id\":\"c\",\"text\":\"Add representative examples when evaluation shows ambiguity.\"},{\"id\":\"d\",\"text\":\"Use only easy examples.\"},{\"id\":\"a\",\"text\":\"Start with clear direct instructions.\"},{\"id\":\"b\",\"text\":\"Force visible step-by-step reasoning for every task.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Start with clear direct instructions.; Add representative examples when evaluation shows ambiguity.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-multiple-select-002",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on prompt engineering techniques? Context: An architect is reviewing prompt engineering techniques. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Treat retrieval failures as prompt failures.\"},{\"id\":\"a\",\"text\":\"Add representative examples when evaluation shows ambiguity.\"},{\"id\":\"b\",\"text\":\"Add examples before establishing a baseline.\"},{\"id\":\"c\",\"text\":\"Structure complex prompts explicitly.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Add representative examples when evaluation shows ambiguity.; Structure complex prompts explicitly.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-multiple-select-003",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-multiple-select-102",
+      "note_type": "multiple-select",
+      "fields": [
+        "For prompt engineering techniques, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in prompt engineering techniques?",
+        "[{\"id\":\"a\",\"text\":\"Structure complex prompts explicitly.\"},{\"id\":\"b\",\"text\":\"Use only easy examples.\"},{\"id\":\"c\",\"text\":\"Use current model-specific thinking guidance.\"},{\"id\":\"d\",\"text\":\"Overfit a prompt to a tiny static eval.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Structure complex prompts explicitly.; Use current model-specific thinking guidance.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-basic-001",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? An agent preloads thousands of pages although each task uses only a few. What is the strongest change?",
+        "Retrieve relevant content just in time instead of preloading the corpus. JIT retrieval preserves context for relevant information."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-basic-002",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for context-window and token management: A long-running agent approaches practical context limits. What should compaction preserve?",
+        "Key decisions, constraints, unresolved work, and important evidence. Compaction reduces size while preserving decision-critical information."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-basic-003",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this context-window and token management situation? Two independent research tasks pollute each other's context. What pattern can help?",
+        "Use context isolation with separate workers/subagents. Separate contexts reduce interference between independent workstreams."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-basic-004",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: A team stores the only copy of an order's authoritative state in conversation history. What is wrong?",
+        "Application state should live in an authoritative external store, not depend on the model context. Model context is a working set, not durable system state."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-basic-reverse-001",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Active context — D2.4 application",
+        "Information currently visible to the model for the present inference."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-basic-reverse-002",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Compaction — D2.4 application",
+        "Compressing a long interaction into a smaller representation that preserves important state and decisions."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-cloze-001",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In context-window and token management, {{c1::Active context}} is the concept described as: Information currently visible to the model for the present inference.",
+        "Applied reinforcement for D2.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-cloze-002",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In context-window and token management, {{c1::Compaction}} is the concept described as: Compressing a long interaction into a smaller representation that preserves important state and decisions.",
+        "Applied reinforcement for D2.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-cloze-003",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For context-window and token management, the precise answer to “What technique summarizes a long trace while preserving critical state?” is {{c1::Compaction}}.",
+        "Applied reinforcement for D2.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-type-answer-001",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within context-window and token management, what term matches this definition: Information currently visible to the model for the present inference.",
+        "Active context"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-type-answer-002",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within context-window and token management, what term matches this definition: Compressing a long interaction into a smaller representation that preserves important state and decisions.",
+        "Compaction"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-multiple-choice-001",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: An agent preloads thousands of pages although each task uses only a few. What is the strongest change? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Increase prompt verbosity.\"},{\"id\":\"c\",\"text\":\"Duplicate the corpus in conversation history.\"},{\"id\":\"d\",\"text\":\"Always use multiple agents.\"},{\"id\":\"a\",\"text\":\"Retrieve relevant content just in time instead of preloading the corpus.\"}]",
+        "a",
+        "JIT retrieval preserves context for relevant information. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-multiple-choice-002",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved context-window and token management guidance to this case: A long-running agent approaches practical context limits. What should compaction preserve?",
+        "[{\"id\":\"c\",\"text\":\"Only the last user message.\"},{\"id\":\"d\",\"text\":\"Nothing; simply drop all prior state.\"},{\"id\":\"a\",\"text\":\"Key decisions, constraints, unresolved work, and important evidence.\"},{\"id\":\"b\",\"text\":\"Every raw tool response verbatim.\"}]",
+        "a",
+        "Compaction reduces size while preserving decision-critical information. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-multiple-choice-003",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? Two independent research tasks pollute each other's context. What pattern can help?",
+        "[{\"id\":\"d\",\"text\":\"Cache every tool result forever.\"},{\"id\":\"a\",\"text\":\"Use context isolation with separate workers/subagents.\"},{\"id\":\"b\",\"text\":\"Merge all transcripts into one prompt.\"},{\"id\":\"c\",\"text\":\"Increase temperature.\"}]",
+        "a",
+        "Separate contexts reduce interference between independent workstreams. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-multiple-select-001",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a context-window and token management review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support context-window and token management?",
+        "[{\"id\":\"c\",\"text\":\"Compact long histories while preserving critical facts.\"},{\"id\":\"d\",\"text\":\"Assume larger windows eliminate relevance problems.\"},{\"id\":\"a\",\"text\":\"Load information when it is relevant to the next decision.\"},{\"id\":\"b\",\"text\":\"Preload every available document.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Load information when it is relevant to the next decision.; Compact long histories while preserving critical facts.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.4-multiple-select-002",
+      "objective": "D2.4",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.4-sources.md"
+      ],
+      "seed_id": "p0-d2.4-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on context-window and token management? Context: An architect is reviewing context-window and token management. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Summarize away hard constraints.\"},{\"id\":\"a\",\"text\":\"Compact long histories while preserving critical facts.\"},{\"id\":\"b\",\"text\":\"Treat chat history as the database.\"},{\"id\":\"c\",\"text\":\"Keep durable state outside model context.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Compact long histories while preserving critical facts.; Keep durable state outside model context.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.4",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-basic-001",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A legal workflow reuses the same large policy manual for thousands of requests. What is a strong optimization?",
+        "Reuse/cache the stable reference content while fetching case-specific current state separately. Stable repeated context is a good reuse target; volatile state is not."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-basic-002",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for prompt reuse, caching, and Skills: A shared Skill changes how production agents perform a regulated workflow. How should it be managed?",
+        "Version, review, test, and control changes like other operational assets. Reusable agent instructions/resources can change behavior and should be governed."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-basic-003",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this prompt reuse, caching, and Skills situation? Which data is the worst prompt-caching candidate?",
+        "A user's current account balance that changes frequently. Caching must not undermine freshness for live state."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-basic-reverse-001",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Prompt template — D2.5 application",
+        "Reusable stable prompt structure with request-specific variables."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-basic-reverse-002",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-cloze-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "stable enough — D2.5 application",
+        "Phrase that completes this prompt reuse, caching, and Skills rule: Reuse is safest when the content is _____ that freshness is not compromised."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-cloze-001",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In prompt reuse, caching, and Skills, {{c1::Prompt template}} is the concept described as: Reusable stable prompt structure with request-specific variables.",
+        "Applied reinforcement for D2.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-cloze-002",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For prompt reuse, caching, and Skills, the precise answer to “What Anthropic mechanism packages reusable instructions, scripts, and resources for agents?” is {{c1::Agent Skills}}.",
+        "Applied reinforcement for D2.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-cloze-003",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In prompt reuse, caching, and Skills, {{c1::Prompt template}} is the concept described as: Reusable stable prompt structure with request-specific variables.",
+        "Applied reinforcement for D2.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-type-answer-001",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within prompt reuse, caching, and Skills, what term matches this definition: Reusable stable prompt structure with request-specific variables.",
+        "Prompt template"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-type-answer-002",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-cloze-01",
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved prompt reuse, caching, and Skills rule? Reuse is safest when the content is _____ that freshness is not compromised.",
+        "stable enough"
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-multiple-choice-001",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A legal workflow reuses the same large policy manual for thousands of requests. What is a strong optimization? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Cache each client's live case status indefinitely.\"},{\"id\":\"c\",\"text\":\"Duplicate the manual into every variable section.\"},{\"id\":\"d\",\"text\":\"Remove freshness checks from current data.\"},{\"id\":\"a\",\"text\":\"Reuse/cache the stable reference content while fetching case-specific current state separately.\"}]",
+        "a",
+        "Stable repeated context is a good reuse target; volatile state is not. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-multiple-choice-002",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved prompt reuse, caching, and Skills guidance to this case: A shared Skill changes how production agents perform a regulated workflow. How should it be managed?",
+        "[{\"id\":\"c\",\"text\":\"Let every user edit it globally.\"},{\"id\":\"d\",\"text\":\"Never regression-test Skill changes.\"},{\"id\":\"a\",\"text\":\"Version, review, test, and control changes like other operational assets.\"},{\"id\":\"b\",\"text\":\"Treat it as harmless prose with no review.\"}]",
+        "a",
+        "Reusable agent instructions/resources can change behavior and should be governed. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-multiple-choice-003",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? Which data is the worst prompt-caching candidate?",
+        "[{\"id\":\"d\",\"text\":\"A reusable set of examples.\"},{\"id\":\"a\",\"text\":\"A user's current account balance that changes frequently.\"},{\"id\":\"b\",\"text\":\"A stable policy manual.\"},{\"id\":\"c\",\"text\":\"A fixed system instruction block.\"}]",
+        "a",
+        "Caching must not undermine freshness for live state. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-multiple-select-001",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a prompt reuse, caching, and Skills review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support prompt reuse, caching, and Skills?",
+        "[{\"id\":\"c\",\"text\":\"Keep volatile state fresh.\"},{\"id\":\"d\",\"text\":\"Use one giant reusable prompt for unrelated workloads.\"},{\"id\":\"a\",\"text\":\"Reuse stable expensive context.\"},{\"id\":\"b\",\"text\":\"Cache rapidly changing business state indefinitely.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Reuse stable expensive context.; Keep volatile state fresh.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.5-multiple-select-002",
+      "objective": "D2.5",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.5-sources.md"
+      ],
+      "seed_id": "p0-d2.5-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on prompt reuse, caching, and Skills? Context: An architect is reviewing prompt reuse, caching, and Skills. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Treat cache freshness as irrelevant.\"},{\"id\":\"a\",\"text\":\"Keep volatile state fresh.\"},{\"id\":\"b\",\"text\":\"Let shared Skills change without review.\"},{\"id\":\"c\",\"text\":\"Version shared prompt assets and Skills.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep volatile state fresh.; Version shared prompt assets and Skills.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D2.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.5",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.1-ordering-001",
+      "objective": "D2.1",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.1-sources.md"
+      ],
+      "seed_id": "p0-d2.1-ordering-200",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a sound model-selection process.",
+        "[{\"id\":\"s1\",\"text\":\"Define task quality and operational thresholds\"},{\"id\":\"s2\",\"text\":\"Evaluate candidate models on representative cases\"},{\"id\":\"s3\",\"text\":\"Compare quality, latency, cost, and risk\"},{\"id\":\"s4\",\"text\":\"Select the model/routing policy\"},{\"id\":\"s5\",\"text\":\"Re-test when the model or workload changes\"}]",
+        "Requirements and evaluation precede selection; changes trigger re-evaluation. Sequence reinforcement for D2.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.1",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.2-ordering-002",
+      "objective": "D2.2",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.2-sources.md"
+      ],
+      "seed_id": "p0-d2.2-ordering-201",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a secure prompt-to-action pattern.",
+        "[{\"id\":\"s1\",\"text\":\"Establish trusted system instructions\"},{\"id\":\"s2\",\"text\":\"Insert user/retrieved content as untrusted data\"},{\"id\":\"s3\",\"text\":\"Let the model propose an output/action\"},{\"id\":\"s4\",\"text\":\"Validate schema and authorization deterministically\"},{\"id\":\"s5\",\"text\":\"Execute only if controls pass\"}]",
+        "Behavioral prompting precedes deterministic validation and execution. Sequence reinforcement for D2.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.2",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d2.3-ordering-003",
+      "objective": "D2.3",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D2.3-sources.md"
+      ],
+      "seed_id": "p0-d2.3-ordering-202",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order an evidence-driven prompt-improvement loop.",
+        "[{\"id\":\"s1\",\"text\":\"Establish a simple baseline prompt\"},{\"id\":\"s2\",\"text\":\"Run representative evaluations\"},{\"id\":\"s3\",\"text\":\"Identify a specific failure mode\"},{\"id\":\"s4\",\"text\":\"Apply the lightest targeted prompting change\"},{\"id\":\"s5\",\"text\":\"Re-run evaluation and regression checks\"}]",
+        "Prompt complexity should be added in response to observed failures. Sequence reinforcement for D2.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d2",
+        "obj:d2.3",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    }
+  ]
+}
