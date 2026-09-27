@@ -149,6 +149,44 @@ Good targets:
 
 Do not use ordering for arbitrary lists with no meaningful sequence.
 
+## P0 build status
+
+**P0 is complete:** 630 logical Deez notes generate exactly **700 study cards** across all 38 objectives.
+
+Download/import:
+
+- [P0 Deez deck](../flashcards/ccar-p-p0.nut)
+- [P0 API payload](../flashcards/ccar-p-p0-api.json)
+- [P0 source notes](../flashcards/source/README.md)
+
+Verified P0 generated-card allocation:
+
+| Domain | P0 cards |
+| --- | ---: |
+| D1 | 119 |
+| D2 | 91 |
+| D3 | 133 |
+| D4 | 112 |
+| D5 | 98 |
+| D6 | 98 |
+| D7 | 49 |
+| **Total** | **700** |
+
+Verified P0 logical-note mix:
+
+| Type | Logical notes | Generated cards |
+| --- | ---: | ---: |
+| Basic | 90 | 90 |
+| Basic + Reverse | 70 | 140 |
+| Cloze | 80 | 80 |
+| Type Answer | 60 | 60 |
+| Multiple Choice | 150 | 150 |
+| Multiple Select | 140 | 140 |
+| Ordering | 40 | 40 |
+| **Total** | **630** | **700** |
+
+The committed source files are audited in CI and must reproduce the committed `.nut`, API payload, and batches byte-for-byte.
+
 ## Priority tiers
 
 Two thousand cards is more material than most people can deeply learn from zero in seven days. Every note therefore receives a priority tag.
