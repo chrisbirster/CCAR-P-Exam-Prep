@@ -225,7 +225,65 @@ Verified P1 logical-note mix:
 
 P0 + P1 now provide **1,500 generated cards**. The cross-priority audit rejects duplicate normalized prompts across both tiers.
 
-The remaining P2 allocation is intentionally preserved at exactly 500 generated cards.
+P2 is complete; P0 + P1 + P2 now total exactly **2,000 generated cards**.
+
+## P2 build status
+
+**P2 is complete:** 440 logical Deez notes generate exactly **500 study cards** across all 38 objectives.
+
+Download/import:
+
+- [P2 Deez deck](../flashcards/ccar-p-p2.nut)
+- [P2 API payload](../flashcards/ccar-p-p2-api.json)
+- [Final combined 2,000-card deck](../flashcards/ccar-p-combined.nut)
+- [Final combined API payload](../flashcards/ccar-p-combined-api.json)
+
+Verified P2 generated-card allocation:
+
+| Domain | P2 cards |
+| --- | ---: |
+| D1 | 85 |
+| D2 | 65 |
+| D3 | 95 |
+| D4 | 80 |
+| D5 | 70 |
+| D6 | 70 |
+| D7 | 35 |
+| **Total** | **500** |
+
+Verified P2 logical-note mix:
+
+| Type | Logical notes | Generated cards |
+| --- | ---: | ---: |
+| Basic | 90 | 90 |
+| Basic + Reverse | 60 | 120 |
+| Cloze | 90 | 90 |
+| Type Answer | 70 | 70 |
+| Multiple Choice | 60 | 60 |
+| Multiple Select | 40 | 40 |
+| Ordering | 30 | 30 |
+| **Total** | **440** | **500** |
+
+## Final deck status
+
+The full deck is now complete:
+
+- **1,780 logical notes**
+- **2,000 generated cards**
+- all 38 objectives
+- exact original domain allocation
+- exact original note-type allocation
+- zero duplicate normalized prompts across P0 + P1 + P2
+
+```text
+P0  700
+P1  800
+P2  500
+────────
+   2,000
+```
+
+The final import target is **CCAR-P Exam Prep** via `ccar-p-combined.nut` or the chunked combined API batches.
 
 ## Priority tiers
 
@@ -247,7 +305,7 @@ Broader scenarios, nuances, integrations, operational trade-offs, and secondary 
 
 ### P2 — Breadth / edge cases
 
-**500 generated cards**
+**500 generated cards — complete**
 
 Less-common cases, additional comparison prompts, and reinforcement.
 
