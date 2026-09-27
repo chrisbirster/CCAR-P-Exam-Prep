@@ -92,8 +92,9 @@ For CCAR-P, **Decide** is the level that matters most.
 - [Notes Audit](audit/)
 - [2,000-Card Flashcard Plan](flashcards/)
 - [Download P0 — 700 generated cards](flashcards/ccar-p-p0.nut)
+- [Download P1 — 800 generated cards](flashcards/ccar-p-p1.nut)
 - Domain-by-domain lessons
-- 2,000-card Deez flashcard deck — **P0 700-card tier complete**
+- 2,000-card Deez flashcard deck — **P0 + P1 complete: 1,500 / 2,000 cards**
 - Original scenario practice
 - Hands-on architecture labs
 - Review checklists
