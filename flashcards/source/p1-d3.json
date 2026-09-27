@@ -1,0 +1,3313 @@
+{
+  "domain": "d3",
+  "priority": "p1",
+  "notes": [
+    {
+      "id": "p1-d3.1-basic-001",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A support assistant only needs order lookup and refund-request submission, but it has a production database admin credential. What should change first?",
+        "Replace the broad credential/tool with scoped capabilities needed for those tasks. Reduce unnecessary capability and blast radius rather than relying on instructions."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-basic-002",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for tool and agent capability bloat: A coding agent legitimately needs shell access. What is the strongest architecture?",
+        "Allow the broad tool inside a constrained sandbox with scoped credentials and permissions. General-purpose capability can be valid when strong containment limits reach and impact."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-basic-003",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this tool and agent capability bloat situation? An agent has twelve overlapping CRM tools with vague names and often chooses the wrong one. What is the best improvement?",
+        "Reduce overlap and define clearer, distinct tool boundaries and descriptions. Overlapping capability increases selection ambiguity."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-basic-004",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: Which change most directly reduces the blast radius of a read-only reporting agent?",
+        "Remove write credentials and destructive tool operations it does not need. Hard capability restriction reduces what can happen if the model is wrong or compromised."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-basic-reverse-001",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Capability bloat — D3.1 application",
+        "Exposing more tools, data, credentials, or side effects than the task needs."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-basic-reverse-002",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Least privilege — D3.1 application",
+        "Granting only the minimum capability required to perform the task."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-basic-reverse-003",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-cloze-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "blast radius — D3.1 application",
+        "Phrase that completes this tool and agent capability bloat rule: More exposed capability increases the potential _____ if an agent is compromised or behaves incorrectly."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-cloze-001",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In tool and agent capability bloat, {{c1::Capability bloat}} is the concept described as: Exposing more tools, data, credentials, or side effects than the task needs.",
+        "Applied reinforcement for D3.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-cloze-002",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In tool and agent capability bloat, {{c1::Least privilege}} is the concept described as: Granting only the minimum capability required to perform the task.",
+        "Applied reinforcement for D3.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-cloze-003",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For tool and agent capability bloat, the precise answer to “What security principle grants only the minimum permissions needed?” is {{c1::Least privilege}}.",
+        "Applied reinforcement for D3.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-type-answer-001",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within tool and agent capability bloat, what term matches this definition: Exposing more tools, data, credentials, or side effects than the task needs.",
+        "Capability bloat"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-type-answer-002",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within tool and agent capability bloat, what term matches this definition: Granting only the minimum capability required to perform the task.",
+        "Least privilege"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-type-answer-003",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-cloze-01",
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved tool and agent capability bloat rule? More exposed capability increases the potential _____ if an agent is compromised or behaves incorrectly.",
+        "blast radius"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-multiple-choice-001",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A support assistant only needs order lookup and refund-request submission, but it has a production database admin credential. What should change first? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Add more logging but keep admin access.\"},{\"id\":\"c\",\"text\":\"Tell the model never to misuse the credential.\"},{\"id\":\"d\",\"text\":\"Add more unrelated tools so selection is balanced.\"},{\"id\":\"a\",\"text\":\"Replace the broad credential/tool with scoped capabilities needed for those tasks.\"}]",
+        "a",
+        "Reduce unnecessary capability and blast radius rather than relying on instructions. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-multiple-choice-002",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved tool and agent capability bloat guidance to this case: A coding agent legitimately needs shell access. What is the strongest architecture?",
+        "[{\"id\":\"c\",\"text\":\"Give unrestricted production shell access.\"},{\"id\":\"d\",\"text\":\"Rely only on a system prompt to protect the host.\"},{\"id\":\"a\",\"text\":\"Allow the broad tool inside a constrained sandbox with scoped credentials and permissions.\"},{\"id\":\"b\",\"text\":\"Ban all broad tools regardless of task.\"}]",
+        "a",
+        "General-purpose capability can be valid when strong containment limits reach and impact. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-multiple-choice-003",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? An agent has twelve overlapping CRM tools with vague names and often chooses the wrong one. What is the best improvement?",
+        "[{\"id\":\"d\",\"text\":\"Hide all tool errors from the model.\"},{\"id\":\"a\",\"text\":\"Reduce overlap and define clearer, distinct tool boundaries and descriptions.\"},{\"id\":\"b\",\"text\":\"Add another CRM tool for each edge case.\"},{\"id\":\"c\",\"text\":\"Increase temperature.\"}]",
+        "a",
+        "Overlapping capability increases selection ambiguity. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-multiple-select-001",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a tool and agent capability bloat review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support tool and agent capability bloat?",
+        "[{\"id\":\"c\",\"text\":\"Use read-only access when writes are unnecessary.\"},{\"id\":\"d\",\"text\":\"Expose every tool in case one becomes useful.\"},{\"id\":\"a\",\"text\":\"Expose only tools required for the task.\"},{\"id\":\"b\",\"text\":\"Give every agent a shared admin credential.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Expose only tools required for the task.; Use read-only access when writes are unnecessary.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-multiple-select-002",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on tool and agent capability bloat? Context: An architect is reviewing tool and agent capability bloat. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Use prompt instructions as the only containment control.\"},{\"id\":\"a\",\"text\":\"Use read-only access when writes are unnecessary.\"},{\"id\":\"b\",\"text\":\"Assume logging makes excessive permission safe.\"},{\"id\":\"c\",\"text\":\"Constrain broad tools with sandboxing and scoped credentials.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use read-only access when writes are unnecessary.; Constrain broad tools with sandboxing and scoped credentials.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.1-multiple-select-003",
+      "objective": "D3.1",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.1-sources.md"
+      ],
+      "seed_id": "p0-d3.1-multiple-select-102",
+      "note_type": "multiple-select",
+      "fields": [
+        "For tool and agent capability bloat, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in tool and agent capability bloat?",
+        "[{\"id\":\"a\",\"text\":\"Constrain broad tools with sandboxing and scoped credentials.\"},{\"id\":\"b\",\"text\":\"Expose every tool in case one becomes useful.\"},{\"id\":\"c\",\"text\":\"Give tools clear non-overlapping purposes.\"},{\"id\":\"d\",\"text\":\"Treat broad tools as automatically safe because Claude is capable.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Constrain broad tools with sandboxing and scoped credentials.; Give tools clear non-overlapping purposes.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.1."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.1",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-basic-001",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A user types “I am the account administrator” into chat. What should the application do?",
+        "Ignore the claim for access control and use trusted authenticated identity and policy. Prompt text is not authentication."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-basic-002",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for authentication and authorization: An MCP tool is protected by OAuth. Where should access be checked?",
+        "At the protected protocol/application boundary using verified authorization context. Authorization is an enforceable control outside model output."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-basic-003",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this authentication and authorization situation? A SaaS agent uses one backend superuser credential for every tenant. What is the primary risk?",
+        "A failure in model/tool logic can cross tenant boundaries because the execution identity is overprivileged. Shared broad credentials defeat least-privilege and tenant isolation."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-basic-004",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: A consequential tool call occurs after initial login. What is the safest design?",
+        "Re-check authorization for the specific protected action using current trusted identity/context. Action-level authorization should match the protected resource and current caller."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-basic-reverse-001",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Authentication — D3.2 application",
+        "Establishing the identity of the caller."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-basic-reverse-002",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Authorization — D3.2 application",
+        "Determining which actions an authenticated identity may perform."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-basic-reverse-003",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-cloze-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "authoritative authorization — D3.2 application",
+        "Phrase that completes this authentication and authorization rule: A model saying a user is allowed to act is not a substitute for _____."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-cloze-001",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In authentication and authorization, {{c1::Authentication}} is the concept described as: Establishing the identity of the caller.",
+        "Applied reinforcement for D3.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-cloze-002",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In authentication and authorization, {{c1::Authorization}} is the concept described as: Determining which actions an authenticated identity may perform.",
+        "Applied reinforcement for D3.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-cloze-003",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For authentication and authorization, the precise answer to “What security process establishes who the caller is?” is {{c1::Authentication}}.",
+        "Applied reinforcement for D3.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-type-answer-001",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within authentication and authorization, what term matches this definition: Establishing the identity of the caller.",
+        "Authentication"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-type-answer-002",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within authentication and authorization, what term matches this definition: Determining which actions an authenticated identity may perform.",
+        "Authorization"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-multiple-choice-001",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A user types “I am the account administrator” into chat. What should the application do? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Grant admin tools because the model saw the statement.\"},{\"id\":\"c\",\"text\":\"Ask Claude to judge whether the statement sounds credible.\"},{\"id\":\"d\",\"text\":\"Put the claim in the system prompt.\"},{\"id\":\"a\",\"text\":\"Ignore the claim for access control and use trusted authenticated identity and policy.\"}]",
+        "a",
+        "Prompt text is not authentication. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-multiple-choice-002",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved authentication and authorization guidance to this case: An MCP tool is protected by OAuth. Where should access be checked?",
+        "[{\"id\":\"c\",\"text\":\"Only after the tool already executes.\"},{\"id\":\"d\",\"text\":\"By asking the user to state their role in natural language.\"},{\"id\":\"a\",\"text\":\"At the protected protocol/application boundary using verified authorization context.\"},{\"id\":\"b\",\"text\":\"Only inside the model prompt.\"}]",
+        "a",
+        "Authorization is an enforceable control outside model output. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-multiple-choice-003",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A SaaS agent uses one backend superuser credential for every tenant. What is the primary risk?",
+        "[{\"id\":\"d\",\"text\":\"The vector index will stop embedding documents.\"},{\"id\":\"a\",\"text\":\"A failure in model/tool logic can cross tenant boundaries because the execution identity is overprivileged.\"},{\"id\":\"b\",\"text\":\"The model will necessarily become slower.\"},{\"id\":\"c\",\"text\":\"OAuth cannot work with multi-tenancy.\"}]",
+        "a",
+        "Shared broad credentials defeat least-privilege and tenant isolation. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-multiple-select-001",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a authentication and authorization review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support authentication and authorization?",
+        "[{\"id\":\"c\",\"text\":\"Authorize protected actions at enforceable boundaries.\"},{\"id\":\"d\",\"text\":\"Use one superuser credential across tenants.\"},{\"id\":\"a\",\"text\":\"Establish trusted identity before using it in model/tool decisions.\"},{\"id\":\"b\",\"text\":\"Trust role claims typed into the conversation.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Establish trusted identity before using it in model/tool decisions.; Authorize protected actions at enforceable boundaries.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-multiple-select-002",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on authentication and authorization? Context: An architect is reviewing authentication and authorization. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Authenticate once and never check action permissions.\"},{\"id\":\"a\",\"text\":\"Authorize protected actions at enforceable boundaries.\"},{\"id\":\"b\",\"text\":\"Let the model invent access policy.\"},{\"id\":\"c\",\"text\":\"Use scoped or delegated credentials.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Authorize protected actions at enforceable boundaries.; Use scoped or delegated credentials.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-multiple-select-003",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-multiple-select-102",
+      "note_type": "multiple-select",
+      "fields": [
+        "For authentication and authorization, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in authentication and authorization?",
+        "[{\"id\":\"a\",\"text\":\"Use scoped or delegated credentials.\"},{\"id\":\"b\",\"text\":\"Use one superuser credential across tenants.\"},{\"id\":\"c\",\"text\":\"Preserve caller identity through the request path.\"},{\"id\":\"d\",\"text\":\"Treat MCP itself as automatic authorization.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use scoped or delegated credentials.; Preserve caller identity through the request path.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-basic-001",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A reranker improves grounded accuracy by 0.3% but adds 1.5 seconds to a 2-second SLA. What should the architect do?",
+        "Evaluate whether the small quality gain justifies violating or consuming most of the latency budget. Accuracy and latency are explicit trade-offs against workload constraints."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-basic-002",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for accuracy-latency trade-offs: Four retrieval calls use unrelated sources and do not depend on one another. How can wall-clock time often be reduced?",
+        "Run the independent calls in parallel and combine results. Independent work is a good candidate for parallel execution."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-basic-003",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this accuracy-latency trade-offs situation? A system is slow. Retrieval is 50 ms, model inference 2.8 s, and formatting 20 ms. Where should optimization start?",
+        "The dominant model-inference contribution, subject to quality constraints. Optimize the dominant contributor rather than the easiest component."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-basic-004",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-multiple-choice-04",
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: Tool Search reduces context and wrong-tool calls but adds a lookup step. When is it most justified?",
+        "When the accuracy/context benefit outweighs the added lookup latency for the workload. Progressive discovery itself has a trade-off and should be evaluated."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-basic-reverse-001",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Latency budget — D3.3 application",
+        "The portion of end-to-end response time available to system stages under the SLA."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-basic-reverse-002",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Parallelization for latency — D3.3 application",
+        "Executing independent operations concurrently to reduce wall-clock time."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-cloze-001",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In accuracy-latency trade-offs, {{c1::Latency budget}} is the concept described as: The portion of end-to-end response time available to system stages under the SLA.",
+        "Applied reinforcement for D3.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-cloze-002",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In accuracy-latency trade-offs, {{c1::Parallelization for latency}} is the concept described as: Executing independent operations concurrently to reduce wall-clock time.",
+        "Applied reinforcement for D3.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-cloze-003",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For accuracy-latency trade-offs, the precise answer to “What percentile metric is commonly used to represent tail latency rather than only the average?” is {{c1::p95}}.",
+        "Applied reinforcement for D3.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-type-answer-001",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within accuracy-latency trade-offs, what term matches this definition: The portion of end-to-end response time available to system stages under the SLA.",
+        "Latency budget"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-type-answer-002",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within accuracy-latency trade-offs, what term matches this definition: Executing independent operations concurrently to reduce wall-clock time.",
+        "Parallelization for latency"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-multiple-choice-001",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A reranker improves grounded accuracy by 0.3% but adds 1.5 seconds to a 2-second SLA. What should the architect do? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Always keep reranking because quality stages are mandatory.\"},{\"id\":\"c\",\"text\":\"Ignore the SLA because accuracy always wins.\"},{\"id\":\"d\",\"text\":\"Remove required safety checks first.\"},{\"id\":\"a\",\"text\":\"Evaluate whether the small quality gain justifies violating or consuming most of the latency budget.\"}]",
+        "a",
+        "Accuracy and latency are explicit trade-offs against workload constraints. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-multiple-choice-002",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved accuracy-latency trade-offs guidance to this case: Four retrieval calls use unrelated sources and do not depend on one another. How can wall-clock time often be reduced?",
+        "[{\"id\":\"c\",\"text\":\"Increase prompt length.\"},{\"id\":\"d\",\"text\":\"Use the same output from the first call for all four.\"},{\"id\":\"a\",\"text\":\"Run the independent calls in parallel and combine results.\"},{\"id\":\"b\",\"text\":\"Run them sequentially by default.\"}]",
+        "a",
+        "Independent work is a good candidate for parallel execution. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-multiple-choice-003",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A system is slow. Retrieval is 50 ms, model inference 2.8 s, and formatting 20 ms. Where should optimization start?",
+        "[{\"id\":\"d\",\"text\":\"Randomly remove a safety control.\"},{\"id\":\"a\",\"text\":\"The dominant model-inference contribution, subject to quality constraints.\"},{\"id\":\"b\",\"text\":\"Formatting because it is easiest.\"},{\"id\":\"c\",\"text\":\"Retrieval because RAG is always the bottleneck.\"}]",
+        "a",
+        "Optimize the dominant contributor rather than the easiest component. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-multiple-select-001",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a accuracy-latency trade-offs review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support accuracy-latency trade-offs?",
+        "[{\"id\":\"c\",\"text\":\"Compare quality gains against SLA impact.\"},{\"id\":\"d\",\"text\":\"Parallelize dependent steps.\"},{\"id\":\"a\",\"text\":\"Measure end-to-end latency by stage.\"},{\"id\":\"b\",\"text\":\"Add reranking because every RAG system must have it.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Measure end-to-end latency by stage.; Compare quality gains against SLA impact.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-multiple-select-002",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on accuracy-latency trade-offs? Context: An architect is reviewing accuracy-latency trade-offs. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Remove required authorization to save time.\"},{\"id\":\"a\",\"text\":\"Compare quality gains against SLA impact.\"},{\"id\":\"b\",\"text\":\"Measure only average latency.\"},{\"id\":\"c\",\"text\":\"Parallelize independent work.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Compare quality gains against SLA impact.; Parallelize independent work.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-multiple-select-003",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-multiple-select-102",
+      "note_type": "multiple-select",
+      "fields": [
+        "For accuracy-latency trade-offs, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in accuracy-latency trade-offs?",
+        "[{\"id\":\"a\",\"text\":\"Parallelize independent work.\"},{\"id\":\"b\",\"text\":\"Parallelize dependent steps.\"},{\"id\":\"c\",\"text\":\"Optimize the dominant latency contributor.\"},{\"id\":\"d\",\"text\":\"Optimize tiny stages while ignoring the dominant bottleneck.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Parallelize independent work.; Optimize the dominant latency contributor.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-basic-001",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A final answer is wrong, but logs contain only the final text. What is the strongest observability improvement?",
+        "Capture correlated trajectory/tool/retrieval events so the failing stage can be identified. Agent failures require visibility into intermediate behavior and dependencies."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-basic-002",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for observability at scale: Worker logs exist but cannot be tied back to the originating user request. What is missing?",
+        "A propagated trace/correlation identity. Distributed observability needs cross-component correlation."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-basic-003",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this observability at scale situation? A team logs every prompt, credential, and tool payload indefinitely for debugging. What is the main issue?",
+        "Observability itself is creating privacy/security and retention risk. Debuggability must be balanced with data minimization and protection."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-basic-reverse-001",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Trace ID — D3.4 application",
+        "A correlation identifier used to connect events across components of one request."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-basic-reverse-002",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Trajectory — D3.4 application",
+        "The sequence of model/tool interactions taken by an agent during a task."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-cloze-001",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In observability at scale, {{c1::Trace ID}} is the concept described as: A correlation identifier used to connect events across components of one request.",
+        "Applied reinforcement for D3.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-cloze-002",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In observability at scale, {{c1::Trajectory}} is the concept described as: The sequence of model/tool interactions taken by an agent during a task.",
+        "Applied reinforcement for D3.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-cloze-003",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For observability at scale, the precise answer to “What identifier connects logs across model, retrieval, tools, queues, and workers?” is {{c1::Trace ID}}.",
+        "Applied reinforcement for D3.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-type-answer-001",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within observability at scale, what term matches this definition: A correlation identifier used to connect events across components of one request.",
+        "Trace ID"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-type-answer-002",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within observability at scale, what term matches this definition: The sequence of model/tool interactions taken by an agent during a task.",
+        "Trajectory"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-multiple-choice-001",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A final answer is wrong, but logs contain only the final text. What is the strongest observability improvement? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Log the final answer twice.\"},{\"id\":\"c\",\"text\":\"Increase model temperature.\"},{\"id\":\"d\",\"text\":\"Remove correlation IDs.\"},{\"id\":\"a\",\"text\":\"Capture correlated trajectory/tool/retrieval events so the failing stage can be identified.\"}]",
+        "a",
+        "Agent failures require visibility into intermediate behavior and dependencies. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-multiple-choice-002",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved observability at scale guidance to this case: Worker logs exist but cannot be tied back to the originating user request. What is missing?",
+        "[{\"id\":\"c\",\"text\":\"A larger context window.\"},{\"id\":\"d\",\"text\":\"An additional prompt example.\"},{\"id\":\"a\",\"text\":\"A propagated trace/correlation identity.\"},{\"id\":\"b\",\"text\":\"More workers.\"}]",
+        "a",
+        "Distributed observability needs cross-component correlation. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-multiple-choice-003",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A team logs every prompt, credential, and tool payload indefinitely for debugging. What is the main issue?",
+        "[{\"id\":\"d\",\"text\":\"Tracing should only happen after incidents.\"},{\"id\":\"a\",\"text\":\"Observability itself is creating privacy/security and retention risk.\"},{\"id\":\"b\",\"text\":\"Logs can never contain sensitive data.\"},{\"id\":\"c\",\"text\":\"More logs always reduce risk.\"}]",
+        "a",
+        "Debuggability must be balanced with data minimization and protection. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-multiple-select-001",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a observability at scale review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support observability at scale?",
+        "[{\"id\":\"c\",\"text\":\"Inspect trajectories and external outcomes.\"},{\"id\":\"d\",\"text\":\"Keep component logs with no correlation.\"},{\"id\":\"a\",\"text\":\"Propagate trace identity across components.\"},{\"id\":\"b\",\"text\":\"Log only the final answer.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Propagate trace identity across components.; Inspect trajectories and external outcomes.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-multiple-select-002",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on observability at scale? Context: An architect is reviewing observability at scale. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Trust model claims over external state.\"},{\"id\":\"a\",\"text\":\"Inspect trajectories and external outcomes.\"},{\"id\":\"b\",\"text\":\"Store secrets in logs for convenience.\"},{\"id\":\"c\",\"text\":\"Record tool names/results and dependency failures.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Inspect trajectories and external outcomes.; Record tool names/results and dependency failures.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-basic-001",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A policy assistant keeps answering from an obsolete policy that ranks above the current version. What should be fixed first?",
+        "Freshness/metadata/ranking in the retrieval pipeline. The wrong evidence is reaching the model; fix retrieval before prompt wording."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-basic-002",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for RAG pipeline design: A document is split at arbitrary character counts, separating headings from their explanations. What should the architect revisit?",
+        "Chunking strategy based on source structure and likely queries. Chunk boundaries affect retrieval quality and meaning."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-basic-003",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this RAG pipeline design situation? Initial hybrid retrieval returns many plausible chunks but ordering is weak. What optional stage can improve final relevance?",
+        "Reranking the candidate set. Reranking refines first-stage candidates with a stronger relevance signal."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-basic-reverse-001",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Chunking — D3.5 application",
+        "Dividing source documents into retrieval units while preserving useful semantic context."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-basic-reverse-002",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-basic-reverse-02",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Reranking — D3.5 application",
+        "Reordering first-stage retrieval candidates with a stronger relevance signal."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-cloze-001",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In RAG pipeline design, {{c1::Chunking}} is the concept described as: Dividing source documents into retrieval units while preserving useful semantic context.",
+        "Applied reinforcement for D3.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-cloze-002",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-basic-reverse-02",
+      "note_type": "cloze",
+      "fields": [
+        "In RAG pipeline design, {{c1::Reranking}} is the concept described as: Reordering first-stage retrieval candidates with a stronger relevance signal.",
+        "Applied reinforcement for D3.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-cloze-003",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For RAG pipeline design, the precise answer to “What retrieval stage reorders candidate chunks after initial search?” is {{c1::Reranking}}.",
+        "Applied reinforcement for D3.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-type-answer-001",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within RAG pipeline design, what term matches this definition: Dividing source documents into retrieval units while preserving useful semantic context.",
+        "Chunking"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-type-answer-002",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-basic-reverse-02",
+      "note_type": "type-answer",
+      "fields": [
+        "Within RAG pipeline design, what term matches this definition: Reordering first-stage retrieval candidates with a stronger relevance signal.",
+        "Reranking"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-multiple-choice-001",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A policy assistant keeps answering from an obsolete policy that ranks above the current version. What should be fixed first? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Tell Claude to be more accurate without changing retrieval.\"},{\"id\":\"c\",\"text\":\"Increase temperature.\"},{\"id\":\"d\",\"text\":\"Add another unrelated tool.\"},{\"id\":\"a\",\"text\":\"Freshness/metadata/ranking in the retrieval pipeline.\"}]",
+        "a",
+        "The wrong evidence is reaching the model; fix retrieval before prompt wording. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-multiple-choice-002",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved RAG pipeline design guidance to this case: A document is split at arbitrary character counts, separating headings from their explanations. What should the architect revisit?",
+        "[{\"id\":\"c\",\"text\":\"Model lifecycle state.\"},{\"id\":\"d\",\"text\":\"Human review sampling rate.\"},{\"id\":\"a\",\"text\":\"Chunking strategy based on source structure and likely queries.\"},{\"id\":\"b\",\"text\":\"OAuth scopes.\"}]",
+        "a",
+        "Chunk boundaries affect retrieval quality and meaning. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-multiple-choice-003",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? Initial hybrid retrieval returns many plausible chunks but ordering is weak. What optional stage can improve final relevance?",
+        "[{\"id\":\"d\",\"text\":\"Disable metadata.\"},{\"id\":\"a\",\"text\":\"Reranking the candidate set.\"},{\"id\":\"b\",\"text\":\"Remove indexing.\"},{\"id\":\"c\",\"text\":\"Use only conversation memory.\"}]",
+        "a",
+        "Reranking refines first-stage candidates with a stronger relevance signal. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-multiple-select-001",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a RAG pipeline design review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support RAG pipeline design?",
+        "[{\"id\":\"c\",\"text\":\"Measure retrieval separately from generation.\"},{\"id\":\"d\",\"text\":\"Change prompts when evidence is never retrieved.\"},{\"id\":\"a\",\"text\":\"Design chunking around document structure and queries.\"},{\"id\":\"b\",\"text\":\"Treat RAG as synonymous with a vector database.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Design chunking around document structure and queries.; Measure retrieval separately from generation.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-multiple-select-002",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on RAG pipeline design? Context: An architect is reviewing RAG pipeline design. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Bypass document permissions during retrieval.\"},{\"id\":\"a\",\"text\":\"Measure retrieval separately from generation.\"},{\"id\":\"b\",\"text\":\"Ignore stale/current document status.\"},{\"id\":\"c\",\"text\":\"Use metadata for freshness/access filtering where required.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Measure retrieval separately from generation.; Use metadata for freshness/access filtering where required.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-basic-001",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A user searches for exact error code ERR-9F21. Which retrieval signal should be strongly represented?",
+        "Lexical/exact-term retrieval such as BM25. Exact identifiers benefit from lexical matching."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-basic-002",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for retrieval strategy selection: Users ask policy questions with wording very different from the source text. Which retrieval method helps most?",
+        "Semantic embedding retrieval. Semantic retrieval captures conceptual similarity across paraphrases."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-basic-003",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this retrieval strategy selection situation? A corpus contains product codes plus natural-language explanations. What strategy often provides robust coverage?",
+        "Hybrid lexical and semantic retrieval. Both exact terminology and conceptual similarity matter."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-basic-reverse-001",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Lexical retrieval — D3.6 application",
+        "Retrieval based on exact words/terms, such as BM25."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-basic-reverse-002",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-cloze-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "lexical retrieval — D3.6 application",
+        "Phrase that completes this retrieval strategy selection rule: Exact identifiers and error strings are often strong candidates for _____."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-cloze-001",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In retrieval strategy selection, {{c1::Lexical retrieval}} is the concept described as: Retrieval based on exact words/terms, such as BM25.",
+        "Applied reinforcement for D3.6."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-cloze-002",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For retrieval strategy selection, the precise answer to “What retrieval approach combines lexical and semantic signals?” is {{c1::Hybrid retrieval}}.",
+        "Applied reinforcement for D3.6."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-cloze-003",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In retrieval strategy selection, {{c1::Lexical retrieval}} is the concept described as: Retrieval based on exact words/terms, such as BM25.",
+        "Applied reinforcement for D3.6."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-type-answer-001",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within retrieval strategy selection, what term matches this definition: Retrieval based on exact words/terms, such as BM25.",
+        "Lexical retrieval"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-type-answer-002",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-cloze-01",
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved retrieval strategy selection rule? Exact identifiers and error strings are often strong candidates for _____.",
+        "lexical retrieval"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-multiple-choice-001",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A user searches for exact error code ERR-9F21. Which retrieval signal should be strongly represented? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Semantic similarity only.\"},{\"id\":\"c\",\"text\":\"Random chunk selection.\"},{\"id\":\"d\",\"text\":\"Conversation memory only.\"},{\"id\":\"a\",\"text\":\"Lexical/exact-term retrieval such as BM25.\"}]",
+        "a",
+        "Exact identifiers benefit from lexical matching. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-multiple-choice-002",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved retrieval strategy selection guidance to this case: Users ask policy questions with wording very different from the source text. Which retrieval method helps most?",
+        "[{\"id\":\"c\",\"text\":\"Sorting documents alphabetically.\"},{\"id\":\"d\",\"text\":\"Using only document timestamps.\"},{\"id\":\"a\",\"text\":\"Semantic embedding retrieval.\"},{\"id\":\"b\",\"text\":\"Exact keyword matching only.\"}]",
+        "a",
+        "Semantic retrieval captures conceptual similarity across paraphrases. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-multiple-choice-003",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A corpus contains product codes plus natural-language explanations. What strategy often provides robust coverage?",
+        "[{\"id\":\"d\",\"text\":\"No retrieval; preload the entire corpus.\"},{\"id\":\"a\",\"text\":\"Hybrid lexical and semantic retrieval.\"},{\"id\":\"b\",\"text\":\"Semantic retrieval with no exact matching.\"},{\"id\":\"c\",\"text\":\"Lexical search with no semantic signal.\"}]",
+        "a",
+        "Both exact terminology and conceptual similarity matter. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-multiple-select-001",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a retrieval strategy selection review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support retrieval strategy selection?",
+        "[{\"id\":\"c\",\"text\":\"Use lexical signals for exact identifiers.\"},{\"id\":\"d\",\"text\":\"Assume a stale index is authoritative for current balances.\"},{\"id\":\"a\",\"text\":\"Match retrieval strategy to query/data shape.\"},{\"id\":\"b\",\"text\":\"Use embeddings for every exact-ID lookup.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Match retrieval strategy to query/data shape.; Use lexical signals for exact identifiers.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.6."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.6-multiple-select-002",
+      "objective": "D3.6",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.6-sources.md"
+      ],
+      "seed_id": "p0-d3.6-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on retrieval strategy selection? Context: An architect is reviewing retrieval strategy selection. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Ignore access/freshness metadata.\"},{\"id\":\"a\",\"text\":\"Use lexical signals for exact identifiers.\"},{\"id\":\"b\",\"text\":\"Use only keyword search for heavily paraphrased questions.\"},{\"id\":\"c\",\"text\":\"Use semantic signals for paraphrases.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use lexical signals for exact identifiers.; Use semantic signals for paraphrases.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.6."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.6",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-basic-001",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? One internal service exposes a single private function to one application. No other AI client needs it. What is the simplest integration?",
+        "A direct API/SDK or internal function boundary. A reusable protocol layer should earn its complexity."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-basic-002",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for integration mechanism selection: Several compatible AI clients need to discover and call the same enterprise tools through a standard interface. What is a strong fit?",
+        "MCP. MCP is designed for standardized capability exposure and discovery."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-basic-003",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this integration mechanism selection situation? A team exposes a destructive MCP tool and assumes MCP makes it safe. What is wrong?",
+        "MCP does not replace authorization, validation, least privilege, or source-system controls. Protocol standardization is distinct from security policy."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-basic-reverse-001",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "MCP — D3.7 application",
+        "A standard protocol for AI applications to discover/use external capabilities exposed by compatible servers."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-basic-reverse-002",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-cloze-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "standardized interoperability and capability discovery — D3.7 application",
+        "Phrase that completes this integration mechanism selection rule: Choose MCP for useful _____, not merely because Claude is involved."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-cloze-001",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In integration mechanism selection, {{c1::MCP}} is the concept described as: A standard protocol for AI applications to discover/use external capabilities exposed by compatible servers.",
+        "Applied reinforcement for D3.7."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-cloze-002",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For integration mechanism selection, the precise answer to “What protocol standardizes reusable tool/resource surfaces for compatible AI clients?” is {{c1::MCP}}.",
+        "Applied reinforcement for D3.7."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-cloze-003",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In integration mechanism selection, {{c1::MCP}} is the concept described as: A standard protocol for AI applications to discover/use external capabilities exposed by compatible servers.",
+        "Applied reinforcement for D3.7."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-type-answer-001",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within integration mechanism selection, what term matches this definition: A standard protocol for AI applications to discover/use external capabilities exposed by compatible servers.",
+        "MCP"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-type-answer-002",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-cloze-01",
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved integration mechanism selection rule? Choose MCP for useful _____, not merely because Claude is involved.",
+        "standardized interoperability and capability discovery"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-multiple-choice-001",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: One internal service exposes a single private function to one application. No other AI client needs it. What is the simplest integration? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"MCP is mandatory for every Claude integration.\"},{\"id\":\"c\",\"text\":\"Agent-to-agent protocol is required.\"},{\"id\":\"d\",\"text\":\"A multi-agent runtime must wrap it.\"},{\"id\":\"a\",\"text\":\"A direct API/SDK or internal function boundary.\"}]",
+        "a",
+        "A reusable protocol layer should earn its complexity. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-multiple-choice-002",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved integration mechanism selection guidance to this case: Several compatible AI clients need to discover and call the same enterprise tools through a standard interface. What is a strong fit?",
+        "[{\"id\":\"c\",\"text\":\"Conversation memory.\"},{\"id\":\"d\",\"text\":\"A vector database with no tool protocol.\"},{\"id\":\"a\",\"text\":\"MCP.\"},{\"id\":\"b\",\"text\":\"A different bespoke private API per client only.\"}]",
+        "a",
+        "MCP is designed for standardized capability exposure and discovery. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-multiple-choice-003",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A team exposes a destructive MCP tool and assumes MCP makes it safe. What is wrong?",
+        "[{\"id\":\"d\",\"text\":\"MCP removes the need for identity.\"},{\"id\":\"a\",\"text\":\"MCP does not replace authorization, validation, least privilege, or source-system controls.\"},{\"id\":\"b\",\"text\":\"MCP automatically denies all writes.\"},{\"id\":\"c\",\"text\":\"MCP tools cannot be destructive.\"}]",
+        "a",
+        "Protocol standardization is distinct from security policy. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-multiple-select-001",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a integration mechanism selection review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support integration mechanism selection?",
+        "[{\"id\":\"c\",\"text\":\"Use MCP when standardized reusable AI-client capability exposure matters.\"},{\"id\":\"d\",\"text\":\"Wrap every private function in MCP.\"},{\"id\":\"a\",\"text\":\"Use direct APIs for narrow privately owned integrations when sufficient.\"},{\"id\":\"b\",\"text\":\"Choose MCP simply because Claude is present.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use direct APIs for narrow privately owned integrations when sufficient.; Use MCP when standardized reusable AI-client capability exposure matters.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.7."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.7-multiple-select-002",
+      "objective": "D3.7",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.7-sources.md"
+      ],
+      "seed_id": "p0-d3.7-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on integration mechanism selection? Context: An architect is reviewing integration mechanism selection. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Use agent-to-agent when a normal function/tool boundary suffices.\"},{\"id\":\"a\",\"text\":\"Use MCP when standardized reusable AI-client capability exposure matters.\"},{\"id\":\"b\",\"text\":\"Assume MCP tools are automatically secure.\"},{\"id\":\"c\",\"text\":\"Keep authorization separate from protocol choice.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use MCP when standardized reusable AI-client capability exposure matters.; Keep authorization separate from protocol choice.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.7."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.7",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-basic-001",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-multiple-choice-01",
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? An enterprise has hundreds of rarely used MCP tools and only a few are relevant per request. What architecture best reduces context overhead?",
+        "Keep common tools available and discover/load long-tail tools on demand. Progressive discovery targets context bloat and tool-selection ambiguity."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-basic-002",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-multiple-choice-02",
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for progressive discovery versus monolithic context: A system has five simple tools used on nearly every request. What is a reasonable choice?",
+        "Loading the small catalog directly may be simpler than adding a discovery layer. Discovery adds complexity and should be justified by catalog/context needs."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-basic-003",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-multiple-choice-03",
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this progressive discovery versus monolithic context situation? A tool is not loaded into the current model context. Can the system assume the user is unauthorized to use it?",
+        "No. Discovery/visibility and authorization are separate controls. Authorization must be enforced independently of what definitions are currently visible."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-basic-reverse-001",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-basic-reverse-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "Progressive discovery — D3.8 application",
+        "Finding/loading relevant tools on demand instead of preloading the full catalog."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-basic-reverse-002",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "compare",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-cloze-01",
+      "note_type": "basic-reverse",
+      "fields": [
+        "selection confusion — D3.8 application",
+        "Phrase that completes this progressive discovery versus monolithic context rule: Large tool catalogs can create both context overhead and _____."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:compare",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-cloze-001",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In progressive discovery versus monolithic context, {{c1::Progressive discovery}} is the concept described as: Finding/loading relevant tools on demand instead of preloading the full catalog.",
+        "Applied reinforcement for D3.8."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-cloze-002",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-type-answer-01",
+      "note_type": "cloze",
+      "fields": [
+        "For progressive discovery versus monolithic context, the precise answer to “What strategy loads long-tail tool definitions only when they become relevant?” is {{c1::Progressive discovery}}.",
+        "Applied reinforcement for D3.8."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-cloze-003",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-basic-reverse-01",
+      "note_type": "cloze",
+      "fields": [
+        "In progressive discovery versus monolithic context, {{c1::Progressive discovery}} is the concept described as: Finding/loading relevant tools on demand instead of preloading the full catalog.",
+        "Applied reinforcement for D3.8."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-type-answer-001",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-basic-reverse-01",
+      "note_type": "type-answer",
+      "fields": [
+        "Within progressive discovery versus monolithic context, what term matches this definition: Finding/loading relevant tools on demand instead of preloading the full catalog.",
+        "Progressive discovery"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-type-answer-002",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "concept",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-cloze-01",
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved progressive discovery versus monolithic context rule? Large tool catalogs can create both context overhead and _____.",
+        "selection confusion"
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:concept",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-multiple-choice-001",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-multiple-choice-01",
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: An enterprise has hundreds of rarely used MCP tools and only a few are relevant per request. What architecture best reduces context overhead? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Load every tool definition on every request.\"},{\"id\":\"c\",\"text\":\"Remove authorization because hidden tools are safe.\"},{\"id\":\"d\",\"text\":\"Duplicate every tool description in the system prompt.\"},{\"id\":\"a\",\"text\":\"Keep common tools available and discover/load long-tail tools on demand.\"}]",
+        "a",
+        "Progressive discovery targets context bloat and tool-selection ambiguity. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-multiple-choice-002",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-multiple-choice-02",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved progressive discovery versus monolithic context guidance to this case: A system has five simple tools used on nearly every request. What is a reasonable choice?",
+        "[{\"id\":\"c\",\"text\":\"Split each tool into ten more tools.\"},{\"id\":\"d\",\"text\":\"Hide all tools until after generation.\"},{\"id\":\"a\",\"text\":\"Loading the small catalog directly may be simpler than adding a discovery layer.\"},{\"id\":\"b\",\"text\":\"Progressive discovery is mandatory regardless of catalog size.\"}]",
+        "a",
+        "Discovery adds complexity and should be justified by catalog/context needs. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-multiple-choice-003",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "scenario",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-multiple-choice-03",
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A tool is not loaded into the current model context. Can the system assume the user is unauthorized to use it?",
+        "[{\"id\":\"d\",\"text\":\"Only if the model says so.\"},{\"id\":\"a\",\"text\":\"No. Discovery/visibility and authorization are separate controls.\"},{\"id\":\"b\",\"text\":\"Yes, hidden tools are automatically forbidden.\"},{\"id\":\"c\",\"text\":\"Yes, context visibility is the authorization policy.\"}]",
+        "a",
+        "Authorization must be enforced independently of what definitions are currently visible. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:scenario",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-multiple-select-001",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-multiple-select-100",
+      "note_type": "multiple-select",
+      "fields": [
+        "During a progressive discovery versus monolithic context review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support progressive discovery versus monolithic context?",
+        "[{\"id\":\"c\",\"text\":\"Keep frequently used critical tools readily available.\"},{\"id\":\"d\",\"text\":\"Build discovery complexity for a tiny stable catalog without benefit.\"},{\"id\":\"a\",\"text\":\"Load long-tail tools only when relevant.\"},{\"id\":\"b\",\"text\":\"Load hundreds of definitions on every request.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Load long-tail tools only when relevant.; Keep frequently used critical tools readily available.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.8."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.8-multiple-select-002",
+      "objective": "D3.8",
+      "priority": "p1",
+      "kind": "decision",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.8-sources.md"
+      ],
+      "seed_id": "p0-d3.8-multiple-select-101",
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on progressive discovery versus monolithic context? Context: An architect is reviewing progressive discovery versus monolithic context. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Use discovery instead of access control.\"},{\"id\":\"a\",\"text\":\"Keep frequently used critical tools readily available.\"},{\"id\":\"b\",\"text\":\"Treat hidden-from-context as unauthorized.\"},{\"id\":\"c\",\"text\":\"Use discovery to reduce context and selection burden.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep frequently used critical tools readily available.; Use discovery to reduce context and selection burden.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D3.8."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.8",
+        "priority:p1",
+        "kind:decision",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.2-ordering-001",
+      "objective": "D3.2",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.2-sources.md"
+      ],
+      "seed_id": "p0-d3.2-ordering-200",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a protected agent action flow.",
+        "[{\"id\":\"s1\",\"text\":\"Authenticate the user\"},{\"id\":\"s2\",\"text\":\"Establish trusted auth context\"},{\"id\":\"s3\",\"text\":\"Let the model propose an action\"},{\"id\":\"s4\",\"text\":\"Authorize the specific protected action\"},{\"id\":\"s5\",\"text\":\"Execute with scoped credentials and record the result\"}]",
+        "Identity is established before proposal; authorization gates execution. Sequence reinforcement for D3.2."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.2",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.3-ordering-002",
+      "objective": "D3.3",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.3-sources.md"
+      ],
+      "seed_id": "p0-d3.3-ordering-201",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a latency-optimization investigation.",
+        "[{\"id\":\"s1\",\"text\":\"Measure end-to-end latency by stage\"},{\"id\":\"s2\",\"text\":\"Identify the dominant contributor\"},{\"id\":\"s3\",\"text\":\"Form a change hypothesis\"},{\"id\":\"s4\",\"text\":\"Measure quality/latency after the change\"},{\"id\":\"s5\",\"text\":\"Keep the change only if thresholds still pass\"}]",
+        "Optimization starts with measurement and must preserve required quality/safety. Sequence reinforcement for D3.3."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.3",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.4-ordering-003",
+      "objective": "D3.4",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.4-sources.md"
+      ],
+      "seed_id": "p0-d3.4-ordering-202",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a trace-based incident investigation.",
+        "[{\"id\":\"s1\",\"text\":\"Start from the failing request/trace ID\"},{\"id\":\"s2\",\"text\":\"Inspect model/retrieval/tool trajectory\"},{\"id\":\"s3\",\"text\":\"Compare claimed action with external outcome\"},{\"id\":\"s4\",\"text\":\"Identify the failing stage\"},{\"id\":\"s5\",\"text\":\"Fix and add a regression check\"}]",
+        "Correlated evidence narrows the failure before remediation. Sequence reinforcement for D3.4."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.4",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-ordering-004",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-ordering-203",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a basic RAG pipeline.",
+        "[{\"id\":\"s1\",\"text\":\"Ingest and parse source content\"},{\"id\":\"s2\",\"text\":\"Chunk and enrich/index the content\"},{\"id\":\"s3\",\"text\":\"Retrieve candidates for a query\"},{\"id\":\"s4\",\"text\":\"Filter/rerank and assemble relevant context\"},{\"id\":\"s5\",\"text\":\"Generate the answer from the selected context\"}]",
+        "RAG prepares indexed units first, then retrieves and assembles evidence at inference time. Sequence reinforcement for D3.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    },
+    {
+      "id": "p1-d3.5-ordering-005",
+      "objective": "D3.5",
+      "priority": "p1",
+      "kind": "sequence",
+      "evidence": "human-approved",
+      "source_refs": [
+        "docs/audit/D3.5-sources.md"
+      ],
+      "seed_id": "p0-d3.5-ordering-204",
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a retrieval-debugging check when a RAG answer is wrong.",
+        "[{\"id\":\"s1\",\"text\":\"Check whether the needed source exists in the corpus\"},{\"id\":\"s2\",\"text\":\"Check whether the right chunk was created/indexed\"},{\"id\":\"s3\",\"text\":\"Check whether retrieval returned it\"},{\"id\":\"s4\",\"text\":\"Check whether ranking/context assembly kept it\"},{\"id\":\"s5\",\"text\":\"Then inspect generation behavior\"}]",
+        "Debug retrieval upstream before blaming generation. Sequence reinforcement for D3.5."
+      ],
+      "tags": [
+        "ccarp",
+        "d3",
+        "obj:d3.5",
+        "priority:p1",
+        "kind:sequence",
+        "source:approved"
+      ]
+    }
+  ]
+}
