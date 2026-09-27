@@ -20,6 +20,7 @@ For every objective, verify five things:
 - **CORRECTED** — audit found and fixed an error or stale statement.
 - **NEEDS SOURCE** — plausible claim lacks adequate primary evidence.
 - **TIME-SENSITIVE** — correct only as of a specific date/version.
+- **HUMAN APPROVED** — the reviewer accepted the study note for flashcard generation; evidence/interpretation caveats still apply.
 
 ## Audit order
 
@@ -62,45 +63,45 @@ D3.1 capability bloat
 
 | Objective | Status | Sources |
 | --- | --- | --- |
-| D1.1 | SOURCES READY — AWAITING HUMAN | [Sources](D1.1-sources.md) |
-| D1.2 | SOURCES READY — AWAITING HUMAN | [Sources](D1.2-sources.md) |
-| D1.3 | SOURCES READY — AWAITING HUMAN | [Sources](D1.3-sources.md) |
-| D1.4 | SOURCES READY — AWAITING HUMAN | [Sources](D1.4-sources.md) |
-| D1.5 | SOURCES READY — AWAITING HUMAN | [Sources](D1.5-sources.md) |
-| D1.6 | SOURCES READY — AWAITING HUMAN | [Sources](D1.6-sources.md) |
-| D2.1 | SOURCES READY — AWAITING HUMAN | [Sources](D2.1-sources.md) |
-| D2.2 | SOURCES READY — AWAITING HUMAN | [Sources](D2.2-sources.md) |
-| D2.3 | SOURCES READY — AWAITING HUMAN | [Sources](D2.3-sources.md) |
-| D2.4 | SOURCES READY — AWAITING HUMAN | [Sources](D2.4-sources.md) |
-| D2.5 | SOURCES READY — AWAITING HUMAN | [Sources](D2.5-sources.md) |
-| D3.1 | AI REVIEWED — AWAITING HUMAN | [Sources](D3.1-sources.md) |
-| D3.2 | SOURCES READY — AWAITING HUMAN | [Sources](D3.2-sources.md) |
-| D3.3 | SOURCES READY — AWAITING HUMAN | [Sources](D3.3-sources.md) |
-| D3.4 | SOURCES READY — AWAITING HUMAN | [Sources](D3.4-sources.md) |
-| D3.5 | SOURCES READY — AWAITING HUMAN | [Sources](D3.5-sources.md) |
-| D3.6 | SOURCES READY — AWAITING HUMAN | [Sources](D3.6-sources.md) |
-| D3.7 | SOURCES READY — AWAITING HUMAN | [Sources](D3.7-sources.md) |
-| D3.8 | SOURCES READY — AWAITING HUMAN | [Sources](D3.8-sources.md) |
-| D4.1 | SOURCES READY — AWAITING HUMAN | [Sources](D4.1-sources.md) |
-| D4.2 | SOURCES READY — AWAITING HUMAN | [Sources](D4.2-sources.md) |
-| D4.3 | SOURCES READY — AWAITING HUMAN | [Sources](D4.3-sources.md) |
-| D4.4 | SOURCES READY — AWAITING HUMAN | [Sources](D4.4-sources.md) |
-| D4.5 | SOURCES READY — AWAITING HUMAN | [Sources](D4.5-sources.md) |
-| D4.6 | SOURCES READY — AWAITING HUMAN | [Sources](D4.6-sources.md) |
-| D5.1 | SOURCES READY — AWAITING HUMAN | [Sources](D5.1-sources.md) |
-| D5.2 | SOURCES READY — AWAITING HUMAN | [Sources](D5.2-sources.md) |
-| D5.3 | SOURCES READY — AWAITING HUMAN | [Sources](D5.3-sources.md) |
-| D5.4 | SOURCES READY — AWAITING HUMAN | [Sources](D5.4-sources.md) |
-| D5.5 | SOURCES READY — AWAITING HUMAN | [Sources](D5.5-sources.md) |
-| D6.1 | SOURCES READY — AWAITING HUMAN | [Sources](D6.1-sources.md) |
-| D6.2 | SOURCES READY — AWAITING HUMAN | [Sources](D6.2-sources.md) |
-| D6.3 | SOURCES READY — AWAITING HUMAN | [Sources](D6.3-sources.md) |
-| D6.4 | SOURCES READY — AWAITING HUMAN | [Sources](D6.4-sources.md) |
-| D6.5 | SOURCES READY — AWAITING HUMAN | [Sources](D6.5-sources.md) |
-| D7.1 | SOURCES READY — AWAITING HUMAN | [Sources](D7.1-sources.md) |
-| D7.2 | SOURCES READY — AWAITING HUMAN | [Sources](D7.2-sources.md) |
-| D7.3 | SOURCES READY — AWAITING HUMAN | [Sources](D7.3-sources.md) |
+| D1.1 | HUMAN APPROVED | [Sources](D1.1-sources.md) |
+| D1.2 | HUMAN APPROVED | [Sources](D1.2-sources.md) |
+| D1.3 | HUMAN APPROVED | [Sources](D1.3-sources.md) |
+| D1.4 | HUMAN APPROVED | [Sources](D1.4-sources.md) |
+| D1.5 | HUMAN APPROVED | [Sources](D1.5-sources.md) |
+| D1.6 | HUMAN APPROVED | [Sources](D1.6-sources.md) |
+| D2.1 | HUMAN APPROVED | [Sources](D2.1-sources.md) |
+| D2.2 | HUMAN APPROVED | [Sources](D2.2-sources.md) |
+| D2.3 | HUMAN APPROVED | [Sources](D2.3-sources.md) |
+| D2.4 | HUMAN APPROVED | [Sources](D2.4-sources.md) |
+| D2.5 | HUMAN APPROVED | [Sources](D2.5-sources.md) |
+| D3.1 | HUMAN APPROVED | [Sources](D3.1-sources.md) |
+| D3.2 | HUMAN APPROVED | [Sources](D3.2-sources.md) |
+| D3.3 | HUMAN APPROVED | [Sources](D3.3-sources.md) |
+| D3.4 | HUMAN APPROVED | [Sources](D3.4-sources.md) |
+| D3.5 | HUMAN APPROVED | [Sources](D3.5-sources.md) |
+| D3.6 | HUMAN APPROVED | [Sources](D3.6-sources.md) |
+| D3.7 | HUMAN APPROVED | [Sources](D3.7-sources.md) |
+| D3.8 | HUMAN APPROVED | [Sources](D3.8-sources.md) |
+| D4.1 | HUMAN APPROVED | [Sources](D4.1-sources.md) |
+| D4.2 | HUMAN APPROVED | [Sources](D4.2-sources.md) |
+| D4.3 | HUMAN APPROVED | [Sources](D4.3-sources.md) |
+| D4.4 | HUMAN APPROVED | [Sources](D4.4-sources.md) |
+| D4.5 | HUMAN APPROVED | [Sources](D4.5-sources.md) |
+| D4.6 | HUMAN APPROVED | [Sources](D4.6-sources.md) |
+| D5.1 | HUMAN APPROVED | [Sources](D5.1-sources.md) |
+| D5.2 | HUMAN APPROVED | [Sources](D5.2-sources.md) |
+| D5.3 | HUMAN APPROVED | [Sources](D5.3-sources.md) |
+| D5.4 | HUMAN APPROVED | [Sources](D5.4-sources.md) |
+| D5.5 | HUMAN APPROVED | [Sources](D5.5-sources.md) |
+| D6.1 | HUMAN APPROVED | [Sources](D6.1-sources.md) |
+| D6.2 | HUMAN APPROVED | [Sources](D6.2-sources.md) |
+| D6.3 | HUMAN APPROVED | [Sources](D6.3-sources.md) |
+| D6.4 | HUMAN APPROVED | [Sources](D6.4-sources.md) |
+| D6.5 | HUMAN APPROVED | [Sources](D6.5-sources.md) |
+| D7.1 | HUMAN APPROVED | [Sources](D7.1-sources.md) |
+| D7.2 | HUMAN APPROVED | [Sources](D7.2-sources.md) |
+| D7.3 | HUMAN APPROVED | [Sources](D7.3-sources.md) |
 
-**Human-approved:** 0 / 38
+**Human-approved:** 38 / 38
 
 No flashcard should be considered final until its source objective has passed this audit.
