@@ -1194,7 +1194,7 @@
       "seed_id": "p0-d1.3-cloze-06",
       "note_type": "basic-reverse",
       "fields": [
-        "workflow — D1.3 application",
+        "Workflow — rule application in choosing augmented LLM, workflow, agent, or hybrid patterns",
         "Phrase that completes this choosing augmented LLM, workflow, agent, or hybrid patterns rule: A _____ follows predefined paths, while an agent dynamically chooses its process."
       ],
       "tags": [
