@@ -91,8 +91,9 @@ For CCAR-P, **Decide** is the level that matters most.
 - [Reference Library](references/)
 - [Notes Audit](audit/)
 - [2,000-Card Flashcard Plan](flashcards/)
+- [Download P0 — 700 generated cards](flashcards/ccar-p-p0.nut)
 - Domain-by-domain lessons
-- 2,000-card Deez flashcard deck
+- 2,000-card Deez flashcard deck — **P0 700-card tier complete**
 - Original scenario practice
 - Hands-on architecture labs
 - Review checklists
@@ -109,7 +110,7 @@ For CCAR-P, **Decide** is the level that matters most.
 | D5 — Governance, Safety & Risk | 280 |
 | D6 — Stakeholder & Lifecycle | 280 |
 | D7 — Developer Productivity | 140 |
-| **Total** | **300** |
+| **Total** | **2,000** |
 
 Planned mix:
 
