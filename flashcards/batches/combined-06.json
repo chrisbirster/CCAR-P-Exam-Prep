@@ -1,0 +1,1737 @@
+{
+  "notes": [
+    {
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: An agent's performance varies significantly between runs of the same task. What should the eval framework add?",
+        "Multiple trials per task to measure reliability under stochastic behavior. Repeated trials characterize variance."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Trial — D4.2 application",
+        "One execution of an evaluation task."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Grader — D4.2 application",
+        "The mechanism that scores whether a task/run met defined criteria."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "cheapest reliable grader — D4.2 application",
+        "Phrase that completes this evaluation datasets and frameworks rule: Use the _____ that can accurately measure the property of interest."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In evaluation datasets and frameworks, {{c1::Trial}} is the concept described as: One execution of an evaluation task.",
+        "Applied reinforcement for D4.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In evaluation datasets and frameworks, {{c1::Grader}} is the concept described as: The mechanism that scores whether a task/run met defined criteria.",
+        "Applied reinforcement for D4.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For evaluation datasets and frameworks, the precise answer to “What evaluation component scores a task result?” is {{c1::Grader}}.",
+        "Applied reinforcement for D4.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For evaluation datasets and frameworks, the precise answer to “What term describes one execution of an eval task?” is {{c1::Trial}}.",
+        "Applied reinforcement for D4.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within evaluation datasets and frameworks, what term matches this definition: One execution of an evaluation task.",
+        "Trial"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within evaluation datasets and frameworks, what term matches this definition: The mechanism that scores whether a task/run met defined criteria.",
+        "Grader"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved evaluation datasets and frameworks rule? Use the _____ that can accurately measure the property of interest.",
+        "cheapest reliable grader"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A tool action should create exactly one database row. What is the best grader? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"An LLM judge reading the agent's explanation.\"},{\"id\":\"c\",\"text\":\"A human reviewer for every run.\"},{\"id\":\"d\",\"text\":\"The model's self-reported success.\"},{\"id\":\"a\",\"text\":\"A deterministic check of the database state.\"}]",
+        "a",
+        "Exact external state should be verified deterministically. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved evaluation datasets and frameworks guidance to this case: A style rubric is nuanced and cannot be checked with simple code. What grader may be appropriate after calibration?",
+        "[{\"id\":\"c\",\"text\":\"A random score.\"},{\"id\":\"d\",\"text\":\"No grader at all.\"},{\"id\":\"a\",\"text\":\"A model-based grader evaluated against human-labeled examples.\"},{\"id\":\"b\",\"text\":\"A schema validator only.\"}]",
+        "a",
+        "Model graders can score nuanced qualities but should be calibrated. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? An eval suite contains only easy happy-path requests. What is the biggest weakness?",
+        "[{\"id\":\"d\",\"text\":\"It should never include production failures.\"},{\"id\":\"a\",\"text\":\"It may miss boundary, adversarial, malformed, and historical failure modes.\"},{\"id\":\"b\",\"text\":\"It contains too many tasks.\"},{\"id\":\"c\",\"text\":\"It should use only one trial.\"}]",
+        "a",
+        "Representative coverage includes important failures, not just routine cases. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: An agent's performance varies significantly between runs of the same task. What should the eval framework add? Which recommendation should they defend?",
+        "[{\"id\":\"a\",\"text\":\"Multiple trials per task to measure reliability under stochastic behavior.\"},{\"id\":\"b\",\"text\":\"One carefully chosen run only.\"},{\"id\":\"c\",\"text\":\"A longer deck name.\"},{\"id\":\"d\",\"text\":\"Fewer measurements.\"}]",
+        "a",
+        "Repeated trials characterize variance. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "During a evaluation datasets and frameworks review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support evaluation datasets and frameworks?",
+        "[{\"id\":\"c\",\"text\":\"Use deterministic graders for exact properties.\"},{\"id\":\"d\",\"text\":\"Use only happy-path data.\"},{\"id\":\"a\",\"text\":\"Include representative and difficult cases.\"},{\"id\":\"b\",\"text\":\"Evaluate only final prose.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Include representative and difficult cases.; Use deterministic graders for exact properties.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on evaluation datasets and frameworks? Context: An architect is reviewing evaluation datasets and frameworks. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Assume one stochastic trial is definitive.\"},{\"id\":\"a\",\"text\":\"Use deterministic graders for exact properties.\"},{\"id\":\"b\",\"text\":\"Use an LLM judge when code can verify exactly.\"},{\"id\":\"c\",\"text\":\"Calibrate model graders.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use deterministic graders for exact properties.; Calibrate model graders.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For evaluation datasets and frameworks, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in evaluation datasets and frameworks?",
+        "[{\"id\":\"a\",\"text\":\"Calibrate model graders.\"},{\"id\":\"b\",\"text\":\"Use only happy-path data.\"},{\"id\":\"c\",\"text\":\"Inspect external outcomes for agent actions.\"},{\"id\":\"d\",\"text\":\"Overfit the system to a tiny static eval set.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Calibrate model graders.; Inspect external outcomes for agent actions.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A team changes the model, prompt, retriever, and tool schema simultaneously, then sees improvement. What is the main problem?",
+        "The experiment cannot attribute the change because several major variables moved together. Controlled experiments isolate specific hypotheses."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for A/B testing and iterative improvement: A new agent can execute risky production writes. How can the team first test it on realistic traffic without exposing users to its actions?",
+        "Use shadow testing with outputs/actions prevented from affecting production. Shadow testing provides realistic input without direct production effect."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this A/B testing and iterative improvement situation? A treatment improves accuracy by 0.05% with strong statistical significance but adds major cost. What should the architect consider?",
+        "Whether the improvement is practically valuable enough to justify the cost. Practical significance and guardrails matter."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: An experiment's primary quality metric rises while latency breaches the SLA. What should happen?",
+        "Treat the latency SLA as a guardrail and reject or revise the treatment. Guardrails prevent one metric from improving by violating another requirement."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Control — D4.3 application",
+        "The baseline experience/system in a controlled experiment."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Treatment — D4.3 application",
+        "The candidate change being tested against the control."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In A/B testing and iterative improvement, {{c1::Control}} is the concept described as: The baseline experience/system in a controlled experiment.",
+        "Applied reinforcement for D4.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In A/B testing and iterative improvement, {{c1::Treatment}} is the concept described as: The candidate change being tested against the control.",
+        "Applied reinforcement for D4.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For A/B testing and iterative improvement, the precise answer to “What experiment mode runs a candidate on real traffic without exposing users to its outputs?” is {{c1::Shadow testing}}.",
+        "Applied reinforcement for D4.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For A/B testing and iterative improvement, the precise answer to “What is the baseline arm of an A/B experiment called?” is {{c1::Control}}.",
+        "Applied reinforcement for D4.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within A/B testing and iterative improvement, what term matches this definition: The baseline experience/system in a controlled experiment.",
+        "Control"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within A/B testing and iterative improvement, what term matches this definition: The candidate change being tested against the control.",
+        "Treatment"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved A/B testing and iterative improvement rule? An A/B experiment should define the hypothesis, primary metric, guardrails, assignment, and _____ before interpreting results.",
+        "decision/stopping rule"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A team changes the model, prompt, retriever, and tool schema simultaneously, then sees improvement. What is the main problem? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"A/B testing requires more than two models.\"},{\"id\":\"c\",\"text\":\"All variables should always change together.\"},{\"id\":\"d\",\"text\":\"Guardrail metrics are unnecessary.\"},{\"id\":\"a\",\"text\":\"The experiment cannot attribute the change because several major variables moved together.\"}]",
+        "a",
+        "Controlled experiments isolate specific hypotheses. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved A/B testing and iterative improvement guidance to this case: A new agent can execute risky production writes. How can the team first test it on realistic traffic without exposing users to its actions?",
+        "[{\"id\":\"c\",\"text\":\"Disable logging.\"},{\"id\":\"d\",\"text\":\"Use only a synthetic prompt unrelated to production.\"},{\"id\":\"a\",\"text\":\"Use shadow testing with outputs/actions prevented from affecting production.\"},{\"id\":\"b\",\"text\":\"Turn it on for every user immediately.\"}]",
+        "a",
+        "Shadow testing provides realistic input without direct production effect. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A treatment improves accuracy by 0.05% with strong statistical significance but adds major cost. What should the architect consider?",
+        "[{\"id\":\"d\",\"text\":\"Always ship any measurable improvement.\"},{\"id\":\"a\",\"text\":\"Whether the improvement is practically valuable enough to justify the cost.\"},{\"id\":\"b\",\"text\":\"Statistical significance guarantees business value.\"},{\"id\":\"c\",\"text\":\"Ignore cost once p<0.05.\"}]",
+        "a",
+        "Practical significance and guardrails matter. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: An experiment's primary quality metric rises while latency breaches the SLA. What should happen? Which recommendation should they defend?",
+        "[{\"id\":\"a\",\"text\":\"Treat the latency SLA as a guardrail and reject or revise the treatment.\"},{\"id\":\"b\",\"text\":\"Ship because primary quality improved.\"},{\"id\":\"c\",\"text\":\"Remove the SLA from reporting.\"},{\"id\":\"d\",\"text\":\"Average quality and latency into one unbounded score.\"}]",
+        "a",
+        "Guardrails prevent one metric from improving by violating another requirement. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "During a A/B testing and iterative improvement review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support A/B testing and iterative improvement?",
+        "[{\"id\":\"c\",\"text\":\"Define primary and guardrail metrics.\"},{\"id\":\"d\",\"text\":\"Ignore latency/cost after quality improves.\"},{\"id\":\"a\",\"text\":\"State the hypothesis before running the experiment.\"},{\"id\":\"b\",\"text\":\"Change many major variables at once.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: State the hypothesis before running the experiment.; Define primary and guardrail metrics.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on A/B testing and iterative improvement? Context: An architect is reviewing A/B testing and iterative improvement. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Live-test risky irreversible actions unnecessarily.\"},{\"id\":\"a\",\"text\":\"Define primary and guardrail metrics.\"},{\"id\":\"b\",\"text\":\"Look at metrics until something becomes significant.\"},{\"id\":\"c\",\"text\":\"Use consistent assignment where cross-exposure would confound results.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Define primary and guardrail metrics.; Use consistent assignment where cross-exposure would confound results.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For A/B testing and iterative improvement, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in A/B testing and iterative improvement?",
+        "[{\"id\":\"a\",\"text\":\"Use consistent assignment where cross-exposure would confound results.\"},{\"id\":\"b\",\"text\":\"Ignore latency/cost after quality improves.\"},{\"id\":\"c\",\"text\":\"Use shadow testing for risky candidates.\"},{\"id\":\"d\",\"text\":\"Define success criteria after seeing results.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use consistent assignment where cross-exposure would confound results.; Use shadow testing for risky candidates.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A model gives wrong answers because the retriever returns obsolete documents. What should change first?",
+        "Fix the retrieval freshness/ranking problem. The failing layer is retrieval, not necessarily prompting."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for diagnosing AI system failures: A tool returns malformed JSON and the agent fails. What is the most direct diagnosis?",
+        "Tool/interface contract failure. Inspect the interface actually producing the malformed data."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this diagnosing AI system failures situation? A worker computes the correct result, but the orchestrator drops it before synthesis. What failure class is this?",
+        "Orchestration failure. The component result is correct; coordination is wrong."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: After repairing a recurrent production failure, what should the team add?",
+        "A regression test/eval reproducing the failure so it stays fixed. Known failures should become protected regression cases."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Retrieval failure — D4.4 application",
+        "The relevant evidence is not retrieved or is outranked by wrong evidence."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Orchestration failure — D4.4 application",
+        "Correct components are coordinated incorrectly, such as dropped worker results or wrong ordering."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In diagnosing AI system failures, {{c1::Retrieval failure}} is the concept described as: The relevant evidence is not retrieved or is outranked by wrong evidence.",
+        "Applied reinforcement for D4.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In diagnosing AI system failures, {{c1::Orchestration failure}} is the concept described as: Correct components are coordinated incorrectly, such as dropped worker results or wrong ordering.",
+        "Applied reinforcement for D4.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For diagnosing AI system failures, the precise answer to “What failure class occurs when relevant evidence never reaches the model?” is {{c1::Retrieval failure}}.",
+        "Applied reinforcement for D4.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within diagnosing AI system failures, what term matches this definition: The relevant evidence is not retrieved or is outranked by wrong evidence.",
+        "Retrieval failure"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within diagnosing AI system failures, what term matches this definition: Correct components are coordinated incorrectly, such as dropped worker results or wrong ordering.",
+        "Orchestration failure"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A model gives wrong answers because the retriever returns obsolete documents. What should change first? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Add more system-prompt warnings.\"},{\"id\":\"c\",\"text\":\"Upgrade the model without inspecting retrieval.\"},{\"id\":\"d\",\"text\":\"Retry the same stale evidence.\"},{\"id\":\"a\",\"text\":\"Fix the retrieval freshness/ranking problem.\"}]",
+        "a",
+        "The failing layer is retrieval, not necessarily prompting. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved diagnosing AI system failures guidance to this case: A tool returns malformed JSON and the agent fails. What is the most direct diagnosis?",
+        "[{\"id\":\"c\",\"text\":\"Model lifecycle failure.\"},{\"id\":\"d\",\"text\":\"Business-value failure.\"},{\"id\":\"a\",\"text\":\"Tool/interface contract failure.\"},{\"id\":\"b\",\"text\":\"Hallucination by definition.\"}]",
+        "a",
+        "Inspect the interface actually producing the malformed data. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A worker computes the correct result, but the orchestrator drops it before synthesis. What failure class is this?",
+        "[{\"id\":\"d\",\"text\":\"Model deprecation.\"},{\"id\":\"a\",\"text\":\"Orchestration failure.\"},{\"id\":\"b\",\"text\":\"Retrieval failure.\"},{\"id\":\"c\",\"text\":\"Prompt injection.\"}]",
+        "a",
+        "The component result is correct; coordination is wrong. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "During a diagnosing AI system failures review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support diagnosing AI system failures?",
+        "[{\"id\":\"c\",\"text\":\"Inspect traces and external outcomes.\"},{\"id\":\"d\",\"text\":\"Upgrade the model to fix a broken API contract.\"},{\"id\":\"a\",\"text\":\"Reproduce the symptom.\"},{\"id\":\"b\",\"text\":\"Call every wrong answer a hallucination.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Reproduce the symptom.; Inspect traces and external outcomes.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on diagnosing AI system failures? Context: An architect is reviewing diagnosing AI system failures. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Retry authorization failures blindly.\"},{\"id\":\"a\",\"text\":\"Inspect traces and external outcomes.\"},{\"id\":\"b\",\"text\":\"Rewrite prompts when retrieval is stale.\"},{\"id\":\"c\",\"text\":\"Identify the specific failing layer.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Inspect traces and external outcomes.; Identify the specific failing layer.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For diagnosing AI system failures, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in diagnosing AI system failures?",
+        "[{\"id\":\"a\",\"text\":\"Identify the specific failing layer.\"},{\"id\":\"b\",\"text\":\"Upgrade the model to fix a broken API contract.\"},{\"id\":\"c\",\"text\":\"Use targeted tests to validate the hypothesis.\"},{\"id\":\"d\",\"text\":\"Fix production bugs without regression coverage.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Identify the specific failing layer.; Use targeted tests to validate the hypothesis.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A cheaper model causes twice as many retries and escalations. What metric should decide whether it is actually cheaper?",
+        "Cost per successful outcome including retries/escalations. A cheap failing request can raise total cost."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for optimizing token, latency, and cost-performance: Tool results contain 100,000 rows but the model needs only an aggregate. What is a strong optimization?",
+        "Process/filter the data programmatically and pass only the high-signal result to the model. Programmatic processing reduces token/context overhead."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this optimizing token, latency, and cost-performance situation? A prompt includes large historical logs that never affect decisions. What should the team test?",
+        "Remove or compact low-value context and confirm quality still passes. Low-value context wastes tokens and may harm relevance."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: An optimization removes a safety validation step and lowers p95 latency. Is it acceptable?",
+        "Only if the validation was not required; required safety controls must remain even when they cost latency. Optimization is constrained by required safety/security thresholds."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Cost per successful outcome — D4.5 application",
+        "Total resource cost divided by tasks that actually meet the success criteria."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Prompt caching — D4.5 application",
+        "Reusing eligible stable prompt/context content rather than recomputing/sending it as uncached work each time."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In optimizing token, latency, and cost-performance, {{c1::Cost per successful outcome}} is the concept described as: Total resource cost divided by tasks that actually meet the success criteria.",
+        "Applied reinforcement for D4.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In optimizing token, latency, and cost-performance, {{c1::Prompt caching}} is the concept described as: Reusing eligible stable prompt/context content rather than recomputing/sending it as uncached work each time.",
+        "Applied reinforcement for D4.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For optimizing token, latency, and cost-performance, the precise answer to “What efficiency metric accounts for failures/retries rather than only request price?” is {{c1::Cost per successful outcome}}.",
+        "Applied reinforcement for D4.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within optimizing token, latency, and cost-performance, what term matches this definition: Total resource cost divided by tasks that actually meet the success criteria.",
+        "Cost per successful outcome"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within optimizing token, latency, and cost-performance, what term matches this definition: Reusing eligible stable prompt/context content rather than recomputing/sending it as uncached work each time.",
+        "Prompt caching"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A cheaper model causes twice as many retries and escalations. What metric should decide whether it is actually cheaper? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Price per single API call only.\"},{\"id\":\"c\",\"text\":\"Model name length.\"},{\"id\":\"d\",\"text\":\"Prompt token count alone.\"},{\"id\":\"a\",\"text\":\"Cost per successful outcome including retries/escalations.\"}]",
+        "a",
+        "A cheap failing request can raise total cost. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved optimizing token, latency, and cost-performance guidance to this case: Tool results contain 100,000 rows but the model needs only an aggregate. What is a strong optimization?",
+        "[{\"id\":\"c\",\"text\":\"Duplicate the rows in the system prompt.\"},{\"id\":\"d\",\"text\":\"Disable the tool.\"},{\"id\":\"a\",\"text\":\"Process/filter the data programmatically and pass only the high-signal result to the model.\"},{\"id\":\"b\",\"text\":\"Send every row through multiple model turns.\"}]",
+        "a",
+        "Programmatic processing reduces token/context overhead. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A prompt includes large historical logs that never affect decisions. What should the team test?",
+        "[{\"id\":\"d\",\"text\":\"Use the strongest model only.\"},{\"id\":\"a\",\"text\":\"Remove or compact low-value context and confirm quality still passes.\"},{\"id\":\"b\",\"text\":\"Add more logs to improve cost.\"},{\"id\":\"c\",\"text\":\"Increase output length.\"}]",
+        "a",
+        "Low-value context wastes tokens and may harm relevance. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "During a optimizing token, latency, and cost-performance review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support optimizing token, latency, and cost-performance?",
+        "[{\"id\":\"c\",\"text\":\"Reduce irrelevant context.\"},{\"id\":\"d\",\"text\":\"Assume the cheapest model is cheapest end to end.\"},{\"id\":\"a\",\"text\":\"Measure cost per successful outcome.\"},{\"id\":\"b\",\"text\":\"Optimize cost per request regardless of failures.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Measure cost per successful outcome.; Reduce irrelevant context.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on optimizing token, latency, and cost-performance? Context: An architect is reviewing optimizing token, latency, and cost-performance. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Add caches without freshness policy.\"},{\"id\":\"a\",\"text\":\"Reduce irrelevant context.\"},{\"id\":\"b\",\"text\":\"Remove required safety checks for speed.\"},{\"id\":\"c\",\"text\":\"Use programmatic processing for large intermediate data.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Reduce irrelevant context.; Use programmatic processing for large intermediate data.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.5\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? Offline evals pass, but tool failures spike after launch because an external API changed. What caught this?",
+        "Production monitoring of real dependencies and outcomes. Production monitoring detects real-world changes offline suites may not predict."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for production monitoring and regression protection: A new model version is deployed. What should protect known behavior?",
+        "Run the regression suite and monitor production after migration. Model changes can alter behavior and require regression testing."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this production monitoring and regression protection situation? Users report a novel failure pattern. What should happen after root cause is fixed?",
+        "Add representative cases to the regression suite and monitor the corrected behavior. Production failures improve future evaluation coverage."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Capability eval — D4.6 application",
+        "An evaluation asking whether the system can perform a new or harder capability."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "real workload or dependencies — D4.6 application",
+        "Phrase that completes this production monitoring and regression protection rule: Production monitoring reveals whether the _____ are drifting from assumptions."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In production monitoring and regression protection, {{c1::Capability eval}} is the concept described as: An evaluation asking whether the system can perform a new or harder capability.",
+        "Applied reinforcement for D4.6."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For production monitoring and regression protection, the precise answer to “What evaluation protects known-good behavior from breaking after changes?” is {{c1::Regression evaluation}}.",
+        "Applied reinforcement for D4.6."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "During an operational review, apply this production monitoring and regression protection rule: In production monitoring and regression protection, {{c1::Capability eval}} is the concept described as: An evaluation asking whether the system can perform a new or harder capability.",
+        "Applied reinforcement for D4.6."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within production monitoring and regression protection, what term matches this definition: An evaluation asking whether the system can perform a new or harder capability.",
+        "Capability eval"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved production monitoring and regression protection rule? Production monitoring reveals whether the _____ are drifting from assumptions.",
+        "real workload or dependencies"
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: Offline evals pass, but tool failures spike after launch because an external API changed. What caught this? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"A static benchmark alone.\"},{\"id\":\"c\",\"text\":\"The system prompt.\"},{\"id\":\"d\",\"text\":\"A one-time prelaunch demo.\"},{\"id\":\"a\",\"text\":\"Production monitoring of real dependencies and outcomes.\"}]",
+        "a",
+        "Production monitoring detects real-world changes offline suites may not predict. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved production monitoring and regression protection guidance to this case: A new model version is deployed. What should protect known behavior?",
+        "[{\"id\":\"c\",\"text\":\"Delete old evals.\"},{\"id\":\"d\",\"text\":\"Only compare price.\"},{\"id\":\"a\",\"text\":\"Run the regression suite and monitor production after migration.\"},{\"id\":\"b\",\"text\":\"Assume newer means identical.\"}]",
+        "a",
+        "Model changes can alter behavior and require regression testing. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? Users report a novel failure pattern. What should happen after root cause is fixed?",
+        "[{\"id\":\"d\",\"text\":\"Only increase model temperature.\"},{\"id\":\"a\",\"text\":\"Add representative cases to the regression suite and monitor the corrected behavior.\"},{\"id\":\"b\",\"text\":\"Ignore it because launch evals already passed.\"},{\"id\":\"c\",\"text\":\"Remove the complaint from logs.\"}]",
+        "a",
+        "Production failures improve future evaluation coverage. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "During a production monitoring and regression protection review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support production monitoring and regression protection?",
+        "[{\"id\":\"c\",\"text\":\"Protect known behavior with regression evals.\"},{\"id\":\"d\",\"text\":\"Deploy model changes without regression tests.\"},{\"id\":\"a\",\"text\":\"Monitor real outcomes and dependencies.\"},{\"id\":\"b\",\"text\":\"Monitor infrastructure uptime only.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Monitor real outcomes and dependencies.; Protect known behavior with regression evals.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.6."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on production monitoring and regression protection? Context: An architect is reviewing production monitoring and regression protection. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Create alerts with no owner.\"},{\"id\":\"a\",\"text\":\"Protect known behavior with regression evals.\"},{\"id\":\"b\",\"text\":\"Keep eval suites frozen forever.\"},{\"id\":\"c\",\"text\":\"Test model/version migrations.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Protect known behavior with regression evals.; Test model/version migrations.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D4.6."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.6\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a metric-definition workflow.",
+        "[{\"id\":\"s1\",\"text\":\"Define the desired outcome\"},{\"id\":\"s2\",\"text\":\"Choose observable measures\"},{\"id\":\"s3\",\"text\":\"Specify how each measure is computed\"},{\"id\":\"s4\",\"text\":\"Set acceptance and guardrail thresholds\"},{\"id\":\"s5\",\"text\":\"Run representative evaluation and compare to thresholds\"}]",
+        "Metrics become useful only after outcome, measurement, and thresholds are explicit. Sequence reinforcement for D4.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.1\",\"priority:p1\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a basic evaluation-framework design.",
+        "[{\"id\":\"s1\",\"text\":\"Define representative tasks\"},{\"id\":\"s2\",\"text\":\"Choose appropriate graders\"},{\"id\":\"s3\",\"text\":\"Run one or more trials\"},{\"id\":\"s4\",\"text\":\"Collect trajectories/outcomes\"},{\"id\":\"s5\",\"text\":\"Aggregate results against thresholds\"}]",
+        "Task definition and grading come before execution and aggregation. Sequence reinforcement for D4.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.2\",\"priority:p1\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a controlled improvement experiment.",
+        "[{\"id\":\"s1\",\"text\":\"State the hypothesis\"},{\"id\":\"s2\",\"text\":\"Choose primary and guardrail metrics\"},{\"id\":\"s3\",\"text\":\"Define assignment and decision rule\"},{\"id\":\"s4\",\"text\":\"Run control/treatment or shadow evaluation\"},{\"id\":\"s5\",\"text\":\"Analyze results and decide whether to ship\"}]",
+        "Pre-specification precedes execution and interpretation. Sequence reinforcement for D4.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.3\",\"priority:p1\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a root-cause diagnostic loop.",
+        "[{\"id\":\"s1\",\"text\":\"Reproduce the symptom\"},{\"id\":\"s2\",\"text\":\"Inspect trace/outcome evidence\"},{\"id\":\"s3\",\"text\":\"Identify the likely failing stage\"},{\"id\":\"s4\",\"text\":\"Run a targeted isolation test\"},{\"id\":\"s5\",\"text\":\"Apply the fix and add regression coverage\"}]",
+        "Evidence-driven isolation precedes remediation. Sequence reinforcement for D4.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d4\",\"obj:d4.4\",\"priority:p1\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A refund tool can transfer money. The system prompt says “never refund more than $500,” but the API accepts any amount. What is the strongest improvement?",
+        "Enforce the limit in deterministic transaction/authorization logic before execution. Hard financial limits belong at the execution boundary."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for guardrails and safety controls: A required authorization service is unavailable during a high-risk transaction. What is usually safest?",
+        "Block or defer the action until authorization can be verified. High-risk controls commonly fail closed."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this guardrails and safety controls situation? An agent reads untrusted web content and can also modify production systems. Which safety posture is strongest?",
+        "Layer prompt-injection defenses with scoped tools, sandboxing/permissions, authorization, and approval where needed. No single prompt-level defense is sufficient."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: An output moderation check runs only after an irreversible transfer has already executed. What is wrong?",
+        "The control is placed after the point where it could prevent the harmful action. Controls must sit at boundaries where they can enforce the property."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Defense in depth — D5.1 application",
+        "Using multiple independent layers so failure of one control does not remove all protection."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Fail closed — D5.1 application",
+        "Block the protected action when a required safety or authorization check cannot complete."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "controls at the relevant system boundary — D5.1 application",
+        "Phrase that completes this guardrails and safety controls rule: Hard safety properties should be enforced by _____, not only by prompt text."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In guardrails and safety controls, {{c1::Defense in depth}} is the concept described as: Using multiple independent layers so failure of one control does not remove all protection.",
+        "Applied reinforcement for D5.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In guardrails and safety controls, {{c1::Fail closed}} is the concept described as: Block the protected action when a required safety or authorization check cannot complete.",
+        "Applied reinforcement for D5.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For guardrails and safety controls, the precise answer to “What security design uses several independent protective layers?” is {{c1::Defense in depth}}.",
+        "Applied reinforcement for D5.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For guardrails and safety controls, the precise answer to “What failure behavior blocks an action when a required control cannot verify it?” is {{c1::Fail closed}}.",
+        "Applied reinforcement for D5.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within guardrails and safety controls, what term matches this definition: Using multiple independent layers so failure of one control does not remove all protection.",
+        "Defense in depth"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within guardrails and safety controls, what term matches this definition: Block the protected action when a required safety or authorization check cannot complete.",
+        "Fail closed"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved guardrails and safety controls rule? Hard safety properties should be enforced by _____, not only by prompt text.",
+        "controls at the relevant system boundary"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A refund tool can transfer money. The system prompt says “never refund more than $500,” but the API accepts any amount. What is the strongest improvement? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Repeat the warning five times in the prompt.\"},{\"id\":\"c\",\"text\":\"Use a more persuasive role description.\"},{\"id\":\"d\",\"text\":\"Log over-$500 refunds after they happen.\"},{\"id\":\"a\",\"text\":\"Enforce the limit in deterministic transaction/authorization logic before execution.\"}]",
+        "a",
+        "Hard financial limits belong at the execution boundary. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved guardrails and safety controls guidance to this case: A required authorization service is unavailable during a high-risk transaction. What is usually safest?",
+        "[{\"id\":\"c\",\"text\":\"Ask the model to guess authorization.\"},{\"id\":\"d\",\"text\":\"Disable the authorization layer permanently.\"},{\"id\":\"a\",\"text\":\"Block or defer the action until authorization can be verified.\"},{\"id\":\"b\",\"text\":\"Allow the action and audit later.\"}]",
+        "a",
+        "High-risk controls commonly fail closed. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? An agent reads untrusted web content and can also modify production systems. Which safety posture is strongest?",
+        "[{\"id\":\"d\",\"text\":\"Give broader tools so the agent can recover from mistakes.\"},{\"id\":\"a\",\"text\":\"Layer prompt-injection defenses with scoped tools, sandboxing/permissions, authorization, and approval where needed.\"},{\"id\":\"b\",\"text\":\"Use only a stronger system prompt.\"},{\"id\":\"c\",\"text\":\"Trust the web page because the agent fetched it.\"}]",
+        "a",
+        "No single prompt-level defense is sufficient. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: An output moderation check runs only after an irreversible transfer has already executed. What is wrong? Which recommendation should they defend?",
+        "[{\"id\":\"a\",\"text\":\"The control is placed after the point where it could prevent the harmful action.\"},{\"id\":\"b\",\"text\":\"Moderation should always occur after side effects.\"},{\"id\":\"c\",\"text\":\"The model should have more tokens.\"},{\"id\":\"d\",\"text\":\"Transfers should never be logged.\"}]",
+        "a",
+        "Controls must sit at boundaries where they can enforce the property. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "During a guardrails and safety controls review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support guardrails and safety controls?",
+        "[{\"id\":\"c\",\"text\":\"Put hard authorization at the protected action boundary.\"},{\"id\":\"d\",\"text\":\"Give admin tools and rely on instructions not to misuse them.\"},{\"id\":\"a\",\"text\":\"Use layered independent controls.\"},{\"id\":\"b\",\"text\":\"Use one giant safety prompt as the only protection.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use layered independent controls.; Put hard authorization at the protected action boundary.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on guardrails and safety controls? Context: An architect is reviewing guardrails and safety controls. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Moderate only after irreversible actions.\"},{\"id\":\"a\",\"text\":\"Put hard authorization at the protected action boundary.\"},{\"id\":\"b\",\"text\":\"Log dangerous actions instead of preventing them.\"},{\"id\":\"c\",\"text\":\"Scope tools and permissions.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Put hard authorization at the protected action boundary.; Scope tools and permissions.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For guardrails and safety controls, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in guardrails and safety controls?",
+        "[{\"id\":\"a\",\"text\":\"Scope tools and permissions.\"},{\"id\":\"b\",\"text\":\"Give admin tools and rely on instructions not to misuse them.\"},{\"id\":\"c\",\"text\":\"Use human approval for sufficiently consequential actions.\"},{\"id\":\"d\",\"text\":\"Treat model refusal behavior as deterministic authorization.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Scope tools and permissions.; Use human approval for sufficiently consequential actions.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A web page contains hidden text telling the browsing agent to upload secrets to an attacker. What failure mode is this?",
+        "Indirect prompt injection. The malicious instruction is delivered through external content."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for LLM and agent risks, limitations, and failure modes: An agent has production write access even though its task is read-only analysis. Which risk is most direct?",
+        "Excessive agency / unnecessary capability. Permissions exceed what the task requires."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this LLM and agent risks, limitations, and failure modes situation? An agent loops through tools for hours and consumes a large budget. Which controls are most relevant?",
+        "Iteration/token/cost budgets, timeouts, rate limits, and stopping conditions. Resource exhaustion needs enforceable execution limits."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: A third-party MCP server is compromised. What architecture most limits damage?",
+        "Provenance/review plus sandboxing, least privilege, scoped credentials, and monitored boundaries. Tool/supply-chain risk requires constrained trust."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Indirect prompt injection — D5.2 application",
+        "Adversarial instructions hidden in external content such as pages, documents, email, or tool results."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Excessive agency — D5.2 application",
+        "More autonomy or capability than is necessary for the intended task."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "untrusted — D5.2 application",
+        "Phrase that completes this LLM and agent risks, limitations, and failure modes rule: External content consumed by an agent should be treated as _____ because it may contain indirect prompt injection."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In LLM and agent risks, limitations, and failure modes, {{c1::Indirect prompt injection}} is the concept described as: Adversarial instructions hidden in external content such as pages, documents, email, or tool results.",
+        "Applied reinforcement for D5.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In LLM and agent risks, limitations, and failure modes, {{c1::Excessive agency}} is the concept described as: More autonomy or capability than is necessary for the intended task.",
+        "Applied reinforcement for D5.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For LLM and agent risks, limitations, and failure modes, the precise answer to “What attack embeds malicious instructions in content the agent reads?” is {{c1::Indirect prompt injection}}.",
+        "Applied reinforcement for D5.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For LLM and agent risks, limitations, and failure modes, the precise answer to “What risk describes granting an agent more autonomy or permissions than required?” is {{c1::Excessive agency}}.",
+        "Applied reinforcement for D5.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within LLM and agent risks, limitations, and failure modes, what term matches this definition: Adversarial instructions hidden in external content such as pages, documents, email, or tool results.",
+        "Indirect prompt injection"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within LLM and agent risks, limitations, and failure modes, what term matches this definition: More autonomy or capability than is necessary for the intended task.",
+        "Excessive agency"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "What phrase completes this approved LLM and agent risks, limitations, and failure modes rule? External content consumed by an agent should be treated as _____ because it may contain indirect prompt injection.",
+        "untrusted"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A web page contains hidden text telling the browsing agent to upload secrets to an attacker. What failure mode is this? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Model deprecation.\"},{\"id\":\"c\",\"text\":\"Ordinary lexical retrieval.\"},{\"id\":\"d\",\"text\":\"A/B contamination.\"},{\"id\":\"a\",\"text\":\"Indirect prompt injection.\"}]",
+        "a",
+        "The malicious instruction is delivered through external content. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved LLM and agent risks, limitations, and failure modes guidance to this case: An agent has production write access even though its task is read-only analysis. Which risk is most direct?",
+        "[{\"id\":\"c\",\"text\":\"Prompt caching.\"},{\"id\":\"d\",\"text\":\"Underfitting a grader.\"},{\"id\":\"a\",\"text\":\"Excessive agency / unnecessary capability.\"},{\"id\":\"b\",\"text\":\"Insufficient context length.\"}]",
+        "a",
+        "Permissions exceed what the task requires. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? An agent loops through tools for hours and consumes a large budget. Which controls are most relevant?",
+        "[{\"id\":\"d\",\"text\":\"Disabling monitoring.\"},{\"id\":\"a\",\"text\":\"Iteration/token/cost budgets, timeouts, rate limits, and stopping conditions.\"},{\"id\":\"b\",\"text\":\"Only a friendlier system prompt.\"},{\"id\":\"c\",\"text\":\"More write permissions.\"}]",
+        "a",
+        "Resource exhaustion needs enforceable execution limits. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A third-party MCP server is compromised. What architecture most limits damage? Which recommendation should they defend?",
+        "[{\"id\":\"a\",\"text\":\"Provenance/review plus sandboxing, least privilege, scoped credentials, and monitored boundaries.\"},{\"id\":\"b\",\"text\":\"Trust all MCP servers because the protocol is standard.\"},{\"id\":\"c\",\"text\":\"Give the server broader credentials to simplify failures.\"},{\"id\":\"d\",\"text\":\"Remove version pinning and review.\"}]",
+        "a",
+        "Tool/supply-chain risk requires constrained trust. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "During a LLM and agent risks, limitations, and failure modes review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support LLM and agent risks, limitations, and failure modes?",
+        "[{\"id\":\"c\",\"text\":\"Minimize capability and secret exposure.\"},{\"id\":\"d\",\"text\":\"Give agents secrets they never need.\"},{\"id\":\"a\",\"text\":\"Treat external content as untrusted.\"},{\"id\":\"b\",\"text\":\"Assume a better model eliminates prompt injection.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Treat external content as untrusted.; Minimize capability and secret exposure.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on LLM and agent risks, limitations, and failure modes? Context: An architect is reviewing LLM and agent risks, limitations, and failure modes. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Trust third-party tools solely because they use MCP.\"},{\"id\":\"a\",\"text\":\"Minimize capability and secret exposure.\"},{\"id\":\"b\",\"text\":\"Call every wrong answer a hallucination.\"},{\"id\":\"c\",\"text\":\"Use budgets/timeouts for runaway execution.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Minimize capability and secret exposure.; Use budgets/timeouts for runaway execution.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For LLM and agent risks, limitations, and failure modes, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in LLM and agent risks, limitations, and failure modes?",
+        "[{\"id\":\"a\",\"text\":\"Use budgets/timeouts for runaway execution.\"},{\"id\":\"b\",\"text\":\"Give agents secrets they never need.\"},{\"id\":\"c\",\"text\":\"Review third-party tools/Skills and provenance.\"},{\"id\":\"d\",\"text\":\"Allow unbounded loops and spending.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use budgets/timeouts for runaway execution.; Review third-party tools/Skills and provenance.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? An AI proposes a large irreversible wire transfer. Which review pattern is strongest?",
+        "Human approval before the transfer executes. High-consequence irreversible actions favor pre-action approval."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for human-in-the-loop validation: A mature low-risk classification workflow needs ongoing quality oversight without reviewing every case. What fits?",
+        "Sampled human review combined with monitoring. Sampling can monitor a mature lower-risk process without erasing automation value."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this human-in-the-loop validation situation? A reviewer sees only “Approve? yes/no” with no source evidence or policy. What is the main weakness?",
+        "The human cannot exercise meaningful judgment and may become a rubber stamp. HITL must provide enough context for a real decision."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: A reversible low-impact content tag is wrong occasionally. Which oversight approach may be proportionate?",
+        "Post-action or sampled review with monitoring, if risk is acceptable. Oversight should be proportionate to consequence and reversibility."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Pre-action approval — D5.3 application",
+        "Human authorization before a consequential action occurs."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Sampled review — D5.3 application",
+        "Reviewing a subset of lower-risk cases to monitor quality and drift."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In human-in-the-loop validation, {{c1::Pre-action approval}} is the concept described as: Human authorization before a consequential action occurs.",
+        "Applied reinforcement for D5.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In human-in-the-loop validation, {{c1::Sampled review}} is the concept described as: Reviewing a subset of lower-risk cases to monitor quality and drift.",
+        "Applied reinforcement for D5.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For human-in-the-loop validation, the precise answer to “What review pattern requires human authorization before execution?” is {{c1::Pre-action approval}}.",
+        "Applied reinforcement for D5.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For human-in-the-loop validation, the precise answer to “What review pattern checks only a fraction of lower-risk cases?” is {{c1::Sampled review}}.",
+        "Applied reinforcement for D5.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within human-in-the-loop validation, what term matches this definition: Human authorization before a consequential action occurs.",
+        "Pre-action approval"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within human-in-the-loop validation, what term matches this definition: Reviewing a subset of lower-risk cases to monitor quality and drift.",
+        "Sampled review"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: An AI proposes a large irreversible wire transfer. Which review pattern is strongest? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Review the transfer a week later.\"},{\"id\":\"c\",\"text\":\"Sample 1% after execution only.\"},{\"id\":\"d\",\"text\":\"Let model confidence determine authorization.\"},{\"id\":\"a\",\"text\":\"Human approval before the transfer executes.\"}]",
+        "a",
+        "High-consequence irreversible actions favor pre-action approval. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved human-in-the-loop validation guidance to this case: A mature low-risk classification workflow needs ongoing quality oversight without reviewing every case. What fits?",
+        "[{\"id\":\"c\",\"text\":\"Remove all human oversight permanently.\"},{\"id\":\"d\",\"text\":\"Review only when the model says it is confident.\"},{\"id\":\"a\",\"text\":\"Sampled human review combined with monitoring.\"},{\"id\":\"b\",\"text\":\"Pre-approve every single low-risk label.\"}]",
+        "a",
+        "Sampling can monitor a mature lower-risk process without erasing automation value. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A reviewer sees only “Approve? yes/no” with no source evidence or policy. What is the main weakness?",
+        "[{\"id\":\"d\",\"text\":\"Approval should happen after execution.\"},{\"id\":\"a\",\"text\":\"The human cannot exercise meaningful judgment and may become a rubber stamp.\"},{\"id\":\"b\",\"text\":\"Human review must never show evidence.\"},{\"id\":\"c\",\"text\":\"The model should hide uncertainty.\"}]",
+        "a",
+        "HITL must provide enough context for a real decision. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A reversible low-impact content tag is wrong occasionally. Which oversight approach may be proportionate? Which recommendation should they defend?",
+        "[{\"id\":\"a\",\"text\":\"Post-action or sampled review with monitoring, if risk is acceptable.\"},{\"id\":\"b\",\"text\":\"Mandatory executive pre-approval for every tag.\"},{\"id\":\"c\",\"text\":\"No monitoring because the action is reversible.\"},{\"id\":\"d\",\"text\":\"Use admin credentials for all cases.\"}]",
+        "a",
+        "Oversight should be proportionate to consequence and reversibility. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "During a human-in-the-loop validation review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support human-in-the-loop validation?",
+        "[{\"id\":\"c\",\"text\":\"Give reviewers relevant evidence and policy.\"},{\"id\":\"d\",\"text\":\"Review every trivial case regardless of cost.\"},{\"id\":\"a\",\"text\":\"Use pre-action review for high-consequence irreversible actions.\"},{\"id\":\"b\",\"text\":\"Place human approval after an irreversible action.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Use pre-action review for high-consequence irreversible actions.; Give reviewers relevant evidence and policy.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on human-in-the-loop validation? Context: An architect is reviewing human-in-the-loop validation. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Use model confidence as the only escalation criterion.\"},{\"id\":\"a\",\"text\":\"Give reviewers relevant evidence and policy.\"},{\"id\":\"b\",\"text\":\"Make reviewers rubber-stamp opaque outputs.\"},{\"id\":\"c\",\"text\":\"Scale oversight with consequence and regulation.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Give reviewers relevant evidence and policy.; Scale oversight with consequence and regulation.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For human-in-the-loop validation, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in human-in-the-loop validation?",
+        "[{\"id\":\"a\",\"text\":\"Scale oversight with consequence and regulation.\"},{\"id\":\"b\",\"text\":\"Review every trivial case regardless of cost.\"},{\"id\":\"c\",\"text\":\"Use sampling for mature low-risk workflows.\"},{\"id\":\"d\",\"text\":\"Remove humans where regulation explicitly requires review.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Scale oversight with consequence and regulation.; Use sampling for mature low-risk workflows.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A team says, “Our model provider is HIPAA compliant, so our whole app is compliant.” What is wrong?",
+        "Application compliance depends on the full system, data flows, controls, agreements, and responsibilities—not one provider alone. Compliance is a system-level responsibility."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for regulatory compliance architecture: A GDPR-related requirement affects deletion/retention of personal data. What should the architect do?",
+        "Map the requirement to specific data lifecycle controls, ownership, and evidence. Regulatory obligations must become operational controls."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this regulatory compliance architecture situation? A FedRAMP-scoped system adds a new cloud service. What architecture question is most important?",
+        "Whether the service falls within the authorized boundary/control inheritance and change process. Boundary and authorization/control scope are central compliance concerns."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: A flashcard claims a specific legal requirement not present in the primary source. What should the study deck do?",
+        "Avoid or verify the claim against authoritative regulatory guidance before teaching it. Exact legal obligations require primary-source verification."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Control evidence — D5.4 application",
+        "Records/artifacts demonstrating that a required control is implemented and operating."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Compliance boundary — D5.4 application",
+        "The systems, data, services, and responsibilities included in the regulated/authorized scope."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In regulatory compliance architecture, {{c1::Control evidence}} is the concept described as: Records/artifacts demonstrating that a required control is implemented and operating.",
+        "Applied reinforcement for D5.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In regulatory compliance architecture, {{c1::Compliance boundary}} is the concept described as: The systems, data, services, and responsibilities included in the regulated/authorized scope.",
+        "Applied reinforcement for D5.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For regulatory compliance architecture, the precise answer to “What term describes records proving a control is implemented and operating?” is {{c1::Control evidence}}.",
+        "Applied reinforcement for D5.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "During an operational review, apply this regulatory compliance architecture rule: In regulatory compliance architecture, {{c1::Control evidence}} is the concept described as: Records/artifacts demonstrating that a required control is implemented and operating.",
+        "Applied reinforcement for D5.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within regulatory compliance architecture, what term matches this definition: Records/artifacts demonstrating that a required control is implemented and operating.",
+        "Control evidence"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within regulatory compliance architecture, what term matches this definition: The systems, data, services, and responsibilities included in the regulated/authorized scope.",
+        "Compliance boundary"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: A team says, “Our model provider is HIPAA compliant, so our whole app is compliant.” What is wrong? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Provider status never matters.\"},{\"id\":\"c\",\"text\":\"HIPAA applies only to prompts.\"},{\"id\":\"d\",\"text\":\"Compliance can be implemented solely in the system prompt.\"},{\"id\":\"a\",\"text\":\"Application compliance depends on the full system, data flows, controls, agreements, and responsibilities—not one provider alone.\"}]",
+        "a",
+        "Compliance is a system-level responsibility. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved regulatory compliance architecture guidance to this case: A GDPR-related requirement affects deletion/retention of personal data. What should the architect do?",
+        "[{\"id\":\"c\",\"text\":\"Keep all logs forever just in case.\"},{\"id\":\"d\",\"text\":\"Assume the vector database handles deletion automatically.\"},{\"id\":\"a\",\"text\":\"Map the requirement to specific data lifecycle controls, ownership, and evidence.\"},{\"id\":\"b\",\"text\":\"Write “comply with GDPR” in the prompt.\"}]",
+        "a",
+        "Regulatory obligations must become operational controls. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A FedRAMP-scoped system adds a new cloud service. What architecture question is most important?",
+        "[{\"id\":\"d\",\"text\":\"Whether the service has more UI features.\"},{\"id\":\"a\",\"text\":\"Whether the service falls within the authorized boundary/control inheritance and change process.\"},{\"id\":\"b\",\"text\":\"Whether the model likes the service.\"},{\"id\":\"c\",\"text\":\"Whether prompts become shorter.\"}]",
+        "a",
+        "Boundary and authorization/control scope are central compliance concerns. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "During a regulatory compliance architecture review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support regulatory compliance architecture?",
+        "[{\"id\":\"c\",\"text\":\"Assign control ownership.\"},{\"id\":\"d\",\"text\":\"Keep sensitive logs indefinitely without policy.\"},{\"id\":\"a\",\"text\":\"Map obligations to enforceable controls.\"},{\"id\":\"b\",\"text\":\"Put “comply with GDPR” in a prompt and stop there.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Map obligations to enforceable controls.; Assign control ownership.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on regulatory compliance architecture? Context: An architect is reviewing regulatory compliance architecture. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Ignore data residency/retention when applicable.\"},{\"id\":\"a\",\"text\":\"Assign control ownership.\"},{\"id\":\"b\",\"text\":\"Assume one compliant vendor makes the whole system compliant.\"},{\"id\":\"c\",\"text\":\"Collect appropriate evidence.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Assign control ownership.; Collect appropriate evidence.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "For regulatory compliance architecture, select the TWO options that preserve the approved design principles. Which TWO decisions reduce the main risk in regulatory compliance architecture?",
+        "[{\"id\":\"a\",\"text\":\"Collect appropriate evidence.\"},{\"id\":\"b\",\"text\":\"Keep sensitive logs indefinitely without policy.\"},{\"id\":\"c\",\"text\":\"Define regulated/system boundaries.\"},{\"id\":\"d\",\"text\":\"Invent legal requirements from memory.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Collect appropriate evidence.; Define regulated/system boundaries.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? An AI system has 95% aggregate accuracy but performs much worse for an important subgroup. What should the team do?",
+        "Evaluate relevant slices and address the disparity rather than relying only on aggregate accuracy. Aggregate metrics can conceal uneven outcomes."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for responsible and ethical AI: After a harmful automated decision, the team says “the AI decided.” What governance problem is most direct?",
+        "Lack of accountability and ownership. Organizations remain responsible for system decisions and controls."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this responsible and ethical AI situation? A user asks why a consequential recommendation was made. What transparency approach is strongest?",
+        "Provide relevant evidence, policy/reasoning summary, limitations, and appeal/ownership path without exposing private chain-of-thought. Transparency should be useful and appropriate to the audience."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: A team stores every model/tool interaction forever to maximize traceability. What concern should be balanced?",
+        "Data minimization, privacy, retention, and access controls. Traceability must be balanced against unnecessary sensitive-data retention."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Fairness evaluation — D5.5 application",
+        "Assessing relevant performance/outcomes across appropriate groups or slices instead of relying only on aggregate metrics."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Accountability — D5.5 application",
+        "Clear ownership for architecture decisions, residual risk, monitoring, and incident response."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In responsible and ethical AI, {{c1::Fairness evaluation}} is the concept described as: Assessing relevant performance/outcomes across appropriate groups or slices instead of relying only on aggregate metrics.",
+        "Applied reinforcement for D5.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In responsible and ethical AI, {{c1::Accountability}} is the concept described as: Clear ownership for architecture decisions, residual risk, monitoring, and incident response.",
+        "Applied reinforcement for D5.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For responsible and ethical AI, the precise answer to “What concept means a named person/team owns residual risk and response?” is {{c1::Accountability}}.",
+        "Applied reinforcement for D5.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within responsible and ethical AI, what term matches this definition: Assessing relevant performance/outcomes across appropriate groups or slices instead of relying only on aggregate metrics.",
+        "Fairness evaluation"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "type-answer",
+      "fields": [
+        "Within responsible and ethical AI, what term matches this definition: Clear ownership for architecture decisions, residual risk, monitoring, and incident response.",
+        "Accountability"
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "A design reviewer is evaluating this scenario: An AI system has 95% aggregate accuracy but performs much worse for an important subgroup. What should the team do? Which recommendation should they defend?",
+        "[{\"id\":\"b\",\"text\":\"Ignore subgroup results because aggregate accuracy is high.\"},{\"id\":\"c\",\"text\":\"Hide the subgroup metrics.\"},{\"id\":\"d\",\"text\":\"Increase logging retention indefinitely.\"},{\"id\":\"a\",\"text\":\"Evaluate relevant slices and address the disparity rather than relying only on aggregate accuracy.\"}]",
+        "a",
+        "Aggregate metrics can conceal uneven outcomes. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Apply the approved responsible and ethical AI guidance to this case: After a harmful automated decision, the team says “the AI decided.” What governance problem is most direct?",
+        "[{\"id\":\"c\",\"text\":\"Insufficient prompt caching.\"},{\"id\":\"d\",\"text\":\"Too many A/B tests.\"},{\"id\":\"a\",\"text\":\"Lack of accountability and ownership.\"},{\"id\":\"b\",\"text\":\"Too much semantic retrieval.\"}]",
+        "a",
+        "Organizations remain responsible for system decisions and controls. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-choice",
+      "fields": [
+        "Which response best preserves the architecture principles in this situation? A user asks why a consequential recommendation was made. What transparency approach is strongest?",
+        "[{\"id\":\"d\",\"text\":\"Provide no explanation because models are probabilistic.\"},{\"id\":\"a\",\"text\":\"Provide relevant evidence, policy/reasoning summary, limitations, and appeal/ownership path without exposing private chain-of-thought.\"},{\"id\":\"b\",\"text\":\"Reveal raw hidden chain-of-thought.\"},{\"id\":\"c\",\"text\":\"Say only “the AI decided.”\"}]",
+        "a",
+        "Transparency should be useful and appropriate to the audience. This P1 variant tests the same approved principle in a re-framed design review."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "During a responsible and ethical AI review, which TWO statements remain aligned with the approved guidance? Which TWO practices best support responsible and ethical AI?",
+        "[{\"id\":\"c\",\"text\":\"Keep human/organizational accountability explicit.\"},{\"id\":\"d\",\"text\":\"Treat transparency as raw chain-of-thought disclosure.\"},{\"id\":\"a\",\"text\":\"Evaluate relevant outcome slices.\"},{\"id\":\"b\",\"text\":\"Use aggregate accuracy as the only fairness evidence.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Evaluate relevant outcome slices.; Keep human/organizational accountability explicit.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "multiple-select",
+      "fields": [
+        "Which TWO recommendations should survive an architecture review focused on responsible and ethical AI? Context: An architect is reviewing responsible and ethical AI. Which TWO choices align with the approved guidance?",
+        "[{\"id\":\"d\",\"text\":\"Keep all sensitive logs forever.\"},{\"id\":\"a\",\"text\":\"Keep human/organizational accountability explicit.\"},{\"id\":\"b\",\"text\":\"Say “the AI decided” to avoid ownership.\"},{\"id\":\"c\",\"text\":\"Provide audience-appropriate transparency.\"}]",
+        "[\"a\",\"c\"]",
+        "Correct: Keep human/organizational accountability explicit.; Provide audience-appropriate transparency.. The other choices conflict with the approved guidance. This variant reinforces the approved decision set for D5.5."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.5\",\"priority:p1\",\"kind:decision\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a defense-in-depth path for a consequential action.",
+        "[{\"id\":\"s1\",\"text\":\"Validate/classify the request\"},{\"id\":\"s2\",\"text\":\"Let the model reason within scoped context/tools\"},{\"id\":\"s3\",\"text\":\"Apply deterministic policy and authorization checks\"},{\"id\":\"s4\",\"text\":\"Require human approval when risk demands it\"},{\"id\":\"s5\",\"text\":\"Execute and record the authorized action\"}]",
+        "Probabilistic reasoning is surrounded by enforceable controls before execution. Sequence reinforcement for D5.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.1\",\"priority:p1\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a risk-treatment cycle for an identified agent failure mode.",
+        "[{\"id\":\"s1\",\"text\":\"Identify the threat/failure mode\"},{\"id\":\"s2\",\"text\":\"Reduce likelihood with preventive controls\"},{\"id\":\"s3\",\"text\":\"Detect attempts or failures with monitoring\"},{\"id\":\"s4\",\"text\":\"Contain/stop harmful effects\"},{\"id\":\"s5\",\"text\":\"Recover and add regression/response improvements\"}]",
+        "Risk treatment combines prevention, detection, containment, and recovery. Sequence reinforcement for D5.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order an indirect-prompt-injection defense path.",
+        "[{\"id\":\"s1\",\"text\":\"Treat external content as untrusted data\"},{\"id\":\"s2\",\"text\":\"Limit the agent's reachable tools/secrets\"},{\"id\":\"s3\",\"text\":\"Detect suspicious instructions/behavior where possible\"},{\"id\":\"s4\",\"text\":\"Re-authorize consequential actions outside the model\"},{\"id\":\"s5\",\"text\":\"Block or escalate unsafe execution\"}]",
+        "Untrusted content is paired with limited capability and independent action controls. Sequence reinforcement for D5.2."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.2\",\"priority:p1\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a meaningful pre-action HITL flow.",
+        "[{\"id\":\"s1\",\"text\":\"Model proposes the consequential action\"},{\"id\":\"s2\",\"text\":\"Collect the evidence/policy relevant to review\"},{\"id\":\"s3\",\"text\":\"Present proposal and context to the authorized reviewer\"},{\"id\":\"s4\",\"text\":\"Reviewer approves or rejects\"},{\"id\":\"s5\",\"text\":\"Execute only approved actions and record the decision\"}]",
+        "The human decision occurs before execution and is informed by evidence. Sequence reinforcement for D5.3."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.3\",\"priority:p1\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "ordering",
+      "fields": [
+        "Put these steps in the operational order you would defend during a P1 design review: Order a compliance-control mapping workflow.",
+        "[{\"id\":\"s1\",\"text\":\"Identify the applicable requirement\"},{\"id\":\"s2\",\"text\":\"Translate it into a technical/operational control\"},{\"id\":\"s3\",\"text\":\"Assign an owner\"},{\"id\":\"s4\",\"text\":\"Define evidence that proves operation\"},{\"id\":\"s5\",\"text\":\"Set review/monitoring cadence\"}]",
+        "Compliance becomes actionable through controls, ownership, evidence, and ongoing review. Sequence reinforcement for D5.4."
+      ],
+      "tags_json": "[\"ccarp\",\"d5\",\"obj:d5.4\",\"priority:p1\",\"kind:sequence\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Without answer choices, what is the best architecture response to this scenario? A stakeholder says the assistant must be “very fast.” What should the architect ask next?",
+        "Define a measurable latency target such as an agreed percentile/SLA. Discovery converts adjectives into measurable criteria."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "Resolve this production scenario for structured discovery and requirement gathering: A stakeholder asks for an agent but cannot explain the desired outcome. What is the best next step?",
+        "Clarify the workflow problem, baseline, users, constraints, and success criteria. Implementation language should not replace requirements discovery."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "What should an architect recommend in this structured discovery and requirement gathering situation? A proposed workflow handles sensitive data, but nobody has identified who owns residual privacy risk. What is missing?",
+        "Explicit risk/decision ownership as part of requirements and governance. Ownership is a requirement for operating consequential systems."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic",
+      "fields": [
+        "State the preferred architecture action for this design-review scenario: Two teams disagree on what “correct” means for an extraction task. What should happen before architecture selection?",
+        "Agree on testable quality criteria and representative examples/evals. Quality requirements need a shared measurable definition."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p1\",\"kind:scenario\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Functional requirement — D6.1 application",
+        "What the solution must do."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "Non-functional requirement — D6.1 application",
+        "How the solution must operate, such as latency, availability, scale, residency, or cost."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "basic-reverse",
+      "fields": [
+        "observable acceptance criteria — D6.1 application",
+        "Phrase that completes this structured discovery and requirement gathering rule: Discovery should turn vague goals into _____ before design."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p1\",\"kind:compare\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In structured discovery and requirement gathering, {{c1::Functional requirement}} is the concept described as: What the solution must do.",
+        "Applied reinforcement for D6.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "In structured discovery and requirement gathering, {{c1::Non-functional requirement}} is the concept described as: How the solution must operate, such as latency, availability, scale, residency, or cost.",
+        "Applied reinforcement for D6.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    },
+    {
+      "note_type": "cloze",
+      "fields": [
+        "For structured discovery and requirement gathering, the precise answer to “What requirement category describes what the system must do?” is {{c1::Functional requirement}}.",
+        "Applied reinforcement for D6.1."
+      ],
+      "tags_json": "[\"ccarp\",\"d6\",\"obj:d6.1\",\"priority:p1\",\"kind:concept\",\"source:approved\"]"
+    }
+  ]
+}
