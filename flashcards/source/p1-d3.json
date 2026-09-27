@@ -2182,7 +2182,7 @@
       "seed_id": "p0-d3.6-cloze-01",
       "note_type": "basic-reverse",
       "fields": [
-        "lexical retrieval — D3.6 application",
+        "Lexical retrieval — rule application in retrieval strategy selection",
         "Phrase that completes this retrieval strategy selection rule: Exact identifiers and error strings are often strong candidates for _____."
       ],
       "tags": [
