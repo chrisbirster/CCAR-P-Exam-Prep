@@ -37,6 +37,28 @@ Artifacts:
 
 [Inspect the source contract](source/).
 
+## Combined deck
+
+Use this if you want one deck in deez.run instead of separate P0 and P1 decks.
+
+- **1,340 logical notes**
+- **1,500 generated cards**
+- deck name: **CCAR-P Exam Prep**
+- preserves `priority:p0` and `priority:p1` tags
+- preserves all objective/source tags
+
+Artifacts:
+
+- [ccar-p-combined.nut](ccar-p-combined.nut)
+- [ccar-p-combined-api.json](ccar-p-combined-api.json)
+- [batches/combined-01.json](batches/combined-01.json) — 200 notes
+- [batches/combined-02.json](batches/combined-02.json) — 200 notes
+- [batches/combined-03.json](batches/combined-03.json) — 200 notes
+- [batches/combined-04.json](batches/combined-04.json) — 200 notes
+- [batches/combined-05.json](batches/combined-05.json) — 200 notes
+- [batches/combined-06.json](batches/combined-06.json) — 200 notes
+- [batches/combined-07.json](batches/combined-07.json) — 140 notes
+
 ## Progress
 
 - P0 — 700 cards — **complete**
