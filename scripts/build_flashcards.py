@@ -32,16 +32,16 @@ def deez_note(note: dict) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--priority", default="p0")
-    parser.add_argument("--deck-name", default="CCAR-P Exam Prep — P0")
+    parser.add_argument("--deck-name")
     parser.add_argument("--batch-size", type=int, default=200)
     args = parser.parse_args()
 
-    notes = load_notes(args.priority)
+    deck_name = deck_name or f"CCAR-P Exam Prep — {args.priority.upper()}"\n    notes = load_notes(args.priority)
     BATCHES.mkdir(parents=True, exist_ok=True)
     nut_path = FLASH / f"ccar-p-{args.priority}.nut"
     api_path = FLASH / f"ccar-p-{args.priority}-api.json"
 
-    header = {"kind":"deck","format":"deez.nut","version":2,"name":args.deck_name}
+    header = {"kind":"deck","format":"deez.nut","version":2,"name":deck_name}
     records = [header, *(deez_note(n) for n in notes)]
     nut_path.write_text(
         "\n".join(json.dumps(r, ensure_ascii=False, separators=(",", ":")) for r in records) + "\n",
@@ -50,7 +50,7 @@ def main() -> None:
 
     generated_cards = sum(2 if n["note_type"] == "basic-reverse" else 1 for n in notes)
     api_payload = {
-        "deck_name": args.deck_name,
+        "deck_name": deck_name,
         "priority": args.priority,
         "generated_cards": generated_cards,
         "logical_notes": len(notes),
