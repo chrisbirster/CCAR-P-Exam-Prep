@@ -2526,7 +2526,7 @@
       "seed_id": "p0-d4.6-basic-reverse-01",
       "note_type": "cloze",
       "fields": [
-        "In production monitoring and regression protection, {{c1::Capability eval}} is the concept described as: An evaluation asking whether the system can perform a new or harder capability.",
+        "During an operational review, apply this production monitoring and regression protection rule: In production monitoring and regression protection, {{c1::Capability eval}} is the concept described as: An evaluation asking whether the system can perform a new or harder capability.",
         "Applied reinforcement for D4.6."
       ],
       "tags": [
